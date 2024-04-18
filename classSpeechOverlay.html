@@ -139,29 +139,7 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 </div><div class="memdoc">
 
 <p>Setting up all the node values probably the place stuff goes wrong iif node names or positions are changed </p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        _text = GetNode&lt;RichTextLabel&gt;(<span class="stringliteral">&quot;SpeechText&quot;</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        _textLabel = GetNode&lt;Label&gt;(<span class="stringliteral">&quot;TextLabel&quot;</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        _choices = GetNode&lt;SpeechOverlayChoices&gt;(<span class="stringliteral">&quot;Choices&quot;</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        _leftPortrait = GetNode&lt;TextureRect&gt;(<span class="stringliteral">&quot;LeftPortrait&quot;</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        _rightPortrait = GetNode&lt;TextureRect&gt;(<span class="stringliteral">&quot;RightPortrait&quot;</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        TextureRect caret = GetNode&lt;TextureRect&gt;(<span class="stringliteral">&quot;Caret&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        _caretAnimation = caret.GetNode&lt;AnimationPlayer&gt;(<span class="stringliteral">&quot;Caret_AnimationPlayer&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        _leftBasePosition = _leftPortrait.Position;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        _rightBasePosition = _rightPortrait.Position;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classInputModule.html">InputModule</a>.ConfirmPressed += ConfirmPressed;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ProcessMode = Node.ProcessModeEnum.Always;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        _text.VisibleCharacters = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="ttc" id="aclassInputModule_html"><div class="ttname"><a href="classInputModule.html">InputModule</a></div><div class="ttdef"><b>Definition:</b> InputModule.cs:8</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a79f2a85627f0d82362c8f30f165c2e29"></a>
@@ -187,11 +165,7 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        _choices.<a class="code" href="classSpeechOverlayChoices.html#acf66fc3edd232e0c6f988cc4ef9e8501">setLabel</a>(label);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
-<div class="ttc" id="aclassSpeechOverlayChoices_html_acf66fc3edd232e0c6f988cc4ef9e8501"><div class="ttname"><a href="classSpeechOverlayChoices.html#acf66fc3edd232e0c6f988cc4ef9e8501">SpeechOverlayChoices.setLabel</a></div><div class="ttdeci">void setLabel(String label)</div><div class="ttdoc">Sets the label of the question</div><div class="ttdef"><b>Definition:</b> SpeechOverlayChoices.cs:25</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a8187c13bcfdecdcb9b6b280dd2c5acec"></a>
@@ -217,20 +191,7 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        _textLabel.Hide();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        _text.Hide();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        _choices.Show();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        _isTalking = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        _choices.<a class="code" href="classSpeechOverlayChoices.html#aa71432f3be7304a1eb0c53879ff4b683">SetChoices</a>(choices);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        _choices.ChoiceMade += ChoicesCallback;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
-<div class="ttc" id="aclassSpeechOverlayChoices_html_aa71432f3be7304a1eb0c53879ff4b683"><div class="ttname"><a href="classSpeechOverlayChoices.html#aa71432f3be7304a1eb0c53879ff4b683">SpeechOverlayChoices.SetChoices</a></div><div class="ttdeci">void SetChoices(String[] choices)</div><div class="ttdoc">Sets the choices for the player to choose from</div><div class="ttdef"><b>Definition:</b> SpeechOverlayChoices.cs:34</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aaa2253ba4d50578879fbf1f6e41a86aa"></a>
@@ -256,10 +217,7 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        _leftPortrait.Texture = portrait;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a975050cd780a270487284227893ed0b0"></a>
@@ -285,10 +243,7 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        _rightPortrait.Texture = portrait;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a83e8ab720126466f740511ea2bd872f0"></a>
@@ -314,10 +269,7 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        _textLabel.Text = label;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="adf37d3d86f2523987f20a241260ec5c0"></a>
@@ -343,23 +295,7 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        _textLabel.Show();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        _text.Show();</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        _choices.Hide();</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        _segments = text.Split(<span class="charliteral">&#39;|&#39;</span>);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        _segmentCount = _segments.Count();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        _text.VisibleCharacters = 0;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        _text.Text = _segments[0];</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        _isTyping = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        _awaitingConfirmation = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        _isTalking = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

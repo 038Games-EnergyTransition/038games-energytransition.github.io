@@ -152,10 +152,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns the current hour of the day (0-23) </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)(_instance._time / (float)_instance._dayLenght * 24);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aeac6c09a9055751986010d4a51c44694"></a>
@@ -183,10 +180,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns the current minute of the hour (0-59) </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)(_instance._time / (float)_instance._dayLenght * 24 * 60) % 60;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a331cefd253cac1cf0d07910dac85ebe6"></a>
@@ -214,10 +208,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns the current time in seconds not relative to the length of a day </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> _instance._time;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae59b061b4dfaa78ce473cf213d6b3a74"></a>
@@ -245,13 +236,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns the current time as an angle (0-360) </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">float</span> angle = <a class="code" href="classGlobalTime.html#a331cefd253cac1cf0d07910dac85ebe6">GetTime</a>() / _instance._dayLenght * 360;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        GD.Print(angle);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> angle;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="ttc" id="aclassGlobalTime_html_a331cefd253cac1cf0d07910dac85ebe6"><div class="ttname"><a href="classGlobalTime.html#a331cefd253cac1cf0d07910dac85ebe6">GlobalTime.GetTime</a></div><div class="ttdeci">static float GetTime()</div><div class="ttdoc">Returns the current time in seconds not relative to the length of a day</div><div class="ttdef"><b>Definition:</b> GlobalTime.cs:34</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa8c03c70220dd51b9ad91f936e3f276c"></a>
@@ -285,10 +270,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        _instance._time = (float)hour / 24 * _instance._dayLenght;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afd06f9098ae87b163a0d8f2ad32567ae"></a>
@@ -322,10 +304,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        _instance._time = (float)minute / 60 / 24 * _instance._dayLenght;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

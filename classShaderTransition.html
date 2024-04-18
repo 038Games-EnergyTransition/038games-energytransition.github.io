@@ -173,20 +173,7 @@ virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>NodeName</b
 </dl>
 
 <p>Reimplemented from <a class="el" href="classCutsceneNode.html#af61a6f7aacf54c2387af64d0ae040485">CutsceneNode</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        _timePast += (float)delta * _playBackSpeed;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span> (_timePast &lt; TransitionTime)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> (_shaderMaterial != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                _shaderMaterial.SetShaderParameter(ShaderParameter, (Reverse ? 1 - _timePast / (TransitionTime) : _timePast / (TransitionTime)) + 0.1);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (_timePast &gt;= TransitionTime + WaitAtEnd)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            _colorRect.QueueFree();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            _colorRect = <span class="keyword">null</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            base.FinishNode();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aaaa93849b0f0a26c8efc0665505df384"></a>
@@ -222,29 +209,7 @@ virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>NodeName</b
 </dl>
 
 <p>Reimplemented from <a class="el" href="classCutsceneNode.html#ac6a344ba8b1a25d7c2e9ff2f7f367e5b">CutsceneNode</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (Shader == <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="classCutsceneScripter.html">CutsceneScripter</a>.Instance.<a class="code" href="classCutsceneScripter.html#a42f96622a74c3676d6c951e7464d6acd">PushError</a>(<span class="keyword">this</span>, <span class="stringliteral">&quot;No shader set&quot;</span>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            base.FinishNode();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        _colorRect = <span class="keyword">new</span> ColorRect</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            Size = <a class="code" href="classCutsceneScripter.html">CutsceneScripter</a>.Instance.GetViewport().GetVisibleRect().Size,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            Position = <span class="keyword">new</span> Vector2(0, 0)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        };</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        _shaderMaterial = <span class="keyword">new</span> ShaderMaterial() { Shader = Shader };</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        _colorRect.Material = _shaderMaterial;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classCutsceneScripter.html">CutsceneScripter</a>.Instance.GetTree().Root.AddChild(_colorRect);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        _playBackSpeed = playBackSpeed;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        _timePast = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="ttc" id="aclassCutsceneScripter_html"><div class="ttname"><a href="classCutsceneScripter.html">CutsceneScripter</a></div><div class="ttdef"><b>Definition:</b> CutsceneScripter.cs:7</div></div>
-<div class="ttc" id="aclassCutsceneScripter_html_a42f96622a74c3676d6c951e7464d6acd"><div class="ttname"><a href="classCutsceneScripter.html#a42f96622a74c3676d6c951e7464d6acd">CutsceneScripter.PushError</a></div><div class="ttdeci">void PushError(CutsceneNode sender, string error)</div><div class="ttdoc">a global accessable function to push errors from cutscene nodes.</div><div class="ttdef"><b>Definition:</b> CutsceneScripter.cs:218</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

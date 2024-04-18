@@ -174,20 +174,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>EditRoute</b><code> [
 <p>An overwritable method that is called when the player interacts with the NPC. </p>
 
 <p>Reimplemented from <a class="el" href="classNpcBase.html#aaf3947f96f3851bcf2e2cfc2b0fb779b">NpcBase</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        GD.Print(<span class="stringliteral">&quot;global paused&quot;</span> + <a class="code" href="classGlobals.html">Globals</a>.Paused);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classGlobals.html">Globals</a>.Paused)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="classSpeechEngine.html">SpeechEngine</a>.DoneTalking += _onDogTalking;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="classSpeechEngine.html">SpeechEngine</a>.Instance?.<a class="code" href="classSpeechEngine.html#a06a3a0060a30819ff8a2db7d8ff32dfe">SetSpeechLabel</a>(<span class="stringliteral">&quot;Talking Ivan&quot;</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="classSpeechEngine.html">SpeechEngine</a>.Instance?.<a class="code" href="classSpeechEngine.html#a9b8ceb89c64bbe9e500ef33846939ce8">Speech</a>(<span class="stringliteral">&quot;I am a Ivan |I talk | . . . | I think i deserve a [swing]treat[/swing]&quot;</span>, Portrait);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="ttc" id="aclassGlobals_html"><div class="ttname"><a href="classGlobals.html">Globals</a></div><div class="ttdef"><b>Definition:</b> Globals.cs:13</div></div>
-<div class="ttc" id="aclassSpeechEngine_html"><div class="ttname"><a href="classSpeechEngine.html">SpeechEngine</a></div><div class="ttdef"><b>Definition:</b> SpeechEngine.cs:8</div></div>
-<div class="ttc" id="aclassSpeechEngine_html_a06a3a0060a30819ff8a2db7d8ff32dfe"><div class="ttname"><a href="classSpeechEngine.html#a06a3a0060a30819ff8a2db7d8ff32dfe">SpeechEngine.SetSpeechLabel</a></div><div class="ttdeci">void SetSpeechLabel(string label)</div><div class="ttdoc">takes a string and puts it the speech overlay</div><div class="ttdef"><b>Definition:</b> SpeechEngine.cs:32</div></div>
-<div class="ttc" id="aclassSpeechEngine_html_a9b8ceb89c64bbe9e500ef33846939ce8"><div class="ttname"><a href="classSpeechEngine.html#a9b8ceb89c64bbe9e500ef33846939ce8">SpeechEngine.Speech</a></div><div class="ttdeci">void Speech(String text, Texture2D portrait)</div><div class="ttdoc">takes a string and portrait and puts it the speech overlay, automaticly starts the speech and pauses ...</div><div class="ttdef"><b>Definition:</b> SpeechEngine.cs:42</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
