@@ -103,17 +103,17 @@ Inheritance diagram for NpcBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a95da3b8eab7e5af7bf50c3aaea862c5d"><td class="memItemLeft" align="right" valign="top"><a id="a95da3b8eab7e5af7bf50c3aaea862c5d"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_ValidateProperty</b> (Godot.Collections.Dictionary property)</td></tr>
+<tr class="memitem:a95da3b8eab7e5af7bf50c3aaea862c5d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a95da3b8eab7e5af7bf50c3aaea862c5d">_ValidateProperty</a> (Godot.Collections.Dictionary property)</td></tr>
+<tr class="memdesc:a95da3b8eab7e5af7bf50c3aaea862c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the property is the route property.  <a href="classNpcBase.html#a95da3b8eab7e5af7bf50c3aaea862c5d">More...</a><br /></td></tr>
 <tr class="separator:a95da3b8eab7e5af7bf50c3aaea862c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149d4bee9c75eb90dd588ff847f2df3d"><td class="memItemLeft" align="right" valign="top"><a id="a149d4bee9c75eb90dd588ff847f2df3d"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a149d4bee9c75eb90dd588ff847f2df3d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a149d4bee9c75eb90dd588ff847f2df3d">_Ready</a> ()</td></tr>
+<tr class="memdesc:a149d4bee9c75eb90dd588ff847f2df3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene is ready. Initializes the NPC and sets up the event listeners. Also loads the route of the NPC and sets the NPC to be visible or not based on the game state.  <a href="classNpcBase.html#a149d4bee9c75eb90dd588ff847f2df3d">More...</a><br /></td></tr>
 <tr class="separator:a149d4bee9c75eb90dd588ff847f2df3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">onSceneChange</a> (object sender, GameState gameState)</td></tr>
 <tr class="memdesc:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene changes.  <a href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">More...</a><br /></td></tr>
 <tr class="separator:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56b9e9512f848094cee33cb1e675ba2e"><td class="memItemLeft" align="right" valign="top"><a id="a56b9e9512f848094cee33cb1e675ba2e"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a56b9e9512f848094cee33cb1e675ba2e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a56b9e9512f848094cee33cb1e675ba2e">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:a56b9e9512f848094cee33cb1e675ba2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame. Handles the NPC's movement and interaction. Also handles the drawing of the path in the editor.  <a href="classNpcBase.html#a56b9e9512f848094cee33cb1e675ba2e">More...</a><br /></td></tr>
 <tr class="separator:a56b9e9512f848094cee33cb1e675ba2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf3947f96f3851bcf2e2cfc2b0fb779b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#aaf3947f96f3851bcf2e2cfc2b0fb779b">OnInteract</a> ()</td></tr>
 <tr class="memdesc:aaf3947f96f3851bcf2e2cfc2b0fb779b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overwritable method that is called when the player interacts with the NPC.  <a href="classNpcBase.html#aaf3947f96f3851bcf2e2cfc2b0fb779b">More...</a><br /></td></tr>
@@ -121,20 +121,91 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3d3ba9465613926e7655d89025fdb07c"><td class="memItemLeft" align="right" valign="top"><a id="a3d3ba9465613926e7655d89025fdb07c"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>routePath</b></td></tr>
+<tr class="memitem:a3d3ba9465613926e7655d89025fdb07c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a3d3ba9465613926e7655d89025fdb07c">routePath</a></td></tr>
+<tr class="memdesc:a3d3ba9465613926e7655d89025fdb07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The route path of the NPC.  <a href="classNpcBase.html#a3d3ba9465613926e7655d89025fdb07c">More...</a><br /></td></tr>
 <tr class="separator:a3d3ba9465613926e7655d89025fdb07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ab3f199452640cf184ad7c2af0a5a24c1"><td class="memItemLeft" align="right" valign="top"><a id="ab3f199452640cf184ad7c2af0a5a24c1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>EditRoute</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ab3f199452640cf184ad7c2af0a5a24c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#ab3f199452640cf184ad7c2af0a5a24c1">EditRoute</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab3f199452640cf184ad7c2af0a5a24c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle edit mode for the route.  <a href="classNpcBase.html#ab3f199452640cf184ad7c2af0a5a24c1">More...</a><br /></td></tr>
 <tr class="separator:ab3f199452640cf184ad7c2af0a5a24c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7a04b2e93d6299cc2a8b026f3bd7a9"><td class="memItemLeft" align="right" valign="top"><a id="a5f7a04b2e93d6299cc2a8b026f3bd7a9"></a>
-<a class="el" href="classNPCRoute.html">NPCRoute</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Route</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a5f7a04b2e93d6299cc2a8b026f3bd7a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNPCRoute.html">NPCRoute</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a5f7a04b2e93d6299cc2a8b026f3bd7a9">Route</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a5f7a04b2e93d6299cc2a8b026f3bd7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The route of the NPC.  <a href="classNpcBase.html#a5f7a04b2e93d6299cc2a8b026f3bd7a9">More...</a><br /></td></tr>
 <tr class="separator:a5f7a04b2e93d6299cc2a8b026f3bd7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a56b9e9512f848094cee33cb1e675ba2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b9e9512f848094cee33cb1e675ba2e">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void NpcBase._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called every frame. Handles the NPC's movement and interaction. Also handles the drawing of the path in the editor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a149d4bee9c75eb90dd588ff847f2df3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149d4bee9c75eb90dd588ff847f2df3d">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void NpcBase._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when the scene is ready. Initializes the NPC and sets up the event listeners. Also loads the route of the NPC and sets the NPC to be visible or not based on the game state. </p>
+
+</div>
+</div>
+<a id="a95da3b8eab7e5af7bf50c3aaea862c5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95da3b8eab7e5af7bf50c3aaea862c5d">&#9670;&nbsp;</a></span>_ValidateProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void NpcBase._ValidateProperty </td>
+          <td>(</td>
+          <td class="paramtype">Godot.Collections.Dictionary&#160;</td>
+          <td class="paramname"><em>property</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the property is the route property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">property</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aaf3947f96f3851bcf2e2cfc2b0fb779b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf3947f96f3851bcf2e2cfc2b0fb779b">&#9670;&nbsp;</a></span>OnInteract()</h2>
 
@@ -198,6 +269,72 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>EditRoute</b><code> [
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3d3ba9465613926e7655d89025fdb07c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3ba9465613926e7655d89025fdb07c">&#9670;&nbsp;</a></span>routePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NpcBase.routePath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The route path of the NPC. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="ab3f199452640cf184ad7c2af0a5a24c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f199452640cf184ad7c2af0a5a24c1">&#9670;&nbsp;</a></span>EditRoute</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NpcBase.EditRoute</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Toggle edit mode for the route. </p>
+
+</div>
+</div>
+<a id="a5f7a04b2e93d6299cc2a8b026f3bd7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7a04b2e93d6299cc2a8b026f3bd7a9">&#9670;&nbsp;</a></span>Route</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNPCRoute.html">NPCRoute</a>? NpcBase.Route</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The route of the NPC. </p>
 
 </div>
 </div>

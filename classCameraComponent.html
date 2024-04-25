@@ -100,16 +100,106 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a80023b64c88da2ca0f0c29ac4edf7134"><td class="memItemLeft" align="right" valign="top"><a id="a80023b64c88da2ca0f0c29ac4edf7134"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
 <tr class="separator:a80023b64c88da2ca0f0c29ac4edf7134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bb801df5bd95520a7dc71303f7249a5"><td class="memItemLeft" align="right" valign="top"><a id="a4bb801df5bd95520a7dc71303f7249a5"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a4bb801df5bd95520a7dc71303f7249a5"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraComponent.html#a4bb801df5bd95520a7dc71303f7249a5">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:a4bb801df5bd95520a7dc71303f7249a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the camera movement  <a href="classCameraComponent.html#a4bb801df5bd95520a7dc71303f7249a5">More...</a><br /></td></tr>
 <tr class="separator:a4bb801df5bd95520a7dc71303f7249a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad21613bfe20f0a5d0b421f83e32ff818"><td class="memItemLeft" align="right" valign="top"><a id="ad21613bfe20f0a5d0b421f83e32ff818"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveToDefault</b> ()</td></tr>
+<tr class="memitem:ad21613bfe20f0a5d0b421f83e32ff818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraComponent.html#ad21613bfe20f0a5d0b421f83e32ff818">MoveToDefault</a> ()</td></tr>
+<tr class="memdesc:ad21613bfe20f0a5d0b421f83e32ff818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the camera to the default yaw, pitch and zoom. The camera will move to the default values over time.  <a href="classCameraComponent.html#ad21613bfe20f0a5d0b421f83e32ff818">More...</a><br /></td></tr>
 <tr class="separator:ad21613bfe20f0a5d0b421f83e32ff818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa66e4d761a3dae7b8c30a6f2c6d3db09"><td class="memItemLeft" align="right" valign="top"><a id="aa66e4d761a3dae7b8c30a6f2c6d3db09"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveTo</b> (float yaw, float pitch, float zoom)</td></tr>
+<tr class="memitem:aa66e4d761a3dae7b8c30a6f2c6d3db09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraComponent.html#aa66e4d761a3dae7b8c30a6f2c6d3db09">MoveTo</a> (float yaw, float pitch, float zoom)</td></tr>
+<tr class="memdesc:aa66e4d761a3dae7b8c30a6f2c6d3db09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the target yaw, pitch and zoom for the camera. The camera will move to the target values over time.  <a href="classCameraComponent.html#aa66e4d761a3dae7b8c30a6f2c6d3db09">More...</a><br /></td></tr>
 <tr class="separator:aa66e4d761a3dae7b8c30a6f2c6d3db09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4bb801df5bd95520a7dc71303f7249a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb801df5bd95520a7dc71303f7249a5">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void CameraComponent._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process the camera movement </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa66e4d761a3dae7b8c30a6f2c6d3db09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66e4d761a3dae7b8c30a6f2c6d3db09">&#9670;&nbsp;</a></span>MoveTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraComponent.MoveTo </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>yaw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>zoom</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the target yaw, pitch and zoom for the camera. The camera will move to the target values over time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">yaw</td><td></td></tr>
+    <tr><td class="paramname">pitch</td><td></td></tr>
+    <tr><td class="paramname">zoom</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad21613bfe20f0a5d0b421f83e32ff818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21613bfe20f0a5d0b421f83e32ff818">&#9670;&nbsp;</a></span>MoveToDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraComponent.MoveToDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the camera to the default yaw, pitch and zoom. The camera will move to the default values over time. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>038EnergyTransition/Modules/Components/CameraComponent/CameraComponent.cs</li>
 </ul>

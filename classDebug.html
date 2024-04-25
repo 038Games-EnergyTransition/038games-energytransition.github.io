@@ -99,33 +99,246 @@ Inheritance diagram for Debug:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abb2ef6ed23e216146d63592d61411994"><td class="memItemLeft" align="right" valign="top"><a id="abb2ef6ed23e216146d63592d61411994"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>ElementType</b> { <b>Label</b>
+<tr class="memitem:abb2ef6ed23e216146d63592d61411994"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">ElementType</a> { <b>Label</b>
 , <b>CheckBox</b>
 , <b>HSlider</b>
  }</td></tr>
+<tr class="memdesc:abb2ef6ed23e216146d63592d61411994"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of element to add to the debug menu  <a href="classDebug.html#abb2ef6ed23e216146d63592d61411994">More...</a><br /></td></tr>
 <tr class="separator:abb2ef6ed23e216146d63592d61411994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0800853ae77e615b794998fa964396f"><td class="memItemLeft" align="right" valign="top"><a id="ad0800853ae77e615b794998fa964396f"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:ac1277aa88b9fd904f5301d56a2e83987"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#ac1277aa88b9fd904f5301d56a2e83987">Debug</a> ()</td></tr>
+<tr class="memdesc:ac1277aa88b9fd904f5301d56a2e83987"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor for the <a class="el" href="classDebug.html">Debug</a> class Adds the engine_fps and platform_name elements to the debug menu  <a href="classDebug.html#ac1277aa88b9fd904f5301d56a2e83987">More...</a><br /></td></tr>
+<tr class="separator:ac1277aa88b9fd904f5301d56a2e83987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0800853ae77e615b794998fa964396f"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#ad0800853ae77e615b794998fa964396f">_Ready</a> ()</td></tr>
+<tr class="memdesc:ad0800853ae77e615b794998fa964396f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The _Ready function for the <a class="el" href="classDebug.html">Debug</a> class Removes all children from the VBoxContainer Updates the platform_name element to display the platform name  <a href="classDebug.html#ad0800853ae77e615b794998fa964396f">More...</a><br /></td></tr>
 <tr class="separator:ad0800853ae77e615b794998fa964396f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3643dcbc3843b248fa3f1c0f5cb8c6d1"><td class="memItemLeft" align="right" valign="top"><a id="a3643dcbc3843b248fa3f1c0f5cb8c6d1"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a3643dcbc3843b248fa3f1c0f5cb8c6d1"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a3643dcbc3843b248fa3f1c0f5cb8c6d1">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:a3643dcbc3843b248fa3f1c0f5cb8c6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The _Process function for the <a class="el" href="classDebug.html">Debug</a> class Updates the engine_fps element to display the engine's frames per second Adds elements to the VBoxContainer  <a href="classDebug.html#a3643dcbc3843b248fa3f1c0f5cb8c6d1">More...</a><br /></td></tr>
 <tr class="separator:a3643dcbc3843b248fa3f1c0f5cb8c6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a523055c06f761298a648a7a8559732f1"><td class="memItemLeft" align="right" valign="top"><a id="a523055c06f761298a648a7a8559732f1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>AddElement</b> (string key, ElementType elementType)</td></tr>
+<tr class="memitem:a523055c06f761298a648a7a8559732f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a523055c06f761298a648a7a8559732f1">AddElement</a> (string key, <a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">ElementType</a> elementType)</td></tr>
+<tr class="memdesc:a523055c06f761298a648a7a8559732f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue an element to be added to the debug menu If the element does not exist, it will be added If the element does exist, it will be updated  <a href="classDebug.html#a523055c06f761298a648a7a8559732f1">More...</a><br /></td></tr>
 <tr class="separator:a523055c06f761298a648a7a8559732f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad3eca27e042aafb8191c3851bbc00a"><td class="memItemLeft" align="right" valign="top"><a id="a4ad3eca27e042aafb8191c3851bbc00a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateElement</b> (string key, Variant value)</td></tr>
+<tr class="memitem:a4ad3eca27e042aafb8191c3851bbc00a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a4ad3eca27e042aafb8191c3851bbc00a">UpdateElement</a> (string key, Variant value)</td></tr>
+<tr class="memdesc:a4ad3eca27e042aafb8191c3851bbc00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue an element to be updated in the debug menu If the element does not exist, it will be added If the element does exist, it will be updated  <a href="classDebug.html#a4ad3eca27e042aafb8191c3851bbc00a">More...</a><br /></td></tr>
 <tr class="separator:a4ad3eca27e042aafb8191c3851bbc00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a233026db83f7bf8ba1a7257019a106ec"><td class="memItemLeft" align="right" valign="top"><a id="a233026db83f7bf8ba1a7257019a106ec"></a>
-static Variant&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (string key)</td></tr>
+<tr class="memitem:a233026db83f7bf8ba1a7257019a106ec"><td class="memItemLeft" align="right" valign="top">static Variant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a233026db83f7bf8ba1a7257019a106ec">GetValue</a> (string key)</td></tr>
+<tr class="memdesc:a233026db83f7bf8ba1a7257019a106ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of an element in the debug menu  <a href="classDebug.html#a233026db83f7bf8ba1a7257019a106ec">More...</a><br /></td></tr>
 <tr class="separator:a233026db83f7bf8ba1a7257019a106ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="abb2ef6ed23e216146d63592d61411994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2ef6ed23e216146d63592d61411994">&#9670;&nbsp;</a></span>ElementType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">Debug.ElementType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The type of element to add to the debug menu </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac1277aa88b9fd904f5301d56a2e83987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1277aa88b9fd904f5301d56a2e83987">&#9670;&nbsp;</a></span>Debug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Debug.Debug </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The constructor for the <a class="el" href="classDebug.html">Debug</a> class Adds the engine_fps and platform_name elements to the debug menu </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3643dcbc3843b248fa3f1c0f5cb8c6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3643dcbc3843b248fa3f1c0f5cb8c6d1">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Debug._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The _Process function for the <a class="el" href="classDebug.html">Debug</a> class Updates the engine_fps element to display the engine's frames per second Adds elements to the VBoxContainer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad0800853ae77e615b794998fa964396f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0800853ae77e615b794998fa964396f">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Debug._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The _Ready function for the <a class="el" href="classDebug.html">Debug</a> class Removes all children from the VBoxContainer Updates the platform_name element to display the platform name </p>
+
+</div>
+</div>
+<a id="a523055c06f761298a648a7a8559732f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a523055c06f761298a648a7a8559732f1">&#9670;&nbsp;</a></span>AddElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Debug.AddElement </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">ElementType</a>&#160;</td>
+          <td class="paramname"><em>elementType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queue an element to be added to the debug menu If the element does not exist, it will be added If the element does exist, it will be updated </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">elementType</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a233026db83f7bf8ba1a7257019a106ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233026db83f7bf8ba1a7257019a106ec">&#9670;&nbsp;</a></span>GetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Variant Debug.GetValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the value of an element in the debug menu </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Variant which can be cast to the appropriate type</dd></dl>
+
+</div>
+</div>
+<a id="a4ad3eca27e042aafb8191c3851bbc00a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad3eca27e042aafb8191c3851bbc00a">&#9670;&nbsp;</a></span>UpdateElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Debug.UpdateElement </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queue an element to be updated in the debug menu If the element does not exist, it will be added If the element does exist, it will be updated </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>038EnergyTransition/Scenes/Debug/Scripts/Debug.cs</li>
 </ul>

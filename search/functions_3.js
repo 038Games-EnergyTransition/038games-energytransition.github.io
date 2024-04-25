@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['deletegame_149',['DeleteGame',['../classFileManager.html#a3ebea4be9eac2b52b065608338a16d72',1,'FileManager']]],
-  ['destroy_150',['Destroy',['../classCutsceneNodeVariableBase.html#a47166b342924caf47e17b4a242b1068b',1,'CutsceneNodeVariableBase.Destroy()'],['../classNPCCutsceneVariable.html#a09193e58373f47b485511337f3f4c8d3',1,'NPCCutsceneVariable.Destroy()']]],
-  ['donechoice_151',['DoneChoice',['../classSpeechEngine.html#a45cfc754d04b90eacca2be4da7f4a7da',1,'SpeechEngine']]]
+  ['cameramoveeventargs_220',['CameraMoveEventArgs',['../classCameraMoveEventArgs.html#a7f091f6cd688e87f379995ad76aaa3f8',1,'CameraMoveEventArgs']]],
+  ['changescene_221',['ChangeScene',['../classSceneManager.html#ad90e43f564209435ab6ca193a7fb6866',1,'SceneManager']]],
+  ['choice_222',['Choice',['../classSpeechEngine.html#af99e8e3478e4c5a76e61ffa032fdd424',1,'SpeechEngine.Choice(String[] choices, String label, Texture2D portrait)'],['../classSpeechEngine.html#a3c2e6c66783aa486fc4afced2855504d',1,'SpeechEngine.Choice(String[] choices, String label)']]]
 ];

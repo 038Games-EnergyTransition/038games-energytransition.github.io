@@ -112,8 +112,7 @@ var NAVTREEINDEX0 =
 "classFadeUIComponent.html#af342ee25db64dcc4a6a3582d97beb829":[0,0,21,0],
 "classFileManager.html":[0,0,22],
 "classGameLogic.html":[0,0,23],
-"classGameLogic.html#a465c44e16460eb178a5076e513a9937f":[0,0,23,0],
-"classGameLogic.html#af834c22b91e25943e3ae46e672a1d455":[0,0,23,1],
+"classGameLogic.html#af834c22b91e25943e3ae46e672a1d455":[0,0,23,0],
 "classGameSave.html":[0,0,24],
 "classGameSave.html#a209fc78f93445bc0cd54e849e145e595":[0,0,24,2],
 "classGameSave.html#a3ba948e85d0bfee60249a37b128227d0":[0,0,24,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "classSpeechOverlayChoices.html#ab0cd3336b622fdd3e644182aaf99501c":[0,0,50,4],
 "classSpeechOverlayChoices.html#acd9cf8c8a71e706ca79b4eed920b4e0f":[0,0,50,1],
 "classSpeechOverlayChoices.html#acf66fc3edd232e0c6f988cc4ef9e8501":[0,0,50,6],
-"classSwingTextEffect.html":[0,0,51]
+"classSwingTextEffect.html":[0,0,51],
+"classSwingTextEffect.html#aa7b3c43cc688cf8742d44ef075dc1a87":[0,0,51,1]
 };

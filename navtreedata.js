@@ -32,7 +32,10 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Properties", "functions_prop.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Properties", "functions_prop.html", null ],
+        [ "Events", "functions_evnt.html", null ]
       ] ]
     ] ]
   ] ]
@@ -41,7 +44,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classSwingTextEffect.html#aa7b3c43cc688cf8742d44ef075dc1a87"
+"classSwingTextEffect.html#abdb0f7fe2b9cc1ed880e63043b3f7c57"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

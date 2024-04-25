@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['play_160',['Play',['../classCutsceneScripter.html#a4a6412750dd10ee8f10ace81ca74c564',1,'CutsceneScripter']]],
-  ['pusherror_161',['PushError',['../classCutsceneScripter.html#a42f96622a74c3676d6c951e7464d6acd',1,'CutsceneScripter']]]
+  ['interperlate_239',['Interperlate',['../classInterperlation.html#aa88bad6e4fad743468da8821a4e48686',1,'Interperlation']]],
+  ['isobjectvalid_240',['IsObjectValid',['../classGlobals.html#a925c4a5f884f13a0d982f932032168b1',1,'Globals']]]
 ];

@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classSwingTextEffect.html#aa7b3c43cc688cf8742d44ef075dc1a87":[0,0,51,1],
 "classSwingTextEffect.html#abdb0f7fe2b9cc1ed880e63043b3f7c57":[0,0,51,0],
 "classTestNPC.html":[0,0,52],
 "classTestNPC.html#a05aa188995c7a1b37a483ed188876bca":[0,0,52,0],
@@ -17,8 +16,11 @@ var NAVTREEINDEX1 =
 "classanimationNode.html#acc670cf5b35a286f48cbb014622ab8ee":[0,0,1,0],
 "classes.html":[0,1],
 "functions.html":[0,3,0],
+"functions_enum.html":[0,3,3],
+"functions_evnt.html":[0,3,5],
 "functions_func.html":[0,3,1],
-"functions_prop.html":[0,3,2],
+"functions_prop.html":[0,3,4],
+"functions_vars.html":[0,3,2],
 "hierarchy.html":[0,2],
 "index.html":[],
 "pages.html":[],

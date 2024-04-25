@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['testnpc_85',['TestNPC',['../classTestNPC.html',1,'']]],
-  ['translations_86',['Translations',['../classTranslations.html',1,'']]]
+  ['questionlabel_109',['QuestionLabel',['../classChoiceBox.html#a2449dfbca199390eb8fae0c36f253f06',1,'ChoiceBox']]]
 ];

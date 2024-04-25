@@ -97,16 +97,110 @@ Inheritance diagram for SettingsManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6190cdba3db8734307d6ad945af2dabd"><td class="memItemLeft" align="right" valign="top"><a id="a6190cdba3db8734307d6ad945af2dabd"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a6190cdba3db8734307d6ad945af2dabd"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSettingsManager.html#a6190cdba3db8734307d6ad945af2dabd">_Ready</a> ()</td></tr>
+<tr class="memdesc:a6190cdba3db8734307d6ad945af2dabd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the node enters the scene tree for the first time. Load the settings from the global settings file. For each child node, check if the settings contain the child's name. If the settings contain the child's name, set the child's value to the settings value. If the child is an OptionButton, set the selected index to the settings value. If the child is a CheckButton, set the button pressed to the settings value.  <a href="classSettingsManager.html#a6190cdba3db8734307d6ad945af2dabd">More...</a><br /></td></tr>
 <tr class="separator:a6190cdba3db8734307d6ad945af2dabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac980a3b0bad7f0b55370b706a8432d5b"><td class="memItemLeft" align="right" valign="top"><a id="ac980a3b0bad7f0b55370b706a8432d5b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnToggled</b> (string name, bool value)</td></tr>
+<tr class="memitem:ac980a3b0bad7f0b55370b706a8432d5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSettingsManager.html#ac980a3b0bad7f0b55370b706a8432d5b">OnToggled</a> (string name, bool value)</td></tr>
+<tr class="memdesc:ac980a3b0bad7f0b55370b706a8432d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an option is toggled  <a href="classSettingsManager.html#ac980a3b0bad7f0b55370b706a8432d5b">More...</a><br /></td></tr>
 <tr class="separator:ac980a3b0bad7f0b55370b706a8432d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a164857ae38a8819a1fd9db5e6dcede82"><td class="memItemLeft" align="right" valign="top"><a id="a164857ae38a8819a1fd9db5e6dcede82"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSelected</b> (string name, int value)</td></tr>
+<tr class="memitem:a164857ae38a8819a1fd9db5e6dcede82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSettingsManager.html#a164857ae38a8819a1fd9db5e6dcede82">OnSelected</a> (string name, int value)</td></tr>
+<tr class="memdesc:a164857ae38a8819a1fd9db5e6dcede82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an option is selected  <a href="classSettingsManager.html#a164857ae38a8819a1fd9db5e6dcede82">More...</a><br /></td></tr>
 <tr class="separator:a164857ae38a8819a1fd9db5e6dcede82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6190cdba3db8734307d6ad945af2dabd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6190cdba3db8734307d6ad945af2dabd">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SettingsManager._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when the node enters the scene tree for the first time. Load the settings from the global settings file. For each child node, check if the settings contain the child's name. If the settings contain the child's name, set the child's value to the settings value. If the child is an OptionButton, set the selected index to the settings value. If the child is a CheckButton, set the button pressed to the settings value. </p>
+
+</div>
+</div>
+<a id="a164857ae38a8819a1fd9db5e6dcede82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164857ae38a8819a1fd9db5e6dcede82">&#9670;&nbsp;</a></span>OnSelected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SettingsManager.OnSelected </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when an option is selected </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac980a3b0bad7f0b55370b706a8432d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac980a3b0bad7f0b55370b706a8432d5b">&#9670;&nbsp;</a></span>OnToggled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SettingsManager.OnToggled </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when an option is toggled </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>038EnergyTransition/Modules/SettingsManager.cs</li>
 </ul>
