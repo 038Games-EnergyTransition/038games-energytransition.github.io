@@ -46,11 +46,14 @@ var hierarchy =
     ] ],
     [ "Node3D", null, [
       [ "GameLogic", "classGameLogic.html", null ],
+      [ "Interactable", "classInteractable.html", [
+        [ "RoomScript", "classRoomScript.html", null ],
+        [ "SceneTransitionDoor", "classSceneTransitionDoor.html", null ]
+      ] ],
       [ "NpcBase", "classNpcBase.html", [
         [ "Dog", "classDog.html", null ],
         [ "TestNPC", "classTestNPC.html", null ]
-      ] ],
-      [ "SceneTransitionDoor", "classSceneTransitionDoor.html", null ]
+      ] ]
     ] ],
     [ "Panel", null, [
       [ "DissolveUIComponent", "classDissolveUIComponent.html", null ],

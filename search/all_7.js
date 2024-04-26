@@ -15,6 +15,6 @@ var searchData=
   ['globals_68',['Globals',['../classGlobals.html',1,'']]],
   ['globalsettings_69',['GlobalSettings',['../classGlobalSettings.html',1,'']]],
   ['globaltime_70',['GlobalTime',['../classGlobalTime.html',1,'']]],
-  ['gravity_71',['Gravity',['../classInputModule.html#a4b1fef58f14940329811f04cc34417a5',1,'InputModule']]],
-  ['gravity_72',['gravity',['../classPlayer.html#ade14f7db2c11604e57d2010ae2586834',1,'Player']]]
+  ['gravity_71',['gravity',['../classPlayer.html#ade14f7db2c11604e57d2010ae2586834',1,'Player']]],
+  ['gravity_72',['Gravity',['../classInputModule.html#a4b1fef58f14940329811f04cc34417a5',1,'InputModule']]]
 ];

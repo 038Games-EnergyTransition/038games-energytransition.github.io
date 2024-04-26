@@ -14,5 +14,6 @@ var classCutsceneScripter =
     [ "loadCutscene", "classCutsceneScripter.html#a6e6a39f6d3841294d402f6697ee9818e", null ],
     [ "PlayCutscene", "classCutsceneScripter.html#ace5ab21d2dc06a4007e62993317f69f1", null ],
     [ "saveCutscene", "classCutsceneScripter.html#a72f12cc89b99ae5b4feee8ca32509ca9", null ],
-    [ "StopCutscene", "classCutsceneScripter.html#a42c29bebc6c0a3cc7892c45785d41890", null ]
+    [ "StopCutscene", "classCutsceneScripter.html#a42c29bebc6c0a3cc7892c45785d41890", null ],
+    [ "CutsceneFinished", "classCutsceneScripter.html#abfbc101a95958d0ebee1be59f9d2d451", null ]
 ];

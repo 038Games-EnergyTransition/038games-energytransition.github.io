@@ -44,7 +44,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classSwingTextEffect.html#abdb0f7fe2b9cc1ed880e63043b3f7c57"
+"classSpeechOverlay.html#aaa2253ba4d50578879fbf1f6e41a86aa"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
