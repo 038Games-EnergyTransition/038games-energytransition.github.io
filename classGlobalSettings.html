@@ -109,14 +109,14 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a19267103bd45526708c6289a1fcc6695"><td class="memItemLeft" align="right" valign="top"><a id="a19267103bd45526708c6289a1fcc6695"></a>
-static Variant&#160;</td><td class="memItemRight" valign="bottom"><b>GetSetting</b> (string key)</td></tr>
+<tr class="memitem:a19267103bd45526708c6289a1fcc6695"><td class="memItemLeft" align="right" valign="top">static Variant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalSettings.html#a19267103bd45526708c6289a1fcc6695">GetSetting</a> (string key)</td></tr>
+<tr class="memdesc:a19267103bd45526708c6289a1fcc6695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a setting from the settings, defaults to false if the setting doesn't exist  <a href="classGlobalSettings.html#a19267103bd45526708c6289a1fcc6695">More...</a><br /></td></tr>
 <tr class="separator:a19267103bd45526708c6289a1fcc6695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92a12243d7f9911b3c22edfcce7822fd"><td class="memItemLeft" align="right" valign="top"><a id="a92a12243d7f9911b3c22edfcce7822fd"></a>
-static Variant&#160;</td><td class="memItemRight" valign="bottom"><b>GetSetting</b> (string key, Variant _default)</td></tr>
+<tr class="memitem:a92a12243d7f9911b3c22edfcce7822fd"><td class="memItemLeft" align="right" valign="top">static Variant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalSettings.html#a92a12243d7f9911b3c22edfcce7822fd">GetSetting</a> (string key, Variant _default)</td></tr>
+<tr class="memdesc:a92a12243d7f9911b3c22edfcce7822fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a setting from the settings, returns and sets a default value if the setting doesn't exist  <a href="classGlobalSettings.html#a92a12243d7f9911b3c22edfcce7822fd">More...</a><br /></td></tr>
 <tr class="separator:a92a12243d7f9911b3c22edfcce7822fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e021a6988e20cdfc9f96b46fe3c3479"><td class="memItemLeft" align="right" valign="top"><a id="a4e021a6988e20cdfc9f96b46fe3c3479"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSetting</b> (string name, Variant value)</td></tr>
+<tr class="memitem:a4e021a6988e20cdfc9f96b46fe3c3479"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalSettings.html#a4e021a6988e20cdfc9f96b46fe3c3479">SetSetting</a> (string name, Variant value)</td></tr>
+<tr class="memdesc:a4e021a6988e20cdfc9f96b46fe3c3479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a setting in the settings dictionary  <a href="classGlobalSettings.html#a4e021a6988e20cdfc9f96b46fe3c3479">More...</a><br /></td></tr>
 <tr class="separator:a4e021a6988e20cdfc9f96b46fe3c3479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -127,9 +127,6 @@ static Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" val
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ae6d7c051aee0010f91e0212cc42bbcb2"><td class="memItemLeft" align="right" valign="top"><a id="ae6d7c051aee0010f91e0212cc42bbcb2"></a>
-Variant&#160;</td><td class="memItemRight" valign="bottom"><b>this[string key]</b><code> [get, set]</code></td></tr>
-<tr class="separator:ae6d7c051aee0010f91e0212cc42bbcb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a325e08f91555f9c8e89a29b024cce8ba"><td class="memItemLeft" align="right" valign="top"><a id="a325e08f91555f9c8e89a29b024cce8ba"></a>
 static <a class="el" href="classGlobalSettings.html">GlobalSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
 <tr class="separator:a325e08f91555f9c8e89a29b024cce8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +148,132 @@ static <a class="el" href="classGlobalSettings.html">GlobalSettings</a>&#160;</t
 </div><div class="memdoc">
 
 <p>When instanced, loads the settings </p>
+
+</div>
+</div>
+<a id="a19267103bd45526708c6289a1fcc6695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19267103bd45526708c6289a1fcc6695">&#9670;&nbsp;</a></span>GetSetting() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Variant GlobalSettings.GetSetting </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a setting from the settings, defaults to false if the setting doesn't exist </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a92a12243d7f9911b3c22edfcce7822fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a12243d7f9911b3c22edfcce7822fd">&#9670;&nbsp;</a></span>GetSetting() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Variant GlobalSettings.GetSetting </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>_default</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a setting from the settings, returns and sets a default value if the setting doesn't exist </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">_default</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a4e021a6988e20cdfc9f96b46fe3c3479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e021a6988e20cdfc9f96b46fe3c3479">&#9670;&nbsp;</a></span>SetSetting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GlobalSettings.SetSetting </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets a setting in the settings dictionary </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

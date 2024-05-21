@@ -147,7 +147,6 @@ var NAVTREEINDEX0 =
 "classGlobalSettings.html":[2,0,31],
 "classGlobalSettings.html#a66ffac5d6b9c97a2975cd081b29b9c93":[2,0,31,1],
 "classGlobalSettings.html#aa8ffb81e6753d93e94afd98f280c94a4":[2,0,31,0],
-"classGlobalSettings.html#ae6d7c051aee0010f91e0212cc42bbcb2":[2,0,31,2],
 "classGlobalTime.html":[2,0,32],
 "classGlobalTime.html#af477e457054014bff73c06bf4c2cbce1":[2,0,32,1],
 "classGlobalTime.html#af499850726d60d0830f8d015719e0253":[2,0,32,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "classQuestPoint.html#ab91feb9c32b963b42e6681fd0884de70":[2,0,52,3],
 "classQuestPoint.html#acfa090c445a98633c4c827aa6f8c6e56":[2,0,52,1],
 "classRayCastObjectFader.html":[2,0,53],
-"classRayCastObjectFader.html#af3d61100996b1ea6b09b66ec3b28c522":[2,0,53,0]
+"classRayCastObjectFader.html#af3d61100996b1ea6b09b66ec3b28c522":[2,0,53,0],
+"classRoomScript.html":[2,0,54]
 };
