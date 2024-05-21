@@ -83,7 +83,8 @@ $(document).ready(function(){initNavTree('classSceneManager.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="classSceneManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SceneManager Class Reference</div>  </div>
@@ -98,157 +99,42 @@ Inheritance diagram for SceneManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad56e482d8bc20caabb3e0df57c1d6d79"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">Scene</a> { <b>Intro</b>
+<tr class="memitem:ad56e482d8bc20caabb3e0df57c1d6d79"><td class="memItemLeft" align="right" valign="top"><a id="ad56e482d8bc20caabb3e0df57c1d6d79"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> { <b>Intro</b>
 , <b>Mainmenu</b>
 , <b>Game</b>
  }</td></tr>
-<tr class="memdesc:ad56e482d8bc20caabb3e0df57c1d6d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">The different scenes that can be loaded.  <a href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">More...</a><br /></td></tr>
 <tr class="separator:ad56e482d8bc20caabb3e0df57c1d6d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad90e43f564209435ab6ca193a7fb6866"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#ad90e43f564209435ab6ca193a7fb6866">ChangeScene</a> (Node node, <a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">Scene</a> scene)</td></tr>
-<tr class="memdesc:ad90e43f564209435ab6ca193a7fb6866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the scene to the specified scene.  <a href="classSceneManager.html#ad90e43f564209435ab6ca193a7fb6866">More...</a><br /></td></tr>
-<tr class="separator:ad90e43f564209435ab6ca193a7fb6866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af055cef3a896ee8e9769da5ab16c5924"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#af055cef3a896ee8e9769da5ab16c5924">SetCurrentNode</a> (Node node)</td></tr>
-<tr class="memdesc:af055cef3a896ee8e9769da5ab16c5924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current node for debug purposes.  <a href="classSceneManager.html#af055cef3a896ee8e9769da5ab16c5924">More...</a><br /></td></tr>
-<tr class="separator:af055cef3a896ee8e9769da5ab16c5924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68bbe706271a0627edeb5442e2fa185e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a68bbe706271a0627edeb5442e2fa185e">UpdateCanvas</a> ()</td></tr>
-<tr class="memdesc:a68bbe706271a0627edeb5442e2fa185e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the canvas layer for debug purposes.  <a href="classSceneManager.html#a68bbe706271a0627edeb5442e2fa185e">More...</a><br /></td></tr>
-<tr class="separator:a68bbe706271a0627edeb5442e2fa185e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6fc2d34e3ddc351f282475bdb0f80245"><td class="memItemLeft" align="right" valign="top"><a id="a6fc2d34e3ddc351f282475bdb0f80245"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="separator:a6fc2d34e3ddc351f282475bdb0f80245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbf6a4b411822460d6e212f91968a4c"><td class="memItemLeft" align="right" valign="top"><a id="a6bbf6a4b411822460d6e212f91968a4c"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="separator:a6bbf6a4b411822460d6e212f91968a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e12c5a7f0374633787cda1a20e28874"><td class="memItemLeft" align="right" valign="top"><a id="a8e12c5a7f0374633787cda1a20e28874"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeScene</b> (Node node, Scene scene, bool threaded=false)</td></tr>
+<tr class="separator:a8e12c5a7f0374633787cda1a20e28874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f969d4520b3d205addf87809aed220"><td class="memItemLeft" align="right" valign="top"><a id="a00f969d4520b3d205addf87809aed220"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCurrentNode</b> (Node node)</td></tr>
+<tr class="separator:a00f969d4520b3d205addf87809aed220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036ca4eec6ed8cfc0d1bb76409825102"><td class="memItemLeft" align="right" valign="top"><a id="a036ca4eec6ed8cfc0d1bb76409825102"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadStartEventHandler</b> ()</td></tr>
+<tr class="separator:a036ca4eec6ed8cfc0d1bb76409825102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d498c1db8ccf61a8762c2e1d957aa6"><td class="memItemLeft" align="right" valign="top"><a id="a16d498c1db8ccf61a8762c2e1d957aa6"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadProgressEventHandler</b> (int percentage)</td></tr>
+<tr class="separator:a16d498c1db8ccf61a8762c2e1d957aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2759c3ed19627f9274cf7b3435bd58"><td class="memItemLeft" align="right" valign="top"><a id="ace2759c3ed19627f9274cf7b3435bd58"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadEndEventHandler</b> ()</td></tr>
+<tr class="separator:ace2759c3ed19627f9274cf7b3435bd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ac05b3b785a4cedf4e2a5943b0fe328cf"><td class="memItemLeft" align="right" valign="top"><a id="ac05b3b785a4cedf4e2a5943b0fe328cf"></a>
+static <a class="el" href="classSceneManager.html">SceneManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
+<tr class="separator:ac05b3b785a4cedf4e2a5943b0fe328cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ad56e482d8bc20caabb3e0df57c1d6d79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad56e482d8bc20caabb3e0df57c1d6d79">&#9670;&nbsp;</a></span>Scene</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">SceneManager.Scene</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The different scenes that can be loaded. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad90e43f564209435ab6ca193a7fb6866"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad90e43f564209435ab6ca193a7fb6866">&#9670;&nbsp;</a></span>ChangeScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void SceneManager.ChangeScene </td>
-          <td>(</td>
-          <td class="paramtype">Node&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">Scene</a>&#160;</td>
-          <td class="paramname"><em>scene</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Change the scene to the specified scene. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">node</td><td></td></tr>
-    <tr><td class="paramname">scene</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af055cef3a896ee8e9769da5ab16c5924"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af055cef3a896ee8e9769da5ab16c5924">&#9670;&nbsp;</a></span>SetCurrentNode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void SceneManager.SetCurrentNode </td>
-          <td>(</td>
-          <td class="paramtype">Node&#160;</td>
-          <td class="paramname"><em>node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the current node for debug purposes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">node</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a68bbe706271a0627edeb5442e2fa185e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68bbe706271a0627edeb5442e2fa185e">&#9670;&nbsp;</a></span>UpdateCanvas()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void SceneManager.UpdateCanvas </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Update the canvas layer for debug purposes. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>038EnergyTransition/Modules/SceneManager.cs</li>
 </ul>

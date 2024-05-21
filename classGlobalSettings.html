@@ -83,7 +83,9 @@ $(document).ready(function(){initNavTree('classGlobalSettings.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="classGlobalSettings-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GlobalSettings Class Reference</div>  </div>
@@ -101,12 +103,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a66ffac5d6b9c97a2975cd081b29b9c93"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalSettings.html#a66ffac5d6b9c97a2975cd081b29b9c93">_Ready</a> ()</td></tr>
 <tr class="memdesc:a66ffac5d6b9c97a2975cd081b29b9c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">When instanced, loads the settings  <a href="classGlobalSettings.html#a66ffac5d6b9c97a2975cd081b29b9c93">More...</a><br /></td></tr>
 <tr class="separator:a66ffac5d6b9c97a2975cd081b29b9c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ffb81e6753d93e94afd98f280c94a4"><td class="memItemLeft" align="right" valign="top"><a id="aa8ffb81e6753d93e94afd98f280c94a4"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="separator:aa8ffb81e6753d93e94afd98f280c94a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a19267103bd45526708c6289a1fcc6695"><td class="memItemLeft" align="right" valign="top"><a id="a19267103bd45526708c6289a1fcc6695"></a>
+static Variant&#160;</td><td class="memItemRight" valign="bottom"><b>GetSetting</b> (string key)</td></tr>
+<tr class="separator:a19267103bd45526708c6289a1fcc6695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a12243d7f9911b3c22edfcce7822fd"><td class="memItemLeft" align="right" valign="top"><a id="a92a12243d7f9911b3c22edfcce7822fd"></a>
+static Variant&#160;</td><td class="memItemRight" valign="bottom"><b>GetSetting</b> (string key, Variant _default)</td></tr>
+<tr class="separator:a92a12243d7f9911b3c22edfcce7822fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e021a6988e20cdfc9f96b46fe3c3479"><td class="memItemLeft" align="right" valign="top"><a id="a4e021a6988e20cdfc9f96b46fe3c3479"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSetting</b> (string name, Variant value)</td></tr>
+<tr class="separator:a4e021a6988e20cdfc9f96b46fe3c3479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a0e0cb72b0ba2a37e559728fddfe96aca"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalSettings.html#a0e0cb72b0ba2a37e559728fddfe96aca">Settings</a> = new Dictionary&lt;string, Variant&gt;()</td></tr>
-<tr class="memdesc:a0e0cb72b0ba2a37e559728fddfe96aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The settings dictionary containing all settings  <a href="classGlobalSettings.html#a0e0cb72b0ba2a37e559728fddfe96aca">More...</a><br /></td></tr>
-<tr class="separator:a0e0cb72b0ba2a37e559728fddfe96aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0bc5385ffa33bc061b1c744ff4b799d"><td class="memItemLeft" align="right" valign="top"><a id="ab0bc5385ffa33bc061b1c744ff4b799d"></a>
+static Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CustomDebugElements</b> = new Dictionary&lt;string, string&gt;()</td></tr>
+<tr class="separator:ab0bc5385ffa33bc061b1c744ff4b799d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ae6d7c051aee0010f91e0212cc42bbcb2"><td class="memItemLeft" align="right" valign="top"><a id="ae6d7c051aee0010f91e0212cc42bbcb2"></a>
+Variant&#160;</td><td class="memItemRight" valign="bottom"><b>this[string key]</b><code> [get, set]</code></td></tr>
+<tr class="separator:ae6d7c051aee0010f91e0212cc42bbcb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325e08f91555f9c8e89a29b024cce8ba"><td class="memItemLeft" align="right" valign="top"><a id="a325e08f91555f9c8e89a29b024cce8ba"></a>
+static <a class="el" href="classGlobalSettings.html">GlobalSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
+<tr class="separator:a325e08f91555f9c8e89a29b024cce8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a66ffac5d6b9c97a2975cd081b29b9c93"></a>
@@ -125,31 +151,6 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>When instanced, loads the settings </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a0e0cb72b0ba2a37e559728fddfe96aca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e0cb72b0ba2a37e559728fddfe96aca">&#9670;&nbsp;</a></span>Settings</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dictionary&lt;string, Variant&gt; GlobalSettings.Settings = new Dictionary&lt;string, Variant&gt;()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The settings dictionary containing all settings </p>
 
 </div>
 </div>

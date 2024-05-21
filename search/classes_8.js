@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['player_207',['Player',['../classPlayer.html',1,'']]]
+  ['npcbase_210',['NpcBase',['../classNpcBase.html',1,'']]],
+  ['npccutscenevariable_211',['NPCCutsceneVariable',['../classNPCCutsceneVariable.html',1,'']]],
+  ['npcroute_212',['NPCRoute',['../classNPCRoute.html',1,'']]]
 ];

@@ -99,11 +99,14 @@ Inheritance diagram for GameSaveManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab509e9272d92bd89ab8a0811b781daf3"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSaveManager.html#ab509e9272d92bd89ab8a0811b781daf3">_Ready</a> ()</td></tr>
-<tr class="memdesc:ab509e9272d92bd89ab8a0811b781daf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the game saves  <a href="classGameSaveManager.html#ab509e9272d92bd89ab8a0811b781daf3">More...</a><br /></td></tr>
+<tr class="memitem:ab509e9272d92bd89ab8a0811b781daf3"><td class="memItemLeft" align="right" valign="top"><a id="ab509e9272d92bd89ab8a0811b781daf3"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
 <tr class="separator:ab509e9272d92bd89ab8a0811b781daf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a920ff678509e31cdfb540fab644a301b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSaveManager.html#a920ff678509e31cdfb540fab644a301b">LoadGamePressed</a> (int saveID)</td></tr>
-<tr class="memdesc:a920ff678509e31cdfb540fab644a301b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a game save and change the scene to the game  <a href="classGameSaveManager.html#a920ff678509e31cdfb540fab644a301b">More...</a><br /></td></tr>
+<tr class="memitem:afb8d5fee5967a5d9fde5a7ab914f1d18"><td class="memItemLeft" align="right" valign="top"><a id="afb8d5fee5967a5d9fde5a7ab914f1d18"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="separator:afb8d5fee5967a5d9fde5a7ab914f1d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a920ff678509e31cdfb540fab644a301b"><td class="memItemLeft" align="right" valign="top"><a id="a920ff678509e31cdfb540fab644a301b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadGamePressed</b> (int saveID)</td></tr>
 <tr class="separator:a920ff678509e31cdfb540fab644a301b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685523e072de3ead9e7c066c8897be31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSaveManager.html#a685523e072de3ead9e7c066c8897be31">DeleteGamePressed</a> (int saveID)</td></tr>
 <tr class="memdesc:a685523e072de3ead9e7c066c8897be31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a game save // TODO: Implement delete game save  <a href="classGameSaveManager.html#a685523e072de3ead9e7c066c8897be31">More...</a><br /></td></tr>
@@ -114,6 +117,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a14dde30fc9f81d6fc3108e5157987bd4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGameSave.html">GameSave</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSaveManager.html#a14dde30fc9f81d6fc3108e5157987bd4">GetCurrentGameSave</a> ()</td></tr>
 <tr class="memdesc:a14dde30fc9f81d6fc3108e5157987bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current game save  <a href="classGameSaveManager.html#a14dde30fc9f81d6fc3108e5157987bd4">More...</a><br /></td></tr>
 <tr class="separator:a14dde30fc9f81d6fc3108e5157987bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e72ac078bd7a1e84c638166ebfd46f"><td class="memItemLeft" align="right" valign="top"><a id="a47e72ac078bd7a1e84c638166ebfd46f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveCurrentGameSave</b> ()</td></tr>
+<tr class="separator:a47e72ac078bd7a1e84c638166ebfd46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -122,31 +128,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a5bc4151f8a45fa1fd1e26a9893a901f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab509e9272d92bd89ab8a0811b781daf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab509e9272d92bd89ab8a0811b781daf3">&#9670;&nbsp;</a></span>_Ready()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void GameSaveManager._Ready </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load the game saves </p>
-<ul>
-<li>Load the game saves from the FileSystem</li>
-<li>Set the button text to the save number</li>
-<li>Set the delete button visibility to true if the save exists</li>
-<li>Connect the button pressed event to the LoadGamePressed and DeleteGamePressed methods</li>
-</ul>
-
-</div>
-</div>
 <a id="a685523e072de3ead9e7c066c8897be31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a685523e072de3ead9e7c066c8897be31">&#9670;&nbsp;</a></span>DeleteGamePressed()</h2>
 
@@ -198,32 +179,6 @@ Static Public Attributes</h2></td></tr>
 
 <p>Get the current game save </p>
 <dl class="section return"><dt>Returns</dt><dd>GamSave object</dd></dl>
-
-</div>
-</div>
-<a id="a920ff678509e31cdfb540fab644a301b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a920ff678509e31cdfb540fab644a301b">&#9670;&nbsp;</a></span>LoadGamePressed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GameSaveManager.LoadGamePressed </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>saveID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load a game save and change the scene to the game </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">saveID</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

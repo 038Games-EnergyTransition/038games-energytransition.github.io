@@ -1,5 +1,11 @@
 var hierarchy =
 [
+    [ "Area3D", null, [
+      [ "CameraPerspectiveSwitcher", "classCameraPerspectiveSwitcher.html", null ]
+    ] ],
+    [ "Button", null, [
+      [ "MenuButtonEffect", "classMenuButtonEffect.html", null ]
+    ] ],
     [ "Camera3D", null, [
       [ "Camera", "classCamera.html", null ]
     ] ],
@@ -10,6 +16,7 @@ var hierarchy =
     [ "Control", null, [
       [ "GameSaveManager", "classGameSaveManager.html", null ],
       [ "Intro", "classIntro.html", null ],
+      [ "Loadscreen", "classLoadscreen.html", null ],
       [ "MainMenu", "classMainMenu.html", null ],
       [ "RotationObject", "classRotationObject.html", null ],
       [ "SpeechOverlay", "classSpeechOverlay.html", null ],
@@ -53,7 +60,8 @@ var hierarchy =
       [ "NpcBase", "classNpcBase.html", [
         [ "Dog", "classDog.html", null ],
         [ "TestNPC", "classTestNPC.html", null ]
-      ] ]
+      ] ],
+      [ "RayCastObjectFader", "classRayCastObjectFader.html", null ]
     ] ],
     [ "Panel", null, [
       [ "DissolveUIComponent", "classDissolveUIComponent.html", null ],
@@ -83,6 +91,9 @@ var hierarchy =
     ] ],
     [ "Sprite3D", null, [
       [ "Character2DComponent", "classCharacter2DComponent.html", null ]
+    ] ],
+    [ "TextureButton", null, [
+      [ "SelectLanguageButton", "classSelectLanguageButton.html", null ]
     ] ],
     [ "TextureRect", null, [
       [ "Car", "classCar.html", null ]
