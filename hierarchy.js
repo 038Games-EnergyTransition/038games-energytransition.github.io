@@ -71,7 +71,8 @@ var hierarchy =
         [ "TestNPC", "classTestNPC.html", null ]
       ] ],
       [ "QuestPoint", "classQuestPoint.html", null ],
-      [ "RayCastObjectFader", "classRayCastObjectFader.html", null ]
+      [ "RayCastObjectFader", "classRayCastObjectFader.html", null ],
+      [ "VisibleOnQualitySetting", "classVisibleOnQualitySetting.html", null ]
     ] ],
     [ "Panel", null, [
       [ "DissolveUIComponent", "classDissolveUIComponent.html", null ],
@@ -113,5 +114,8 @@ var hierarchy =
     ] ],
     [ "TextureRect", null, [
       [ "Car", "classCar.html", null ]
+    ] ],
+    [ "WorldEnvironment", null, [
+      [ "WorldEnvironmentQualitySettings", "classWorldEnvironmentQualitySettings.html", null ]
     ] ]
 ];

@@ -75,5 +75,7 @@ var annotated_dup =
     [ "TestNPC", "classTestNPC.html", "classTestNPC" ],
     [ "TestQuestIndicator", "classTestQuestIndicator.html", "classTestQuestIndicator" ],
     [ "Translations", "classTranslations.html", "classTranslations" ],
-    [ "UIMoveEventArgs", "classUIMoveEventArgs.html", "classUIMoveEventArgs" ]
+    [ "UIMoveEventArgs", "classUIMoveEventArgs.html", "classUIMoveEventArgs" ],
+    [ "VisibleOnQualitySetting", "classVisibleOnQualitySetting.html", "classVisibleOnQualitySetting" ],
+    [ "WorldEnvironmentQualitySettings", "classWorldEnvironmentQualitySettings.html", "classWorldEnvironmentQualitySettings" ]
 ];
