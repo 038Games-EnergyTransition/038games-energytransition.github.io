@@ -2,6 +2,8 @@ var classSpeechOverlay =
 [
     [ "_Process", "classSpeechOverlay.html#acaeabae8cc3d0ff188d3c5b81c7419f5", null ],
     [ "_Ready", "classSpeechOverlay.html#a91bb8082526a15eb927db20e3cf86b4c", null ],
+    [ "SetBackgroundColor", "classSpeechOverlay.html#af63456cfc38955565a93e85f8c6d80cf", null ],
+    [ "SetBackgroundImg", "classSpeechOverlay.html#a09493bbf96d97846ab9229f0b8dc7c75", null ],
     [ "SetChoiceLabel", "classSpeechOverlay.html#a79f2a85627f0d82362c8f30f165c2e29", null ],
     [ "SetChoices", "classSpeechOverlay.html#a8187c13bcfdecdcb9b6b280dd2c5acec", null ],
     [ "SetLeftPortrait", "classSpeechOverlay.html#aaa2253ba4d50578879fbf1f6e41a86aa", null ],

@@ -3,6 +3,7 @@ var hierarchy =
     [ "Area3D", null, [
       [ "CameraPerspectiveSwitcher", "classCameraPerspectiveSwitcher.html", null ]
     ] ],
+    [ "BankTransaction", "classBankTransaction.html", null ],
     [ "Button", null, [
       [ "MenuButtonEffect", "classMenuButtonEffect.html", null ]
     ] ],
@@ -30,13 +31,16 @@ var hierarchy =
       [ "CameraMoveEventArgs", "classCameraMoveEventArgs.html", null ],
       [ "UIMoveEventArgs", "classUIMoveEventArgs.html", null ]
     ] ],
+    [ "GlobalBank", "classGlobalBank.html", null ],
     [ "Interperlation", "classInterperlation.html", null ],
+    [ "KarmaManager", "classKarmaManager.html", null ],
     [ "Marker3D", null, [
       [ "CameraComponent", "classCameraComponent.html", null ]
     ] ],
     [ "MeshInstance3D", null, [
       [ "ColorChangeTest", "classColorChangeTest.html", null ]
     ] ],
+    [ "MoneyManager", "classMoneyManager.html", null ],
     [ "Node", null, [
       [ "CutsceneScripter", "classCutsceneScripter.html", null ],
       [ "Debug", "classDebug.html", null ],
@@ -46,9 +50,12 @@ var hierarchy =
       [ "GlobalTime", "classGlobalTime.html", null ],
       [ "Globals", "classGlobals.html", null ],
       [ "InputModule", "classInputModule.html", null ],
+      [ "MainLineQuestManager", "classMainLineQuestManager.html", null ],
       [ "SceneManager", "classSceneManager.html", null ],
       [ "SettingsManager", "classSettingsManager.html", null ],
       [ "SpeechEngine", "classSpeechEngine.html", null ],
+      [ "StatisticsManager", "classStatisticsManager.html", null ],
+      [ "TestNode", "classTestNode.html", null ],
       [ "Translations", "classTranslations.html", null ]
     ] ],
     [ "Node3D", null, [
@@ -58,9 +65,12 @@ var hierarchy =
         [ "SceneTransitionDoor", "classSceneTransitionDoor.html", null ]
       ] ],
       [ "NpcBase", "classNpcBase.html", [
+        [ "AartScript", "classAartScript.html", null ],
         [ "Dog", "classDog.html", null ],
+        [ "IvanScript", "classIvanScript.html", null ],
         [ "TestNPC", "classTestNPC.html", null ]
       ] ],
+      [ "QuestPoint", "classQuestPoint.html", null ],
       [ "RayCastObjectFader", "classRayCastObjectFader.html", null ]
     ] ],
     [ "Panel", null, [
@@ -80,14 +90,20 @@ var hierarchy =
         [ "SetStateCutsceneNode", "classSetStateCutsceneNode.html", null ],
         [ "ShaderTransition", "classShaderTransition.html", null ],
         [ "Sleep", "classSleep.html", null ],
+        [ "SpeechBackground", "classSpeechBackground.html", null ],
         [ "animationNode", "classanimationNode.html", null ]
       ] ],
       [ "NPCRoute", "classNPCRoute.html", null ],
-      [ "RouteMarker", "classRouteMarker.html", null ]
+      [ "QuestPiece", "classQuestPiece.html", null ],
+      [ "RouteMarker", "classRouteMarker.html", null ],
+      [ "StatisticsResource", "classStatisticsResource.html", null ]
     ] ],
     [ "RichTextEffect", null, [
       [ "AngryTextEffect", "classAngryTextEffect.html", null ],
       [ "SwingTextEffect", "classSwingTextEffect.html", null ]
+    ] ],
+    [ "RichTextLabel", null, [
+      [ "TestQuestIndicator", "classTestQuestIndicator.html", null ]
     ] ],
     [ "Sprite3D", null, [
       [ "Character2DComponent", "classCharacter2DComponent.html", null ]

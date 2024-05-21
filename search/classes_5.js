@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['ifcutscene_200',['IfCutscene',['../classIfCutscene.html',1,'']]],
-  ['inputmodule_201',['InputModule',['../classInputModule.html',1,'']]],
-  ['intcutscenevariable_202',['IntCutsceneVariable',['../classIntCutsceneVariable.html',1,'']]],
-  ['interactable_203',['Interactable',['../classInteractable.html',1,'']]],
-  ['interperlation_204',['Interperlation',['../classInterperlation.html',1,'']]],
-  ['intro_205',['Intro',['../classIntro.html',1,'']]]
+  ['gamelogic_218',['GameLogic',['../classGameLogic.html',1,'']]],
+  ['gamesave_219',['GameSave',['../classGameSave.html',1,'']]],
+  ['gamesavemanager_220',['GameSaveManager',['../classGameSaveManager.html',1,'']]],
+  ['globalbank_221',['GlobalBank',['../classGlobalBank.html',1,'']]],
+  ['globals_222',['Globals',['../classGlobals.html',1,'']]],
+  ['globalsettings_223',['GlobalSettings',['../classGlobalSettings.html',1,'']]],
+  ['globaltime_224',['GlobalTime',['../classGlobalTime.html',1,'']]]
 ];

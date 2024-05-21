@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['testnpc_229',['TestNPC',['../classTestNPC.html',1,'']]],
-  ['translations_230',['Translations',['../classTranslations.html',1,'']]]
+  ['questpiece_243',['QuestPiece',['../classQuestPiece.html',1,'']]],
+  ['questpoint_244',['QuestPoint',['../classQuestPoint.html',1,'']]]
 ];

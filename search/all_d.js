@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['ongamestatechange_105',['OnGameStateChange',['../classGlobals.html#a15ff0e4ca05cd837aef10fba6ca1c0b2',1,'Globals']]],
-  ['oninteract_106',['OnInteract',['../classInteractable.html#ac98fdae4f4827ec372039bc288369092',1,'Interactable.OnInteract()'],['../classRoomScript.html#ae1223054e2f7293778d7a4906b7d5a6e',1,'RoomScript.OnInteract()'],['../classDog.html#acf4bb131cb194b942a19432eb390553e',1,'Dog.OnInteract()'],['../classNpcBase.html#aaf3947f96f3851bcf2e2cfc2b0fb779b',1,'NpcBase.OnInteract()'],['../classTestNPC.html#a05aa188995c7a1b37a483ed188876bca',1,'TestNPC.OnInteract()'],['../classSceneTransitionDoor.html#aa5a950a22317b0f9d3c1865d918fd53d',1,'SceneTransitionDoor.OnInteract()']]],
-  ['onscenechange_107',['onSceneChange',['../classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52',1,'NpcBase.onSceneChange()'],['../classPlayer.html#af5aca1b518d7ef3291be9ba6377986b5',1,'Player.onSceneChange()']]],
-  ['onselected_108',['OnSelected',['../classSettingsManager.html#a164857ae38a8819a1fd9db5e6dcede82',1,'SettingsManager']]],
-  ['ontoggled_109',['OnToggled',['../classSettingsManager.html#ac980a3b0bad7f0b55370b706a8432d5b',1,'SettingsManager']]]
+  ['nextquest_108',['NextQuest',['../classMainLineQuestManager.html#add7cb11b37992c8d0cd1a37d4c7fb91b',1,'MainLineQuestManager']]],
+  ['nextroom_109',['NextRoom',['../classSceneTransitionDoor.html#aa93707c870d3da88283f4e30738ef43b',1,'SceneTransitionDoor']]],
+  ['nextsetting_110',['NextSetting',['../classCamera.html#a8eaf03ab426e582451ee9ef993345cfa',1,'Camera']]],
+  ['nodename_111',['NodeName',['../classCutsceneNode.html#a7d4d57cf119b914c13c73b47c0b49b02',1,'CutsceneNode']]],
+  ['npcbase_112',['NpcBase',['../classNpcBase.html',1,'']]],
+  ['npccutscenevariable_113',['NPCCutsceneVariable',['../classNPCCutsceneVariable.html',1,'']]],
+  ['npcname_114',['NPCName',['../classCreateNPC.html#ae2fd3dc65e5d6f61580ded89d4debae8',1,'CreateNPC.NPCName()'],['../classMoveNPC.html#a121cc87c53011b8432dd5ec0c031214b',1,'MoveNPC.NPCName()']]],
+  ['npcroute_115',['NPCRoute',['../classNPCRoute.html',1,'']]]
 ];

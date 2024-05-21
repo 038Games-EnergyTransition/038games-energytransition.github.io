@@ -6,6 +6,8 @@ var classSpeechEngine =
     [ "Clear", "classSpeechEngine.html#a8e5c99be0bc922c5176045e295275c7f", null ],
     [ "Done", "classSpeechEngine.html#a04bb3e1fe21dce0237308e52cba73faa", null ],
     [ "DoneChoice", "classSpeechEngine.html#a45cfc754d04b90eacca2be4da7f4a7da", null ],
+    [ "SetBackgroundColor", "classSpeechEngine.html#ae9c37f57d9d406ff3776f66d0c6b04ab", null ],
+    [ "SetBackgroundImg", "classSpeechEngine.html#ab245ce841f69778d34d8eb8e22d4827d", null ],
     [ "SetSpeechLabel", "classSpeechEngine.html#a06a3a0060a30819ff8a2db7d8ff32dfe", null ],
     [ "Speech", "classSpeechEngine.html#aa7efcf2cffc872dcaf249b28c65543f0", null ],
     [ "Speech", "classSpeechEngine.html#a9b8ceb89c64bbe9e500ef33846939ce8", null ]
