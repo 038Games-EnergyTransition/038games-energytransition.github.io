@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "AartScript", "classAartScript.html", "classAartScript" ],
     [ "AngryTextEffect", "classAngryTextEffect.html", "classAngryTextEffect" ],
+    [ "AnimatedSunLight", "classAnimatedSunLight.html", "classAnimatedSunLight" ],
     [ "animationNode", "classanimationNode.html", "classanimationNode" ],
     [ "BankTransaction", "classBankTransaction.html", "classBankTransaction" ],
     [ "Camera", "classCamera.html", "classCamera" ],
@@ -70,6 +71,7 @@ var annotated_dup =
     [ "SpeechOverlayChoices", "classSpeechOverlayChoices.html", "classSpeechOverlayChoices" ],
     [ "StatisticsManager", "classStatisticsManager.html", "classStatisticsManager" ],
     [ "StatisticsResource", "classStatisticsResource.html", "classStatisticsResource" ],
+    [ "SunVisibleOnQualitySetting", "classSunVisibleOnQualitySetting.html", "classSunVisibleOnQualitySetting" ],
     [ "SwingTextEffect", "classSwingTextEffect.html", "classSwingTextEffect" ],
     [ "TestNode", "classTestNode.html", "classTestNode" ],
     [ "TestNPC", "classTestNPC.html", "classTestNPC" ],

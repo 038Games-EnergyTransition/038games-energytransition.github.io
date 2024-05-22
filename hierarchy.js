@@ -27,6 +27,9 @@ var hierarchy =
       [ "IntCutsceneVariable", "classIntCutsceneVariable.html", null ],
       [ "NPCCutsceneVariable", "classNPCCutsceneVariable.html", null ]
     ] ],
+    [ "DirectionalLight3D", null, [
+      [ "SunVisibleOnQualitySetting", "classSunVisibleOnQualitySetting.html", null ]
+    ] ],
     [ "EventArgs", null, [
       [ "CameraMoveEventArgs", "classCameraMoveEventArgs.html", null ],
       [ "UIMoveEventArgs", "classUIMoveEventArgs.html", null ]
@@ -59,6 +62,7 @@ var hierarchy =
       [ "Translations", "classTranslations.html", null ]
     ] ],
     [ "Node3D", null, [
+      [ "AnimatedSunLight", "classAnimatedSunLight.html", null ],
       [ "GameLogic", "classGameLogic.html", null ],
       [ "Interactable", "classInteractable.html", [
         [ "RoomScript", "classRoomScript.html", null ],

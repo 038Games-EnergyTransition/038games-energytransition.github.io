@@ -84,6 +84,8 @@ $(document).ready(function(){initNavTree('classGlobalTime.html',''); initResizab
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="classGlobalTime-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GlobalTime Class Reference</div>  </div>
@@ -125,6 +127,21 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae59b061b4dfaa78ce473cf213d6b3a74"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#ae59b061b4dfaa78ce473cf213d6b3a74">GetTimeAngle</a> ()</td></tr>
 <tr class="memdesc:ae59b061b4dfaa78ce473cf213d6b3a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time as an angle (0-360)  <a href="classGlobalTime.html#ae59b061b4dfaa78ce473cf213d6b3a74">More...</a><br /></td></tr>
 <tr class="separator:ae59b061b4dfaa78ce473cf213d6b3a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ed83dd41a1b76d1e20177fe0480be7"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a63ed83dd41a1b76d1e20177fe0480be7">GetTimeFormatted</a> ()</td></tr>
+<tr class="memdesc:a63ed83dd41a1b76d1e20177fe0480be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10  <a href="classGlobalTime.html#a63ed83dd41a1b76d1e20177fe0480be7">More...</a><br /></td></tr>
+<tr class="separator:a63ed83dd41a1b76d1e20177fe0480be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aad0343322011ff68e0867fad3ddd2453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453">DayLength</a> = 10</td></tr>
+<tr class="memdesc:aad0343322011ff68e0867fad3ddd2453"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long a day should last in seconds From 0:00 to 23:59  <a href="classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453">More...</a><br /></td></tr>
+<tr class="separator:aad0343322011ff68e0867fad3ddd2453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGlobalTime.html">GlobalTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a89db3310a123e8c42fb3a7b7e9bb12e8">Instance</a><code> [get]</code></td></tr>
+<tr class="memdesc:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton instance of the <a class="el" href="classGlobalTime.html">GlobalTime</a> class  <a href="classGlobalTime.html#a89db3310a123e8c42fb3a7b7e9bb12e8">More...</a><br /></td></tr>
+<tr class="separator:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af499850726d60d0830f8d015719e0253"></a>
@@ -284,6 +301,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a63ed83dd41a1b76d1e20177fe0480be7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ed83dd41a1b76d1e20177fe0480be7">&#9670;&nbsp;</a></span>GetTimeFormatted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string GlobalTime.GetTimeFormatted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10 </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="aa8c03c70220dd51b9ad91f936e3f276c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8c03c70220dd51b9ad91f936e3f276c">&#9670;&nbsp;</a></span>SetHour()</h2>
 
@@ -349,6 +394,48 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aad0343322011ff68e0867fad3ddd2453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0343322011ff68e0867fad3ddd2453">&#9670;&nbsp;</a></span>DayLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GlobalTime.DayLength = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How long a day should last in seconds From 0:00 to 23:59 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a89db3310a123e8c42fb3a7b7e9bb12e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89db3310a123e8c42fb3a7b7e9bb12e8">&#9670;&nbsp;</a></span>Instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGlobalTime.html">GlobalTime</a> GlobalTime.Instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Singleton instance of the <a class="el" href="classGlobalTime.html">GlobalTime</a> class </p>
 
 </div>
 </div>
