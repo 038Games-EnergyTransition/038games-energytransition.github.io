@@ -130,10 +130,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a63ed83dd41a1b76d1e20177fe0480be7"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a63ed83dd41a1b76d1e20177fe0480be7">GetTimeFormatted</a> ()</td></tr>
 <tr class="memdesc:a63ed83dd41a1b76d1e20177fe0480be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10  <a href="classGlobalTime.html#a63ed83dd41a1b76d1e20177fe0480be7">More...</a><br /></td></tr>
 <tr class="separator:a63ed83dd41a1b76d1e20177fe0480be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c2d83b008afbe0f0997ff4e6004e53"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a31c2d83b008afbe0f0997ff4e6004e53">GetTimeFormattedSnapped</a> (int minuteSnap)</td></tr>
+<tr class="memdesc:a31c2d83b008afbe0f0997ff4e6004e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10 Snapping the time to the nearest X minutes  <a href="classGlobalTime.html#a31c2d83b008afbe0f0997ff4e6004e53">More...</a><br /></td></tr>
+<tr class="separator:a31c2d83b008afbe0f0997ff4e6004e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aad0343322011ff68e0867fad3ddd2453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453">DayLength</a> = 10</td></tr>
+<tr class="memitem:aad0343322011ff68e0867fad3ddd2453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453">DayLength</a> = 60</td></tr>
 <tr class="memdesc:aad0343322011ff68e0867fad3ddd2453"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long a day should last in seconds From 0:00 to 23:59  <a href="classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453">More...</a><br /></td></tr>
 <tr class="separator:aad0343322011ff68e0867fad3ddd2453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -329,6 +332,35 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a31c2d83b008afbe0f0997ff4e6004e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c2d83b008afbe0f0997ff4e6004e53">&#9670;&nbsp;</a></span>GetTimeFormattedSnapped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string GlobalTime.GetTimeFormattedSnapped </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minuteSnap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10 Snapping the time to the nearest X minutes </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="aa8c03c70220dd51b9ad91f936e3f276c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8c03c70220dd51b9ad91f936e3f276c">&#9670;&nbsp;</a></span>SetHour()</h2>
 
@@ -405,7 +437,7 @@ Properties</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GlobalTime.DayLength = 10</td>
+          <td class="memname">int GlobalTime.DayLength = 60</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['banktransaction_205',['BankTransaction',['../classBankTransaction.html',1,'']]]
+  ['banktransaction_233',['BankTransaction',['../classBankTransaction.html',1,'']]],
+  ['baseapp_234',['BaseApp',['../classBaseApp.html',1,'']]]
 ];

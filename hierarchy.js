@@ -8,17 +8,29 @@ var hierarchy =
       [ "MenuButtonEffect", "classMenuButtonEffect.html", null ]
     ] ],
     [ "Camera3D", null, [
-      [ "Camera", "classCamera.html", null ]
+      [ "Camera", "classCamera.html", null ],
+      [ "PlayerCameraFollower", "classPlayerCameraFollower.html", null ]
     ] ],
     [ "CameraSetting", "structCameraSetting.html", null ],
     [ "CharacterBody3D", null, [
       [ "Player", "classPlayer.html", null ]
     ] ],
     [ "Control", null, [
+      [ "AnimatedPositionManager", "classAnimatedPositionManager.html", null ],
+      [ "AppHomescreen", "classAppHomescreen.html", null ],
+      [ "BaseApp", "classBaseApp.html", [
+        [ "CameraApp", "classCameraApp.html", null ],
+        [ "MapsApp", "classMapsApp.html", null ],
+        [ "QuitApp", "classQuitApp.html", null ],
+        [ "SaveApp", "classSaveApp.html", null ],
+        [ "TimeApp", "classTimeApp.html", null ],
+        [ "WallpaperApp", "classWallpaperApp.html", null ]
+      ] ],
       [ "GameSaveManager", "classGameSaveManager.html", null ],
       [ "Intro", "classIntro.html", null ],
       [ "Loadscreen", "classLoadscreen.html", null ],
       [ "MainMenu", "classMainMenu.html", null ],
+      [ "Phone", "classPhone.html", null ],
       [ "RotationObject", "classRotationObject.html", null ],
       [ "SpeechOverlay", "classSpeechOverlay.html", null ],
       [ "SpeechOverlayChoices", "classSpeechOverlayChoices.html", null ]
@@ -37,6 +49,9 @@ var hierarchy =
     [ "GlobalBank", "classGlobalBank.html", null ],
     [ "Interperlation", "classInterperlation.html", null ],
     [ "KarmaManager", "classKarmaManager.html", null ],
+    [ "Label", null, [
+      [ "AppTodoHomescreenQuestText", "classAppTodoHomescreenQuestText.html", null ]
+    ] ],
     [ "Marker3D", null, [
       [ "CameraComponent", "classCameraComponent.html", null ]
     ] ],
@@ -51,6 +66,7 @@ var hierarchy =
       [ "GlobalSettings", "classGlobalSettings.html", null ],
       [ "GlobalTime", "classGlobalTime.html", null ],
       [ "Globals", "classGlobals.html", null ],
+      [ "InputHandler", "classInputHandler.html", null ],
       [ "InputModule", "classInputModule.html", null ],
       [ "MainLineQuestManager", "classMainLineQuestManager.html", null ],
       [ "SceneManager", "classSceneManager.html", null ],
@@ -79,9 +95,11 @@ var hierarchy =
     ] ],
     [ "Panel", null, [
       [ "DissolveUIComponent", "classDissolveUIComponent.html", null ],
-      [ "FadeUIComponent", "classFadeUIComponent.html", null ]
+      [ "FadeUIComponent", "classFadeUIComponent.html", null ],
+      [ "HomescreenLowerApps", "classHomescreenLowerApps.html", null ]
     ] ],
     [ "Resource", null, [
+      [ "AnimatedPositionPoint", "classAnimatedPositionPoint.html", null ],
       [ "Cutscene", "classCutscene.html", null ],
       [ "CutsceneNode", "classCutsceneNode.html", [
         [ "CameraMove", "classCameraMove.html", null ],
@@ -108,6 +126,7 @@ var hierarchy =
       [ "SwingTextEffect", "classSwingTextEffect.html", null ]
     ] ],
     [ "RichTextLabel", null, [
+      [ "AppTodoQuestText", "classAppTodoQuestText.html", null ],
       [ "TestQuestIndicator", "classTestQuestIndicator.html", null ]
     ] ],
     [ "Sprite3D", null, [
@@ -117,6 +136,7 @@ var hierarchy =
       [ "SelectLanguageButton", "classSelectLanguageButton.html", null ]
     ] ],
     [ "TextureRect", null, [
+      [ "AppTimeHomescreenMask", "classAppTimeHomescreenMask.html", null ],
       [ "Car", "classCar.html", null ]
     ] ],
     [ "WorldEnvironment", null, [
