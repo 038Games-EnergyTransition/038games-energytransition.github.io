@@ -9,5 +9,6 @@ var classSpeechOverlay =
     [ "SetLeftPortrait", "classSpeechOverlay.html#aaa2253ba4d50578879fbf1f6e41a86aa", null ],
     [ "SetRightPortrait", "classSpeechOverlay.html#a975050cd780a270487284227893ed0b0", null ],
     [ "SetSpeechLabel", "classSpeechOverlay.html#a83e8ab720126466f740511ea2bd872f0", null ],
-    [ "SetText", "classSpeechOverlay.html#adf37d3d86f2523987f20a241260ec5c0", null ]
+    [ "SetText", "classSpeechOverlay.html#adf37d3d86f2523987f20a241260ec5c0", null ],
+    [ "_textSpeed", "classSpeechOverlay.html#aaeadbdcf96ddafa6c57c55bd560e7739", null ]
 ];

@@ -111,12 +111,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a149d4bee9c75eb90dd588ff847f2df3d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a149d4bee9c75eb90dd588ff847f2df3d">_Ready</a> ()</td></tr>
 <tr class="memdesc:a149d4bee9c75eb90dd588ff847f2df3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene is ready. Initializes the NPC and sets up the event listeners. Also loads the route of the NPC and sets the NPC to be visible or not based on the game state.  <a href="classNpcBase.html#a149d4bee9c75eb90dd588ff847f2df3d">More...</a><br /></td></tr>
 <tr class="separator:a149d4bee9c75eb90dd588ff847f2df3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dff57e9a0157043ee48cf53f494dc12"><td class="memItemLeft" align="right" valign="top"><a id="a0dff57e9a0157043ee48cf53f494dc12"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>_ExitTree</b> ()</td></tr>
+<tr class="separator:a0dff57e9a0157043ee48cf53f494dc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">onSceneChange</a> (object sender, GameState gameState)</td></tr>
 <tr class="memdesc:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene changes.  <a href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">More...</a><br /></td></tr>
 <tr class="separator:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b9e9512f848094cee33cb1e675ba2e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a56b9e9512f848094cee33cb1e675ba2e">_Process</a> (double delta)</td></tr>
 <tr class="memdesc:a56b9e9512f848094cee33cb1e675ba2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame. Handles the NPC's movement and interaction. Also handles the drawing of the path in the editor.  <a href="classNpcBase.html#a56b9e9512f848094cee33cb1e675ba2e">More...</a><br /></td></tr>
 <tr class="separator:a56b9e9512f848094cee33cb1e675ba2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747d4c88c6f3255e1a94b96502c30932"><td class="memItemLeft" align="right" valign="top"><a id="a747d4c88c6f3255e1a94b96502c30932"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>nextMarker</b> ()</td></tr>
+<tr class="separator:a747d4c88c6f3255e1a94b96502c30932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf3947f96f3851bcf2e2cfc2b0fb779b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#aaf3947f96f3851bcf2e2cfc2b0fb779b">OnInteract</a> ()</td></tr>
 <tr class="memdesc:aaf3947f96f3851bcf2e2cfc2b0fb779b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overwritable method that is called when the player interacts with the NPC.  <a href="classNpcBase.html#aaf3947f96f3851bcf2e2cfc2b0fb779b">More...</a><br /></td></tr>
 <tr class="separator:aaf3947f96f3851bcf2e2cfc2b0fb779b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +135,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a34bf91bbe0927604f756aa5e8b050e92"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a34bf91bbe0927604f756aa5e8b050e92">NPCName</a> = &quot;NPC&quot;<code> [get, set]</code></td></tr>
+<tr class="memdesc:a34bf91bbe0927604f756aa5e8b050e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the NPC also used by the statistics manager to track interactions following the pattern "InteractedWith" + NPCName  <a href="classNpcBase.html#a34bf91bbe0927604f756aa5e8b050e92">More...</a><br /></td></tr>
+<tr class="separator:a34bf91bbe0927604f756aa5e8b050e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f199452640cf184ad7c2af0a5a24c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#ab3f199452640cf184ad7c2af0a5a24c1">EditRoute</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ab3f199452640cf184ad7c2af0a5a24c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle edit mode for the route.  <a href="classNpcBase.html#ab3f199452640cf184ad7c2af0a5a24c1">More...</a><br /></td></tr>
 <tr class="separator:ab3f199452640cf184ad7c2af0a5a24c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,6 +322,30 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Toggle edit mode for the route. </p>
+
+</div>
+</div>
+<a id="a34bf91bbe0927604f756aa5e8b050e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34bf91bbe0927604f756aa5e8b050e92">&#9670;&nbsp;</a></span>NPCName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NpcBase.NPCName = &quot;NPC&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Name of the NPC also used by the statistics manager to track interactions following the pattern "InteractedWith" + NPCName </p>
 
 </div>
 </div>

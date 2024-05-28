@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"classQuestPoint.html#a1a2ae4749e1fcc12999f290924308898":[2,0,53,4],
+"classQuestPoint.html#a29c8917589a4b3815713e6f35b783dd0":[2,0,53,0],
+"classQuestPoint.html#aa7da2378c44d14c32c7601de2c743283":[2,0,53,2],
+"classQuestPoint.html#ab91feb9c32b963b42e6681fd0884de70":[2,0,53,3],
 "classQuestPoint.html#acfa090c445a98633c4c827aa6f8c6e56":[2,0,53,1],
 "classRayCastObjectFader.html":[2,0,54],
 "classRayCastObjectFader.html#af3d61100996b1ea6b09b66ec3b28c522":[2,0,54,0],
@@ -81,6 +85,7 @@ var NAVTREEINDEX1 =
 "classSpeechOverlay.html#a91bb8082526a15eb927db20e3cf86b4c":[2,0,67,1],
 "classSpeechOverlay.html#a975050cd780a270487284227893ed0b0":[2,0,67,7],
 "classSpeechOverlay.html#aaa2253ba4d50578879fbf1f6e41a86aa":[2,0,67,6],
+"classSpeechOverlay.html#aaeadbdcf96ddafa6c57c55bd560e7739":[2,0,67,10],
 "classSpeechOverlay.html#acaeabae8cc3d0ff188d3c5b81c7419f5":[2,0,67,0],
 "classSpeechOverlay.html#adf37d3d86f2523987f20a241260ec5c0":[2,0,67,9],
 "classSpeechOverlay.html#af63456cfc38955565a93e85f8c6d80cf":[2,0,67,2],
@@ -98,8 +103,9 @@ var NAVTREEINDEX1 =
 "classStatisticsResource.html":[2,0,70],
 "classStatisticsResource.html#a2d000257a7a038bfe919703c2fc4dee8":[2,0,70,1],
 "classStatisticsResource.html#aa00cf2d1ab63556d11a4eb7a2410b366":[2,0,70,2],
+"classStatisticsResource.html#aae33702b93ac98da8fe8456658f44dcc":[2,0,70,3],
 "classStatisticsResource.html#adeea627c86faf1b16c72041f5e3510de":[2,0,70,0],
-"classStatisticsResource.html#ae14b2952fd52c98957838ecf5613657d":[2,0,70,3],
+"classStatisticsResource.html#ae14b2952fd52c98957838ecf5613657d":[2,0,70,4],
 "classSunVisibleOnQualitySetting.html":[2,0,71],
 "classSunVisibleOnQualitySetting.html#a20b7b250ce9530243834b17978a3b981":[2,0,71,1],
 "classSunVisibleOnQualitySetting.html#a23f5d05df994b42c53cdf73b63ec5547":[2,0,71,2],

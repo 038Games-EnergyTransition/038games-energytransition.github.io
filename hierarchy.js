@@ -48,7 +48,6 @@ var hierarchy =
       [ "CutsceneScripter", "classCutsceneScripter.html", null ],
       [ "Debug", "classDebug.html", null ],
       [ "FileManager", "classFileManager.html", null ],
-      [ "GameSave", "classGameSave.html", null ],
       [ "GlobalSettings", "classGlobalSettings.html", null ],
       [ "GlobalTime", "classGlobalTime.html", null ],
       [ "Globals", "classGlobals.html", null ],
@@ -98,6 +97,7 @@ var hierarchy =
         [ "SpeechBackground", "classSpeechBackground.html", null ],
         [ "animationNode", "classanimationNode.html", null ]
       ] ],
+      [ "GameSave", "classGameSave.html", null ],
       [ "NPCRoute", "classNPCRoute.html", null ],
       [ "QuestPiece", "classQuestPiece.html", null ],
       [ "RouteMarker", "classRouteMarker.html", null ],

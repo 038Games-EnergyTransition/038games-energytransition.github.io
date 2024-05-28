@@ -18,6 +18,6 @@ var searchData=
   ['globals_81',['Globals',['../classGlobals.html',1,'']]],
   ['globalsettings_82',['GlobalSettings',['../classGlobalSettings.html',1,'']]],
   ['globaltime_83',['GlobalTime',['../classGlobalTime.html',1,'']]],
-  ['gravity_84',['gravity',['../classPlayer.html#ade14f7db2c11604e57d2010ae2586834',1,'Player']]],
-  ['gravity_85',['Gravity',['../classInputModule.html#a4b1fef58f14940329811f04cc34417a5',1,'InputModule']]]
+  ['gravity_84',['Gravity',['../classInputModule.html#a4b1fef58f14940329811f04cc34417a5',1,'InputModule']]],
+  ['gravity_85',['gravity',['../classPlayer.html#ade14f7db2c11604e57d2010ae2586834',1,'Player']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['choiceresultname_348',['ChoiceResultName',['../classChoiceBox.html#a4703685d331c96b4e2651ec0b1334453',1,'ChoiceBox']]],
-  ['choices_349',['Choices',['../classChoiceBox.html#a66f2b412b7f0c05b47204046f77e1348',1,'ChoiceBox']]],
-  ['currentgamesaveid_350',['CurrentGameSaveId',['../classGameSaveManager.html#a5bc4151f8a45fa1fd1e26a9893a901f9',1,'GameSaveManager']]],
-  ['currentgamestate_351',['CurrentGameState',['../classGlobals.html#ab7f4412793327572c8f17985b8694b8d',1,'Globals']]]
+  ['choiceresultname_349',['ChoiceResultName',['../classChoiceBox.html#a4703685d331c96b4e2651ec0b1334453',1,'ChoiceBox']]],
+  ['choices_350',['Choices',['../classChoiceBox.html#a66f2b412b7f0c05b47204046f77e1348',1,'ChoiceBox']]],
+  ['currentgamesaveid_351',['CurrentGameSaveId',['../classGameSaveManager.html#a5bc4151f8a45fa1fd1e26a9893a901f9',1,'GameSaveManager']]],
+  ['currentgamestate_352',['CurrentGameState',['../classGlobals.html#ab7f4412793327572c8f17985b8694b8d',1,'Globals']]]
 ];
