@@ -9,6 +9,7 @@ var classCutsceneScripter =
     [ "Path", "classCutsceneScripter.html#aa0866d2c9590a7b63a67b12c7286fc4f", null ],
     [ "PauseCutscene", "classCutsceneScripter.html#a8614c183453df21afb40076d02f280f1", null ],
     [ "PlayBackSpeed", "classCutsceneScripter.html#a5d3a7b27f06cba2317fde2294e33c477", null ],
+    [ "PlayInEditor", "classCutsceneScripter.html#a05b7def412c4c2b62d8fcc00e3a5c2bb", null ],
     [ "Cutscene", "classCutsceneScripter.html#a09fce16da8cde1ed09a09b3e090c2d66", null ],
     [ "IsPlaying", "classCutsceneScripter.html#aa1d06584e1d0fc83a3ea3c3ad7b7a02c", null ],
     [ "loadCutscene", "classCutsceneScripter.html#a6e6a39f6d3841294d402f6697ee9818e", null ],

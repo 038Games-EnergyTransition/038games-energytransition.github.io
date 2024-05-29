@@ -74,7 +74,8 @@ var hierarchy =
       [ "SpeechEngine", "classSpeechEngine.html", null ],
       [ "StatisticsManager", "classStatisticsManager.html", null ],
       [ "TestNode", "classTestNode.html", null ],
-      [ "Translations", "classTranslations.html", null ]
+      [ "Translations", "classTranslations.html", null ],
+      [ "Translator", "classTranslator.html", null ]
     ] ],
     [ "Node3D", null, [
       [ "AnimatedSunLight", "classAnimatedSunLight.html", null ],
@@ -114,6 +115,7 @@ var hierarchy =
         [ "ShaderTransition", "classShaderTransition.html", null ],
         [ "Sleep", "classSleep.html", null ],
         [ "SpeechBackground", "classSpeechBackground.html", null ],
+        [ "StatisticsNode", "classStatisticsNode.html", null ],
         [ "animationNode", "classanimationNode.html", null ]
       ] ],
       [ "GameSave", "classGameSave.html", null ],
