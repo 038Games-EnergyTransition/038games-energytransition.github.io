@@ -62,6 +62,7 @@ var annotated_dup =
     [ "NpcBase", "classNpcBase.html", "classNpcBase" ],
     [ "NPCCutsceneVariable", "classNPCCutsceneVariable.html", "classNPCCutsceneVariable" ],
     [ "NPCRoute", "classNPCRoute.html", "classNPCRoute" ],
+    [ "OVPort", "classOVPort.html", "classOVPort" ],
     [ "Phone", "classPhone.html", "classPhone" ],
     [ "Player", "classPlayer.html", "classPlayer" ],
     [ "PlayerCameraFollower", "classPlayerCameraFollower.html", "classPlayerCameraFollower" ],

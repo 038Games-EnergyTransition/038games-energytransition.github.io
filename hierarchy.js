@@ -133,6 +133,9 @@ var hierarchy =
     [ "Sprite3D", null, [
       [ "Character2DComponent", "classCharacter2DComponent.html", null ]
     ] ],
+    [ "StaticBody3D", null, [
+      [ "OVPort", "classOVPort.html", null ]
+    ] ],
     [ "TextureButton", null, [
       [ "SelectLanguageButton", "classSelectLanguageButton.html", null ]
     ] ],
