@@ -87,6 +87,7 @@ var annotated_dup =
     [ "StatisticsManager", "classStatisticsManager.html", "classStatisticsManager" ],
     [ "StatisticsResource", "classStatisticsResource.html", "classStatisticsResource" ],
     [ "SunVisibleOnQualitySetting", "classSunVisibleOnQualitySetting.html", "classSunVisibleOnQualitySetting" ],
+    [ "SupermarketDoors", "classSupermarketDoors.html", "classSupermarketDoors" ],
     [ "SwingTextEffect", "classSwingTextEffect.html", "classSwingTextEffect" ],
     [ "TestNode", "classTestNode.html", "classTestNode" ],
     [ "TestNPC", "classTestNPC.html", "classTestNPC" ],

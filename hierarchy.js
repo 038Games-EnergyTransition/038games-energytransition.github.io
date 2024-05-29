@@ -91,6 +91,7 @@ var hierarchy =
       ] ],
       [ "QuestPoint", "classQuestPoint.html", null ],
       [ "RayCastObjectFader", "classRayCastObjectFader.html", null ],
+      [ "SupermarketDoors", "classSupermarketDoors.html", null ],
       [ "VisibleOnQualitySetting", "classVisibleOnQualitySetting.html", null ]
     ] ],
     [ "Panel", null, [
