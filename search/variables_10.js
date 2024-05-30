@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['value_440',['Value',['../classIntCutsceneVariable.html#ac3f88c133d29851b43f1e85582673896',1,'IntCutsceneVariable']]]
+  ['waitatend_445',['WaitAtEnd',['../classShaderTransition.html#a8f7e509797e62f96dabc24c85e81b5fe',1,'ShaderTransition']]],
+  ['walkingspeed_446',['WalkingSpeed',['../classMoveNPC.html#a572cf7e5adda042225618b1f2562fc66',1,'MoveNPC']]]
 ];
