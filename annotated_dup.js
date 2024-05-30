@@ -77,6 +77,7 @@ var annotated_dup =
     [ "SceneManager", "classSceneManager.html", "classSceneManager" ],
     [ "SceneTransitionDoor", "classSceneTransitionDoor.html", "classSceneTransitionDoor" ],
     [ "SelectLanguageButton", "classSelectLanguageButton.html", "classSelectLanguageButton" ],
+    [ "SetActivePortraitNode", "classSetActivePortraitNode.html", "classSetActivePortraitNode" ],
     [ "SetStateCutsceneNode", "classSetStateCutsceneNode.html", "classSetStateCutsceneNode" ],
     [ "SettingsManager", "classSettingsManager.html", "classSettingsManager" ],
     [ "ShaderTransition", "classShaderTransition.html", "classShaderTransition" ],

@@ -111,6 +111,7 @@ var hierarchy =
         [ "DialogueBox", "classDialogueBox.html", null ],
         [ "IfCutscene", "classIfCutscene.html", null ],
         [ "MoveNPC", "classMoveNPC.html", null ],
+        [ "SetActivePortraitNode", "classSetActivePortraitNode.html", null ],
         [ "SetStateCutsceneNode", "classSetStateCutsceneNode.html", null ],
         [ "ShaderTransition", "classShaderTransition.html", null ],
         [ "Sleep", "classSleep.html", null ],

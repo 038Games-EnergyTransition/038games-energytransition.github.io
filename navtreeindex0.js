@@ -178,10 +178,11 @@ var NAVTREEINDEX0 =
 "classDebug.html#ac1277aa88b9fd904f5301d56a2e83987":[2,0,29,1],
 "classDebug.html#ad0800853ae77e615b794998fa964396f":[2,0,29,3],
 "classDialogueBox.html":[2,0,30],
-"classDialogueBox.html#a12e9fb8108284b8d527f00a2cc3bc05f":[2,0,30,3],
-"classDialogueBox.html#a447c1842ba2429d9d0e789b42e904a85":[2,0,30,4],
+"classDialogueBox.html#a12e9fb8108284b8d527f00a2cc3bc05f":[2,0,30,4],
+"classDialogueBox.html#a447c1842ba2429d9d0e789b42e904a85":[2,0,30,5],
+"classDialogueBox.html#a83294d5a4ef9cf443bdfa09b003ccacc":[2,0,30,2],
 "classDialogueBox.html#ab6a8c16318504c5358dcb86a4eee3ece":[2,0,30,1],
-"classDialogueBox.html#abe953ba98afcf74deab808807bf2bda6":[2,0,30,2],
+"classDialogueBox.html#af8972778bb45ce7da9fe608a2b361176":[2,0,30,3],
 "classDialogueBox.html#afda71789a48a30a8114cabef4f0df9db":[2,0,30,0],
 "classDissolveUIComponent.html":[2,0,31],
 "classDissolveUIComponent.html#a141156b414d2bd38064155cb41c4c210":[2,0,31,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classInputHandler.html#a78f4ee67c7dff36c9d4dd914d0faf23a":[2,0,44,0],
 "classInputHandler.html#ac66d7d98ca3c7e3483a0c07d2800f3c4":[2,0,44,3],
 "classInputModule.html":[2,0,45],
-"classInputModule.html#ab57a213fff20e0fc737f5d31a2961cc5":[2,0,45,1],
-"classInputModule.html#ad967453b13bf72ca8293326b1444aa5d":[2,0,45,0]
+"classInputModule.html#ab57a213fff20e0fc737f5d31a2961cc5":[2,0,45,1]
 };
