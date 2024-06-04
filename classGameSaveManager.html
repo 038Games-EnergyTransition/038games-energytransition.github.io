@@ -84,7 +84,9 @@ $(document).ready(function(){initNavTree('classGameSaveManager.html',''); initRe
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="classGameSaveManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GameSaveManager Class Reference</div>  </div>
@@ -105,11 +107,23 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> (
 <tr class="memitem:afb8d5fee5967a5d9fde5a7ab914f1d18"><td class="memItemLeft" align="right" valign="top"><a id="afb8d5fee5967a5d9fde5a7ab914f1d18"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
 <tr class="separator:afb8d5fee5967a5d9fde5a7ab914f1d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928e6e016caad57729e8305957762b1a"><td class="memItemLeft" align="right" valign="top"><a id="a928e6e016caad57729e8305957762b1a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelDeleteSavefile</b> ()</td></tr>
+<tr class="separator:a928e6e016caad57729e8305957762b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5c8d54fa1fc3ef59e1a5b6d6bb8729"><td class="memItemLeft" align="right" valign="top"><a id="a3d5c8d54fa1fc3ef59e1a5b6d6bb8729"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfirmDeleteSavefile</b> ()</td></tr>
+<tr class="separator:a3d5c8d54fa1fc3ef59e1a5b6d6bb8729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa095ff50c0267abbe4667e92f93563"><td class="memItemLeft" align="right" valign="top"><a id="a5aa095ff50c0267abbe4667e92f93563"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadSaves</b> ()</td></tr>
+<tr class="separator:a5aa095ff50c0267abbe4667e92f93563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abedb9678c93530986e122ac1f582725f"><td class="memItemLeft" align="right" valign="top"><a id="abedb9678c93530986e122ac1f582725f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showSaves</b> ()</td></tr>
+<tr class="separator:abedb9678c93530986e122ac1f582725f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a920ff678509e31cdfb540fab644a301b"><td class="memItemLeft" align="right" valign="top"><a id="a920ff678509e31cdfb540fab644a301b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadGamePressed</b> (int saveID)</td></tr>
 <tr class="separator:a920ff678509e31cdfb540fab644a301b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685523e072de3ead9e7c066c8897be31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSaveManager.html#a685523e072de3ead9e7c066c8897be31">DeleteGamePressed</a> (int saveID)</td></tr>
-<tr class="memdesc:a685523e072de3ead9e7c066c8897be31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a game save // TODO: Implement delete game save  <a href="classGameSaveManager.html#a685523e072de3ead9e7c066c8897be31">More...</a><br /></td></tr>
+<tr class="memdesc:a685523e072de3ead9e7c066c8897be31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a game save  <a href="classGameSaveManager.html#a685523e072de3ead9e7c066c8897be31">More...</a><br /></td></tr>
 <tr class="separator:a685523e072de3ead9e7c066c8897be31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -121,11 +135,26 @@ Static Public Member Functions</h2></td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveCurrentGameSave</b> ()</td></tr>
 <tr class="separator:a47e72ac078bd7a1e84c638166ebfd46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a85ed8d9fc5f92a19f049e0108de0e270"><td class="memItemLeft" align="right" valign="top"><a id="a85ed8d9fc5f92a19f049e0108de0e270"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>TextLoadGame</b> = &quot;_LOADGAME&quot;</td></tr>
+<tr class="separator:a85ed8d9fc5f92a19f049e0108de0e270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c320cd0771b3eab81e3db3ddffa5d55"><td class="memItemLeft" align="right" valign="top"><a id="a3c320cd0771b3eab81e3db3ddffa5d55"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>TextNewGame</b> = &quot;_NEWGAME&quot;</td></tr>
+<tr class="separator:a3c320cd0771b3eab81e3db3ddffa5d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a5bc4151f8a45fa1fd1e26a9893a901f9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSaveManager.html#a5bc4151f8a45fa1fd1e26a9893a901f9">CurrentGameSaveId</a> = -1</td></tr>
 <tr class="memdesc:a5bc4151f8a45fa1fd1e26a9893a901f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current game save id that is selected  <a href="classGameSaveManager.html#a5bc4151f8a45fa1fd1e26a9893a901f9">More...</a><br /></td></tr>
 <tr class="separator:a5bc4151f8a45fa1fd1e26a9893a901f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a2a21dbc6f1468bcc290afe86aa49502c"><td class="memItemLeft" align="right" valign="top"><a id="a2a21dbc6f1468bcc290afe86aa49502c"></a>
+static <a class="el" href="classGameSaveManager.html">GameSaveManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
+<tr class="separator:a2a21dbc6f1468bcc290afe86aa49502c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a685523e072de3ead9e7c066c8897be31"></a>
@@ -144,7 +173,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Delete a game save // TODO: Implement delete game save </p>
+<p>Delete a game save </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">saveID</td><td></td></tr>

@@ -1,5 +1,8 @@
 var hierarchy =
 [
+    [ "AnimationPlayer", null, [
+      [ "AutoplayAnimationPlayer", "classAutoplayAnimationPlayer.html", null ]
+    ] ],
     [ "Area3D", null, [
       [ "CameraPerspectiveSwitcher", "classCameraPerspectiveSwitcher.html", null ]
     ] ],
@@ -140,6 +143,9 @@ var hierarchy =
     ] ],
     [ "StaticBody3D", null, [
       [ "OVPort", "classOVPort.html", null ]
+    ] ],
+    [ "SubViewport", null, [
+      [ "SceneInstancer", "classSceneInstancer.html", null ]
     ] ],
     [ "TextureButton", null, [
       [ "SelectLanguageButton", "classSelectLanguageButton.html", null ]
