@@ -4,6 +4,6 @@ var searchData=
   ['deletegame_366',['DeleteGame',['../classFileManager.html#a3ebea4be9eac2b52b065608338a16d72',1,'FileManager']]],
   ['deletegamepressed_367',['DeleteGamePressed',['../classGameSaveManager.html#a685523e072de3ead9e7c066c8897be31',1,'GameSaveManager']]],
   ['destroy_368',['Destroy',['../classCutsceneNodeVariableBase.html#a47166b342924caf47e17b4a242b1068b',1,'CutsceneNodeVariableBase.Destroy()'],['../classNPCCutsceneVariable.html#a09193e58373f47b485511337f3f4c8d3',1,'NPCCutsceneVariable.Destroy()']]],
-  ['done_369',['Done',['../classSpeechEngine.html#a04bb3e1fe21dce0237308e52cba73faa',1,'SpeechEngine']]],
-  ['donechoice_370',['DoneChoice',['../classSpeechEngine.html#a45cfc754d04b90eacca2be4da7f4a7da',1,'SpeechEngine']]]
+  ['donechoice_369',['DoneChoice',['../classSpeechEngine.html#a45cfc754d04b90eacca2be4da7f4a7da',1,'SpeechEngine']]],
+  ['donetaking_370',['DoneTaking',['../classSpeechEngine.html#a9887ae98907e8f9ba039d5ca7ea3dd93',1,'SpeechEngine']]]
 ];

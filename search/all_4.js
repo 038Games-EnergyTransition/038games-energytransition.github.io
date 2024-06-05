@@ -9,7 +9,7 @@ var searchData=
   ['dialoguebox_61',['DialogueBox',['../classDialogueBox.html',1,'']]],
   ['dissolveuicomponent_62',['DissolveUIComponent',['../classDissolveUIComponent.html',1,'']]],
   ['dog_63',['Dog',['../classDog.html',1,'']]],
-  ['done_64',['Done',['../classSpeechEngine.html#a04bb3e1fe21dce0237308e52cba73faa',1,'SpeechEngine']]],
-  ['donechoice_65',['DoneChoice',['../classSpeechEngine.html#a45cfc754d04b90eacca2be4da7f4a7da',1,'SpeechEngine']]],
+  ['donechoice_64',['DoneChoice',['../classSpeechEngine.html#a45cfc754d04b90eacca2be4da7f4a7da',1,'SpeechEngine']]],
+  ['donetaking_65',['DoneTaking',['../classSpeechEngine.html#a9887ae98907e8f9ba039d5ca7ea3dd93',1,'SpeechEngine']]],
   ['duration_66',['Duration',['../classCameraMove.html#ac1822ea8a860d5c90a2f0b3ca218587a',1,'CameraMove']]]
 ];
