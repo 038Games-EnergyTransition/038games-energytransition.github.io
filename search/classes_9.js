@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['karmamanager_296',['KarmaManager',['../classKarmaManager.html',1,'']]]
+  ['karmamanager_297',['KarmaManager',['../classKarmaManager.html',1,'']]]
 ];

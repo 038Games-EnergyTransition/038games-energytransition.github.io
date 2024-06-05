@@ -20,6 +20,6 @@ var searchData=
   ['globals_99',['Globals',['../classGlobals.html',1,'']]],
   ['globalsettings_100',['GlobalSettings',['../classGlobalSettings.html',1,'']]],
   ['globaltime_101',['GlobalTime',['../classGlobalTime.html',1,'']]],
-  ['gravity_102',['gravity',['../classPlayer.html#ade14f7db2c11604e57d2010ae2586834',1,'Player']]],
-  ['gravity_103',['Gravity',['../classInputModule.html#a4b1fef58f14940329811f04cc34417a5',1,'InputModule']]]
+  ['gravity_102',['Gravity',['../classInputModule.html#a4b1fef58f14940329811f04cc34417a5',1,'InputModule']]],
+  ['gravity_103',['gravity',['../classPlayer.html#ade14f7db2c11604e57d2010ae2586834',1,'Player']]]
 ];

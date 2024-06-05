@@ -48,8 +48,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classIfCutscene.html",
-"classSpeechOverlay.html#adf37d3d86f2523987f20a241260ec5c0"
+"classHomescreenLowerApps.html#a815bf9051b7648e0a6b9761969ce76f1",
+"classSpeechOverlay.html#acaeabae8cc3d0ff188d3c5b81c7419f5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

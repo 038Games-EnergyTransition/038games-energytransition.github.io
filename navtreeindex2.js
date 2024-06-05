@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classSpeechOverlay.html#acaeabae8cc3d0ff188d3c5b81c7419f5":[2,0,88,0],
 "classSpeechOverlay.html#adf37d3d86f2523987f20a241260ec5c0":[2,0,88,10],
 "classSpeechOverlay.html#af63456cfc38955565a93e85f8c6d80cf":[2,0,88,3],
 "classSpeechOverlayChoices.html":[2,0,89],

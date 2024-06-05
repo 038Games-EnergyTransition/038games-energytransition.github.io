@@ -2,6 +2,7 @@ var classGameSave =
 [
     [ "GameSave", "classGameSave.html#a4218bd44fe4c90f725800f3a2e444e71", null ],
     [ "GameSave", "classGameSave.html#ac441d21e0e51a86cf047bb600fd9be27", null ],
+    [ "IngameTime", "classGameSave.html#a96dba61d139d3365c5997720ee8223b0", null ],
     [ "IsEmpty", "classGameSave.html#a4381e5689c5242f3924eeb06297d13f7", null ],
     [ "PlayerName", "classGameSave.html#a00fbb7b0b6af6e04f2402f9ea6a6081a", null ],
     [ "PlayerPosition", "classGameSave.html#a91a2717db9184d0aa95bb64319de856e", null ],

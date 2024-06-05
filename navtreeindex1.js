@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classHomescreenLowerApps.html#a815bf9051b7648e0a6b9761969ce76f1":[2,0,44,0],
 "classIfCutscene.html":[2,0,45],
 "classIfCutscene.html#a3bc77e7c87d659ab186d01bb80ff200c":[2,0,45,1],
 "classIfCutscene.html#a4690816fe2f43167a95a827859dc451a":[2,0,45,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classSpeechOverlay.html#a91bb8082526a15eb927db20e3cf86b4c":[2,0,88,1],
 "classSpeechOverlay.html#a975050cd780a270487284227893ed0b0":[2,0,88,8],
 "classSpeechOverlay.html#aaa2253ba4d50578879fbf1f6e41a86aa":[2,0,88,7],
-"classSpeechOverlay.html#aaeadbdcf96ddafa6c57c55bd560e7739":[2,0,88,13],
-"classSpeechOverlay.html#acaeabae8cc3d0ff188d3c5b81c7419f5":[2,0,88,0]
+"classSpeechOverlay.html#aaeadbdcf96ddafa6c57c55bd560e7739":[2,0,88,13]
 };
