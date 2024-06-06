@@ -1,5 +1,6 @@
 var classPlayer =
 [
+    [ "_ExitTree", "classPlayer.html#a3645ff8a4268176aa02d484a443c98ea", null ],
     [ "_Process", "classPlayer.html#a81db5dd46c343160498d29f6fa42d611", null ],
     [ "_Ready", "classPlayer.html#ae192a478a80f0e93e01339d62cdd6f6d", null ],
     [ "onSceneChange", "classPlayer.html#af5aca1b518d7ef3291be9ba6377986b5", null ],

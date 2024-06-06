@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['text_463',['Text',['../classDialogueBox.html#a12e9fb8108284b8d527f00a2cc3bc05f',1,'DialogueBox']]],
-  ['thennode_464',['thenNode',['../classIfCutscene.html#ab0db3269a63b286d78151d69ca1f6d74',1,'IfCutscene']]]
+  ['spawnlocation_461',['SpawnLocation',['../classSceneTransitionDoor.html#abaaba20c15309138196dc923ff2452dc',1,'SceneTransitionDoor']]],
+  ['speed_462',['Speed',['../classPlayer.html#aea3feea42eb3f90364cd3454df79b57b',1,'Player.Speed()'],['../classCar.html#a2de21a04b4c6fac7b3160bec314367ce',1,'Car.Speed()'],['../classRotationObject.html#aeb16eb6468573408f69b49dbabd12504',1,'RotationObject.Speed()']]],
+  ['spritescale_463',['SpriteScale',['../classCreateNPC.html#acc5298b46ece50f278e827ebc5d96e53',1,'CreateNPC']]],
+  ['startatanewday_464',['StartAtANewDay',['../classQuestPiece.html#a518e6fbfa54f06cd4cc43f20b7cb3d4c',1,'QuestPiece']]]
 ];

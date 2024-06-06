@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['value_465',['Value',['../classIntCutsceneVariable.html#ac3f88c133d29851b43f1e85582673896',1,'IntCutsceneVariable']]]
+  ['text_465',['Text',['../classDialogueBox.html#a12e9fb8108284b8d527f00a2cc3bc05f',1,'DialogueBox']]],
+  ['thennode_466',['thenNode',['../classIfCutscene.html#ab0db3269a63b286d78151d69ca1f6d74',1,'IfCutscene']]]
 ];

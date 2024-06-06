@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['daychanged_54',['DayChanged',['../classGlobalTime.html#a22781e74d56805cf2b64d4b6918a7215',1,'GlobalTime']]],
   ['daylength_55',['DayLength',['../classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453',1,'GlobalTime']]],
   ['debug_56',['Debug',['../classDebug.html',1,'Debug'],['../classDebug.html#ac1277aa88b9fd904f5301d56a2e83987',1,'Debug.Debug()']]],
   ['defaultscreensize_57',['DefaultScreenSize',['../classGlobals.html#a75336a5518f051bfd882b225b3777efa',1,'Globals']]],

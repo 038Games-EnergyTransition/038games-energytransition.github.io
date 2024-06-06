@@ -85,7 +85,9 @@ $(document).ready(function(){initNavTree('classGlobalTime.html',''); initResizab
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#events">Events</a> &#124;
 <a href="classGlobalTime-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GlobalTime Class Reference</div>  </div>
@@ -133,18 +135,36 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a31c2d83b008afbe0f0997ff4e6004e53"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a31c2d83b008afbe0f0997ff4e6004e53">GetTimeFormattedSnapped</a> (int minuteSnap)</td></tr>
 <tr class="memdesc:a31c2d83b008afbe0f0997ff4e6004e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10 Snapping the time to the nearest X minutes  <a href="classGlobalTime.html#a31c2d83b008afbe0f0997ff4e6004e53">More...</a><br /></td></tr>
 <tr class="separator:a31c2d83b008afbe0f0997ff4e6004e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6197b6788b441d0144c7997e60b26eb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#ad6197b6788b441d0144c7997e60b26eb">EndDay</a> ()</td></tr>
+<tr class="memdesc:ad6197b6788b441d0144c7997e60b26eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">void to end the day and start a new one  <a href="classGlobalTime.html#ad6197b6788b441d0144c7997e60b26eb">More...</a><br /></td></tr>
+<tr class="separator:ad6197b6788b441d0144c7997e60b26eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869f55ee191583cb5c8d46a24126c9ef"><td class="memItemLeft" align="right" valign="top"><a id="a869f55ee191583cb5c8d46a24126c9ef"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StartDay</b> ()</td></tr>
+<tr class="separator:a869f55ee191583cb5c8d46a24126c9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aad0343322011ff68e0867fad3ddd2453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453">DayLength</a> = 60</td></tr>
+<tr class="memitem:aad0343322011ff68e0867fad3ddd2453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453">DayLength</a> = 600</td></tr>
 <tr class="memdesc:aad0343322011ff68e0867fad3ddd2453"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long a day should last in seconds From 0:00 to 23:59  <a href="classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453">More...</a><br /></td></tr>
 <tr class="separator:aad0343322011ff68e0867fad3ddd2453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a7b683ef694082627acecabbfeca42a7d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a7b683ef694082627acecabbfeca42a7d">Paused</a> = false</td></tr>
+<tr class="memdesc:a7b683ef694082627acecabbfeca42a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to check if time is paused  <a href="classGlobalTime.html#a7b683ef694082627acecabbfeca42a7d">More...</a><br /></td></tr>
+<tr class="separator:a7b683ef694082627acecabbfeca42a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGlobalTime.html">GlobalTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a89db3310a123e8c42fb3a7b7e9bb12e8">Instance</a><code> [get]</code></td></tr>
 <tr class="memdesc:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton instance of the <a class="el" href="classGlobalTime.html">GlobalTime</a> class  <a href="classGlobalTime.html#a89db3310a123e8c42fb3a7b7e9bb12e8">More...</a><br /></td></tr>
 <tr class="separator:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
+Events</h2></td></tr>
+<tr class="memitem:a22781e74d56805cf2b64d4b6918a7215"><td class="memItemLeft" align="right" valign="top">static EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a22781e74d56805cf2b64d4b6918a7215">DayChanged</a></td></tr>
+<tr class="memdesc:a22781e74d56805cf2b64d4b6918a7215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that fires wen a new day starts;  <a href="classGlobalTime.html#a22781e74d56805cf2b64d4b6918a7215">More...</a><br /></td></tr>
+<tr class="separator:a22781e74d56805cf2b64d4b6918a7215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af499850726d60d0830f8d015719e0253"></a>
@@ -189,6 +209,33 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the <a class="el" href="classGlobalTime.html">GlobalTime</a> class Sets the current time to 8:00 </p>
+
+</div>
+</div>
+<a id="ad6197b6788b441d0144c7997e60b26eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6197b6788b441d0144c7997e60b26eb">&#9670;&nbsp;</a></span>EndDay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GlobalTime.EndDay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>void to end the day and start a new one </p>
 
 </div>
 </div>
@@ -437,12 +484,36 @@ Properties</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GlobalTime.DayLength = 60</td>
+          <td class="memname">int GlobalTime.DayLength = 600</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>How long a day should last in seconds From 0:00 to 23:59 </p>
+
+</div>
+</div>
+<a id="a7b683ef694082627acecabbfeca42a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b683ef694082627acecabbfeca42a7d">&#9670;&nbsp;</a></span>Paused</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GlobalTime.Paused = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Boolean to check if time is paused </p>
 
 </div>
 </div>
@@ -468,6 +539,31 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Singleton instance of the <a class="el" href="classGlobalTime.html">GlobalTime</a> class </p>
+
+</div>
+</div>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="a22781e74d56805cf2b64d4b6918a7215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22781e74d56805cf2b64d4b6918a7215">&#9670;&nbsp;</a></span>DayChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler GlobalTime.DayChanged</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event that fires wen a new day starts; </p>
 
 </div>
 </div>
