@@ -93,6 +93,7 @@ var hierarchy =
         [ "IvanScript", "classIvanScript.html", null ],
         [ "TestNPC", "classTestNPC.html", null ]
       ] ],
+      [ "OVPort", "classOVPort.html", null ],
       [ "QuestPoint", "classQuestPoint.html", null ],
       [ "RayCastObjectFader", "classRayCastObjectFader.html", null ],
       [ "SupermarketDoors", "classSupermarketDoors.html", null ],
@@ -140,9 +141,6 @@ var hierarchy =
     ] ],
     [ "Sprite3D", null, [
       [ "Character2DComponent", "classCharacter2DComponent.html", null ]
-    ] ],
-    [ "StaticBody3D", null, [
-      [ "OVPort", "classOVPort.html", null ]
     ] ],
     [ "SubViewport", null, [
       [ "SceneInstancer", "classSceneInstancer.html", null ]

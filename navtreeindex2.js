@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classSpeechOverlay.html#aaeadbdcf96ddafa6c57c55bd560e7739":[2,0,88,13],
 "classSpeechOverlay.html#acaeabae8cc3d0ff188d3c5b81c7419f5":[2,0,88,0],
 "classSpeechOverlay.html#adf37d3d86f2523987f20a241260ec5c0":[2,0,88,10],
 "classSpeechOverlay.html#af63456cfc38955565a93e85f8c6d80cf":[2,0,88,3],
@@ -92,8 +93,8 @@ var NAVTREEINDEX2 =
 "classanimationNode.html#a3b039f8dadf51e5479734baf188291ca":[2,0,5,1],
 "classanimationNode.html#acc670cf5b35a286f48cbb014622ab8ee":[2,0,5,0],
 "classes.html":[2,1],
-"functions.html":[2,3,0,0],
 "functions.html":[2,3,0],
+"functions.html":[2,3,0,0],
 "functions_a.html":[2,3,0,1],
 "functions_b.html":[2,3,0,2],
 "functions_c.html":[2,3,0,3],
