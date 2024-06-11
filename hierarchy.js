@@ -8,6 +8,7 @@ var hierarchy =
     ] ],
     [ "BankTransaction", "classBankTransaction.html", null ],
     [ "Button", null, [
+      [ "IncrementButton", "classIncrementButton.html", null ],
       [ "MenuButtonEffect", "classMenuButtonEffect.html", null ]
     ] ],
     [ "Camera3D", null, [
@@ -15,6 +16,9 @@ var hierarchy =
       [ "PlayerCameraFollower", "classPlayerCameraFollower.html", null ]
     ] ],
     [ "CameraSetting", "structCameraSetting.html", null ],
+    [ "CharacterBody2D", null, [
+      [ "Example2Player", "classExample2Player.html", null ]
+    ] ],
     [ "CharacterBody3D", null, [
       [ "Player", "classPlayer.html", null ]
     ] ],
@@ -29,11 +33,13 @@ var hierarchy =
         [ "TimeApp", "classTimeApp.html", null ],
         [ "WallpaperApp", "classWallpaperApp.html", null ]
       ] ],
+      [ "Game", "classGame.html", null ],
       [ "GameSaveManager", "classGameSaveManager.html", null ],
       [ "Intro", "classIntro.html", null ],
       [ "Loadscreen", "classLoadscreen.html", null ],
       [ "MainMenu", "classMainMenu.html", null ],
       [ "Phone", "classPhone.html", null ],
+      [ "QuestEditor", "classQuestEditor.html", null ],
       [ "RotationObject", "classRotationObject.html", null ],
       [ "SpeechOverlay", "classSpeechOverlay.html", null ],
       [ "SpeechOverlayChoices", "classSpeechOverlayChoices.html", null ]
@@ -50,6 +56,24 @@ var hierarchy =
       [ "UIMoveEventArgs", "classUIMoveEventArgs.html", null ]
     ] ],
     [ "GlobalBank", "classGlobalBank.html", null ],
+    [ "GraphEdit", null, [
+      [ "QuestEditorGraph", "classQuestEditorGraph.html", null ]
+    ] ],
+    [ "GraphNode", null, [
+      [ "QuestGraphNode", "classQuestGraphNode.html", [
+        [ "ActionNode", "classActionNode.html", null ],
+        [ "ConditionNode", "classConditionNode.html", null ],
+        [ "EndNode", "classEndNode.html", null ],
+        [ "ObjectiveNode", "classObjectiveNode.html", null ],
+        [ "StartNode", "classStartNode.html", null ]
+      ] ]
+    ] ],
+    [ "HBoxContainer", null, [
+      [ "EditorAction", "classEditorAction.html", null ],
+      [ "VariantInput", "classVariantInput.html", null ],
+      [ "Vector2Input", "classVector2Input.html", null ],
+      [ "Vector3Input", "classVector3Input.html", null ]
+    ] ],
     [ "Interperlation", "classInterperlation.html", null ],
     [ "KarmaManager", "classKarmaManager.html", null ],
     [ "Label", null, [
@@ -64,6 +88,7 @@ var hierarchy =
     [ "MoneyManager", "classMoneyManager.html", null ],
     [ "Node", null, [
       [ "CutsceneScripter", "classCutsceneScripter.html", null ],
+      [ "DataManager", "classDataManager.html", null ],
       [ "Debug", "classDebug.html", null ],
       [ "FileManager", "classFileManager.html", null ],
       [ "GlobalSettings", "classGlobalSettings.html", null ],
@@ -72,6 +97,7 @@ var hierarchy =
       [ "InputHandler", "classInputHandler.html", null ],
       [ "InputModule", "classInputModule.html", null ],
       [ "MainLineQuestManager", "classMainLineQuestManager.html", null ],
+      [ "QuestManager", "classQuestManager.html", null ],
       [ "SceneManager", "classSceneManager.html", null ],
       [ "SettingsManager", "classSettingsManager.html", null ],
       [ "SpeechEngine", "classSpeechEngine.html", null ],
@@ -79,6 +105,9 @@ var hierarchy =
       [ "TestNode", "classTestNode.html", null ],
       [ "Translations", "classTranslations.html", null ],
       [ "Translator", "classTranslator.html", null ]
+    ] ],
+    [ "Node2D", null, [
+      [ "Example2Game", "classExample2Game.html", null ]
     ] ],
     [ "Node3D", null, [
       [ "AnimatedSunLight", "classAnimatedSunLight.html", null ],
@@ -104,6 +133,11 @@ var hierarchy =
       [ "FadeUIComponent", "classFadeUIComponent.html", null ],
       [ "HomescreenLowerApps", "classHomescreenLowerApps.html", null ]
     ] ],
+    [ "QuestSerialPart", "classQuestSerialPart.html", null ],
+    [ "RefCounted", null, [
+      [ "Debouncer", "classDebouncer.html", null ],
+      [ "QuesterSettings", "classQuesterSettings.html", null ]
+    ] ],
     [ "Resource", null, [
       [ "AnimatedPositionPoint", "classAnimatedPositionPoint.html", null ],
       [ "Cutscene", "classCutscene.html", null ],
@@ -127,7 +161,16 @@ var hierarchy =
       ] ],
       [ "GameSave", "classGameSave.html", null ],
       [ "NPCRoute", "classNPCRoute.html", null ],
+      [ "QuestEdge", "classQuestEdge.html", null ],
+      [ "QuestNode", "classQuestNode.html", [
+        [ "QuestAction", "classQuestAction.html", null ],
+        [ "QuestCondition", "classQuestCondition.html", null ],
+        [ "QuestEnd", "classQuestEnd.html", null ],
+        [ "QuestObjective", "classQuestObjective.html", null ],
+        [ "QuestStart", "classQuestStart.html", null ]
+      ] ],
       [ "QuestPiece", "classQuestPiece.html", null ],
+      [ "QuestResource", "classQuestResource.html", null ],
       [ "RouteMarker", "classRouteMarker.html", null ],
       [ "StatisticsResource", "classStatisticsResource.html", null ]
     ] ],
@@ -142,6 +185,9 @@ var hierarchy =
     [ "Sprite3D", null, [
       [ "Character2DComponent", "classCharacter2DComponent.html", null ]
     ] ],
+    [ "StaticBody2D", null, [
+      [ "Example2Entity", "classExample2Entity.html", null ]
+    ] ],
     [ "SubViewport", null, [
       [ "SceneInstancer", "classSceneInstancer.html", null ]
     ] ],
@@ -151,6 +197,10 @@ var hierarchy =
     [ "TextureRect", null, [
       [ "AppTimeHomescreenMask", "classAppTimeHomescreenMask.html", null ],
       [ "Car", "classCar.html", null ]
+    ] ],
+    [ "VBoxContainer", null, [
+      [ "MetadataEditor", "classMetadataEditor.html", null ],
+      [ "MetadataItem", "classMetadataItem.html", null ]
     ] ],
     [ "WorldEnvironment", null, [
       [ "WorldEnvironmentQualitySettings", "classWorldEnvironmentQualitySettings.html", null ]

@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "038 Energy Transition", "index.html", [
     [ "MIT License", "md_038EnergyTransition_addons_debug_menu_LICENSE.html", null ],
+    [ "Translation", "md_038EnergyTransition_Translation_README.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -48,8 +49,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classHomescreenLowerApps.html#a815bf9051b7648e0a6b9761969ce76f1",
-"classSpeechOverlay.html#aaeadbdcf96ddafa6c57c55bd560e7739"
+"classExample2Entity.html#a257314be6c2206018a93cbd0da68401f",
+"classQuestCondition.html#ac08144af4d53acf9e4318bf5b004e7ff",
+"classStartNode.html#ad1faa840ea03371c63852e929f509511"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
