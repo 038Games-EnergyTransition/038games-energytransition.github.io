@@ -1,6 +1,8 @@
 var classChoiceBox =
 [
+    [ "OnChoiceMade", "classChoiceBox.html#a345f0a8e4be422b29ddaac2e5ee10944", null ],
     [ "StartNode", "classChoiceBox.html#a74f932253becb1a895a4b34743908f1f", null ],
+    [ "activePortrait", "classChoiceBox.html#a2e57042faf3af0e0bafc16c137d53d05", null ],
     [ "ChoiceResultName", "classChoiceBox.html#a4703685d331c96b4e2651ec0b1334453", null ],
     [ "Choices", "classChoiceBox.html#a66f2b412b7f0c05b47204046f77e1348", null ],
     [ "LeftPortrait", "classChoiceBox.html#ad0e7022d8ab8f0c7264e55542868b6ec", null ],

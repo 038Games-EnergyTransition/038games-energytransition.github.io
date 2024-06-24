@@ -84,11 +84,15 @@ $(document).ready(function(){initNavTree('classSpeechOverlayChoices.html',''); i
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#events">Events</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSpeechOverlayChoices-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SpeechOverlayChoices Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A control that displays a question and choices for the player to choose from.  
+ <a href="classSpeechOverlayChoices.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SpeechOverlayChoices:</div>
 <div class="dyncontent">
@@ -98,8 +102,8 @@ Inheritance diagram for SpeechOverlayChoices:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5d2fc0d58e721e2143b203ec747c3466"><td class="memItemLeft" align="right" valign="top"><a id="a5d2fc0d58e721e2143b203ec747c3466"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a5d2fc0d58e721e2143b203ec747c3466"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlayChoices.html#a5d2fc0d58e721e2143b203ec747c3466">_Ready</a> ()</td></tr>
+<tr class="memdesc:a5d2fc0d58e721e2143b203ec747c3466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classSpeechOverlayChoices.html" title="A control that displays a question and choices for the player to choose from.">SpeechOverlayChoices</a> control. Sets up the choice buttons and the question label.  <a href="classSpeechOverlayChoices.html#a5d2fc0d58e721e2143b203ec747c3466">More...</a><br /></td></tr>
 <tr class="separator:a5d2fc0d58e721e2143b203ec747c3466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf66fc3edd232e0c6f988cc4ef9e8501"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlayChoices.html#acf66fc3edd232e0c6f988cc4ef9e8501">setLabel</a> (String label)</td></tr>
 <tr class="memdesc:acf66fc3edd232e0c6f988cc4ef9e8501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the label of the question  <a href="classSpeechOverlayChoices.html#acf66fc3edd232e0c6f988cc4ef9e8501">More...</a><br /></td></tr>
@@ -108,25 +112,52 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> (
 <tr class="memdesc:aa71432f3be7304a1eb0c53879ff4b683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the choices for the player to choose from  <a href="classSpeechOverlayChoices.html#aa71432f3be7304a1eb0c53879ff4b683">More...</a><br /></td></tr>
 <tr class="separator:aa71432f3be7304a1eb0c53879ff4b683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9cf8c8a71e706ca79b4eed920b4e0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlayChoices.html#acd9cf8c8a71e706ca79b4eed920b4e0f">Button1</a> ()</td></tr>
-<tr class="memdesc:acd9cf8c8a71e706ca79b4eed920b4e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Button event handlers for the choices  <a href="classSpeechOverlayChoices.html#acd9cf8c8a71e706ca79b4eed920b4e0f">More...</a><br /></td></tr>
+<tr class="memdesc:acd9cf8c8a71e706ca79b4eed920b4e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the player makes a choice, this method is called. Fires the ChoiceMade event with the index of the choice.  <a href="classSpeechOverlayChoices.html#acd9cf8c8a71e706ca79b4eed920b4e0f">More...</a><br /></td></tr>
 <tr class="separator:acd9cf8c8a71e706ca79b4eed920b4e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05f45dc61cbadb80ece36a4803c2261c"><td class="memItemLeft" align="right" valign="top"><a id="a05f45dc61cbadb80ece36a4803c2261c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Button2</b> ()</td></tr>
+<tr class="memitem:a05f45dc61cbadb80ece36a4803c2261c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlayChoices.html#a05f45dc61cbadb80ece36a4803c2261c">Button2</a> ()</td></tr>
 <tr class="separator:a05f45dc61cbadb80ece36a4803c2261c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a415c25315c862dc69889e9cbe85cd9e4"><td class="memItemLeft" align="right" valign="top"><a id="a415c25315c862dc69889e9cbe85cd9e4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Button3</b> ()</td></tr>
+<tr class="memitem:a415c25315c862dc69889e9cbe85cd9e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlayChoices.html#a415c25315c862dc69889e9cbe85cd9e4">Button3</a> ()</td></tr>
 <tr class="separator:a415c25315c862dc69889e9cbe85cd9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0cd3336b622fdd3e644182aaf99501c"><td class="memItemLeft" align="right" valign="top"><a id="ab0cd3336b622fdd3e644182aaf99501c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Button4</b> ()</td></tr>
+<tr class="memitem:ab0cd3336b622fdd3e644182aaf99501c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlayChoices.html#ab0cd3336b622fdd3e644182aaf99501c">Button4</a> ()</td></tr>
 <tr class="separator:ab0cd3336b622fdd3e644182aaf99501c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
 Events</h2></td></tr>
-<tr class="memitem:a42adafa7e00996a67f373c77df25f4be"><td class="memItemLeft" align="right" valign="top"><a id="a42adafa7e00996a67f373c77df25f4be"></a>
-EventHandler&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ChoiceMade</b></td></tr>
+<tr class="memitem:a42adafa7e00996a67f373c77df25f4be"><td class="memItemLeft" align="right" valign="top">EventHandler&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlayChoices.html#a42adafa7e00996a67f373c77df25f4be">ChoiceMade</a></td></tr>
+<tr class="memdesc:a42adafa7e00996a67f373c77df25f4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for when the player makes a choice.  <a href="classSpeechOverlayChoices.html#a42adafa7e00996a67f373c77df25f4be">More...</a><br /></td></tr>
 <tr class="separator:a42adafa7e00996a67f373c77df25f4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad2a19efe9e892319e816f9322973935a"><td class="memItemLeft" align="right" valign="top">Button[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlayChoices.html#ad2a19efe9e892319e816f9322973935a">_choiceButtons</a></td></tr>
+<tr class="memdesc:ad2a19efe9e892319e816f9322973935a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of buttons that the player can choose from.  <a href="classSpeechOverlayChoices.html#ad2a19efe9e892319e816f9322973935a">More...</a><br /></td></tr>
+<tr class="separator:ad2a19efe9e892319e816f9322973935a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013cce2292ead77f4a8647e78adb9df0"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlayChoices.html#a013cce2292ead77f4a8647e78adb9df0">_questionLabel</a></td></tr>
+<tr class="memdesc:a013cce2292ead77f4a8647e78adb9df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The text label for the question.  <a href="classSpeechOverlayChoices.html#a013cce2292ead77f4a8647e78adb9df0">More...</a><br /></td></tr>
+<tr class="separator:a013cce2292ead77f4a8647e78adb9df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A control that displays a question and choices for the player to choose from. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5d2fc0d58e721e2143b203ec747c3466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2fc0d58e721e2143b203ec747c3466">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SpeechOverlayChoices._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the <a class="el" href="classSpeechOverlayChoices.html" title="A control that displays a question and choices for the player to choose from.">SpeechOverlayChoices</a> control. Sets up the choice buttons and the question label. </p>
+
+</div>
+</div>
 <a id="acd9cf8c8a71e706ca79b4eed920b4e0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd9cf8c8a71e706ca79b4eed920b4e0f">&#9670;&nbsp;</a></span>Button1()</h2>
 
@@ -142,7 +173,58 @@ EventHandler&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
       </table>
 </div><div class="memdoc">
 
-<p>Button event handlers for the choices </p>
+<p>When the player makes a choice, this method is called. Fires the ChoiceMade event with the index of the choice. </p>
+
+</div>
+</div>
+<a id="a05f45dc61cbadb80ece36a4803c2261c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f45dc61cbadb80ece36a4803c2261c">&#9670;&nbsp;</a></span>Button2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SpeechOverlayChoices.Button2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a415c25315c862dc69889e9cbe85cd9e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415c25315c862dc69889e9cbe85cd9e4">&#9670;&nbsp;</a></span>Button3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SpeechOverlayChoices.Button3 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0cd3336b622fdd3e644182aaf99501c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cd3336b622fdd3e644182aaf99501c">&#9670;&nbsp;</a></span>Button4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SpeechOverlayChoices.Button4 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -198,8 +280,74 @@ EventHandler&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad2a19efe9e892319e816f9322973935a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2a19efe9e892319e816f9322973935a">&#9670;&nbsp;</a></span>_choiceButtons</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button [] SpeechOverlayChoices._choiceButtons</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A collection of buttons that the player can choose from. </p>
+
+</div>
+</div>
+<a id="a013cce2292ead77f4a8647e78adb9df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a013cce2292ead77f4a8647e78adb9df0">&#9670;&nbsp;</a></span>_questionLabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Label SpeechOverlayChoices._questionLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The text label for the question. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="a42adafa7e00996a67f373c77df25f4be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42adafa7e00996a67f373c77df25f4be">&#9670;&nbsp;</a></span>ChoiceMade</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler&lt;int&gt; SpeechOverlayChoices.ChoiceMade</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event handler for when the player makes a choice. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/SpeechEngine/SpeechOverlay/SpeechOverlayChoices.cs</li>
+<li>038EnergyTransition/Modules/SpeechEngine/SpeechOverlay/<a class="el" href="SpeechOverlayChoices_8cs.html">SpeechOverlayChoices.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

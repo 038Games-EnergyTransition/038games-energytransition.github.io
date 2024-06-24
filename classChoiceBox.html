@@ -85,18 +85,23 @@ $(document).ready(function(){initNavTree('classChoiceBox.html',''); initResizabl
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classChoiceBox-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChoiceBox Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A choice box that will display a question and a set of choices for the player to choose from.  
+ <a href="classChoiceBox.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ChoiceBox:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classChoiceBox.png" usemap="#ChoiceBox_map" alt=""/>
   <map id="ChoiceBox_map" name="ChoiceBox_map">
-<area href="classCutsceneNode.html" alt="CutsceneNode" shape="rect" coords="0,56,95,80"/>
+<area href="classCutsceneNode.html" title="Base class for all cutscene nodes" alt="CutsceneNode" shape="rect" coords="0,56,95,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -110,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af61a6f7aacf54c2387af64d0ae040485 inherit pub_methods_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called every frame if the cutscene is active  <a href="classCutsceneNode.html#af61a6f7aacf54c2387af64d0ae040485">More...</a><br /></td></tr>
 <tr class="separator:af61a6f7aacf54c2387af64d0ae040485 inherit pub_methods_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8eac4c0769f6f3a7f9099cd814280d5 inherit pub_methods_classCutsceneNode"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#ae8eac4c0769f6f3a7f9099cd814280d5">FinishNode</a> ()</td></tr>
-<tr class="memdesc:ae8eac4c0769f6f3a7f9099cd814280d5 inherit pub_methods_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the cutscene is finished  <a href="classCutsceneNode.html#ae8eac4c0769f6f3a7f9099cd814280d5">More...</a><br /></td></tr>
+<tr class="memdesc:ae8eac4c0769f6f3a7f9099cd814280d5 inherit pub_methods_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the cutscene is finished and triggers the CutsceneFinished event  <a href="classCutsceneNode.html#ae8eac4c0769f6f3a7f9099cd814280d5">More...</a><br /></td></tr>
 <tr class="separator:ae8eac4c0769f6f3a7f9099cd814280d5 inherit pub_methods_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -124,31 +129,78 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6526934fe09c4f04941a207ba68e37f7"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChoiceBox.html#a6526934fe09c4f04941a207ba68e37f7">RightPortrait</a></td></tr>
 <tr class="memdesc:a6526934fe09c4f04941a207ba68e37f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional portrait to display next to the question.  <a href="classChoiceBox.html#a6526934fe09c4f04941a207ba68e37f7">More...</a><br /></td></tr>
 <tr class="separator:a6526934fe09c4f04941a207ba68e37f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e7022d8ab8f0c7264e55542868b6ec"><td class="memItemLeft" align="right" valign="top"><a id="ad0e7022d8ab8f0c7264e55542868b6ec"></a>
-Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>LeftPortrait</b></td></tr>
+<tr class="memitem:ad0e7022d8ab8f0c7264e55542868b6ec"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChoiceBox.html#ad0e7022d8ab8f0c7264e55542868b6ec">LeftPortrait</a></td></tr>
+<tr class="memdesc:ad0e7022d8ab8f0c7264e55542868b6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional portrait to display on the left side of the screen.  <a href="classChoiceBox.html#ad0e7022d8ab8f0c7264e55542868b6ec">More...</a><br /></td></tr>
 <tr class="separator:ad0e7022d8ab8f0c7264e55542868b6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4703685d331c96b4e2651ec0b1334453"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChoiceBox.html#a4703685d331c96b4e2651ec0b1334453">ChoiceResultName</a> = &quot;ChoiceResult&quot;</td></tr>
 <tr class="memdesc:a4703685d331c96b4e2651ec0b1334453"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name that the cutsceneVariable will be given where the result will be stored. it will use a <a class="el" href="classIntCutsceneVariable.html" title="A variable that holds an integer value that can be used in cutscenes">IntCutsceneVariable</a>. the value will be the index of the choice that was made.  <a href="classChoiceBox.html#a4703685d331c96b4e2651ec0b1334453">More...</a><br /></td></tr>
 <tr class="separator:a4703685d331c96b4e2651ec0b1334453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classCutsceneNode"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classCutsceneNode')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classCutsceneNode.html">CutsceneNode</a></td></tr>
-<tr class="memitem:a9ce10eb95a002c6f5150ba9a121696b6 inherit pub_attribs_classCutsceneNode"><td class="memItemLeft" align="right" valign="top"><a id="a9ce10eb95a002c6f5150ba9a121696b6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlayAlone</b> = true</td></tr>
+<tr class="memitem:a9ce10eb95a002c6f5150ba9a121696b6 inherit pub_attribs_classCutsceneNode"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#a9ce10eb95a002c6f5150ba9a121696b6">PlayAlone</a> = true</td></tr>
 <tr class="separator:a9ce10eb95a002c6f5150ba9a121696b6 inherit pub_attribs_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b70809d5c4607c7bcecb635663723c0 inherit pub_attribs_classCutsceneNode"><td class="memItemLeft" align="right" valign="top"><a id="a4b70809d5c4607c7bcecb635663723c0"></a>
-EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>CutsceneFinished</b></td></tr>
+<tr class="memitem:a4b70809d5c4607c7bcecb635663723c0 inherit pub_attribs_classCutsceneNode"><td class="memItemLeft" align="right" valign="top">EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#a4b70809d5c4607c7bcecb635663723c0">CutsceneFinished</a></td></tr>
+<tr class="memdesc:a4b70809d5c4607c7bcecb635663723c0 inherit pub_attribs_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is called when the cutscene is finished  <a href="classCutsceneNode.html#a4b70809d5c4607c7bcecb635663723c0">More...</a><br /></td></tr>
 <tr class="separator:a4b70809d5c4607c7bcecb635663723c0 inherit pub_attribs_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a53ef4e5a2940c8a0b69db87b400de0bd"><td class="memItemLeft" align="right" valign="top"><a id="a53ef4e5a2940c8a0b69db87b400de0bd"></a>
-override string&#160;</td><td class="memItemRight" valign="bottom"><b>NodeName</b><code> [get]</code></td></tr>
+<tr class="memitem:a53ef4e5a2940c8a0b69db87b400de0bd"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChoiceBox.html#a53ef4e5a2940c8a0b69db87b400de0bd">NodeName</a><code> [get]</code></td></tr>
 <tr class="separator:a53ef4e5a2940c8a0b69db87b400de0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_classCutsceneNode"><td colspan="2" onclick="javascript:toggleInherit('properties_classCutsceneNode')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classCutsceneNode.html">CutsceneNode</a></td></tr>
 <tr class="memitem:a7d4d57cf119b914c13c73b47c0b49b02 inherit properties_classCutsceneNode"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#a7d4d57cf119b914c13c73b47c0b49b02">NodeName</a><code> [get]</code></td></tr>
 <tr class="memdesc:a7d4d57cf119b914c13c73b47c0b49b02 inherit properties_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">value used to dentify what node it is wen printing general errors  <a href="classCutsceneNode.html#a7d4d57cf119b914c13c73b47c0b49b02">More...</a><br /></td></tr>
 <tr class="separator:a7d4d57cf119b914c13c73b47c0b49b02 inherit properties_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a345f0a8e4be422b29ddaac2e5ee10944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChoiceBox.html#a345f0a8e4be422b29ddaac2e5ee10944">OnChoiceMade</a> (object sender, int e)</td></tr>
+<tr class="separator:a345f0a8e4be422b29ddaac2e5ee10944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2e57042faf3af0e0bafc16c137d53d05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChoiceBox.html#a2e57042faf3af0e0bafc16c137d53d05">activePortrait</a> = 0</td></tr>
+<tr class="memdesc:a2e57042faf3af0e0bafc16c137d53d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">what portrait to use. 0 for left, 1 for right.  <a href="classChoiceBox.html#a2e57042faf3af0e0bafc16c137d53d05">More...</a><br /></td></tr>
+<tr class="separator:a2e57042faf3af0e0bafc16c137d53d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A choice box that will display a question and a set of choices for the player to choose from. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a345f0a8e4be422b29ddaac2e5ee10944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345f0a8e4be422b29ddaac2e5ee10944">&#9670;&nbsp;</a></span>OnChoiceMade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChoiceBox.OnChoiceMade </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a74f932253becb1a895a4b34743908f1f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74f932253becb1a895a4b34743908f1f">&#9670;&nbsp;</a></span>StartNode()</h2>
 
@@ -186,6 +238,30 @@ override string&#160;</td><td class="memItemRight" valign="bottom"><b>NodeName</
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2e57042faf3af0e0bafc16c137d53d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e57042faf3af0e0bafc16c137d53d05">&#9670;&nbsp;</a></span>activePortrait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ChoiceBox.activePortrait = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>what portrait to use. 0 for left, 1 for right. </p>
+
+</div>
+</div>
 <a id="a4703685d331c96b4e2651ec0b1334453"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4703685d331c96b4e2651ec0b1334453">&#9670;&nbsp;</a></span>ChoiceResultName</h2>
 
@@ -215,6 +291,22 @@ override string&#160;</td><td class="memItemRight" valign="bottom"><b>NodeName</
 </div><div class="memdoc">
 
 <p>An array of choices for the player to choose from. if there are less than 4 options the buttons will be automatically hidden. </p>
+
+</div>
+</div>
+<a id="ad0e7022d8ab8f0c7264e55542868b6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e7022d8ab8f0c7264e55542868b6ec">&#9670;&nbsp;</a></span>LeftPortrait</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D ChoiceBox.LeftPortrait</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional portrait to display on the left side of the screen. </p>
 
 </div>
 </div>
@@ -250,8 +342,31 @@ override string&#160;</td><td class="memItemRight" valign="bottom"><b>NodeName</
 
 </div>
 </div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a53ef4e5a2940c8a0b69db87b400de0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ef4e5a2940c8a0b69db87b400de0bd">&#9670;&nbsp;</a></span>NodeName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string ChoiceBox.NodeName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/Cutscenes/CutsceneNodes/ChoiceBox.cs</li>
+<li>038EnergyTransition/Modules/Cutscenes/CutsceneNodes/<a class="el" href="ChoiceBox_8cs.html">ChoiceBox.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -7,5 +7,6 @@ var classPhone =
     [ "HomeButton", "classPhone.html#aa44262205b69948eaed9a75bee6f2e09", null ],
     [ "IsOpen", "classPhone.html#ad69c959ed327aafdb4f28757f51d4eb3", null ],
     [ "Screen", "classPhone.html#add5c5d108cc011d5fb076e8d7c4281e4", null ],
-    [ "Apps", "classPhone.html#ac6283fb0446a34194a7961384b50b113", null ]
+    [ "Apps", "classPhone.html#ac6283fb0446a34194a7961384b50b113", null ],
+    [ "Instance", "classPhone.html#af86b8569719fecf38be59e0081fd4b7a", null ]
 ];

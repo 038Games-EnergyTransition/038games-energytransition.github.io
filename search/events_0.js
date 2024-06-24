@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['daychanged_565',['DayChanged',['../classGlobalTime.html#a22781e74d56805cf2b64d4b6918a7215',1,'GlobalTime']]]
+  ['choicemade_2237',['ChoiceMade',['../classSpeechEngine.html#ab887e1ef124d1105c693839225b2b25d',1,'SpeechEngine.ChoiceMade()'],['../classSpeechOverlayChoices.html#a42adafa7e00996a67f373c77df25f4be',1,'SpeechOverlayChoices.ChoiceMade()']]],
+  ['confirmpressed_2238',['ConfirmPressed',['../classInputModule.html#ad70212ad10dbefb1b20b4ba45c591ae6',1,'InputModule']]],
+  ['cutscenefinished_2239',['CutsceneFinished',['../classCutsceneScripter.html#abfbc101a95958d0ebee1be59f9d2d451',1,'CutsceneScripter']]]
 ];

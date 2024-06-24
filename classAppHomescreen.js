@@ -8,5 +8,6 @@ var classAppHomescreen =
     [ "AppGridOffset", "classAppHomescreen.html#a26dced7268c0a87fa7fd2b8ccbc1750b", null ],
     [ "AppGridSize", "classAppHomescreen.html#a7ab4ca788e42ae0d0fcefff9073a5af8", null ],
     [ "AppGridSpacing", "classAppHomescreen.html#abb84eceddb111e5e22b0fe833813fa33", null ],
-    [ "AppPreviewSize", "classAppHomescreen.html#a581bbe7a61061cb8b707ec47023db8b8", null ]
+    [ "AppPreviewSize", "classAppHomescreen.html#a581bbe7a61061cb8b707ec47023db8b8", null ],
+    [ "Instance", "classAppHomescreen.html#a0c7bc8996e92a2222ab58bd8bfa36b7e", null ]
 ];

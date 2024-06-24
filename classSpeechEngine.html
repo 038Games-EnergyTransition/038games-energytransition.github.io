@@ -86,11 +86,15 @@ $(document).ready(function(){initNavTree('classSpeechEngine.html',''); initResiz
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#events">Events</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSpeechEngine-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SpeechEngine Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The speech engine is used to display text and choices to the player.  
+ <a href="classSpeechEngine.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SpeechEngine:</div>
 <div class="dyncontent">
@@ -100,8 +104,8 @@ Inheritance diagram for SpeechEngine:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad762f1750558fad193c963406db0160e"><td class="memItemLeft" align="right" valign="top"><a id="ad762f1750558fad193c963406db0160e"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:ad762f1750558fad193c963406db0160e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechEngine.html#ad762f1750558fad193c963406db0160e">_Ready</a> ()</td></tr>
+<tr class="memdesc:ad762f1750558fad193c963406db0160e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the speech engine. Sets the instance of the speech engine. Sets the speech overlay to be hidden.  <a href="classSpeechEngine.html#ad762f1750558fad193c963406db0160e">More...</a><br /></td></tr>
 <tr class="separator:ad762f1750558fad193c963406db0160e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06a3a0060a30819ff8a2db7d8ff32dfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechEngine.html#a06a3a0060a30819ff8a2db7d8ff32dfe">SetSpeechLabel</a> (string label)</td></tr>
 <tr class="memdesc:a06a3a0060a30819ff8a2db7d8ff32dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">takes a string and puts it the speech overlay  <a href="classSpeechEngine.html#a06a3a0060a30819ff8a2db7d8ff32dfe">More...</a><br /></td></tr>
@@ -139,26 +143,53 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> (
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:adec35ecf4b29c54ff05fdff9417ead58"><td class="memItemLeft" align="right" valign="top"><a id="adec35ecf4b29c54ff05fdff9417ead58"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearEvents</b> ()</td></tr>
+<tr class="memitem:adec35ecf4b29c54ff05fdff9417ead58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechEngine.html#adec35ecf4b29c54ff05fdff9417ead58">ClearEvents</a> ()</td></tr>
+<tr class="memdesc:adec35ecf4b29c54ff05fdff9417ead58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the assigned events.  <a href="classSpeechEngine.html#adec35ecf4b29c54ff05fdff9417ead58">More...</a><br /></td></tr>
 <tr class="separator:adec35ecf4b29c54ff05fdff9417ead58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:afdc7bd426a9689fab3665c249c9f3925"><td class="memItemLeft" align="right" valign="top"><a id="afdc7bd426a9689fab3665c249c9f3925"></a>
-static <a class="el" href="classSpeechEngine.html">SpeechEngine</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b></td></tr>
+<tr class="memitem:afdc7bd426a9689fab3665c249c9f3925"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSpeechEngine.html">SpeechEngine</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechEngine.html#afdc7bd426a9689fab3665c249c9f3925">Instance</a></td></tr>
+<tr class="memdesc:afdc7bd426a9689fab3665c249c9f3925"><td class="mdescLeft">&#160;</td><td class="mdescRight">The instance of the speech engine.  <a href="classSpeechEngine.html#afdc7bd426a9689fab3665c249c9f3925">More...</a><br /></td></tr>
 <tr class="separator:afdc7bd426a9689fab3665c249c9f3925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
 Events</h2></td></tr>
-<tr class="memitem:a0d0a56ad45db6a1211bded3c4081d846"><td class="memItemLeft" align="right" valign="top"><a id="a0d0a56ad45db6a1211bded3c4081d846"></a>
-static EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>DoneTalking</b></td></tr>
+<tr class="memitem:a0d0a56ad45db6a1211bded3c4081d846"><td class="memItemLeft" align="right" valign="top">static EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechEngine.html#a0d0a56ad45db6a1211bded3c4081d846">DoneTalking</a></td></tr>
+<tr class="memdesc:a0d0a56ad45db6a1211bded3c4081d846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that fires when the speech is done. Invoked by <a class="el" href="classSpeechEngine.html#a9887ae98907e8f9ba039d5ca7ea3dd93" title="used by the speechoverlay to anounce the speech is done">DoneTaking</a>  <a href="classSpeechEngine.html#a0d0a56ad45db6a1211bded3c4081d846">More...</a><br /></td></tr>
 <tr class="separator:a0d0a56ad45db6a1211bded3c4081d846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab887e1ef124d1105c693839225b2b25d"><td class="memItemLeft" align="right" valign="top"><a id="ab887e1ef124d1105c693839225b2b25d"></a>
-static EventHandler&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ChoiceMade</b></td></tr>
+<tr class="memitem:ab887e1ef124d1105c693839225b2b25d"><td class="memItemLeft" align="right" valign="top">static EventHandler&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechEngine.html#ab887e1ef124d1105c693839225b2b25d">ChoiceMade</a></td></tr>
+<tr class="memdesc:ab887e1ef124d1105c693839225b2b25d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that fires when a choice is made. Invoked by <a class="el" href="classSpeechEngine.html#a45cfc754d04b90eacca2be4da7f4a7da" title="used by the speechoverlay to anounce the choice made">DoneChoice</a>  <a href="classSpeechEngine.html#ab887e1ef124d1105c693839225b2b25d">More...</a><br /></td></tr>
 <tr class="separator:ab887e1ef124d1105c693839225b2b25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af1d127a4d4fa57042d55485dc890f980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpeechOverlay.html">SpeechOverlay</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechEngine.html#af1d127a4d4fa57042d55485dc890f980">speechoverlay</a></td></tr>
+<tr class="memdesc:af1d127a4d4fa57042d55485dc890f980"><td class="mdescLeft">&#160;</td><td class="mdescRight">The speech overlay used to display text and choices.  <a href="classSpeechEngine.html#af1d127a4d4fa57042d55485dc890f980">More...</a><br /></td></tr>
+<tr class="separator:af1d127a4d4fa57042d55485dc890f980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The speech engine is used to display text and choices to the player. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad762f1750558fad193c963406db0160e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad762f1750558fad193c963406db0160e">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SpeechEngine._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the speech engine. Sets the instance of the speech engine. Sets the speech overlay to be hidden. </p>
+
+</div>
+</div>
 <a id="a3c2e6c66783aa486fc4afced2855504d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c2e6c66783aa486fc4afced2855504d">&#9670;&nbsp;</a></span>Choice()</h2>
 
@@ -212,6 +243,33 @@ static EventHandler&lt; int &gt;&#160;</td><td class="memItemRight" valign="bott
 </div><div class="memdoc">
 
 <p>clears the overlay </p>
+
+</div>
+</div>
+<a id="adec35ecf4b29c54ff05fdff9417ead58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec35ecf4b29c54ff05fdff9417ead58">&#9670;&nbsp;</a></span>ClearEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SpeechEngine.ClearEvents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the assigned events. </p>
 
 </div>
 </div>
@@ -424,8 +482,107 @@ static EventHandler&lt; int &gt;&#160;</td><td class="memItemRight" valign="bott
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afdc7bd426a9689fab3665c249c9f3925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc7bd426a9689fab3665c249c9f3925">&#9670;&nbsp;</a></span>Instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpeechEngine.html">SpeechEngine</a> SpeechEngine.Instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The instance of the speech engine. </p>
+<p><code>SpeechEngine.Instance.Speech("Hello World!"); // example</code> </p>
+
+</div>
+</div>
+<a id="af1d127a4d4fa57042d55485dc890f980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d127a4d4fa57042d55485dc890f980">&#9670;&nbsp;</a></span>speechoverlay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpeechOverlay.html">SpeechOverlay</a> SpeechEngine.speechoverlay</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The speech overlay used to display text and choices. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="ab887e1ef124d1105c693839225b2b25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab887e1ef124d1105c693839225b2b25d">&#9670;&nbsp;</a></span>ChoiceMade</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler&lt;int&gt; SpeechEngine.ChoiceMade</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event that fires when a choice is made. Invoked by <a class="el" href="classSpeechEngine.html#a45cfc754d04b90eacca2be4da7f4a7da" title="used by the speechoverlay to anounce the choice made">DoneChoice</a> </p>
+
+</div>
+</div>
+<a id="a0d0a56ad45db6a1211bded3c4081d846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0a56ad45db6a1211bded3c4081d846">&#9670;&nbsp;</a></span>DoneTalking</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler SpeechEngine.DoneTalking</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event that fires when the speech is done. Invoked by <a class="el" href="classSpeechEngine.html#a9887ae98907e8f9ba039d5ca7ea3dd93" title="used by the speechoverlay to anounce the speech is done">DoneTaking</a> </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/SpeechEngine/SpeechEngine.cs</li>
+<li>038EnergyTransition/Modules/SpeechEngine/<a class="el" href="SpeechEngine_8cs.html">SpeechEngine.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

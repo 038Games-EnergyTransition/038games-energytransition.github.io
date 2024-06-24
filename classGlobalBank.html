@@ -90,30 +90,188 @@ $(document).ready(function(){initNavTree('classGlobalBank.html',''); initResizab
 <div class="title">GlobalBank Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The bank manager for all the transactions and the current balance.  
+ <a href="classGlobalBank.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5804a988f0bbfced0db6e72cd89a2c9f"><td class="memItemLeft" align="right" valign="top"><a id="a5804a988f0bbfced0db6e72cd89a2c9f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> ()</td></tr>
-<tr class="separator:a5804a988f0bbfced0db6e72cd89a2c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd0da2fb47db60d362ad31f7d68b13dc"><td class="memItemLeft" align="right" valign="top"><a id="acd0da2fb47db60d362ad31f7d68b13dc"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTransaction</b> (BankTransactionType type, int amount)</td></tr>
+<tr class="memitem:a313069c6b302054d1859b48eba6ca89c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalBank.html#a313069c6b302054d1859b48eba6ca89c">Load</a> ()</td></tr>
+<tr class="memdesc:a313069c6b302054d1859b48eba6ca89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the transactions from the save file.  <a href="classGlobalBank.html#a313069c6b302054d1859b48eba6ca89c">More...</a><br /></td></tr>
+<tr class="separator:a313069c6b302054d1859b48eba6ca89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad49c506c463e8a4fbc1e1825669637"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalBank.html#a4ad49c506c463e8a4fbc1e1825669637">Save</a> ()</td></tr>
+<tr class="memdesc:a4ad49c506c463e8a4fbc1e1825669637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the transactions to the save file.  <a href="classGlobalBank.html#a4ad49c506c463e8a4fbc1e1825669637">More...</a><br /></td></tr>
+<tr class="separator:a4ad49c506c463e8a4fbc1e1825669637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0da2fb47db60d362ad31f7d68b13dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalBank.html#acd0da2fb47db60d362ad31f7d68b13dc">AddTransaction</a> (<a class="el" href="GlobalBank_8cs.html#a31f17178f387bf1921ffedf1dce05cb0">BankTransactionType</a> type, int amount)</td></tr>
+<tr class="memdesc:acd0da2fb47db60d362ad31f7d68b13dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a transaction to the list of transactions.  <a href="classGlobalBank.html#acd0da2fb47db60d362ad31f7d68b13dc">More...</a><br /></td></tr>
 <tr class="separator:acd0da2fb47db60d362ad31f7d68b13dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a181b9f37243a5b994ed15707a6e448a0"><td class="memItemLeft" align="right" valign="top"><a id="a181b9f37243a5b994ed15707a6e448a0"></a>
-static List&lt; <a class="el" href="classBankTransaction.html">BankTransaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Transactions</b> = new List&lt;<a class="el" href="classBankTransaction.html">BankTransaction</a>&gt;()</td></tr>
+<tr class="memitem:a181b9f37243a5b994ed15707a6e448a0"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="classBankTransaction.html">BankTransaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalBank.html#a181b9f37243a5b994ed15707a6e448a0">Transactions</a> = new List&lt;<a class="el" href="classBankTransaction.html">BankTransaction</a>&gt;()</td></tr>
+<tr class="memdesc:a181b9f37243a5b994ed15707a6e448a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of transactions that have been made.  <a href="classGlobalBank.html#a181b9f37243a5b994ed15707a6e448a0">More...</a><br /></td></tr>
 <tr class="separator:a181b9f37243a5b994ed15707a6e448a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ae468af2eece2b24e1bf2e34c93321317"><td class="memItemLeft" align="right" valign="top"><a id="ae468af2eece2b24e1bf2e34c93321317"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentBalance</b><code> [get]</code></td></tr>
+<tr class="memitem:ae468af2eece2b24e1bf2e34c93321317"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalBank.html#ae468af2eece2b24e1bf2e34c93321317">CurrentBalance</a><code> [get]</code></td></tr>
+<tr class="memdesc:ae468af2eece2b24e1bf2e34c93321317"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current balance of the player. Stored in the statistics manager.  <a href="classGlobalBank.html#ae468af2eece2b24e1bf2e34c93321317">More...</a><br /></td></tr>
 <tr class="separator:ae468af2eece2b24e1bf2e34c93321317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The bank manager for all the transactions and the current balance. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="acd0da2fb47db60d362ad31f7d68b13dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0da2fb47db60d362ad31f7d68b13dc">&#9670;&nbsp;</a></span>AddTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GlobalBank.AddTransaction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="GlobalBank_8cs.html#a31f17178f387bf1921ffedf1dce05cb0">BankTransactionType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a transaction to the list of transactions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td></td></tr>
+    <tr><td class="paramname">amount</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a313069c6b302054d1859b48eba6ca89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313069c6b302054d1859b48eba6ca89c">&#9670;&nbsp;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GlobalBank.Load </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load the transactions from the save file. </p>
+
+</div>
+</div>
+<a id="a4ad49c506c463e8a4fbc1e1825669637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad49c506c463e8a4fbc1e1825669637">&#9670;&nbsp;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GlobalBank.Save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the transactions to the save file. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a181b9f37243a5b994ed15707a6e448a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181b9f37243a5b994ed15707a6e448a0">&#9670;&nbsp;</a></span>Transactions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classBankTransaction.html">BankTransaction</a>&gt; GlobalBank.Transactions = new List&lt;<a class="el" href="classBankTransaction.html">BankTransaction</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The list of transactions that have been made. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="ae468af2eece2b24e1bf2e34c93321317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae468af2eece2b24e1bf2e34c93321317">&#9670;&nbsp;</a></span>CurrentBalance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GlobalBank.CurrentBalance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current balance of the player. Stored in the statistics manager. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/GlobalBank/GlobalBank.cs</li>
+<li>038EnergyTransition/Modules/GlobalBank/<a class="el" href="GlobalBank_8cs.html">GlobalBank.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

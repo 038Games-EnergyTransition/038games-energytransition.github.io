@@ -88,11 +88,16 @@ $(document).ready(function(){initNavTree('classGlobalTime.html',''); initResizab
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#events">Events</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGlobalTime-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GlobalTime Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classGlobalTime.html" title="GlobalTime class to keep track of the current time in the game">GlobalTime</a> class to keep track of the current time in the game  
+ <a href="classGlobalTime.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for GlobalTime:</div>
 <div class="dyncontent">
@@ -103,7 +108,7 @@ Inheritance diagram for GlobalTime:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af477e457054014bff73c06bf4c2cbce1"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#af477e457054014bff73c06bf4c2cbce1">_Ready</a> ()</td></tr>
-<tr class="memdesc:af477e457054014bff73c06bf4c2cbce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classGlobalTime.html">GlobalTime</a> class Sets the current time to 8:00  <a href="classGlobalTime.html#af477e457054014bff73c06bf4c2cbce1">More...</a><br /></td></tr>
+<tr class="memdesc:af477e457054014bff73c06bf4c2cbce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classGlobalTime.html" title="GlobalTime class to keep track of the current time in the game">GlobalTime</a> class Sets the current time to 8:00  <a href="classGlobalTime.html#af477e457054014bff73c06bf4c2cbce1">More...</a><br /></td></tr>
 <tr class="separator:af477e457054014bff73c06bf4c2cbce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af499850726d60d0830f8d015719e0253"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#af499850726d60d0830f8d015719e0253">_Process</a> (double delta)</td></tr>
 <tr class="memdesc:af499850726d60d0830f8d015719e0253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current time  <a href="classGlobalTime.html#af499850726d60d0830f8d015719e0253">More...</a><br /></td></tr>
@@ -133,14 +138,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a63ed83dd41a1b76d1e20177fe0480be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10  <a href="classGlobalTime.html#a63ed83dd41a1b76d1e20177fe0480be7">More...</a><br /></td></tr>
 <tr class="separator:a63ed83dd41a1b76d1e20177fe0480be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31c2d83b008afbe0f0997ff4e6004e53"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a31c2d83b008afbe0f0997ff4e6004e53">GetTimeFormattedSnapped</a> (int minuteSnap)</td></tr>
-<tr class="memdesc:a31c2d83b008afbe0f0997ff4e6004e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10 Snapping the time to the nearest X minutes  <a href="classGlobalTime.html#a31c2d83b008afbe0f0997ff4e6004e53">More...</a><br /></td></tr>
+<tr class="memdesc:a31c2d83b008afbe0f0997ff4e6004e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10 Snapping the time to the nearest X minutes (Used in the time app on the phone)  <a href="classGlobalTime.html#a31c2d83b008afbe0f0997ff4e6004e53">More...</a><br /></td></tr>
 <tr class="separator:a31c2d83b008afbe0f0997ff4e6004e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6197b6788b441d0144c7997e60b26eb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#ad6197b6788b441d0144c7997e60b26eb">EndDay</a> ()</td></tr>
-<tr class="memdesc:ad6197b6788b441d0144c7997e60b26eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">void to end the day and start a new one  <a href="classGlobalTime.html#ad6197b6788b441d0144c7997e60b26eb">More...</a><br /></td></tr>
-<tr class="separator:ad6197b6788b441d0144c7997e60b26eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a869f55ee191583cb5c8d46a24126c9ef"><td class="memItemLeft" align="right" valign="top"><a id="a869f55ee191583cb5c8d46a24126c9ef"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>StartDay</b> ()</td></tr>
+<tr class="memitem:a869f55ee191583cb5c8d46a24126c9ef"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a869f55ee191583cb5c8d46a24126c9ef">StartDay</a> ()</td></tr>
+<tr class="memdesc:a869f55ee191583cb5c8d46a24126c9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a new day and show the "dayStart" cutscene Set the time to 08:00  <a href="classGlobalTime.html#a869f55ee191583cb5c8d46a24126c9ef">More...</a><br /></td></tr>
 <tr class="separator:a869f55ee191583cb5c8d46a24126c9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6197b6788b441d0144c7997e60b26eb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#ad6197b6788b441d0144c7997e60b26eb">EndDay</a> ()</td></tr>
+<tr class="memdesc:ad6197b6788b441d0144c7997e60b26eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the current day and show the "dayEndReminder" cutscene  <a href="classGlobalTime.html#ad6197b6788b441d0144c7997e60b26eb">More...</a><br /></td></tr>
+<tr class="separator:ad6197b6788b441d0144c7997e60b26eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -156,17 +161,34 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGlobalTime.html">GlobalTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a89db3310a123e8c42fb3a7b7e9bb12e8">Instance</a><code> [get]</code></td></tr>
-<tr class="memdesc:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton instance of the <a class="el" href="classGlobalTime.html">GlobalTime</a> class  <a href="classGlobalTime.html#a89db3310a123e8c42fb3a7b7e9bb12e8">More...</a><br /></td></tr>
+<tr class="memitem:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGlobalTime.html">GlobalTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a89db3310a123e8c42fb3a7b7e9bb12e8">Instance</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton instance of the <a class="el" href="classGlobalTime.html" title="GlobalTime class to keep track of the current time in the game">GlobalTime</a> class For easy access to the current time  <a href="classGlobalTime.html#a89db3310a123e8c42fb3a7b7e9bb12e8">More...</a><br /></td></tr>
 <tr class="separator:a89db3310a123e8c42fb3a7b7e9bb12e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
 Events</h2></td></tr>
 <tr class="memitem:a22781e74d56805cf2b64d4b6918a7215"><td class="memItemLeft" align="right" valign="top">static EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a22781e74d56805cf2b64d4b6918a7215">DayChanged</a></td></tr>
-<tr class="memdesc:a22781e74d56805cf2b64d4b6918a7215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that fires wen a new day starts;  <a href="classGlobalTime.html#a22781e74d56805cf2b64d4b6918a7215">More...</a><br /></td></tr>
+<tr class="memdesc:a22781e74d56805cf2b64d4b6918a7215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that fires when a new day starts  <a href="classGlobalTime.html#a22781e74d56805cf2b64d4b6918a7215">More...</a><br /></td></tr>
 <tr class="separator:a22781e74d56805cf2b64d4b6918a7215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3c1ad77cda09412ada33a170219f1910"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a3c1ad77cda09412ada33a170219f1910">OnDayStart</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a3c1ad77cda09412ada33a170219f1910"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Event] called from <a class="el" href="classGlobalTime.html#a869f55ee191583cb5c8d46a24126c9ef" title="Start a new day and show the &quot;dayStart&quot; cutscene Set the time to 08:00">StartDay()</a> EventHandler after the "dayStart" cutscene is played  <a href="classGlobalTime.html#a3c1ad77cda09412ada33a170219f1910">More...</a><br /></td></tr>
+<tr class="separator:a3c1ad77cda09412ada33a170219f1910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4491413f830abea8cae7edaee1d84024"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#a4491413f830abea8cae7edaee1d84024">OnDayEnd</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a4491413f830abea8cae7edaee1d84024"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Event] called from <a class="el" href="classGlobalTime.html#ad6197b6788b441d0144c7997e60b26eb" title="Stop the current day and show the &quot;dayEndReminder&quot; cutscene">EndDay()</a> Eventhandler called after the "dayEndReminder" cutscene is played  <a href="classGlobalTime.html#a4491413f830abea8cae7edaee1d84024">More...</a><br /></td></tr>
+<tr class="separator:a4491413f830abea8cae7edaee1d84024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af6ba1ff7084d21333163355113792d0b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalTime.html#af6ba1ff7084d21333163355113792d0b">_time</a> = 0</td></tr>
+<tr class="memdesc:af6ba1ff7084d21333163355113792d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current time in seconds not relative to the length of a day  <a href="classGlobalTime.html#af6ba1ff7084d21333163355113792d0b">More...</a><br /></td></tr>
+<tr class="separator:af6ba1ff7084d21333163355113792d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classGlobalTime.html" title="GlobalTime class to keep track of the current time in the game">GlobalTime</a> class to keep track of the current time in the game </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af499850726d60d0830f8d015719e0253"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af499850726d60d0830f8d015719e0253">&#9670;&nbsp;</a></span>_Process()</h2>
 
@@ -208,7 +230,7 @@ Events</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the <a class="el" href="classGlobalTime.html">GlobalTime</a> class Sets the current time to 8:00 </p>
+<p>Initializes the <a class="el" href="classGlobalTime.html" title="GlobalTime class to keep track of the current time in the game">GlobalTime</a> class Sets the current time to 8:00 </p>
 
 </div>
 </div>
@@ -235,7 +257,7 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>void to end the day and start a new one </p>
+<p>Stop the current day and show the "dayEndReminder" cutscene </p>
 
 </div>
 </div>
@@ -403,8 +425,104 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10 Snapping the time to the nearest X minutes </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Returns the current time formatted as a string (HH:MM) Adding a leading zero to the hour or minute if it is less than 10 Snapping the time to the nearest X minutes (Used in the time app on the phone) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minuteSnap</td><td>The amount of minutes to snap to (minuteSnap = 5 -&gt; 08:00, 08:05, 08:10, etc...)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>formatted time with leading zeros and snapped to the nearest X minutes</dd></dl>
+
+</div>
+</div>
+<a id="a4491413f830abea8cae7edaee1d84024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4491413f830abea8cae7edaee1d84024">&#9670;&nbsp;</a></span>OnDayEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GlobalTime.OnDayEnd </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[Event] called from <a class="el" href="classGlobalTime.html#ad6197b6788b441d0144c7997e60b26eb" title="Stop the current day and show the &quot;dayEndReminder&quot; cutscene">EndDay()</a> Eventhandler called after the "dayEndReminder" cutscene is played </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>Unused</td></tr>
+    <tr><td class="paramname">e</td><td>Unused</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c1ad77cda09412ada33a170219f1910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1ad77cda09412ada33a170219f1910">&#9670;&nbsp;</a></span>OnDayStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GlobalTime.OnDayStart </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[Event] called from <a class="el" href="classGlobalTime.html#a869f55ee191583cb5c8d46a24126c9ef" title="Start a new day and show the &quot;dayStart&quot; cutscene Set the time to 08:00">StartDay()</a> EventHandler after the "dayStart" cutscene is played </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>Unused</td></tr>
+    <tr><td class="paramname">e</td><td>Unused</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -476,7 +594,58 @@ Events</h2></td></tr>
 
 </div>
 </div>
+<a id="a869f55ee191583cb5c8d46a24126c9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869f55ee191583cb5c8d46a24126c9ef">&#9670;&nbsp;</a></span>StartDay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GlobalTime.StartDay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start a new day and show the "dayStart" cutscene Set the time to 08:00 </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="af6ba1ff7084d21333163355113792d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6ba1ff7084d21333163355113792d0b">&#9670;&nbsp;</a></span>_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GlobalTime._time = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current time in seconds not relative to the length of a day </p>
+
+</div>
+</div>
 <a id="aad0343322011ff68e0867fad3ddd2453"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad0343322011ff68e0867fad3ddd2453">&#9670;&nbsp;</a></span>DayLength</h2>
 
@@ -533,12 +702,13 @@ Events</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Singleton instance of the <a class="el" href="classGlobalTime.html">GlobalTime</a> class </p>
+<p>Singleton instance of the <a class="el" href="classGlobalTime.html" title="GlobalTime class to keep track of the current time in the game">GlobalTime</a> class For easy access to the current time </p>
+<p><code>GlobalTime.Instance.GetTime() // example</code> </p>
 
 </div>
 </div>
@@ -563,12 +733,12 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Event that fires wen a new day starts; </p>
+<p>Event that fires when a new day starts </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/Components/GlobalTimeComponent/GlobalTime.cs</li>
+<li>038EnergyTransition/Modules/Components/GlobalTimeComponent/<a class="el" href="GlobalTime_8cs.html">GlobalTime.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

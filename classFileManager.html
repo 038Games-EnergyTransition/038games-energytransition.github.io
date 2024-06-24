@@ -83,11 +83,15 @@ $(document).ready(function(){initNavTree('classFileManager.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classFileManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">FileManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The file manager, used to save and load game saves and settings to the player's computer.  
+ <a href="classFileManager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for FileManager:</div>
 <div class="dyncontent">
@@ -98,22 +102,31 @@ Inheritance diagram for FileManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a43d444c82711b9749a16048e39ef1f65"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileManager.html#a43d444c82711b9749a16048e39ef1f65">saveGame</a> (int saveID, <a class="el" href="classGameSave.html">GameSave</a> gameSave)</td></tr>
-<tr class="memdesc:a43d444c82711b9749a16048e39ef1f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a <a class="el" href="classGameSave.html">GameSave</a> object to the FileSystem of the player's computer  <a href="classFileManager.html#a43d444c82711b9749a16048e39ef1f65">More...</a><br /></td></tr>
+<tr class="memdesc:a43d444c82711b9749a16048e39ef1f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> object to the FileSystem of the player's computer  <a href="classFileManager.html#a43d444c82711b9749a16048e39ef1f65">More...</a><br /></td></tr>
 <tr class="separator:a43d444c82711b9749a16048e39ef1f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0afab62b78cd6c74f50025b0c501cc1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGameSave.html">GameSave</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileManager.html#a0afab62b78cd6c74f50025b0c501cc1b">loadGame</a> (int saveID)</td></tr>
-<tr class="memdesc:a0afab62b78cd6c74f50025b0c501cc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a <a class="el" href="classGameSave.html">GameSave</a> from the FileSystem of the player's computer  <a href="classFileManager.html#a0afab62b78cd6c74f50025b0c501cc1b">More...</a><br /></td></tr>
+<tr class="memdesc:a0afab62b78cd6c74f50025b0c501cc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> from the FileSystem of the player's computer  <a href="classFileManager.html#a0afab62b78cd6c74f50025b0c501cc1b">More...</a><br /></td></tr>
 <tr class="separator:a0afab62b78cd6c74f50025b0c501cc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ebea4be9eac2b52b065608338a16d72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileManager.html#a3ebea4be9eac2b52b065608338a16d72">DeleteGame</a> (int saveID)</td></tr>
-<tr class="memdesc:a3ebea4be9eac2b52b065608338a16d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a <a class="el" href="classGameSave.html">GameSave</a> from the FileSystem of the player's computer  <a href="classFileManager.html#a3ebea4be9eac2b52b065608338a16d72">More...</a><br /></td></tr>
+<tr class="memdesc:a3ebea4be9eac2b52b065608338a16d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> from the FileSystem of the player's computer  <a href="classFileManager.html#a3ebea4be9eac2b52b065608338a16d72">More...</a><br /></td></tr>
 <tr class="separator:a3ebea4be9eac2b52b065608338a16d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4033347bb10cdb329a3bdd5176b6d9e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileManager.html#af4033347bb10cdb329a3bdd5176b6d9e">SaveSettings</a> (Dictionary&lt; string, Variant &gt; settings)</td></tr>
 <tr class="memdesc:af4033347bb10cdb329a3bdd5176b6d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the settings to the FileSystem of the player's computer  <a href="classFileManager.html#af4033347bb10cdb329a3bdd5176b6d9e">More...</a><br /></td></tr>
 <tr class="separator:af4033347bb10cdb329a3bdd5176b6d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c12f48795a2aa5d7b6bf27f448a9edb"><td class="memItemLeft" align="right" valign="top"><a id="a5c12f48795a2aa5d7b6bf27f448a9edb"></a>
-static Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoadSettings</b> (Dictionary&lt; string, Variant &gt; settings)</td></tr>
+<tr class="memitem:a5c12f48795a2aa5d7b6bf27f448a9edb"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileManager.html#a5c12f48795a2aa5d7b6bf27f448a9edb">LoadSettings</a> (Dictionary&lt; string, Variant &gt; settings)</td></tr>
+<tr class="memdesc:a5c12f48795a2aa5d7b6bf27f448a9edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the settings from the FileSystem of the player's computer  <a href="classFileManager.html#a5c12f48795a2aa5d7b6bf27f448a9edb">More...</a><br /></td></tr>
 <tr class="separator:a5c12f48795a2aa5d7b6bf27f448a9edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:adaed30d3f3c5f8517b9eafae0ea069ad"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileManager.html#adaed30d3f3c5f8517b9eafae0ea069ad">savePath</a> = &quot;user://save&quot;</td></tr>
+<tr class="separator:adaed30d3f3c5f8517b9eafae0ea069ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4aa9648baad428463358ae98402e4b8"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileManager.html#ae4aa9648baad428463358ae98402e4b8">fileExtention</a> = &quot;.tres&quot;</td></tr>
+<tr class="separator:ae4aa9648baad428463358ae98402e4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The file manager, used to save and load game saves and settings to the player's computer. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3ebea4be9eac2b52b065608338a16d72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ebea4be9eac2b52b065608338a16d72">&#9670;&nbsp;</a></span>DeleteGame()</h2>
 
@@ -138,7 +151,7 @@ static Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" va
 </table>
 </div><div class="memdoc">
 
-<p>Delete a <a class="el" href="classGameSave.html">GameSave</a> from the FileSystem of the player's computer </p>
+<p>Delete a <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> from the FileSystem of the player's computer </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">saveID</td><td></td></tr>
@@ -172,14 +185,49 @@ static Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" va
 </table>
 </div><div class="memdoc">
 
-<p>Load a <a class="el" href="classGameSave.html">GameSave</a> from the FileSystem of the player's computer </p>
+<p>Load a <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> from the FileSystem of the player's computer </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">saveID</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classGameSave.html">GameSave</a> object</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> object</dd></dl>
+
+</div>
+</div>
+<a id="a5c12f48795a2aa5d7b6bf27f448a9edb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c12f48795a2aa5d7b6bf27f448a9edb">&#9670;&nbsp;</a></span>LoadSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Dictionary&lt;string, Variant&gt; FileManager.LoadSettings </td>
+          <td>(</td>
+          <td class="paramtype">Dictionary&lt; string, Variant &gt;&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load the settings from the FileSystem of the player's computer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A dictionary containing the settings</dd></dl>
 
 </div>
 </div>
@@ -217,7 +265,7 @@ static Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" va
 </table>
 </div><div class="memdoc">
 
-<p>Save a <a class="el" href="classGameSave.html">GameSave</a> object to the FileSystem of the player's computer </p>
+<p>Save a <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> object to the FileSystem of the player's computer </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">saveID</td><td></td></tr>
@@ -262,8 +310,53 @@ static Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" va
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae4aa9648baad428463358ae98402e4b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4aa9648baad428463358ae98402e4b8">&#9670;&nbsp;</a></span>fileExtention</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string FileManager.fileExtention = &quot;.tres&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adaed30d3f3c5f8517b9eafae0ea069ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaed30d3f3c5f8517b9eafae0ea069ad">&#9670;&nbsp;</a></span>savePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string FileManager.savePath = &quot;user://save&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/FileManager.cs</li>
+<li>038EnergyTransition/Modules/<a class="el" href="FileManager_8cs.html">FileManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

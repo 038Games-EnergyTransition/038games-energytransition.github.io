@@ -89,20 +89,22 @@ $(document).ready(function(){initNavTree('classDog.html',''); initResizable(); }
 <div class="title">Dog Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>[TEST ONLY] The dog NPC.  
+ <a href="classDog.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Dog:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classDog.png" usemap="#Dog_map" alt=""/>
   <map id="Dog_map" name="Dog_map">
-<area href="classNpcBase.html" alt="NpcBase" shape="rect" coords="0,56,63,80"/>
+<area href="classNpcBase.html" title="Base class for all NPC nodes in the game, comes with a route system for NPC movement." alt="NpcBase" shape="rect" coords="0,56,63,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0c21c3b976e36bff642ca17b631bd899"><td class="memItemLeft" align="right" valign="top"><a id="a0c21c3b976e36bff642ca17b631bd899"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a0c21c3b976e36bff642ca17b631bd899"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDog.html#a0c21c3b976e36bff642ca17b631bd899">_Ready</a> ()</td></tr>
 <tr class="separator:a0c21c3b976e36bff642ca17b631bd899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf4bb131cb194b942a19432eb390553e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDog.html#acf4bb131cb194b942a19432eb390553e">OnInteract</a> ()</td></tr>
 <tr class="memdesc:acf4bb131cb194b942a19432eb390553e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overwritable method that is called when the player interacts with the NPC.  <a href="classDog.html#acf4bb131cb194b942a19432eb390553e">More...</a><br /></td></tr>
@@ -114,32 +116,26 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> (
 <tr class="memitem:a149d4bee9c75eb90dd588ff847f2df3d inherit pub_methods_classNpcBase"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a149d4bee9c75eb90dd588ff847f2df3d">_Ready</a> ()</td></tr>
 <tr class="memdesc:a149d4bee9c75eb90dd588ff847f2df3d inherit pub_methods_classNpcBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene is ready. Initializes the NPC and sets up the event listeners. Also loads the route of the NPC and sets the NPC to be visible or not based on the game state.  <a href="classNpcBase.html#a149d4bee9c75eb90dd588ff847f2df3d">More...</a><br /></td></tr>
 <tr class="separator:a149d4bee9c75eb90dd588ff847f2df3d inherit pub_methods_classNpcBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dff57e9a0157043ee48cf53f494dc12 inherit pub_methods_classNpcBase"><td class="memItemLeft" align="right" valign="top"><a id="a0dff57e9a0157043ee48cf53f494dc12"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_ExitTree</b> ()</td></tr>
+<tr class="memitem:a0dff57e9a0157043ee48cf53f494dc12 inherit pub_methods_classNpcBase"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a0dff57e9a0157043ee48cf53f494dc12">_ExitTree</a> ()</td></tr>
 <tr class="separator:a0dff57e9a0157043ee48cf53f494dc12 inherit pub_methods_classNpcBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e3745a0ffcd950d108d3a13fb3b5a52 inherit pub_methods_classNpcBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">onSceneChange</a> (object sender, GameState gameState)</td></tr>
+<tr class="memitem:a1e3745a0ffcd950d108d3a13fb3b5a52 inherit pub_methods_classNpcBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">onSceneChange</a> (object sender, <a class="el" href="Globals_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> gameState)</td></tr>
 <tr class="memdesc:a1e3745a0ffcd950d108d3a13fb3b5a52 inherit pub_methods_classNpcBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene changes.  <a href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">More...</a><br /></td></tr>
 <tr class="separator:a1e3745a0ffcd950d108d3a13fb3b5a52 inherit pub_methods_classNpcBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b9e9512f848094cee33cb1e675ba2e inherit pub_methods_classNpcBase"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a56b9e9512f848094cee33cb1e675ba2e">_Process</a> (double delta)</td></tr>
 <tr class="memdesc:a56b9e9512f848094cee33cb1e675ba2e inherit pub_methods_classNpcBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame. Handles the NPC's movement and interaction. Also handles the drawing of the path in the editor.  <a href="classNpcBase.html#a56b9e9512f848094cee33cb1e675ba2e">More...</a><br /></td></tr>
 <tr class="separator:a56b9e9512f848094cee33cb1e675ba2e inherit pub_methods_classNpcBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a747d4c88c6f3255e1a94b96502c30932 inherit pub_methods_classNpcBase"><td class="memItemLeft" align="right" valign="top"><a id="a747d4c88c6f3255e1a94b96502c30932"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>nextMarker</b> ()</td></tr>
+<tr class="memitem:a747d4c88c6f3255e1a94b96502c30932 inherit pub_methods_classNpcBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a747d4c88c6f3255e1a94b96502c30932">nextMarker</a> ()</td></tr>
 <tr class="separator:a747d4c88c6f3255e1a94b96502c30932 inherit pub_methods_classNpcBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5da15c6d083eb014d3c44fd8892bf159"><td class="memItemLeft" align="right" valign="top"><a id="a5da15c6d083eb014d3c44fd8892bf159"></a>
-Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>Portrait</b></td></tr>
+<tr class="memitem:a5da15c6d083eb014d3c44fd8892bf159"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDog.html#a5da15c6d083eb014d3c44fd8892bf159">Portrait</a></td></tr>
 <tr class="separator:a5da15c6d083eb014d3c44fd8892bf159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9897d5d08e40c08c0d33e4ce030ab0b4"><td class="memItemLeft" align="right" valign="top"><a id="a9897d5d08e40c08c0d33e4ce030ab0b4"></a>
-Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>PortraitAngry</b></td></tr>
+<tr class="memitem:a9897d5d08e40c08c0d33e4ce030ab0b4"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDog.html#a9897d5d08e40c08c0d33e4ce030ab0b4">PortraitAngry</a></td></tr>
 <tr class="separator:a9897d5d08e40c08c0d33e4ce030ab0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c8d4a58c1fdfed35a35504052d50de7"><td class="memItemLeft" align="right" valign="top"><a id="a0c8d4a58c1fdfed35a35504052d50de7"></a>
-Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>PortraitHappy</b></td></tr>
+<tr class="memitem:a0c8d4a58c1fdfed35a35504052d50de7"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDog.html#a0c8d4a58c1fdfed35a35504052d50de7">PortraitHappy</a></td></tr>
 <tr class="separator:a0c8d4a58c1fdfed35a35504052d50de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefd2b4aa257f80fda2c1e21a3b173d6a"><td class="memItemLeft" align="right" valign="top"><a id="aefd2b4aa257f80fda2c1e21a3b173d6a"></a>
-Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>PortraitTaco</b></td></tr>
+<tr class="memitem:aefd2b4aa257f80fda2c1e21a3b173d6a"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDog.html#aefd2b4aa257f80fda2c1e21a3b173d6a">PortraitTaco</a></td></tr>
 <tr class="separator:aefd2b4aa257f80fda2c1e21a3b173d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classNpcBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classNpcBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classNpcBase.html">NpcBase</a></td></tr>
 <tr class="memitem:a3d3ba9465613926e7655d89025fdb07c inherit pub_attribs_classNpcBase"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a3d3ba9465613926e7655d89025fdb07c">routePath</a></td></tr>
@@ -159,7 +155,26 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a5f7a04b2e93d6299cc2a8b026f3bd7a9 inherit properties_classNpcBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">The route of the NPC.  <a href="classNpcBase.html#a5f7a04b2e93d6299cc2a8b026f3bd7a9">More...</a><br /></td></tr>
 <tr class="separator:a5f7a04b2e93d6299cc2a8b026f3bd7a9 inherit properties_classNpcBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>[TEST ONLY] The dog NPC. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0c21c3b976e36bff642ca17b631bd899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c21c3b976e36bff642ca17b631bd899">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Dog._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acf4bb131cb194b942a19432eb390553e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf4bb131cb194b942a19432eb390553e">&#9670;&nbsp;</a></span>OnInteract()</h2>
 
@@ -189,8 +204,65 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5da15c6d083eb014d3c44fd8892bf159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da15c6d083eb014d3c44fd8892bf159">&#9670;&nbsp;</a></span>Portrait</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D Dog.Portrait</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9897d5d08e40c08c0d33e4ce030ab0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9897d5d08e40c08c0d33e4ce030ab0b4">&#9670;&nbsp;</a></span>PortraitAngry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D Dog.PortraitAngry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c8d4a58c1fdfed35a35504052d50de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8d4a58c1fdfed35a35504052d50de7">&#9670;&nbsp;</a></span>PortraitHappy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D Dog.PortraitHappy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefd2b4aa257f80fda2c1e21a3b173d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd2b4aa257f80fda2c1e21a3b173d6a">&#9670;&nbsp;</a></span>PortraitTaco</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D Dog.PortraitTaco</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Objects/NPCs/ExampleDog/Dog.cs</li>
+<li>038EnergyTransition/Objects/NPCs/ExampleDog/<a class="el" href="Dog_8cs.html">Dog.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

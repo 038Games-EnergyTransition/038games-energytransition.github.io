@@ -83,11 +83,15 @@ $(document).ready(function(){initNavTree('classAnimatedSunLight.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classAnimatedSunLight-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AnimatedSunLight Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The animated sun light. This is used to animate the sun light in the game.  
+ <a href="classAnimatedSunLight.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for AnimatedSunLight:</div>
 <div class="dyncontent">
@@ -97,15 +101,202 @@ Inheritance diagram for AnimatedSunLight:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a581fdbac7460126b8ed6c923b2e3950e"><td class="memItemLeft" align="right" valign="top"><a id="a581fdbac7460126b8ed6c923b2e3950e"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a581fdbac7460126b8ed6c923b2e3950e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedSunLight.html#a581fdbac7460126b8ed6c923b2e3950e">_Ready</a> ()</td></tr>
+<tr class="memdesc:a581fdbac7460126b8ed6c923b2e3950e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the <a class="el" href="classAnimatedSunLight.html#a0fb470750bd9d71dda4a584f96fe59b6">and </a>.  <a href="classAnimatedSunLight.html#a581fdbac7460126b8ed6c923b2e3950e">More...</a><br /></td></tr>
 <tr class="separator:a581fdbac7460126b8ed6c923b2e3950e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf094cbd939c1a646d7802dee2b4761"><td class="memItemLeft" align="right" valign="top"><a id="acdf094cbd939c1a646d7802dee2b4761"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:acdf094cbd939c1a646d7802dee2b4761"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedSunLight.html#acdf094cbd939c1a646d7802dee2b4761">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:acdf094cbd939c1a646d7802dee2b4761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the animated sun light when <a class="el" href="classAnimatedSunLight.html#a7027b9867d9f256151301bcadedd8ef3" title="Is the AnimatedSunLight enabled?">_enabled</a> is true.  <a href="classAnimatedSunLight.html#acdf094cbd939c1a646d7802dee2b4761">More...</a><br /></td></tr>
 <tr class="separator:acdf094cbd939c1a646d7802dee2b4761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0fb470750bd9d71dda4a584f96fe59b6"><td class="memItemLeft" align="right" valign="top">AnimationPlayer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedSunLight.html#a0fb470750bd9d71dda4a584f96fe59b6">_animationPlayer</a></td></tr>
+<tr class="memdesc:a0fb470750bd9d71dda4a584f96fe59b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The animation player which contains the <a class="el" href="classAnimatedSunLight.html#a942b386a5265ad3282e3e5bd3d846c68">animation. </a> <a href="classAnimatedSunLight.html#a0fb470750bd9d71dda4a584f96fe59b6">More...</a><br /></td></tr>
+<tr class="separator:a0fb470750bd9d71dda4a584f96fe59b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade1e8d4fcfe8e092cf7f79f5038e56d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedSunLight.html#aade1e8d4fcfe8e092cf7f79f5038e56d">_animationName</a></td></tr>
+<tr class="memdesc:aade1e8d4fcfe8e092cf7f79f5038e56d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the animation to play in the <a class="el" href="classAnimatedSunLight.html#a0fb470750bd9d71dda4a584f96fe59b6">. </a> <a href="classAnimatedSunLight.html#aade1e8d4fcfe8e092cf7f79f5038e56d">More...</a><br /></td></tr>
+<tr class="separator:aade1e8d4fcfe8e092cf7f79f5038e56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942b386a5265ad3282e3e5bd3d846c68"><td class="memItemLeft" align="right" valign="top">DirectionalLight3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedSunLight.html#a942b386a5265ad3282e3e5bd3d846c68">_animatedSun</a></td></tr>
+<tr class="memdesc:a942b386a5265ad3282e3e5bd3d846c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">The animated sun light that will be animated and used to set the LightColor, GlobalRotation and visibility for each sun defined in <a class="el" href="classAnimatedSunLight.html#a924111c451d34e5fd2918ef4eb802006">. </a> <a href="classAnimatedSunLight.html#a942b386a5265ad3282e3e5bd3d846c68">More...</a><br /></td></tr>
+<tr class="separator:a942b386a5265ad3282e3e5bd3d846c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924111c451d34e5fd2918ef4eb802006"><td class="memItemLeft" align="right" valign="top">Array&lt; <a class="el" href="classSunVisibleOnQualitySetting.html">SunVisibleOnQualitySetting</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedSunLight.html#a924111c451d34e5fd2918ef4eb802006">_targetSuns</a></td></tr>
+<tr class="memdesc:a924111c451d34e5fd2918ef4eb802006"><td class="mdescLeft">&#160;</td><td class="mdescRight">The suns that will be animated and used to set the LightColor, GlobalRotation and visibility for each sun.  <a href="classAnimatedSunLight.html#a924111c451d34e5fd2918ef4eb802006">More...</a><br /></td></tr>
+<tr class="separator:a924111c451d34e5fd2918ef4eb802006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7027b9867d9f256151301bcadedd8ef3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedSunLight.html#a7027b9867d9f256151301bcadedd8ef3">_enabled</a> = false</td></tr>
+<tr class="memdesc:a7027b9867d9f256151301bcadedd8ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the <a class="el" href="classAnimatedSunLight.html" title="The animated sun light. This is used to animate the sun light in the game.">AnimatedSunLight</a> enabled?  <a href="classAnimatedSunLight.html#a7027b9867d9f256151301bcadedd8ef3">More...</a><br /></td></tr>
+<tr class="separator:a7027b9867d9f256151301bcadedd8ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The animated sun light. This is used to animate the sun light in the game. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="acdf094cbd939c1a646d7802dee2b4761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdf094cbd939c1a646d7802dee2b4761">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void AnimatedSunLight._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process the animated sun light when <a class="el" href="classAnimatedSunLight.html#a7027b9867d9f256151301bcadedd8ef3" title="Is the AnimatedSunLight enabled?">_enabled</a> is true. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a581fdbac7460126b8ed6c923b2e3950e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581fdbac7460126b8ed6c923b2e3950e">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void AnimatedSunLight._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepare the <a class="el" href="classAnimatedSunLight.html#a0fb470750bd9d71dda4a584f96fe59b6">and </a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a942b386a5265ad3282e3e5bd3d846c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942b386a5265ad3282e3e5bd3d846c68">&#9670;&nbsp;</a></span>_animatedSun</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DirectionalLight3D AnimatedSunLight._animatedSun</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The animated sun light that will be animated and used to set the LightColor, GlobalRotation and visibility for each sun defined in <a class="el" href="classAnimatedSunLight.html#a924111c451d34e5fd2918ef4eb802006">. </a></p>
+
+</div>
+</div>
+<a id="aade1e8d4fcfe8e092cf7f79f5038e56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade1e8d4fcfe8e092cf7f79f5038e56d">&#9670;&nbsp;</a></span>_animationName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string AnimatedSunLight._animationName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the animation to play in the <a class="el" href="classAnimatedSunLight.html#a0fb470750bd9d71dda4a584f96fe59b6">. </a></p>
+
+</div>
+</div>
+<a id="a0fb470750bd9d71dda4a584f96fe59b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb470750bd9d71dda4a584f96fe59b6">&#9670;&nbsp;</a></span>_animationPlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimationPlayer AnimatedSunLight._animationPlayer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The animation player which contains the <a class="el" href="classAnimatedSunLight.html#a942b386a5265ad3282e3e5bd3d846c68">animation. </a></p>
+
+</div>
+</div>
+<a id="a7027b9867d9f256151301bcadedd8ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7027b9867d9f256151301bcadedd8ef3">&#9670;&nbsp;</a></span>_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AnimatedSunLight._enabled = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the <a class="el" href="classAnimatedSunLight.html" title="The animated sun light. This is used to animate the sun light in the game.">AnimatedSunLight</a> enabled? </p>
+
+</div>
+</div>
+<a id="a924111c451d34e5fd2918ef4eb802006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924111c451d34e5fd2918ef4eb802006">&#9670;&nbsp;</a></span>_targetSuns</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Array&lt;<a class="el" href="classSunVisibleOnQualitySetting.html">SunVisibleOnQualitySetting</a>&gt; AnimatedSunLight._targetSuns</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The suns that will be animated and used to set the LightColor, GlobalRotation and visibility for each sun. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/Game/Scripts/AnimatedSunLight.cs</li>
+<li>038EnergyTransition/Scenes/Game/Scripts/<a class="el" href="AnimatedSunLight_8cs.html">AnimatedSunLight.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

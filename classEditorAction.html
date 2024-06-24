@@ -84,6 +84,9 @@ $(document).ready(function(){initNavTree('classEditorAction.html',''); initResiz
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classEditorAction-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">EditorAction Class Reference</div>  </div>
@@ -98,24 +101,222 @@ Inheritance diagram for EditorAction:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae669a7027ce8c1c4898cb103eaf6e026"><td class="memItemLeft" align="right" valign="top"><a id="ae669a7027ce8c1c4898cb103eaf6e026"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:ae669a7027ce8c1c4898cb103eaf6e026"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEditorAction.html#ae669a7027ce8c1c4898cb103eaf6e026">_Ready</a> ()</td></tr>
 <tr class="separator:ae669a7027ce8c1c4898cb103eaf6e026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7caf0027f3f665a2c35c3de35a45473f"><td class="memItemLeft" align="right" valign="top"><a id="a7caf0027f3f665a2c35c3de35a45473f"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a7caf0027f3f665a2c35c3de35a45473f"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEditorAction.html#a7caf0027f3f665a2c35c3de35a45473f">_Process</a> (double delta)</td></tr>
 <tr class="separator:a7caf0027f3f665a2c35c3de35a45473f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:af900f81b374ef30e228df21ecf7b5007"><td class="memItemLeft" align="right" valign="top"><a id="af900f81b374ef30e228df21ecf7b5007"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>IconName</b><code> [get, set]</code></td></tr>
+<tr class="memitem:af900f81b374ef30e228df21ecf7b5007"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEditorAction.html#af900f81b374ef30e228df21ecf7b5007">IconName</a><code> [get, set]</code></td></tr>
 <tr class="separator:af900f81b374ef30e228df21ecf7b5007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4bec93ef922c69bd5561e4cc2595c8d"><td class="memItemLeft" align="right" valign="top"><a id="ab4bec93ef922c69bd5561e4cc2595c8d"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ActionText</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ab4bec93ef922c69bd5561e4cc2595c8d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEditorAction.html#ab4bec93ef922c69bd5561e4cc2595c8d">ActionText</a><code> [get, set]</code></td></tr>
 <tr class="separator:ab4bec93ef922c69bd5561e4cc2595c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a658c0c06ffbb3a8464c08084ce84659a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659a">STATE</a> { <a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659aa3ce542dfb80acd9d3ecc081f236950cf">FADE_IN</a>
+, <a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659aab5398fa4e7f3b2e156aeac16851e2f40">START_TIMER</a>
+, <a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659aad5cc6a0064b5c25ba37826aa3fda910c">WAIT</a>
+, <a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659aae5c4ab91cc2038893a3a99b567f13199">FADE_OUT</a>
+ }</td></tr>
+<tr class="separator:a658c0c06ffbb3a8464c08084ce84659a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af826920bceb33146ff55d40542747d09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEditorAction.html#af826920bceb33146ff55d40542747d09">setAlpha</a> (float alpha)</td></tr>
+<tr class="separator:af826920bceb33146ff55d40542747d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af0bec67ade1d033a812ffc29576432cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEditorAction.html#af0bec67ade1d033a812ffc29576432cf">_initialized</a> = false</td></tr>
+<tr class="separator:af0bec67ade1d033a812ffc29576432cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5121e9aba47a4e48b893cad617cda62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659a">STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEditorAction.html#ac5121e9aba47a4e48b893cad617cda62">_state</a> = <a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659aa3ce542dfb80acd9d3ecc081f236950cf">STATE.FADE_IN</a></td></tr>
+<tr class="separator:ac5121e9aba47a4e48b893cad617cda62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a658c0c06ffbb3a8464c08084ce84659a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a658c0c06ffbb3a8464c08084ce84659a">&#9670;&nbsp;</a></span>STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659a">EditorAction.STATE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a658c0c06ffbb3a8464c08084ce84659aa3ce542dfb80acd9d3ecc081f236950cf"></a>FADE_IN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a658c0c06ffbb3a8464c08084ce84659aab5398fa4e7f3b2e156aeac16851e2f40"></a>START_TIMER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a658c0c06ffbb3a8464c08084ce84659aad5cc6a0064b5c25ba37826aa3fda910c"></a>WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a658c0c06ffbb3a8464c08084ce84659aae5c4ab91cc2038893a3a99b567f13199"></a>FADE_OUT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7caf0027f3f665a2c35c3de35a45473f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7caf0027f3f665a2c35c3de35a45473f">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void EditorAction._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae669a7027ce8c1c4898cb103eaf6e026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae669a7027ce8c1c4898cb103eaf6e026">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void EditorAction._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af826920bceb33146ff55d40542747d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af826920bceb33146ff55d40542747d09">&#9670;&nbsp;</a></span>setAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditorAction.setAlpha </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af0bec67ade1d033a812ffc29576432cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0bec67ade1d033a812ffc29576432cf">&#9670;&nbsp;</a></span>_initialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EditorAction._initialized = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5121e9aba47a4e48b893cad617cda62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5121e9aba47a4e48b893cad617cda62">&#9670;&nbsp;</a></span>_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659a">STATE</a> EditorAction._state = <a class="el" href="classEditorAction.html#a658c0c06ffbb3a8464c08084ce84659aa3ce542dfb80acd9d3ecc081f236950cf">STATE.FADE_IN</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="ab4bec93ef922c69bd5561e4cc2595c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4bec93ef922c69bd5561e4cc2595c8d">&#9670;&nbsp;</a></span>ActionText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string EditorAction.ActionText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af900f81b374ef30e228df21ecf7b5007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af900f81b374ef30e228df21ecf7b5007">&#9670;&nbsp;</a></span>IconName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string EditorAction.IconName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/addons/quester/scripts/components/EditorAction.cs</li>
+<li>038EnergyTransition/addons/quester/scripts/components/<a class="el" href="EditorAction_8cs.html">EditorAction.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

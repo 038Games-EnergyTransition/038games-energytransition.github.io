@@ -85,11 +85,17 @@ $(document).ready(function(){initNavTree('classAnimatedPositionManager.html','')
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classAnimatedPositionManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AnimatedPositionManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Animate a control based on named points to transition between.  
+ <a href="classAnimatedPositionManager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for AnimatedPositionManager:</div>
 <div class="dyncontent">
@@ -99,8 +105,8 @@ Inheritance diagram for AnimatedPositionManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a289e79b16d6ecbb9545d27284573e395"><td class="memItemLeft" align="right" valign="top"><a id="a289e79b16d6ecbb9545d27284573e395"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a289e79b16d6ecbb9545d27284573e395"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#a289e79b16d6ecbb9545d27284573e395">_Ready</a> ()</td></tr>
+<tr class="memdesc:a289e79b16d6ecbb9545d27284573e395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the singleton instance. Remove all children when the scene is ready.  <a href="classAnimatedPositionManager.html#a289e79b16d6ecbb9545d27284573e395">More...</a><br /></td></tr>
 <tr class="separator:a289e79b16d6ecbb9545d27284573e395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099727c53005ab435a4dd0f88de50949"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#a099727c53005ab435a4dd0f88de50949">_Process</a> (double delta)</td></tr>
 <tr class="memdesc:a099727c53005ab435a4dd0f88de50949"><td class="mdescLeft">&#160;</td><td class="mdescRight">If in editor process the preview of the phone position points  <a href="classAnimatedPositionManager.html#a099727c53005ab435a4dd0f88de50949">More...</a><br /></td></tr>
@@ -114,29 +120,86 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> (
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a33fd7474c1b85167fc14b1fde99255cd"><td class="memItemLeft" align="right" valign="top"><a id="a33fd7474c1b85167fc14b1fde99255cd"></a>
-Control&#160;</td><td class="memItemRight" valign="bottom"><b>animationPositionTaget</b></td></tr>
+<tr class="memitem:a33fd7474c1b85167fc14b1fde99255cd"><td class="memItemLeft" align="right" valign="top">Control&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#a33fd7474c1b85167fc14b1fde99255cd">animationPositionTaget</a></td></tr>
+<tr class="memdesc:a33fd7474c1b85167fc14b1fde99255cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target control where the position, scale and rotation lerp will be applied to.  <a href="classAnimatedPositionManager.html#a33fd7474c1b85167fc14b1fde99255cd">More...</a><br /></td></tr>
 <tr class="separator:a33fd7474c1b85167fc14b1fde99255cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2d64ca47b66430c9f62f422f6e2399"><td class="memItemLeft" align="right" valign="top"><a id="a3f2d64ca47b66430c9f62f422f6e2399"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>animationSpeed</b> = 4f</td></tr>
+<tr class="memitem:a3f2d64ca47b66430c9f62f422f6e2399"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#a3f2d64ca47b66430c9f62f422f6e2399">animationSpeed</a> = 4f</td></tr>
+<tr class="memdesc:a3f2d64ca47b66430c9f62f422f6e2399"><td class="mdescLeft">&#160;</td><td class="mdescRight">The speed of the lerp animation *delta.  <a href="classAnimatedPositionManager.html#a3f2d64ca47b66430c9f62f422f6e2399">More...</a><br /></td></tr>
 <tr class="separator:a3f2d64ca47b66430c9f62f422f6e2399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4c98c9629eb8b389831cbe2470fca6"><td class="memItemLeft" align="right" valign="top"><a id="abd4c98c9629eb8b389831cbe2470fca6"></a>
-Array&lt; <a class="el" href="classAnimatedPositionPoint.html">AnimatedPositionPoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>points</b> = new Array&lt;<a class="el" href="classAnimatedPositionPoint.html">AnimatedPositionPoint</a>&gt;()</td></tr>
+<tr class="memitem:abd4c98c9629eb8b389831cbe2470fca6"><td class="memItemLeft" align="right" valign="top">Array&lt; <a class="el" href="classAnimatedPositionPoint.html">AnimatedPositionPoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#abd4c98c9629eb8b389831cbe2470fca6">points</a> = new Array&lt;<a class="el" href="classAnimatedPositionPoint.html">AnimatedPositionPoint</a>&gt;()</td></tr>
+<tr class="memdesc:abd4c98c9629eb8b389831cbe2470fca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of named points to animate to.  <a href="classAnimatedPositionManager.html#abd4c98c9629eb8b389831cbe2470fca6">More...</a><br /></td></tr>
 <tr class="separator:abd4c98c9629eb8b389831cbe2470fca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476eeadd8d81b9bf9bd509312da28279"><td class="memItemLeft" align="right" valign="top"><a id="a476eeadd8d81b9bf9bd509312da28279"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>showPreview</b> = false</td></tr>
+<tr class="memitem:a476eeadd8d81b9bf9bd509312da28279"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#a476eeadd8d81b9bf9bd509312da28279">showPreview</a> = false</td></tr>
+<tr class="memdesc:a476eeadd8d81b9bf9bd509312da28279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the preview of the phone position points in the editor? This needs to be enabled in order for the preview of <a class="el" href="classAnimatedPositionPoint.html#a325e1c6c139abac6f03d4849a8a6d04c" title="Should the point be visible in the editor as preview?">AnimatedPositionPoint.showPreview</a> to work.  <a href="classAnimatedPositionManager.html#a476eeadd8d81b9bf9bd509312da28279">More...</a><br /></td></tr>
 <tr class="separator:a476eeadd8d81b9bf9bd509312da28279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6901bfe2c84b0e452d867739d466fb07"><td class="memItemLeft" align="right" valign="top"><a id="a6901bfe2c84b0e452d867739d466fb07"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>previewColorLerpSpeed</b> = 4f</td></tr>
+<tr class="memitem:a6901bfe2c84b0e452d867739d466fb07"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#a6901bfe2c84b0e452d867739d466fb07">previewColorLerpSpeed</a> = 4f</td></tr>
+<tr class="memdesc:a6901bfe2c84b0e452d867739d466fb07"><td class="mdescLeft">&#160;</td><td class="mdescRight">The speed of the color change of the preview rectangle(s).  <a href="classAnimatedPositionManager.html#a6901bfe2c84b0e452d867739d466fb07">More...</a><br /></td></tr>
 <tr class="separator:a6901bfe2c84b0e452d867739d466fb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:af8df6a03e267c6e5a09c45bbc1cc0f3d"><td class="memItemLeft" align="right" valign="top"><a id="af8df6a03e267c6e5a09c45bbc1cc0f3d"></a>
-static <a class="el" href="classAnimatedPositionManager.html">AnimatedPositionManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
+<tr class="memitem:af8df6a03e267c6e5a09c45bbc1cc0f3d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classAnimatedPositionManager.html">AnimatedPositionManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#af8df6a03e267c6e5a09c45bbc1cc0f3d">Instance</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:af8df6a03e267c6e5a09c45bbc1cc0f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The singleton instance of the <a class="el" href="classAnimatedPositionManager.html" title="Animate a control based on named points to transition between.">AnimatedPositionManager</a>.  <a href="classAnimatedPositionManager.html#af8df6a03e267c6e5a09c45bbc1cc0f3d">More...</a><br /></td></tr>
 <tr class="separator:af8df6a03e267c6e5a09c45bbc1cc0f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a645fd4079f62469389e9ee009ff115be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#a645fd4079f62469389e9ee009ff115be">_drawPointPreview</a> (<a class="el" href="classAnimatedPositionPoint.html">AnimatedPositionPoint</a> point)</td></tr>
+<tr class="memdesc:a645fd4079f62469389e9ee009ff115be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a rectangle preview of the phone position point  <a href="classAnimatedPositionManager.html#a645fd4079f62469389e9ee009ff115be">More...</a><br /></td></tr>
+<tr class="separator:a645fd4079f62469389e9ee009ff115be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a05e92472b9957396f314728668f610e6"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#a05e92472b9957396f314728668f610e6">_currentPreviewColor</a> = <a class="el" href="classAnimatedPositionManager.html#af44f8e91335101705d2ed7d03913ad8b">color1</a></td></tr>
+<tr class="memdesc:a05e92472b9957396f314728668f610e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current preview color.  <a href="classAnimatedPositionManager.html#a05e92472b9957396f314728668f610e6">More...</a><br /></td></tr>
+<tr class="separator:a05e92472b9957396f314728668f610e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8f5c35faf6ffc5673e684cbd40b65a"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#aab8f5c35faf6ffc5673e684cbd40b65a">_nextPreviewColor</a> = <a class="el" href="classAnimatedPositionManager.html#a90d0920eaf415651a7f1c45c02f5af89">color2</a></td></tr>
+<tr class="memdesc:aab8f5c35faf6ffc5673e684cbd40b65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next preview color.  <a href="classAnimatedPositionManager.html#aab8f5c35faf6ffc5673e684cbd40b65a">More...</a><br /></td></tr>
+<tr class="separator:aab8f5c35faf6ffc5673e684cbd40b65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a05f369ce594d10924f4ee213a6785"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#aa7a05f369ce594d10924f4ee213a6785">_targetPointName</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:aa7a05f369ce594d10924f4ee213a6785"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the target point to move the phone to.  <a href="classAnimatedPositionManager.html#aa7a05f369ce594d10924f4ee213a6785">More...</a><br /></td></tr>
+<tr class="separator:aa7a05f369ce594d10924f4ee213a6785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af44f8e91335101705d2ed7d03913ad8b"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#af44f8e91335101705d2ed7d03913ad8b">color1</a> = new Color(0f, 1f, 0f, 0.2f)</td></tr>
+<tr class="memdesc:af44f8e91335101705d2ed7d03913ad8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preview color 1.  <a href="classAnimatedPositionManager.html#af44f8e91335101705d2ed7d03913ad8b">More...</a><br /></td></tr>
+<tr class="separator:af44f8e91335101705d2ed7d03913ad8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d0920eaf415651a7f1c45c02f5af89"><td class="memItemLeft" align="right" valign="top">static Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatedPositionManager.html#a90d0920eaf415651a7f1c45c02f5af89">color2</a> = new Color(1f, 0f, 0f, 0.2f)</td></tr>
+<tr class="memdesc:a90d0920eaf415651a7f1c45c02f5af89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preview color 2.  <a href="classAnimatedPositionManager.html#a90d0920eaf415651a7f1c45c02f5af89">More...</a><br /></td></tr>
+<tr class="separator:a90d0920eaf415651a7f1c45c02f5af89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Animate a control based on named points to transition between. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a645fd4079f62469389e9ee009ff115be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645fd4079f62469389e9ee009ff115be">&#9670;&nbsp;</a></span>_drawPointPreview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AnimatedPositionManager._drawPointPreview </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAnimatedPositionPoint.html">AnimatedPositionPoint</a>&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draw a rectangle preview of the phone position point </p>
+
+</div>
+</div>
 <a id="a099727c53005ab435a4dd0f88de50949"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a099727c53005ab435a4dd0f88de50949">&#9670;&nbsp;</a></span>_Process()</h2>
 
@@ -154,6 +217,25 @@ static <a class="el" href="classAnimatedPositionManager.html">AnimatedPositionMa
 </div><div class="memdoc">
 
 <p>If in editor process the preview of the phone position points </p>
+
+</div>
+</div>
+<a id="a289e79b16d6ecbb9545d27284573e395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a289e79b16d6ecbb9545d27284573e395">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void AnimatedPositionManager._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the singleton instance. Remove all children when the scene is ready. </p>
 
 </div>
 </div>
@@ -197,8 +279,235 @@ static <a class="el" href="classAnimatedPositionManager.html">AnimatedPositionMa
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a05e92472b9957396f314728668f610e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e92472b9957396f314728668f610e6">&#9670;&nbsp;</a></span>_currentPreviewColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color AnimatedPositionManager._currentPreviewColor = <a class="el" href="classAnimatedPositionManager.html#af44f8e91335101705d2ed7d03913ad8b">color1</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current preview color. </p>
+
+</div>
+</div>
+<a id="aab8f5c35faf6ffc5673e684cbd40b65a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab8f5c35faf6ffc5673e684cbd40b65a">&#9670;&nbsp;</a></span>_nextPreviewColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color AnimatedPositionManager._nextPreviewColor = <a class="el" href="classAnimatedPositionManager.html#a90d0920eaf415651a7f1c45c02f5af89">color2</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The next preview color. </p>
+
+</div>
+</div>
+<a id="aa7a05f369ce594d10924f4ee213a6785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a05f369ce594d10924f4ee213a6785">&#9670;&nbsp;</a></span>_targetPointName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string AnimatedPositionManager._targetPointName = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the target point to move the phone to. </p>
+
+</div>
+</div>
+<a id="a33fd7474c1b85167fc14b1fde99255cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33fd7474c1b85167fc14b1fde99255cd">&#9670;&nbsp;</a></span>animationPositionTaget</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Control AnimatedPositionManager.animationPositionTaget</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The target control where the position, scale and rotation lerp will be applied to. </p>
+
+</div>
+</div>
+<a id="a3f2d64ca47b66430c9f62f422f6e2399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2d64ca47b66430c9f62f422f6e2399">&#9670;&nbsp;</a></span>animationSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AnimatedPositionManager.animationSpeed = 4f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The speed of the lerp animation *delta. </p>
+
+</div>
+</div>
+<a id="af44f8e91335101705d2ed7d03913ad8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44f8e91335101705d2ed7d03913ad8b">&#9670;&nbsp;</a></span>color1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color AnimatedPositionManager.color1 = new Color(0f, 1f, 0f, 0.2f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Preview color 1. </p>
+
+</div>
+</div>
+<a id="a90d0920eaf415651a7f1c45c02f5af89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d0920eaf415651a7f1c45c02f5af89">&#9670;&nbsp;</a></span>color2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color AnimatedPositionManager.color2 = new Color(1f, 0f, 0f, 0.2f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Preview color 2. </p>
+
+</div>
+</div>
+<a id="abd4c98c9629eb8b389831cbe2470fca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4c98c9629eb8b389831cbe2470fca6">&#9670;&nbsp;</a></span>points</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Array&lt;<a class="el" href="classAnimatedPositionPoint.html">AnimatedPositionPoint</a>&gt; AnimatedPositionManager.points = new Array&lt;<a class="el" href="classAnimatedPositionPoint.html">AnimatedPositionPoint</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The list of named points to animate to. </p>
+
+</div>
+</div>
+<a id="a6901bfe2c84b0e452d867739d466fb07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6901bfe2c84b0e452d867739d466fb07">&#9670;&nbsp;</a></span>previewColorLerpSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AnimatedPositionManager.previewColorLerpSpeed = 4f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The speed of the color change of the preview rectangle(s). </p>
+
+</div>
+</div>
+<a id="a476eeadd8d81b9bf9bd509312da28279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a476eeadd8d81b9bf9bd509312da28279">&#9670;&nbsp;</a></span>showPreview</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AnimatedPositionManager.showPreview = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Show the preview of the phone position points in the editor? This needs to be enabled in order for the preview of <a class="el" href="classAnimatedPositionPoint.html#a325e1c6c139abac6f03d4849a8a6d04c" title="Should the point be visible in the editor as preview?">AnimatedPositionPoint.showPreview</a> to work. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="af8df6a03e267c6e5a09c45bbc1cc0f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8df6a03e267c6e5a09c45bbc1cc0f3d">&#9670;&nbsp;</a></span>Instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAnimatedPositionManager.html">AnimatedPositionManager</a> AnimatedPositionManager.Instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The singleton instance of the <a class="el" href="classAnimatedPositionManager.html" title="Animate a control based on named points to transition between.">AnimatedPositionManager</a>. </p>
+<p><code>AnimatedPositionManager.Instance.MoveTo("PointName"); // example</code> </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/HUD/Phone/Scripts/AnimatedPositionManager.cs</li>
+<li>038EnergyTransition/Scenes/HUD/Phone/Scripts/<a class="el" href="AnimatedPositionManager_8cs.html">AnimatedPositionManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

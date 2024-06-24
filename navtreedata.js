@@ -36,11 +36,19 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Properties", "functions_prop.html", null ],
         [ "Events", "functions_evnt.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ]
       ] ]
     ] ]
   ] ]
@@ -48,10 +56,13 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"classExample2Entity.html#a257314be6c2206018a93cbd0da68401f",
-"classQuestCondition.html#ac08144af4d53acf9e4318bf5b004e7ff",
-"classStartNode.html#ad1faa840ea03371c63852e929f509511"
+"AartScript_8cs.html",
+"classBaseApp.html",
+"classEngineCS.html",
+"classMainMenu.html#a17807e5db625a240f50a3bc65cbebd48",
+"classQuestEditorGraph.html#a34f0572c109e7d2253a46c1a5c7b1bad",
+"classSpeechBackground.html#af3b9f29137290c01a46a8cec116e61cdabe53a0541a6d36f6ecb879fa2c584b08",
+"classanimationNode.html#a25c51af25ec12b307840ec2be96c74c3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

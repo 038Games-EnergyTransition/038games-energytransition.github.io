@@ -84,11 +84,15 @@ $(document).ready(function(){initNavTree('classSwingTextEffect.html',''); initRe
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classSwingTextEffect-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SwingTextEffect Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A custom rich text effect that makes the text swing up and down in a rainbow pattern.  
+ <a href="classSwingTextEffect.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SwingTextEffect:</div>
 <div class="dyncontent">
@@ -98,8 +102,7 @@ Inheritance diagram for SwingTextEffect:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abdb0f7fe2b9cc1ed880e63043b3f7c57"><td class="memItemLeft" align="right" valign="top"><a id="abdb0f7fe2b9cc1ed880e63043b3f7c57"></a>
-override bool&#160;</td><td class="memItemRight" valign="bottom"><b>_ProcessCustomFX</b> (CharFXTransform charFX)</td></tr>
+<tr class="memitem:abdb0f7fe2b9cc1ed880e63043b3f7c57"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSwingTextEffect.html#abdb0f7fe2b9cc1ed880e63043b3f7c57">_ProcessCustomFX</a> (CharFXTransform charFX)</td></tr>
 <tr class="separator:abdb0f7fe2b9cc1ed880e63043b3f7c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -107,7 +110,33 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa7b3c43cc688cf8742d44ef075dc1a87"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSwingTextEffect.html#aa7b3c43cc688cf8742d44ef075dc1a87">bbcode</a> = &quot;swing&quot;</td></tr>
 <tr class="memdesc:aa7b3c43cc688cf8742d44ef075dc1a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syntax: [swing][/swing]  <a href="classSwingTextEffect.html#aa7b3c43cc688cf8742d44ef075dc1a87">More...</a><br /></td></tr>
 <tr class="separator:aa7b3c43cc688cf8742d44ef075dc1a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aca37ac60cbd62c3671740945f9aafdc9"><td class="memItemLeft" align="right" valign="top">static Color[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSwingTextEffect.html#aca37ac60cbd62c3671740945f9aafdc9">rainbow</a></td></tr>
+<tr class="separator:aca37ac60cbd62c3671740945f9aafdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A custom rich text effect that makes the text swing up and down in a rainbow pattern. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abdb0f7fe2b9cc1ed880e63043b3f7c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb0f7fe2b9cc1ed880e63043b3f7c57">&#9670;&nbsp;</a></span>_ProcessCustomFX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool SwingTextEffect._ProcessCustomFX </td>
+          <td>(</td>
+          <td class="paramtype">CharFXTransform&#160;</td>
+          <td class="paramname"><em>charFX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="aa7b3c43cc688cf8742d44ef075dc1a87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7b3c43cc688cf8742d44ef075dc1a87">&#9670;&nbsp;</a></span>bbcode</h2>
@@ -125,8 +154,39 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aca37ac60cbd62c3671740945f9aafdc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca37ac60cbd62c3671740945f9aafdc9">&#9670;&nbsp;</a></span>rainbow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color [] SwingTextEffect.rainbow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> Color[] {</div>
+<div class="line">        <span class="keyword">new</span> Color(1, 0, 0),</div>
+<div class="line">        <span class="keyword">new</span> Color(1, 0.5f, 0),</div>
+<div class="line">        <span class="keyword">new</span> Color(1, 1, 0),</div>
+<div class="line">        <span class="keyword">new</span> Color(0, 1, 0),</div>
+<div class="line">        <span class="keyword">new</span> Color(0, 0, 1),</div>
+<div class="line">        <span class="keyword">new</span> Color(0.29f, 0, 0.51f),</div>
+<div class="line">        <span class="keyword">new</span> Color(0.93f, 0.51f, 0.93f)</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/SpeechEngine/TextEffects/SwingTextEffect.cs</li>
+<li>038EnergyTransition/Modules/SpeechEngine/TextEffects/<a class="el" href="SwingTextEffect_8cs.html">SwingTextEffect.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

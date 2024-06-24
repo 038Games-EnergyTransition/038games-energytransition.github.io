@@ -7,5 +7,7 @@ var classSpeechOverlayChoices =
     [ "Button4", "classSpeechOverlayChoices.html#ab0cd3336b622fdd3e644182aaf99501c", null ],
     [ "SetChoices", "classSpeechOverlayChoices.html#aa71432f3be7304a1eb0c53879ff4b683", null ],
     [ "setLabel", "classSpeechOverlayChoices.html#acf66fc3edd232e0c6f988cc4ef9e8501", null ],
+    [ "_choiceButtons", "classSpeechOverlayChoices.html#ad2a19efe9e892319e816f9322973935a", null ],
+    [ "_questionLabel", "classSpeechOverlayChoices.html#a013cce2292ead77f4a8647e78adb9df0", null ],
     [ "ChoiceMade", "classSpeechOverlayChoices.html#a42adafa7e00996a67f373c77df25f4be", null ]
 ];

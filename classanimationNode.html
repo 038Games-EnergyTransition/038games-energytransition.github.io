@@ -85,18 +85,23 @@ $(document).ready(function(){initNavTree('classanimationNode.html',''); initResi
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classanimationNode-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">animationNode Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Animation node for the cutscene scripter Plays an animation from an AnimationPlayer node  
+ <a href="classanimationNode.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for animationNode:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classanimationNode.png" usemap="#animationNode_map" alt=""/>
   <map id="animationNode_map" name="animationNode_map">
-<area href="classCutsceneNode.html" alt="CutsceneNode" shape="rect" coords="0,56,95,80"/>
+<area href="classCutsceneNode.html" title="Base class for all cutscene nodes" alt="CutsceneNode" shape="rect" coords="0,56,95,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -110,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af61a6f7aacf54c2387af64d0ae040485 inherit pub_methods_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called every frame if the cutscene is active  <a href="classCutsceneNode.html#af61a6f7aacf54c2387af64d0ae040485">More...</a><br /></td></tr>
 <tr class="separator:af61a6f7aacf54c2387af64d0ae040485 inherit pub_methods_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8eac4c0769f6f3a7f9099cd814280d5 inherit pub_methods_classCutsceneNode"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#ae8eac4c0769f6f3a7f9099cd814280d5">FinishNode</a> ()</td></tr>
-<tr class="memdesc:ae8eac4c0769f6f3a7f9099cd814280d5 inherit pub_methods_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the cutscene is finished  <a href="classCutsceneNode.html#ae8eac4c0769f6f3a7f9099cd814280d5">More...</a><br /></td></tr>
+<tr class="memdesc:ae8eac4c0769f6f3a7f9099cd814280d5 inherit pub_methods_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the cutscene is finished and triggers the CutsceneFinished event  <a href="classCutsceneNode.html#ae8eac4c0769f6f3a7f9099cd814280d5">More...</a><br /></td></tr>
 <tr class="separator:ae8eac4c0769f6f3a7f9099cd814280d5 inherit pub_methods_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -119,27 +124,74 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a3b039f8dadf51e5479734baf188291ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path to the AnimationPlayer node its need to be active in the same scene as the cutsceneScripter for it to work  <a href="classanimationNode.html#a3b039f8dadf51e5479734baf188291ca">More...</a><br /></td></tr>
 <tr class="separator:a3b039f8dadf51e5479734baf188291ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classCutsceneNode"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classCutsceneNode')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classCutsceneNode.html">CutsceneNode</a></td></tr>
-<tr class="memitem:a9ce10eb95a002c6f5150ba9a121696b6 inherit pub_attribs_classCutsceneNode"><td class="memItemLeft" align="right" valign="top"><a id="a9ce10eb95a002c6f5150ba9a121696b6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlayAlone</b> = true</td></tr>
+<tr class="memitem:a9ce10eb95a002c6f5150ba9a121696b6 inherit pub_attribs_classCutsceneNode"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#a9ce10eb95a002c6f5150ba9a121696b6">PlayAlone</a> = true</td></tr>
 <tr class="separator:a9ce10eb95a002c6f5150ba9a121696b6 inherit pub_attribs_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b70809d5c4607c7bcecb635663723c0 inherit pub_attribs_classCutsceneNode"><td class="memItemLeft" align="right" valign="top"><a id="a4b70809d5c4607c7bcecb635663723c0"></a>
-EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>CutsceneFinished</b></td></tr>
+<tr class="memitem:a4b70809d5c4607c7bcecb635663723c0 inherit pub_attribs_classCutsceneNode"><td class="memItemLeft" align="right" valign="top">EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#a4b70809d5c4607c7bcecb635663723c0">CutsceneFinished</a></td></tr>
+<tr class="memdesc:a4b70809d5c4607c7bcecb635663723c0 inherit pub_attribs_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is called when the cutscene is finished  <a href="classCutsceneNode.html#a4b70809d5c4607c7bcecb635663723c0">More...</a><br /></td></tr>
 <tr class="separator:a4b70809d5c4607c7bcecb635663723c0 inherit pub_attribs_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a2940d0e2dc9b85cceede5ed352676184"><td class="memItemLeft" align="right" valign="top"><a id="a2940d0e2dc9b85cceede5ed352676184"></a>
-override string&#160;</td><td class="memItemRight" valign="bottom"><b>NodeName</b><code> [get]</code></td></tr>
+<tr class="memitem:a2940d0e2dc9b85cceede5ed352676184"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimationNode.html#a2940d0e2dc9b85cceede5ed352676184">NodeName</a><code> [get]</code></td></tr>
 <tr class="separator:a2940d0e2dc9b85cceede5ed352676184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25c51af25ec12b307840ec2be96c74c3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimationNode.html#a25c51af25ec12b307840ec2be96c74c3">AnimationName</a> = &quot;&quot;<code> [get, set]</code></td></tr>
-<tr class="memdesc:a25c51af25ec12b307840ec2be96c74c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the animation to play as defined in the editor  <a href="classanimationNode.html#a25c51af25ec12b307840ec2be96c74c3">More...</a><br /></td></tr>
+<tr class="memdesc:a25c51af25ec12b307840ec2be96c74c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the animation to play as defined in the editor When null or empty, the node will finish immediately  <a href="classanimationNode.html#a25c51af25ec12b307840ec2be96c74c3">More...</a><br /></td></tr>
 <tr class="separator:a25c51af25ec12b307840ec2be96c74c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_classCutsceneNode"><td colspan="2" onclick="javascript:toggleInherit('properties_classCutsceneNode')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classCutsceneNode.html">CutsceneNode</a></td></tr>
 <tr class="memitem:a7d4d57cf119b914c13c73b47c0b49b02 inherit properties_classCutsceneNode"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#a7d4d57cf119b914c13c73b47c0b49b02">NodeName</a><code> [get]</code></td></tr>
 <tr class="memdesc:a7d4d57cf119b914c13c73b47c0b49b02 inherit properties_classCutsceneNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">value used to dentify what node it is wen printing general errors  <a href="classCutsceneNode.html#a7d4d57cf119b914c13c73b47c0b49b02">More...</a><br /></td></tr>
 <tr class="separator:a7d4d57cf119b914c13c73b47c0b49b02 inherit properties_classCutsceneNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab33d5cb364167c686c1465c267878e2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimationNode.html#ab33d5cb364167c686c1465c267878e2c">AnimationFinished</a> (StringName animName)</td></tr>
+<tr class="memdesc:ab33d5cb364167c686c1465c267878e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">event handler for when the animation is finished  <a href="classanimationNode.html#ab33d5cb364167c686c1465c267878e2c">More...</a><br /></td></tr>
+<tr class="separator:ab33d5cb364167c686c1465c267878e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7e95709c2f75b0d34729e8e99f11af69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classanimationNode.html#a3b039f8dadf51e5479734baf188291ca">AnimationPlayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimationNode.html#a7e95709c2f75b0d34729e8e99f11af69">_animationPlayer</a></td></tr>
+<tr class="memdesc:a7e95709c2f75b0d34729e8e99f11af69"><td class="mdescLeft">&#160;</td><td class="mdescRight">private variable the animationplayer from the </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classanimationNode.html#a3b039f8dadf51e5479734baf188291ca" title="The path to the AnimationPlayer node its need to be active in the same scene as the cutsceneScripter ...">AnimationPlayer</a></dd></dl>
+<p>stores its instance  <a href="classanimationNode.html#a7e95709c2f75b0d34729e8e99f11af69">More...</a><br /></td></tr>
+<tr class="separator:a7e95709c2f75b0d34729e8e99f11af69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Animation node for the cutscene scripter Plays an animation from an AnimationPlayer node </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab33d5cb364167c686c1465c267878e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33d5cb364167c686c1465c267878e2c">&#9670;&nbsp;</a></span>AnimationFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void animationNode.AnimationFinished </td>
+          <td>(</td>
+          <td class="paramtype">StringName&#160;</td>
+          <td class="paramname"><em>animName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>event handler for when the animation is finished </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="acc670cf5b35a286f48cbb014622ab8ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc670cf5b35a286f48cbb014622ab8ee">&#9670;&nbsp;</a></span>StartNode()</h2>
 
@@ -177,6 +229,31 @@ override string&#160;</td><td class="memItemRight" valign="bottom"><b>NodeName</
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7e95709c2f75b0d34729e8e99f11af69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e95709c2f75b0d34729e8e99f11af69">&#9670;&nbsp;</a></span>_animationPlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classanimationNode.html#a3b039f8dadf51e5479734baf188291ca">AnimationPlayer</a> animationNode._animationPlayer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>private variable the animationplayer from the </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classanimationNode.html#a3b039f8dadf51e5479734baf188291ca" title="The path to the AnimationPlayer node its need to be active in the same scene as the cutsceneScripter ...">AnimationPlayer</a></dd></dl>
+<p>stores its instance </p>
+
+</div>
+</div>
 <a id="a3b039f8dadf51e5479734baf188291ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b039f8dadf51e5479734baf188291ca">&#9670;&nbsp;</a></span>AnimationPlayer</h2>
 
@@ -214,12 +291,34 @@ override string&#160;</td><td class="memItemRight" valign="bottom"><b>NodeName</
 </table>
 </div><div class="memdoc">
 
-<p>The name of the animation to play as defined in the editor </p>
+<p>The name of the animation to play as defined in the editor When null or empty, the node will finish immediately </p>
+
+</div>
+</div>
+<a id="a2940d0e2dc9b85cceede5ed352676184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2940d0e2dc9b85cceede5ed352676184">&#9670;&nbsp;</a></span>NodeName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string animationNode.NodeName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/Cutscenes/CutsceneNodes/animationNode.cs</li>
+<li>038EnergyTransition/Modules/Cutscenes/CutsceneNodes/<a class="el" href="animationNode_8cs.html">animationNode.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

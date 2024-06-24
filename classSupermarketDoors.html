@@ -84,11 +84,16 @@ $(document).ready(function(){initNavTree('classSupermarketDoors.html',''); initR
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSupermarketDoors-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SupermarketDoors Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Sliding doors for the supermarket that can be opened and closed by entities (player &amp; NPCs) wit hthe right collision mask.  
+ <a href="classSupermarketDoors.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SupermarketDoors:</div>
 <div class="dyncontent">
@@ -98,27 +103,300 @@ Inheritance diagram for SupermarketDoors:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a97897692a732eb0453c175d689d1e69e"><td class="memItemLeft" align="right" valign="top"><a id="a97897692a732eb0453c175d689d1e69e"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a97897692a732eb0453c175d689d1e69e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#a97897692a732eb0453c175d689d1e69e">_Ready</a> ()</td></tr>
 <tr class="separator:a97897692a732eb0453c175d689d1e69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a071aa08b425f2a2050953a0c12aaccd1"><td class="memItemLeft" align="right" valign="top"><a id="a071aa08b425f2a2050953a0c12aaccd1"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a071aa08b425f2a2050953a0c12aaccd1"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#a071aa08b425f2a2050953a0c12aaccd1">_Process</a> (double delta)</td></tr>
 <tr class="separator:a071aa08b425f2a2050953a0c12aaccd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a967d1bf2501f4d84af78d85f633e5416"><td class="memItemLeft" align="right" valign="top"><a id="a967d1bf2501f4d84af78d85f633e5416"></a>
-Node3D&#160;</td><td class="memItemRight" valign="bottom"><b>DoorLeft</b></td></tr>
+<tr class="memitem:a967d1bf2501f4d84af78d85f633e5416"><td class="memItemLeft" align="right" valign="top">Node3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#a967d1bf2501f4d84af78d85f633e5416">DoorLeft</a></td></tr>
+<tr class="memdesc:a967d1bf2501f4d84af78d85f633e5416"><td class="mdescLeft">&#160;</td><td class="mdescRight">The door on the left side, which will be moved to the left when an entity enters the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>.  <a href="classSupermarketDoors.html#a967d1bf2501f4d84af78d85f633e5416">More...</a><br /></td></tr>
 <tr class="separator:a967d1bf2501f4d84af78d85f633e5416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e4cb6d85638cef34af5a9fa5ac80604"><td class="memItemLeft" align="right" valign="top"><a id="a5e4cb6d85638cef34af5a9fa5ac80604"></a>
-Node3D&#160;</td><td class="memItemRight" valign="bottom"><b>DoorRight</b></td></tr>
+<tr class="memitem:a5e4cb6d85638cef34af5a9fa5ac80604"><td class="memItemLeft" align="right" valign="top">Node3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#a5e4cb6d85638cef34af5a9fa5ac80604">DoorRight</a></td></tr>
+<tr class="memdesc:a5e4cb6d85638cef34af5a9fa5ac80604"><td class="mdescLeft">&#160;</td><td class="mdescRight">The door on the right side, which will be moved to the right when an entity enters the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>.  <a href="classSupermarketDoors.html#a5e4cb6d85638cef34af5a9fa5ac80604">More...</a><br /></td></tr>
 <tr class="separator:a5e4cb6d85638cef34af5a9fa5ac80604"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25b2f40a3e9ab55565cfd29308640acf"><td class="memItemLeft" align="right" valign="top"><a id="a25b2f40a3e9ab55565cfd29308640acf"></a>
-Area3D&#160;</td><td class="memItemRight" valign="bottom"><b>EntityDetector</b></td></tr>
+<tr class="memitem:a25b2f40a3e9ab55565cfd29308640acf"><td class="memItemLeft" align="right" valign="top">Area3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf">EntityDetector</a></td></tr>
+<tr class="memdesc:a25b2f40a3e9ab55565cfd29308640acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The entity detector to detect entities (player &amp; NPCs) that can open the doors.  <a href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf">More...</a><br /></td></tr>
 <tr class="separator:a25b2f40a3e9ab55565cfd29308640acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9373a3c8b02e8cfb9dbb2a7ce0a88bf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#a9373a3c8b02e8cfb9dbb2a7ce0a88bf8">_on_body_entered</a> (Node3D body)</td></tr>
+<tr class="memdesc:a9373a3c8b02e8cfb9dbb2a7ce0a88bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to handle the body entering the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>.  <a href="classSupermarketDoors.html#a9373a3c8b02e8cfb9dbb2a7ce0a88bf8">More...</a><br /></td></tr>
+<tr class="separator:a9373a3c8b02e8cfb9dbb2a7ce0a88bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2fa9d9772199804356ed324473b9bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#a9d2fa9d9772199804356ed324473b9bf">_on_body_exited</a> (Node3D body)</td></tr>
+<tr class="memdesc:a9d2fa9d9772199804356ed324473b9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to handle the body exiting the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>.  <a href="classSupermarketDoors.html#a9d2fa9d9772199804356ed324473b9bf">More...</a><br /></td></tr>
+<tr class="separator:a9d2fa9d9772199804356ed324473b9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a95cbb4eb629805ed77d60b71db130d31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#a95cbb4eb629805ed77d60b71db130d31">DoorLeftBasePosition</a></td></tr>
+<tr class="memdesc:a95cbb4eb629805ed77d60b71db130d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base position of the left door when it is closed.  <a href="classSupermarketDoors.html#a95cbb4eb629805ed77d60b71db130d31">More...</a><br /></td></tr>
+<tr class="separator:a95cbb4eb629805ed77d60b71db130d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae651a9230e5c0c7b1b7eafd188c67912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#ae651a9230e5c0c7b1b7eafd188c67912">DoorRightBasePosition</a></td></tr>
+<tr class="memdesc:ae651a9230e5c0c7b1b7eafd188c67912"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base position of the right door when it is closed.  <a href="classSupermarketDoors.html#ae651a9230e5c0c7b1b7eafd188c67912">More...</a><br /></td></tr>
+<tr class="separator:ae651a9230e5c0c7b1b7eafd188c67912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9b77d0872ddf22e25afb48198f0c91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#a1b9b77d0872ddf22e25afb48198f0c91">_bodyCounter</a> = 0</td></tr>
+<tr class="memdesc:a1b9b77d0872ddf22e25afb48198f0c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of entities that are currently in the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>.  <a href="classSupermarketDoors.html#a1b9b77d0872ddf22e25afb48198f0c91">More...</a><br /></td></tr>
+<tr class="separator:a1b9b77d0872ddf22e25afb48198f0c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb27cc4f0c25d9dde02dd43940363483"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupermarketDoors.html#abb27cc4f0c25d9dde02dd43940363483">initDone</a> = false</td></tr>
+<tr class="memdesc:abb27cc4f0c25d9dde02dd43940363483"><td class="mdescLeft">&#160;</td><td class="mdescRight">A flag to check if the initialization is done. Indicates if the doors are ready to be used.  <a href="classSupermarketDoors.html#abb27cc4f0c25d9dde02dd43940363483">More...</a><br /></td></tr>
+<tr class="separator:abb27cc4f0c25d9dde02dd43940363483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Sliding doors for the supermarket that can be opened and closed by entities (player &amp; NPCs) wit hthe right collision mask. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9373a3c8b02e8cfb9dbb2a7ce0a88bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9373a3c8b02e8cfb9dbb2a7ce0a88bf8">&#9670;&nbsp;</a></span>_on_body_entered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SupermarketDoors._on_body_entered </td>
+          <td>(</td>
+          <td class="paramtype">Node3D&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to handle the body entering the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d2fa9d9772199804356ed324473b9bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d2fa9d9772199804356ed324473b9bf">&#9670;&nbsp;</a></span>_on_body_exited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SupermarketDoors._on_body_exited </td>
+          <td>(</td>
+          <td class="paramtype">Node3D&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to handle the body exiting the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a071aa08b425f2a2050953a0c12aaccd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071aa08b425f2a2050953a0c12aaccd1">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SupermarketDoors._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97897692a732eb0453c175d689d1e69e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97897692a732eb0453c175d689d1e69e">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SupermarketDoors._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1b9b77d0872ddf22e25afb48198f0c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9b77d0872ddf22e25afb48198f0c91">&#9670;&nbsp;</a></span>_bodyCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SupermarketDoors._bodyCounter = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The amount of entities that are currently in the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>. </p>
+
+</div>
+</div>
+<a id="a967d1bf2501f4d84af78d85f633e5416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967d1bf2501f4d84af78d85f633e5416">&#9670;&nbsp;</a></span>DoorLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node3D SupermarketDoors.DoorLeft</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The door on the left side, which will be moved to the left when an entity enters the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>. </p>
+
+</div>
+</div>
+<a id="a95cbb4eb629805ed77d60b71db130d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95cbb4eb629805ed77d60b71db130d31">&#9670;&nbsp;</a></span>DoorLeftBasePosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a> SupermarketDoors.DoorLeftBasePosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The base position of the left door when it is closed. </p>
+
+</div>
+</div>
+<a id="a5e4cb6d85638cef34af5a9fa5ac80604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4cb6d85638cef34af5a9fa5ac80604">&#9670;&nbsp;</a></span>DoorRight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node3D SupermarketDoors.DoorRight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The door on the right side, which will be moved to the right when an entity enters the <a class="el" href="classSupermarketDoors.html#a25b2f40a3e9ab55565cfd29308640acf" title="The entity detector to detect entities (player &amp; NPCs) that can open the doors.">EntityDetector</a>. </p>
+
+</div>
+</div>
+<a id="ae651a9230e5c0c7b1b7eafd188c67912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae651a9230e5c0c7b1b7eafd188c67912">&#9670;&nbsp;</a></span>DoorRightBasePosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a> SupermarketDoors.DoorRightBasePosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The base position of the right door when it is closed. </p>
+
+</div>
+</div>
+<a id="a25b2f40a3e9ab55565cfd29308640acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b2f40a3e9ab55565cfd29308640acf">&#9670;&nbsp;</a></span>EntityDetector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Area3D SupermarketDoors.EntityDetector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The entity detector to detect entities (player &amp; NPCs) that can open the doors. </p>
+
+</div>
+</div>
+<a id="abb27cc4f0c25d9dde02dd43940363483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb27cc4f0c25d9dde02dd43940363483">&#9670;&nbsp;</a></span>initDone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SupermarketDoors.initDone = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A flag to check if the initialization is done. Indicates if the doors are ready to be used. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/Game/Scripts/SupermarketDoors.cs</li>
+<li>038EnergyTransition/Scenes/Game/Scripts/<a class="el" href="SupermarketDoors_8cs.html">SupermarketDoors.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

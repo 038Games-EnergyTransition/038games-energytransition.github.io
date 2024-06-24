@@ -85,11 +85,16 @@ $(document).ready(function(){initNavTree('classLoadscreen.html',''); initResizab
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classLoadscreen-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Loadscreen Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Loadingscreen for the game with a progress bar.  
+ <a href="classLoadscreen.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Loadscreen:</div>
 <div class="dyncontent">
@@ -99,33 +104,282 @@ Inheritance diagram for Loadscreen:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae1266bbb0704adaa30377863d19ab5dc"><td class="memItemLeft" align="right" valign="top"><a id="ae1266bbb0704adaa30377863d19ab5dc"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:ae1266bbb0704adaa30377863d19ab5dc"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoadscreen.html#ae1266bbb0704adaa30377863d19ab5dc">_Ready</a> ()</td></tr>
 <tr class="separator:ae1266bbb0704adaa30377863d19ab5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eceb9b42a92768185bb8aeb925959c5"><td class="memItemLeft" align="right" valign="top"><a id="a6eceb9b42a92768185bb8aeb925959c5"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a6eceb9b42a92768185bb8aeb925959c5"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoadscreen.html#a6eceb9b42a92768185bb8aeb925959c5">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:a6eceb9b42a92768185bb8aeb925959c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the visibility and fading of the loadscreen.  <a href="classLoadscreen.html#a6eceb9b42a92768185bb8aeb925959c5">More...</a><br /></td></tr>
 <tr class="separator:a6eceb9b42a92768185bb8aeb925959c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b01f748726807beda16f2db064aa95"><td class="memItemLeft" align="right" valign="top"><a id="ac3b01f748726807beda16f2db064aa95"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowLoadscreen</b> ()</td></tr>
+<tr class="memitem:ac3b01f748726807beda16f2db064aa95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoadscreen.html#ac3b01f748726807beda16f2db064aa95">ShowLoadscreen</a> ()</td></tr>
+<tr class="memdesc:ac3b01f748726807beda16f2db064aa95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the loadscreen.  <a href="classLoadscreen.html#ac3b01f748726807beda16f2db064aa95">More...</a><br /></td></tr>
 <tr class="separator:ac3b01f748726807beda16f2db064aa95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:afead6e77ee8618ea53444bc71df932e3"><td class="memItemLeft" align="right" valign="top"><a id="afead6e77ee8618ea53444bc71df932e3"></a>
-SubViewportContainer&#160;</td><td class="memItemRight" valign="bottom"><b>BackgroundSubViewportContainer</b></td></tr>
+<tr class="memitem:afead6e77ee8618ea53444bc71df932e3"><td class="memItemLeft" align="right" valign="top">SubViewportContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoadscreen.html#afead6e77ee8618ea53444bc71df932e3">BackgroundSubViewportContainer</a></td></tr>
+<tr class="memdesc:afead6e77ee8618ea53444bc71df932e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sub-viewport container for the background. Used to queue free the background when the loadscreen is done.  <a href="classLoadscreen.html#afead6e77ee8618ea53444bc71df932e3">More...</a><br /></td></tr>
 <tr class="separator:afead6e77ee8618ea53444bc71df932e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a8a237b3bdc5e7df90292a935ab6ff3fa"><td class="memItemLeft" align="right" valign="top"><a id="a8a237b3bdc5e7df90292a935ab6ff3fa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ForceHide</b> = false<code> [get, set]</code></td></tr>
+<tr class="memitem:a8a237b3bdc5e7df90292a935ab6ff3fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoadscreen.html#a8a237b3bdc5e7df90292a935ab6ff3fa">ForceHide</a> = false<code> [get, set]</code></td></tr>
+<tr class="memdesc:a8a237b3bdc5e7df90292a935ab6ff3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force hide the loadscreen.  <a href="classLoadscreen.html#a8a237b3bdc5e7df90292a935ab6ff3fa">More...</a><br /></td></tr>
 <tr class="separator:a8a237b3bdc5e7df90292a935ab6ff3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3af787040623e07b7903225eb7456d5"><td class="memItemLeft" align="right" valign="top"><a id="ae3af787040623e07b7903225eb7456d5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasFullyFadedIn</b> = false<code> [get]</code></td></tr>
+<tr class="memitem:ae3af787040623e07b7903225eb7456d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoadscreen.html#ae3af787040623e07b7903225eb7456d5">HasFullyFadedIn</a> = false<code> [get, private set]</code></td></tr>
+<tr class="memdesc:ae3af787040623e07b7903225eb7456d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the loadscreen has fully faded in.  <a href="classLoadscreen.html#ae3af787040623e07b7903225eb7456d5">More...</a><br /></td></tr>
 <tr class="separator:ae3af787040623e07b7903225eb7456d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a15621e3a00f6b427dd9b868919786943"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoadscreen.html#a15621e3a00f6b427dd9b868919786943">_setSelfModulateAlpha</a> (Control node, float alpha)</td></tr>
+<tr class="memdesc:a15621e3a00f6b427dd9b868919786943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the alpha of the self-modulate of a control.  <a href="classLoadscreen.html#a15621e3a00f6b427dd9b868919786943">More...</a><br /></td></tr>
+<tr class="separator:a15621e3a00f6b427dd9b868919786943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146a821144a36962d5a80fd881fd9804"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoadscreen.html#a146a821144a36962d5a80fd881fd9804">_getSelfModulateAlpha</a> (Control node)</td></tr>
+<tr class="memdesc:a146a821144a36962d5a80fd881fd9804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the alpha of the self-modulate of a control.  <a href="classLoadscreen.html#a146a821144a36962d5a80fd881fd9804">More...</a><br /></td></tr>
+<tr class="separator:a146a821144a36962d5a80fd881fd9804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0b816383c0f0336dad2670213fc2aa2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoadscreen.html#a0b816383c0f0336dad2670213fc2aa2c">_doForceHide</a> = false</td></tr>
+<tr class="memdesc:a0b816383c0f0336dad2670213fc2aa2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The force hide flag.  <a href="classLoadscreen.html#a0b816383c0f0336dad2670213fc2aa2c">More...</a><br /></td></tr>
+<tr class="separator:a0b816383c0f0336dad2670213fc2aa2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Loadingscreen for the game with a progress bar. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a146a821144a36962d5a80fd881fd9804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a146a821144a36962d5a80fd881fd9804">&#9670;&nbsp;</a></span>_getSelfModulateAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Loadscreen._getSelfModulateAlpha </td>
+          <td>(</td>
+          <td class="paramtype">Control&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the alpha of the self-modulate of a control. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a6eceb9b42a92768185bb8aeb925959c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eceb9b42a92768185bb8aeb925959c5">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Loadscreen._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle the visibility and fading of the loadscreen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1266bbb0704adaa30377863d19ab5dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1266bbb0704adaa30377863d19ab5dc">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Loadscreen._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15621e3a00f6b427dd9b868919786943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15621e3a00f6b427dd9b868919786943">&#9670;&nbsp;</a></span>_setSelfModulateAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Loadscreen._setSelfModulateAlpha </td>
+          <td>(</td>
+          <td class="paramtype">Control&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the alpha of the self-modulate of a control. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td></td></tr>
+    <tr><td class="paramname">alpha</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac3b01f748726807beda16f2db064aa95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3b01f748726807beda16f2db064aa95">&#9670;&nbsp;</a></span>ShowLoadscreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Loadscreen.ShowLoadscreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Show the loadscreen. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0b816383c0f0336dad2670213fc2aa2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b816383c0f0336dad2670213fc2aa2c">&#9670;&nbsp;</a></span>_doForceHide</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Loadscreen._doForceHide = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The force hide flag. </p>
+
+</div>
+</div>
+<a id="afead6e77ee8618ea53444bc71df932e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afead6e77ee8618ea53444bc71df932e3">&#9670;&nbsp;</a></span>BackgroundSubViewportContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SubViewportContainer Loadscreen.BackgroundSubViewportContainer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The sub-viewport container for the background. Used to queue free the background when the loadscreen is done. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a8a237b3bdc5e7df90292a935ab6ff3fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a237b3bdc5e7df90292a935ab6ff3fa">&#9670;&nbsp;</a></span>ForceHide</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Loadscreen.ForceHide = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Force hide the loadscreen. </p>
+
+</div>
+</div>
+<a id="ae3af787040623e07b7903225eb7456d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3af787040623e07b7903225eb7456d5">&#9670;&nbsp;</a></span>HasFullyFadedIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Loadscreen.HasFullyFadedIn = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the loadscreen has fully faded in. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/MainMenu/Scripts/Loadscreen.cs</li>
+<li>038EnergyTransition/Scenes/MainMenu/Scripts/<a class="el" href="Loadscreen_8cs.html">Loadscreen.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

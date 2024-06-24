@@ -84,6 +84,9 @@ $(document).ready(function(){initNavTree('classQuestManager.html',''); initResiz
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classQuestManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">QuestManager Class Reference</div>  </div>
@@ -98,66 +101,545 @@ Inheritance diagram for QuestManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af38f7d4e562147dd04bdad8b9389cce0"><td class="memItemLeft" align="right" valign="top"><a id="af38f7d4e562147dd04bdad8b9389cce0"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>ConditionQueryRequestedEventHandler</b> (string type, string key, Variant value, <a class="el" href="classQuestCondition.html">QuestCondition</a> requester)</td></tr>
+<tr class="memitem:af38f7d4e562147dd04bdad8b9389cce0"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#af38f7d4e562147dd04bdad8b9389cce0">ConditionQueryRequestedEventHandler</a> (string type, string key, Variant value, <a class="el" href="classQuestCondition.html">QuestCondition</a> requester)</td></tr>
 <tr class="separator:af38f7d4e562147dd04bdad8b9389cce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42b6e15d3103596015aba310d525d95a"><td class="memItemLeft" align="right" valign="top"><a id="a42b6e15d3103596015aba310d525d95a"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>ActionQueryRequestedEventHandler</b> (string type, string key, Variant value, <a class="el" href="classQuestAction.html">QuestAction</a> requester)</td></tr>
+<tr class="memitem:a42b6e15d3103596015aba310d525d95a"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a42b6e15d3103596015aba310d525d95a">ActionQueryRequestedEventHandler</a> (string type, string key, Variant value, <a class="el" href="classQuestAction.html">QuestAction</a> requester)</td></tr>
 <tr class="separator:a42b6e15d3103596015aba310d525d95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34997be8e9dd6381eb6c4eb00b1428e1"><td class="memItemLeft" align="right" valign="top"><a id="a34997be8e9dd6381eb6c4eb00b1428e1"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>QuestStartedEventHandler</b> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
+<tr class="memitem:a34997be8e9dd6381eb6c4eb00b1428e1"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a34997be8e9dd6381eb6c4eb00b1428e1">QuestStartedEventHandler</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
 <tr class="separator:a34997be8e9dd6381eb6c4eb00b1428e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f6b117d112c6ab0e5ec616234d6aa8"><td class="memItemLeft" align="right" valign="top"><a id="a31f6b117d112c6ab0e5ec616234d6aa8"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>QuestObjectiveAddedEventHandler</b> (<a class="el" href="classQuestResource.html">QuestResource</a> quest, <a class="el" href="classQuestObjective.html">QuestObjective</a> objective)</td></tr>
+<tr class="memitem:a31f6b117d112c6ab0e5ec616234d6aa8"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a31f6b117d112c6ab0e5ec616234d6aa8">QuestObjectiveAddedEventHandler</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest, <a class="el" href="classQuestObjective.html">QuestObjective</a> objective)</td></tr>
 <tr class="separator:a31f6b117d112c6ab0e5ec616234d6aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18afebb62c84a512a5212510306d5672"><td class="memItemLeft" align="right" valign="top"><a id="a18afebb62c84a512a5212510306d5672"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>QuestObjectiveCompletedEventHandler</b> (<a class="el" href="classQuestResource.html">QuestResource</a> quest, <a class="el" href="classQuestObjective.html">QuestObjective</a> objective)</td></tr>
+<tr class="memitem:a18afebb62c84a512a5212510306d5672"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a18afebb62c84a512a5212510306d5672">QuestObjectiveCompletedEventHandler</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest, <a class="el" href="classQuestObjective.html">QuestObjective</a> objective)</td></tr>
 <tr class="separator:a18afebb62c84a512a5212510306d5672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff7cf354284878ab356e26a0a26dc39"><td class="memItemLeft" align="right" valign="top"><a id="a5ff7cf354284878ab356e26a0a26dc39"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>QuestCompletedEventHandler</b> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
+<tr class="memitem:a5ff7cf354284878ab356e26a0a26dc39"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a5ff7cf354284878ab356e26a0a26dc39">QuestCompletedEventHandler</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
 <tr class="separator:a5ff7cf354284878ab356e26a0a26dc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71a111122dfd7a3f81720673908a5560"><td class="memItemLeft" align="right" valign="top"><a id="a71a111122dfd7a3f81720673908a5560"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a71a111122dfd7a3f81720673908a5560"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a71a111122dfd7a3f81720673908a5560">_Ready</a> ()</td></tr>
 <tr class="separator:a71a111122dfd7a3f81720673908a5560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c0feed7f6cb2e9717f1c2c2c4e4f28"><td class="memItemLeft" align="right" valign="top"><a id="a41c0feed7f6cb2e9717f1c2c2c4e4f28"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StartQuest</b> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
+<tr class="memitem:a41c0feed7f6cb2e9717f1c2c2c4e4f28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a41c0feed7f6cb2e9717f1c2c2c4e4f28">StartQuest</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
 <tr class="separator:a41c0feed7f6cb2e9717f1c2c2c4e4f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7320309614eaf2324b8142c327afa1f3"><td class="memItemLeft" align="right" valign="top"><a id="a7320309614eaf2324b8142c327afa1f3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateQuests</b> ()</td></tr>
+<tr class="memitem:a7320309614eaf2324b8142c327afa1f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a7320309614eaf2324b8142c327afa1f3">UpdateQuests</a> ()</td></tr>
 <tr class="separator:a7320309614eaf2324b8142c327afa1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a978052a92933da2f8f1f66c0b3b1924c"><td class="memItemLeft" align="right" valign="top"><a id="a978052a92933da2f8f1f66c0b3b1924c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveQuest</b> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
+<tr class="memitem:a978052a92933da2f8f1f66c0b3b1924c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a978052a92933da2f8f1f66c0b3b1924c">RemoveQuest</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
 <tr class="separator:a978052a92933da2f8f1f66c0b3b1924c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c65d4088d0ab000144e5913f99f9720"><td class="memItemLeft" align="right" valign="top"><a id="a8c65d4088d0ab000144e5913f99f9720"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetQuest</b> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
+<tr class="memitem:a8c65d4088d0ab000144e5913f99f9720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a8c65d4088d0ab000144e5913f99f9720">ResetQuest</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
 <tr class="separator:a8c65d4088d0ab000144e5913f99f9720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2474be8c3f43ae73a6b415a776b2eddd"><td class="memItemLeft" align="right" valign="top"><a id="a2474be8c3f43ae73a6b415a776b2eddd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="memitem:a2474be8c3f43ae73a6b415a776b2eddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a2474be8c3f43ae73a6b415a776b2eddd">Clear</a> ()</td></tr>
 <tr class="separator:a2474be8c3f43ae73a6b415a776b2eddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af94c0f10d48888b49a147628697a11ed"><td class="memItemLeft" align="right" valign="top"><a id="af94c0f10d48888b49a147628697a11ed"></a>
-List&lt; <a class="el" href="classQuestResource.html">QuestResource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetQuests</b> ()</td></tr>
+<tr class="memitem:af94c0f10d48888b49a147628697a11ed"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classQuestResource.html">QuestResource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#af94c0f10d48888b49a147628697a11ed">GetQuests</a> ()</td></tr>
 <tr class="separator:af94c0f10d48888b49a147628697a11ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08e7fed894dc91796da6e595216cecdf"><td class="memItemLeft" align="right" valign="top"><a id="a08e7fed894dc91796da6e595216cecdf"></a>
-List&lt; <a class="el" href="classQuestResource.html">QuestResource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompletedQuests</b> ()</td></tr>
+<tr class="memitem:a08e7fed894dc91796da6e595216cecdf"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classQuestResource.html">QuestResource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a08e7fed894dc91796da6e595216cecdf">GetCompletedQuests</a> ()</td></tr>
 <tr class="separator:a08e7fed894dc91796da6e595216cecdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43a14b86bcdd607470debe60565951e9"><td class="memItemLeft" align="right" valign="top"><a id="a43a14b86bcdd607470debe60565951e9"></a>
-List&lt; <a class="el" href="classQuestSerialPart.html">QuestSerialPart</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Serialize</b> ()</td></tr>
+<tr class="memitem:a43a14b86bcdd607470debe60565951e9"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classQuestSerialPart.html">QuestSerialPart</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a43a14b86bcdd607470debe60565951e9">Serialize</a> ()</td></tr>
 <tr class="separator:a43a14b86bcdd607470debe60565951e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae78a480ac20ac67547431f91aaf0e6f9"><td class="memItemLeft" align="right" valign="top"><a id="ae78a480ac20ac67547431f91aaf0e6f9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Deserialize</b> (List&lt; <a class="el" href="classQuestSerialPart.html">QuestSerialPart</a> &gt; quests)</td></tr>
+<tr class="memitem:ae78a480ac20ac67547431f91aaf0e6f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#ae78a480ac20ac67547431f91aaf0e6f9">Deserialize</a> (List&lt; <a class="el" href="classQuestSerialPart.html">QuestSerialPart</a> &gt; quests)</td></tr>
 <tr class="separator:ae78a480ac20ac67547431f91aaf0e6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fda72b21f6937520fcfd79581746ee4"><td class="memItemLeft" align="right" valign="top"><a id="a2fda72b21f6937520fcfd79581746ee4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ToggleUpdatePolling</b> (bool value)</td></tr>
+<tr class="memitem:a2fda72b21f6937520fcfd79581746ee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a2fda72b21f6937520fcfd79581746ee4">ToggleUpdatePolling</a> (bool value)</td></tr>
 <tr class="separator:a2fda72b21f6937520fcfd79581746ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a8e1cd09cf2af8f04d6854f0b54d8b0bf"><td class="memItemLeft" align="right" valign="top"><a id="a8e1cd09cf2af8f04d6854f0b54d8b0bf"></a>
-static <a class="el" href="classQuestManager.html">QuestManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
+<tr class="memitem:a8e1cd09cf2af8f04d6854f0b54d8b0bf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classQuestManager.html">QuestManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a8e1cd09cf2af8f04d6854f0b54d8b0bf">Instance</a><code> [get, private set]</code></td></tr>
 <tr class="separator:a8e1cd09cf2af8f04d6854f0b54d8b0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab2c3747af20863407e766353285f0b56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#ab2c3747af20863407e766353285f0b56">_setupTimer</a> ()</td></tr>
+<tr class="separator:ab2c3747af20863407e766353285f0b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a76b930b36ef65d9f06b7a035ebd19d3b"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classQuestResource.html">QuestResource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a76b930b36ef65d9f06b7a035ebd19d3b">_quests</a> = new List&lt;<a class="el" href="classQuestResource.html">QuestResource</a>&gt;()</td></tr>
+<tr class="separator:a76b930b36ef65d9f06b7a035ebd19d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf68d85f71b2c1aae109ad130c5ea371"><td class="memItemLeft" align="right" valign="top">Timer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#acf68d85f71b2c1aae109ad130c5ea371">_questUpdateTimer</a></td></tr>
+<tr class="separator:acf68d85f71b2c1aae109ad130c5ea371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a998ac2c3a0a63ac9d657f77c4e626548"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classQuestManager.html">QuestManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a998ac2c3a0a63ac9d657f77c4e626548">_instance</a></td></tr>
+<tr class="separator:a998ac2c3a0a63ac9d657f77c4e626548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a71a111122dfd7a3f81720673908a5560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a111122dfd7a3f81720673908a5560">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void QuestManager._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2c3747af20863407e766353285f0b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c3747af20863407e766353285f0b56">&#9670;&nbsp;</a></span>_setupTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestManager._setupTimer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42b6e15d3103596015aba310d525d95a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b6e15d3103596015aba310d525d95a">&#9670;&nbsp;</a></span>ActionQueryRequestedEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void QuestManager.ActionQueryRequestedEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQuestAction.html">QuestAction</a>&#160;</td>
+          <td class="paramname"><em>requester</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2474be8c3f43ae73a6b415a776b2eddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2474be8c3f43ae73a6b415a776b2eddd">&#9670;&nbsp;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestManager.Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af38f7d4e562147dd04bdad8b9389cce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af38f7d4e562147dd04bdad8b9389cce0">&#9670;&nbsp;</a></span>ConditionQueryRequestedEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void QuestManager.ConditionQueryRequestedEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQuestCondition.html">QuestCondition</a>&#160;</td>
+          <td class="paramname"><em>requester</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae78a480ac20ac67547431f91aaf0e6f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78a480ac20ac67547431f91aaf0e6f9">&#9670;&nbsp;</a></span>Deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestManager.Deserialize </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="classQuestSerialPart.html">QuestSerialPart</a> &gt;&#160;</td>
+          <td class="paramname"><em>quests</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08e7fed894dc91796da6e595216cecdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08e7fed894dc91796da6e595216cecdf">&#9670;&nbsp;</a></span>GetCompletedQuests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classQuestResource.html">QuestResource</a>&gt; QuestManager.GetCompletedQuests </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af94c0f10d48888b49a147628697a11ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af94c0f10d48888b49a147628697a11ed">&#9670;&nbsp;</a></span>GetQuests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classQuestResource.html">QuestResource</a>&gt; QuestManager.GetQuests </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ff7cf354284878ab356e26a0a26dc39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff7cf354284878ab356e26a0a26dc39">&#9670;&nbsp;</a></span>QuestCompletedEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void QuestManager.QuestCompletedEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31f6b117d112c6ab0e5ec616234d6aa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f6b117d112c6ab0e5ec616234d6aa8">&#9670;&nbsp;</a></span>QuestObjectiveAddedEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void QuestManager.QuestObjectiveAddedEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQuestObjective.html">QuestObjective</a>&#160;</td>
+          <td class="paramname"><em>objective</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18afebb62c84a512a5212510306d5672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18afebb62c84a512a5212510306d5672">&#9670;&nbsp;</a></span>QuestObjectiveCompletedEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void QuestManager.QuestObjectiveCompletedEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQuestObjective.html">QuestObjective</a>&#160;</td>
+          <td class="paramname"><em>objective</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34997be8e9dd6381eb6c4eb00b1428e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34997be8e9dd6381eb6c4eb00b1428e1">&#9670;&nbsp;</a></span>QuestStartedEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void QuestManager.QuestStartedEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a978052a92933da2f8f1f66c0b3b1924c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978052a92933da2f8f1f66c0b3b1924c">&#9670;&nbsp;</a></span>RemoveQuest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestManager.RemoveQuest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c65d4088d0ab000144e5913f99f9720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c65d4088d0ab000144e5913f99f9720">&#9670;&nbsp;</a></span>ResetQuest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestManager.ResetQuest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43a14b86bcdd607470debe60565951e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a14b86bcdd607470debe60565951e9">&#9670;&nbsp;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classQuestSerialPart.html">QuestSerialPart</a>&gt; QuestManager.Serialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41c0feed7f6cb2e9717f1c2c2c4e4f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c0feed7f6cb2e9717f1c2c2c4e4f28">&#9670;&nbsp;</a></span>StartQuest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestManager.StartQuest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fda72b21f6937520fcfd79581746ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fda72b21f6937520fcfd79581746ee4">&#9670;&nbsp;</a></span>ToggleUpdatePolling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestManager.ToggleUpdatePolling </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7320309614eaf2324b8142c327afa1f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7320309614eaf2324b8142c327afa1f3">&#9670;&nbsp;</a></span>UpdateQuests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestManager.UpdateQuests </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a998ac2c3a0a63ac9d657f77c4e626548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998ac2c3a0a63ac9d657f77c4e626548">&#9670;&nbsp;</a></span>_instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQuestManager.html">QuestManager</a> QuestManager._instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76b930b36ef65d9f06b7a035ebd19d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b930b36ef65d9f06b7a035ebd19d3b">&#9670;&nbsp;</a></span>_quests</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classQuestResource.html">QuestResource</a>&gt; QuestManager._quests = new List&lt;<a class="el" href="classQuestResource.html">QuestResource</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf68d85f71b2c1aae109ad130c5ea371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf68d85f71b2c1aae109ad130c5ea371">&#9670;&nbsp;</a></span>_questUpdateTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Timer QuestManager._questUpdateTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a8e1cd09cf2af8f04d6854f0b54d8b0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1cd09cf2af8f04d6854f0b54d8b0bf">&#9670;&nbsp;</a></span>Instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQuestManager.html">QuestManager</a> QuestManager.Instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/addons/quester/QuestManager.cs</li>
+<li>038EnergyTransition/addons/quester/<a class="el" href="QuestManager_8cs.html">QuestManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

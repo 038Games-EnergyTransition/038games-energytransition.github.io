@@ -84,11 +84,16 @@ $(document).ready(function(){initNavTree('classCameraPerspectiveSwitcher.html','
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classCameraPerspectiveSwitcher-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CameraPerspectiveSwitcher Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classCameraPerspectiveSwitcher.html" title="The CameraPerspectiveSwitcher class. This is used to switch the camera perspective for the player.">CameraPerspectiveSwitcher</a> class. This is used to switch the camera perspective for the player.  
+ <a href="classCameraPerspectiveSwitcher.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CameraPerspectiveSwitcher:</div>
 <div class="dyncontent">
@@ -98,24 +103,180 @@ Inheritance diagram for CameraPerspectiveSwitcher:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5ad41a2870b01824f7c172e0f7e8c358"><td class="memItemLeft" align="right" valign="top"><a id="a5ad41a2870b01824f7c172e0f7e8c358"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a5ad41a2870b01824f7c172e0f7e8c358"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraPerspectiveSwitcher.html#a5ad41a2870b01824f7c172e0f7e8c358">_Ready</a> ()</td></tr>
 <tr class="separator:a5ad41a2870b01824f7c172e0f7e8c358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e781a54f2af7462bd156e50084b02c"><td class="memItemLeft" align="right" valign="top"><a id="a21e781a54f2af7462bd156e50084b02c"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
-<tr class="separator:a21e781a54f2af7462bd156e50084b02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad868481f5b31cbb4fb94db0ee3a8b0e3"><td class="memItemLeft" align="right" valign="top"><a id="ad868481f5b31cbb4fb94db0ee3a8b0e3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CameraSetting</b> = 2</td></tr>
+<tr class="memitem:ad868481f5b31cbb4fb94db0ee3a8b0e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraPerspectiveSwitcher.html#ad868481f5b31cbb4fb94db0ee3a8b0e3">CameraSetting</a> = 2</td></tr>
+<tr class="memdesc:ad868481f5b31cbb4fb94db0ee3a8b0e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera setting index.  <a href="classCameraPerspectiveSwitcher.html#ad868481f5b31cbb4fb94db0ee3a8b0e3">More...</a><br /></td></tr>
 <tr class="separator:ad868481f5b31cbb4fb94db0ee3a8b0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5053002fc39f1f92cf00063a18e7cab"><td class="memItemLeft" align="right" valign="top"><a id="af5053002fc39f1f92cf00063a18e7cab"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CameraXOffset</b> = 0</td></tr>
+<tr class="memitem:af5053002fc39f1f92cf00063a18e7cab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraPerspectiveSwitcher.html#af5053002fc39f1f92cf00063a18e7cab">CameraXOffset</a> = 0</td></tr>
+<tr class="memdesc:af5053002fc39f1f92cf00063a18e7cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The horizontal offset of the camera.  <a href="classCameraPerspectiveSwitcher.html#af5053002fc39f1f92cf00063a18e7cab">More...</a><br /></td></tr>
 <tr class="separator:af5053002fc39f1f92cf00063a18e7cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a854aae546a9b4a812f8539c05cdeec07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraPerspectiveSwitcher.html#a854aae546a9b4a812f8539c05cdeec07">OnBodyEntered</a> (Node3D body)</td></tr>
+<tr class="memdesc:a854aae546a9b4a812f8539c05cdeec07"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the body enters the area, the camera perspective is switched and the camera is forced to this perspective.  <a href="classCameraPerspectiveSwitcher.html#a854aae546a9b4a812f8539c05cdeec07">More...</a><br /></td></tr>
+<tr class="separator:a854aae546a9b4a812f8539c05cdeec07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84322e08a2cf718c1ccf59536e197da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraPerspectiveSwitcher.html#ab84322e08a2cf718c1ccf59536e197da">OnBodyExited</a> (Node3D body)</td></tr>
+<tr class="memdesc:ab84322e08a2cf718c1ccf59536e197da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the body exits the area. The camera perspective is restored to the previous perspective and the player can change the camera perspective again.  <a href="classCameraPerspectiveSwitcher.html#ab84322e08a2cf718c1ccf59536e197da">More...</a><br /></td></tr>
+<tr class="separator:ab84322e08a2cf718c1ccf59536e197da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a439ff5673ebc4f92d7960d13b5c41784"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="classPlayer.html">Player</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraPerspectiveSwitcher.html#a439ff5673ebc4f92d7960d13b5c41784">_playerRestorCameraPositions</a> = new Dictionary&lt;<a class="el" href="classPlayer.html">Player</a>, int&gt; { }</td></tr>
+<tr class="memdesc:a439ff5673ebc4f92d7960d13b5c41784"><td class="mdescLeft">&#160;</td><td class="mdescRight">The player restore camera positions.  <a href="classCameraPerspectiveSwitcher.html#a439ff5673ebc4f92d7960d13b5c41784">More...</a><br /></td></tr>
+<tr class="separator:a439ff5673ebc4f92d7960d13b5c41784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classCameraPerspectiveSwitcher.html" title="The CameraPerspectiveSwitcher class. This is used to switch the camera perspective for the player.">CameraPerspectiveSwitcher</a> class. This is used to switch the camera perspective for the player. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5ad41a2870b01824f7c172e0f7e8c358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad41a2870b01824f7c172e0f7e8c358">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void CameraPerspectiveSwitcher._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a854aae546a9b4a812f8539c05cdeec07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a854aae546a9b4a812f8539c05cdeec07">&#9670;&nbsp;</a></span>OnBodyEntered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraPerspectiveSwitcher.OnBodyEntered </td>
+          <td>(</td>
+          <td class="paramtype">Node3D&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When the body enters the area, the camera perspective is switched and the camera is forced to this perspective. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab84322e08a2cf718c1ccf59536e197da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84322e08a2cf718c1ccf59536e197da">&#9670;&nbsp;</a></span>OnBodyExited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraPerspectiveSwitcher.OnBodyExited </td>
+          <td>(</td>
+          <td class="paramtype">Node3D&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the body exits the area. The camera perspective is restored to the previous perspective and the player can change the camera perspective again. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a439ff5673ebc4f92d7960d13b5c41784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a439ff5673ebc4f92d7960d13b5c41784">&#9670;&nbsp;</a></span>_playerRestorCameraPositions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;<a class="el" href="classPlayer.html">Player</a>, int&gt; CameraPerspectiveSwitcher._playerRestorCameraPositions = new Dictionary&lt;<a class="el" href="classPlayer.html">Player</a>, int&gt; { }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The player restore camera positions. </p>
+
+</div>
+</div>
+<a id="ad868481f5b31cbb4fb94db0ee3a8b0e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad868481f5b31cbb4fb94db0ee3a8b0e3">&#9670;&nbsp;</a></span>CameraSetting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraPerspectiveSwitcher.CameraSetting = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The camera setting index. </p>
+
+</div>
+</div>
+<a id="af5053002fc39f1f92cf00063a18e7cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5053002fc39f1f92cf00063a18e7cab">&#9670;&nbsp;</a></span>CameraXOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraPerspectiveSwitcher.CameraXOffset = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The horizontal offset of the camera. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/Game/Scripts/CameraPerspectiveSwitcher.cs</li>
+<li>038EnergyTransition/Scenes/Game/Scripts/<a class="el" href="CameraPerspectiveSwitcher_8cs.html">CameraPerspectiveSwitcher.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

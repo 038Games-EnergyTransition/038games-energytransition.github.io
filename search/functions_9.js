@@ -1,4 +1,11 @@
 var searchData=
 [
-  ['loadgame_462',['loadGame',['../classFileManager.html#a0afab62b78cd6c74f50025b0c501cc1b',1,'FileManager']]]
+  ['incrementstat_1566',['IncrementStat',['../classStatisticsManager.html#a42ecf28cedee7ecfb3b6223f5658f812',1,'StatisticsManager.IncrementStat(string statName, int value)'],['../classStatisticsManager.html#a51125655712d659ebfb5723ca1aa9fdf',1,'StatisticsManager.IncrementStat(string statName)'],['../classStatisticsResource.html#aa00cf2d1ab63556d11a4eb7a2410b366',1,'StatisticsResource.IncrementStat()']]],
+  ['init_1567',['Init',['../classAppHomescreen.html#a10c313590c79913bbc33778a45b62070',1,'AppHomescreen']]],
+  ['init_5fsettings_1568',['init_settings',['../classQuesterSettings.html#ac3a0ded82069c8896a8847b6db188d2a',1,'QuesterSettings']]],
+  ['instantiate_1569',['Instantiate',['../classQuestResource.html#aa12b1f2999131b34512279f4900cc946',1,'QuestResource']]],
+  ['interperlate_1570',['Interperlate',['../classInterperlation.html#aa88bad6e4fad743468da8821a4e48686',1,'Interperlation']]],
+  ['isloaded_1571',['IsLoaded',['../classStatisticsManager.html#a46d5cf400dd61176f66cade1050e5df9',1,'StatisticsManager']]],
+  ['isobjectvalid_1572',['IsObjectValid',['../classGlobals.html#a925c4a5f884f13a0d982f932032168b1',1,'Globals']]],
+  ['isstatnamevalid_1573',['IsStatNameValid',['../classStatisticsManager.html#a316ac7af84c502f7f449db88ad1317cd',1,'StatisticsManager']]]
 ];

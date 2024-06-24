@@ -83,11 +83,16 @@ $(document).ready(function(){initNavTree('classIntro.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classIntro-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Intro Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The intro scene that plays the intro animation.  
+ <a href="classIntro.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Intro:</div>
 <div class="dyncontent">
@@ -100,8 +105,82 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaffec1898188714cba2a489614019066"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIntro.html#aaffec1898188714cba2a489614019066">_Ready</a> ()</td></tr>
 <tr class="memdesc:aaffec1898188714cba2a489614019066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the node enters the scene tree for the first time.  <a href="classIntro.html#aaffec1898188714cba2a489614019066">More...</a><br /></td></tr>
 <tr class="separator:aaffec1898188714cba2a489614019066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3495eecc1e455e113b3b838f21aded"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIntro.html#a1d3495eecc1e455e113b3b838f21aded">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:a1d3495eecc1e455e113b3b838f21aded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the <a class="el" href="classIntro.html#a75b94ed781cb14a86f507a85f4e46763" title="The target AnimationPlayer Node where to play the animation from. When this is null,...">TargetAnimnationPlayer</a> is valid and has the <a class="el" href="classIntro.html#ae8f4695af73c77e43f108f6092bfa0b1" title="The name of the animation to play. When the animation name is not found, the scene will skip the anim...">TargetAnimationName</a> animation. If not valid, the scene will skip the animation and go directly to the main menu <a class="el" href="classIntro.html#a9033451425d706bad986cbd6328cad47" title="[Event] Called when the TargetAnimnationPlayer finishes playing the animation. Changes the scene to t...">_on_animation_player_animation_finished</a>.  <a href="classIntro.html#a1d3495eecc1e455e113b3b838f21aded">More...</a><br /></td></tr>
+<tr class="separator:a1d3495eecc1e455e113b3b838f21aded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a75b94ed781cb14a86f507a85f4e46763"><td class="memItemLeft" align="right" valign="top">AnimationPlayer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIntro.html#a75b94ed781cb14a86f507a85f4e46763">TargetAnimnationPlayer</a></td></tr>
+<tr class="memdesc:a75b94ed781cb14a86f507a85f4e46763"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target AnimationPlayer Node where to play the animation from. When this is null, the scene will skip the animation and go directly to the main menu.  <a href="classIntro.html#a75b94ed781cb14a86f507a85f4e46763">More...</a><br /></td></tr>
+<tr class="separator:a75b94ed781cb14a86f507a85f4e46763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f4695af73c77e43f108f6092bfa0b1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIntro.html#ae8f4695af73c77e43f108f6092bfa0b1">TargetAnimationName</a></td></tr>
+<tr class="memdesc:ae8f4695af73c77e43f108f6092bfa0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the animation to play. When the animation name is not found, the scene will skip the animation and go directly to the main menu.  <a href="classIntro.html#ae8f4695af73c77e43f108f6092bfa0b1">More...</a><br /></td></tr>
+<tr class="separator:ae8f4695af73c77e43f108f6092bfa0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9033451425d706bad986cbd6328cad47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIntro.html#a9033451425d706bad986cbd6328cad47">_on_animation_player_animation_finished</a> (StringName anim_name)</td></tr>
+<tr class="memdesc:a9033451425d706bad986cbd6328cad47"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Event] Called when the TargetAnimnationPlayer finishes playing the animation. Changes the scene to the main menu  <a href="classIntro.html#a9033451425d706bad986cbd6328cad47">More...</a><br /></td></tr>
+<tr class="separator:a9033451425d706bad986cbd6328cad47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The intro scene that plays the intro animation. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9033451425d706bad986cbd6328cad47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9033451425d706bad986cbd6328cad47">&#9670;&nbsp;</a></span>_on_animation_player_animation_finished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Intro._on_animation_player_animation_finished </td>
+          <td>(</td>
+          <td class="paramtype">StringName&#160;</td>
+          <td class="paramname"><em>anim_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[Event] Called when the TargetAnimnationPlayer finishes playing the animation. Changes the scene to the main menu </p>
+
+</div>
+</div>
+<a id="a1d3495eecc1e455e113b3b838f21aded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3495eecc1e455e113b3b838f21aded">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Intro._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the <a class="el" href="classIntro.html#a75b94ed781cb14a86f507a85f4e46763" title="The target AnimationPlayer Node where to play the animation from. When this is null,...">TargetAnimnationPlayer</a> is valid and has the <a class="el" href="classIntro.html#ae8f4695af73c77e43f108f6092bfa0b1" title="The name of the animation to play. When the animation name is not found, the scene will skip the anim...">TargetAnimationName</a> animation. If not valid, the scene will skip the animation and go directly to the main menu <a class="el" href="classIntro.html#a9033451425d706bad986cbd6328cad47" title="[Event] Called when the TargetAnimnationPlayer finishes playing the animation. Changes the scene to t...">_on_animation_player_animation_finished</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aaffec1898188714cba2a489614019066"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaffec1898188714cba2a489614019066">&#9670;&nbsp;</a></span>_Ready()</h2>
 
@@ -121,8 +200,41 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae8f4695af73c77e43f108f6092bfa0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f4695af73c77e43f108f6092bfa0b1">&#9670;&nbsp;</a></span>TargetAnimationName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Intro.TargetAnimationName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The name of the animation to play. When the animation name is not found, the scene will skip the animation and go directly to the main menu. </p>
+
+</div>
+</div>
+<a id="a75b94ed781cb14a86f507a85f4e46763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b94ed781cb14a86f507a85f4e46763">&#9670;&nbsp;</a></span>TargetAnimnationPlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimationPlayer Intro.TargetAnimnationPlayer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The target AnimationPlayer Node where to play the animation from. When this is null, the scene will skip the animation and go directly to the main menu. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/Intro/Scripts/Intro.cs</li>
+<li>038EnergyTransition/Scenes/Intro/Scripts/<a class="el" href="Intro_8cs.html">Intro.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

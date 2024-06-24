@@ -84,6 +84,8 @@ $(document).ready(function(){initNavTree('classIncrementButton.html',''); initRe
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classIncrementButton-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IncrementButton Class Reference</div>  </div>
@@ -98,24 +100,139 @@ Inheritance diagram for IncrementButton:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a06defcc4f38fe67570e93fac319acf72"><td class="memItemLeft" align="right" valign="top"><a id="a06defcc4f38fe67570e93fac319acf72"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a06defcc4f38fe67570e93fac319acf72"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIncrementButton.html#a06defcc4f38fe67570e93fac319acf72">_Ready</a> ()</td></tr>
 <tr class="separator:a06defcc4f38fe67570e93fac319acf72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7b7202a13e3fa66850aa28850d3112d3"><td class="memItemLeft" align="right" valign="top"><a id="a7b7202a13e3fa66850aa28850d3112d3"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>TargetQuestKey</b></td></tr>
+<tr class="memitem:a7b7202a13e3fa66850aa28850d3112d3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIncrementButton.html#a7b7202a13e3fa66850aa28850d3112d3">TargetQuestKey</a></td></tr>
 <tr class="separator:a7b7202a13e3fa66850aa28850d3112d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f50d4b10fb8c55323be41e2213844cb"><td class="memItemLeft" align="right" valign="top"><a id="a7f50d4b10fb8c55323be41e2213844cb"></a>
-Label&#160;</td><td class="memItemRight" valign="bottom"><b>labelValue</b></td></tr>
+<tr class="memitem:a7f50d4b10fb8c55323be41e2213844cb"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIncrementButton.html#a7f50d4b10fb8c55323be41e2213844cb">labelValue</a></td></tr>
 <tr class="separator:a7f50d4b10fb8c55323be41e2213844cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2c13cc6f318b2326adc602c9ac68c5a"><td class="memItemLeft" align="right" valign="top"><a id="ab2c13cc6f318b2326adc602c9ac68c5a"></a>
-<a class="el" href="classDataManager.html">DataManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_dataManager</b></td></tr>
+<tr class="memitem:ab2c13cc6f318b2326adc602c9ac68c5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDataManager.html">DataManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIncrementButton.html#ab2c13cc6f318b2326adc602c9ac68c5a">_dataManager</a></td></tr>
 <tr class="separator:ab2c13cc6f318b2326adc602c9ac68c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab1a9d95673260a3f798dd7a3e7c47648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIncrementButton.html#ab1a9d95673260a3f798dd7a3e7c47648">_updateValue</a> (int value)</td></tr>
+<tr class="separator:ab1a9d95673260a3f798dd7a3e7c47648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a733922ff470fceb3ca00d6ca72a99cd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuestManager.html">QuestManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIncrementButton.html#a733922ff470fceb3ca00d6ca72a99cd3">_questManager</a> = <a class="el" href="classQuestManager.html#a8e1cd09cf2af8f04d6854f0b54d8b0bf">QuestManager.Instance</a></td></tr>
+<tr class="separator:a733922ff470fceb3ca00d6ca72a99cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a06defcc4f38fe67570e93fac319acf72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06defcc4f38fe67570e93fac319acf72">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void IncrementButton._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1a9d95673260a3f798dd7a3e7c47648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a9d95673260a3f798dd7a3e7c47648">&#9670;&nbsp;</a></span>_updateValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IncrementButton._updateValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab2c13cc6f318b2326adc602c9ac68c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c13cc6f318b2326adc602c9ac68c5a">&#9670;&nbsp;</a></span>_dataManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDataManager.html">DataManager</a> IncrementButton._dataManager</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a733922ff470fceb3ca00d6ca72a99cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733922ff470fceb3ca00d6ca72a99cd3">&#9670;&nbsp;</a></span>_questManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQuestManager.html">QuestManager</a> IncrementButton._questManager = <a class="el" href="classQuestManager.html#a8e1cd09cf2af8f04d6854f0b54d8b0bf">QuestManager.Instance</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f50d4b10fb8c55323be41e2213844cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f50d4b10fb8c55323be41e2213844cb">&#9670;&nbsp;</a></span>labelValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Label IncrementButton.labelValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b7202a13e3fa66850aa28850d3112d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b7202a13e3fa66850aa28850d3112d3">&#9670;&nbsp;</a></span>TargetQuestKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IncrementButton.TargetQuestKey</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/addons/quester/example/example1/IncrementButton.cs</li>
+<li>038EnergyTransition/addons/quester/example/example1/<a class="el" href="IncrementButton_8cs.html">IncrementButton.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

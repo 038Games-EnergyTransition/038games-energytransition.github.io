@@ -1,6 +1,28 @@
 var classQuestEditor =
 [
+    [ "_addNewNode", "classQuestEditor.html#ab5cd00aacb95f85eb8db689dd53aa20d", null ],
+    [ "_logAction", "classQuestEditor.html#aedef58735d037f8b36e94a030d6cf47b", null ],
+    [ "_on_AddNodeButton_pressed", "classQuestEditor.html#af3a19fb9560af64fc0892f84e12dc048", null ],
+    [ "_on_NewButton_pressed", "classQuestEditor.html#a06a5f64a54bb13227b120e4df6aad728", null ],
+    [ "_on_OpenButton_pressed", "classQuestEditor.html#ab14ecd2d5b5c8f8c2f30a3c59a4ba7e8", null ],
+    [ "_on_SaveButton_pressed", "classQuestEditor.html#a78b5dfccce80d6be2ef23a6f003c75c4", null ],
+    [ "_onLoadFileDialogFileSelected", "classQuestEditor.html#a3b62595fe8023b7a3b030b4bb3947eff", null ],
+    [ "_onSaveFileDialogFileSelected", "classQuestEditor.html#a721aece8631d1020a77772b361d041f8", null ],
     [ "_Ready", "classQuestEditor.html#a3a0946efeb30df897c536d02c1e0eb1d", null ],
+    [ "applyChanges", "classQuestEditor.html#a91bf3bd2c6cb3f963411967bca6c35af", null ],
+    [ "loadFile", "classQuestEditor.html#a445b4b974b7739f75f9a0dafdce7cfa9", null ],
+    [ "saveChanges", "classQuestEditor.html#afe72d78997970c5446520bfd3a085448", null ],
+    [ "saveFile", "classQuestEditor.html#a64b5e9c3d047f268332f1c23c4909841", null ],
     [ "ShowAddNodeMenu", "classQuestEditor.html#adcb36f02936bead3b0dc8184177cf7c2", null ],
+    [ "_actionlogContainer", "classQuestEditor.html#ae4e3aee4b28dac8c902b569d572f37be", null ],
+    [ "_addNodeButton", "classQuestEditor.html#a2de43e1814a7b4428100ff49d6351ff6", null ],
+    [ "_addNodeMenu", "classQuestEditor.html#a8931015156f15352fdba50ddca539574", null ],
+    [ "_graph", "classQuestEditor.html#a3fdfc5ae57bb3ffd461254f09a416d1f", null ],
+    [ "_loadFileDialog", "classQuestEditor.html#aced9b4576818b52331e1d1bca45b9069", null ],
+    [ "_newButton", "classQuestEditor.html#a2efe6e2163b7b257b7173ea28c5daf88", null ],
+    [ "_openButton", "classQuestEditor.html#acbfbcede590c08c3edc063e5e2d06443", null ],
+    [ "_saveButton", "classQuestEditor.html#aece92447a03eefb7e82b62d2743f4f80", null ],
+    [ "_saveFileDialog", "classQuestEditor.html#afed93162fd986ff2e9fc59ad5ca45a94", null ],
+    [ "_saveFilePath", "classQuestEditor.html#a6677dcf0638474f91b753c624772f520", null ],
     [ "EditorActionScene", "classQuestEditor.html#afe3bc4c215aab6758cbef1a0e22ef5ab", null ]
 ];

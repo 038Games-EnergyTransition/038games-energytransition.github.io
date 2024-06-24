@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('classAppHomescreen.html',''); initResi
 <div class="title">AppHomescreen Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The homescreen of the phone. Holds a grid of apps and their positions.  
+ <a href="classAppHomescreen.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for AppHomescreen:</div>
 <div class="dyncontent">
@@ -99,14 +102,13 @@ Inheritance diagram for AppHomescreen:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad3852734d0f70b1ed979ec54ac151f53"><td class="memItemLeft" align="right" valign="top"><a id="ad3852734d0f70b1ed979ec54ac151f53"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:ad3852734d0f70b1ed979ec54ac151f53"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#ad3852734d0f70b1ed979ec54ac151f53">_Ready</a> ()</td></tr>
 <tr class="separator:ad3852734d0f70b1ed979ec54ac151f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac26962559c624cf393891522ffd94244"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#ac26962559c624cf393891522ffd94244">_Draw</a> ()</td></tr>
 <tr class="memdesc:ac26962559c624cf393891522ffd94244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the homescreen grid and app positions in the ditor as preview  <a href="classAppHomescreen.html#ac26962559c624cf393891522ffd94244">More...</a><br /></td></tr>
 <tr class="separator:ac26962559c624cf393891522ffd94244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc8a6a487d202a2cea1ac40d1cc10bac"><td class="memItemLeft" align="right" valign="top"><a id="afc8a6a487d202a2cea1ac40d1cc10bac"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:afc8a6a487d202a2cea1ac40d1cc10bac"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#afc8a6a487d202a2cea1ac40d1cc10bac">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:afc8a6a487d202a2cea1ac40d1cc10bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the visibility of the homescreen grid in the editor. Update the homescreen modulate to fade in and out when a phone app is opened or closed.  <a href="classAppHomescreen.html#afc8a6a487d202a2cea1ac40d1cc10bac">More...</a><br /></td></tr>
 <tr class="separator:afc8a6a487d202a2cea1ac40d1cc10bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c313590c79913bbc33778a45b62070"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#a10c313590c79913bbc33778a45b62070">Init</a> (Array&lt; <a class="el" href="classBaseApp.html">BaseApp</a> &gt; apps)</td></tr>
 <tr class="memdesc:a10c313590c79913bbc33778a45b62070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the homescreen with the given apps Position the apps icon on the homescreen with their given position  <a href="classAppHomescreen.html#a10c313590c79913bbc33778a45b62070">More...</a><br /></td></tr>
@@ -114,29 +116,31 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a668a3bdc93960161753330c418e7101d"><td class="memItemLeft" align="right" valign="top"><a id="a668a3bdc93960161753330c418e7101d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AppGridEditorPreview</b> = false</td></tr>
+<tr class="memitem:a668a3bdc93960161753330c418e7101d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#a668a3bdc93960161753330c418e7101d">AppGridEditorPreview</a> = false</td></tr>
+<tr class="memdesc:a668a3bdc93960161753330c418e7101d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the homescreen grid be visible in the editor?  <a href="classAppHomescreen.html#a668a3bdc93960161753330c418e7101d">More...</a><br /></td></tr>
 <tr class="separator:a668a3bdc93960161753330c418e7101d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a581bbe7a61061cb8b707ec47023db8b8"><td class="memItemLeft" align="right" valign="top"><a id="a581bbe7a61061cb8b707ec47023db8b8"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>AppPreviewSize</b> = 40</td></tr>
+<tr class="memitem:a581bbe7a61061cb8b707ec47023db8b8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#a581bbe7a61061cb8b707ec47023db8b8">AppPreviewSize</a> = 40</td></tr>
+<tr class="memdesc:a581bbe7a61061cb8b707ec47023db8b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the app preview icon. The actual size of the app icon is determined by the homescreen icon of the app itself.  <a href="classAppHomescreen.html#a581bbe7a61061cb8b707ec47023db8b8">More...</a><br /></td></tr>
 <tr class="separator:a581bbe7a61061cb8b707ec47023db8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ab4ca788e42ae0d0fcefff9073a5af8"><td class="memItemLeft" align="right" valign="top"><a id="a7ab4ca788e42ae0d0fcefff9073a5af8"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>AppGridSize</b> = new Vector2(3, 6)</td></tr>
+<tr class="memitem:a7ab4ca788e42ae0d0fcefff9073a5af8"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#a7ab4ca788e42ae0d0fcefff9073a5af8">AppGridSize</a> = new Vector2(3, 6)</td></tr>
+<tr class="memdesc:a7ab4ca788e42ae0d0fcefff9073a5af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the app grid.  <a href="classAppHomescreen.html#a7ab4ca788e42ae0d0fcefff9073a5af8">More...</a><br /></td></tr>
 <tr class="separator:a7ab4ca788e42ae0d0fcefff9073a5af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26dced7268c0a87fa7fd2b8ccbc1750b"><td class="memItemLeft" align="right" valign="top"><a id="a26dced7268c0a87fa7fd2b8ccbc1750b"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>AppGridOffset</b> = Vector2.Zero</td></tr>
+<tr class="memitem:a26dced7268c0a87fa7fd2b8ccbc1750b"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#a26dced7268c0a87fa7fd2b8ccbc1750b">AppGridOffset</a> = Vector2.Zero</td></tr>
+<tr class="memdesc:a26dced7268c0a87fa7fd2b8ccbc1750b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset of the app grid.  <a href="classAppHomescreen.html#a26dced7268c0a87fa7fd2b8ccbc1750b">More...</a><br /></td></tr>
 <tr class="separator:a26dced7268c0a87fa7fd2b8ccbc1750b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb84eceddb111e5e22b0fe833813fa33"><td class="memItemLeft" align="right" valign="top"><a id="abb84eceddb111e5e22b0fe833813fa33"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>AppGridSpacing</b> = Vector2.One * 50</td></tr>
+<tr class="memitem:abb84eceddb111e5e22b0fe833813fa33"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#abb84eceddb111e5e22b0fe833813fa33">AppGridSpacing</a> = Vector2.One * 50</td></tr>
+<tr class="memdesc:abb84eceddb111e5e22b0fe833813fa33"><td class="mdescLeft">&#160;</td><td class="mdescRight">The spacing between the apps on the homescreen.  <a href="classAppHomescreen.html#abb84eceddb111e5e22b0fe833813fa33">More...</a><br /></td></tr>
 <tr class="separator:abb84eceddb111e5e22b0fe833813fa33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a0c7bc8996e92a2222ab58bd8bfa36b7e"><td class="memItemLeft" align="right" valign="top"><a id="a0c7bc8996e92a2222ab58bd8bfa36b7e"></a>
-static <a class="el" href="classAppHomescreen.html">AppHomescreen</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
+<tr class="memitem:a0c7bc8996e92a2222ab58bd8bfa36b7e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classAppHomescreen.html">AppHomescreen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppHomescreen.html#a0c7bc8996e92a2222ab58bd8bfa36b7e">Instance</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:a0c7bc8996e92a2222ab58bd8bfa36b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to the homescreen instance.  <a href="classAppHomescreen.html#a0c7bc8996e92a2222ab58bd8bfa36b7e">More...</a><br /></td></tr>
 <tr class="separator:a0c7bc8996e92a2222ab58bd8bfa36b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The homescreen of the phone. Holds a grid of apps and their positions. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac26962559c624cf393891522ffd94244"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac26962559c624cf393891522ffd94244">&#9670;&nbsp;</a></span>_Draw()</h2>
 
@@ -153,6 +157,49 @@ static <a class="el" href="classAppHomescreen.html">AppHomescreen</a>&#160;</td>
 </div><div class="memdoc">
 
 <p>Draw the homescreen grid and app positions in the ditor as preview </p>
+
+</div>
+</div>
+<a id="afc8a6a487d202a2cea1ac40d1cc10bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8a6a487d202a2cea1ac40d1cc10bac">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void AppHomescreen._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the visibility of the homescreen grid in the editor. Update the homescreen modulate to fade in and out when a phone app is opened or closed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad3852734d0f70b1ed979ec54ac151f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3852734d0f70b1ed979ec54ac151f53">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void AppHomescreen._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -176,8 +223,115 @@ static <a class="el" href="classAppHomescreen.html">AppHomescreen</a>&#160;</td>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a668a3bdc93960161753330c418e7101d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668a3bdc93960161753330c418e7101d">&#9670;&nbsp;</a></span>AppGridEditorPreview</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AppHomescreen.AppGridEditorPreview = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Should the homescreen grid be visible in the editor? </p>
+
+</div>
+</div>
+<a id="a26dced7268c0a87fa7fd2b8ccbc1750b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26dced7268c0a87fa7fd2b8ccbc1750b">&#9670;&nbsp;</a></span>AppGridOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 AppHomescreen.AppGridOffset = Vector2.Zero</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The offset of the app grid. </p>
+
+</div>
+</div>
+<a id="a7ab4ca788e42ae0d0fcefff9073a5af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab4ca788e42ae0d0fcefff9073a5af8">&#9670;&nbsp;</a></span>AppGridSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 AppHomescreen.AppGridSize = new Vector2(3, 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of the app grid. </p>
+
+</div>
+</div>
+<a id="abb84eceddb111e5e22b0fe833813fa33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb84eceddb111e5e22b0fe833813fa33">&#9670;&nbsp;</a></span>AppGridSpacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 AppHomescreen.AppGridSpacing = Vector2.One * 50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The spacing between the apps on the homescreen. </p>
+
+</div>
+</div>
+<a id="a581bbe7a61061cb8b707ec47023db8b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581bbe7a61061cb8b707ec47023db8b8">&#9670;&nbsp;</a></span>AppPreviewSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AppHomescreen.AppPreviewSize = 40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of the app preview icon. The actual size of the app icon is determined by the homescreen icon of the app itself. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a0c7bc8996e92a2222ab58bd8bfa36b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c7bc8996e92a2222ab58bd8bfa36b7e">&#9670;&nbsp;</a></span>Instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAppHomescreen.html">AppHomescreen</a> AppHomescreen.Instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A reference to the homescreen instance. </p>
+<p><code>AppHomescreen.Instance.Init(apps); // example</code> </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/HUD/Phone/Scripts/AppHomescreen.cs</li>
+<li>038EnergyTransition/Scenes/HUD/Phone/Scripts/<a class="el" href="AppHomescreen_8cs.html">AppHomescreen.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,6 +1,22 @@
 var searchData=
 [
-  ['daylength_507',['DayLength',['../classGlobalTime.html#aad0343322011ff68e0867fad3ddd2453',1,'GlobalTime']]],
-  ['defaultscreensize_508',['DefaultScreenSize',['../classGlobals.html#a75336a5518f051bfd882b225b3777efa',1,'Globals']]],
-  ['duration_509',['Duration',['../classCameraMove.html#ac1822ea8a860d5c90a2f0b3ca218587a',1,'CameraMove']]]
+  ['camerasetting_1895',['CameraSetting',['../classCameraPerspectiveSwitcher.html#ad868481f5b31cbb4fb94db0ee3a8b0e3',1,'CameraPerspectiveSwitcher']]],
+  ['cameraxoffset_1896',['CameraXOffset',['../classCamera.html#ae74cdf331f210e58341330554f477dba',1,'Camera.CameraXOffset()'],['../classCameraPerspectiveSwitcher.html#af5053002fc39f1f92cf00063a18e7cab',1,'CameraPerspectiveSwitcher.CameraXOffset()']]],
+  ['choiceresultname_1897',['ChoiceResultName',['../classChoiceBox.html#a4703685d331c96b4e2651ec0b1334453',1,'ChoiceBox']]],
+  ['choices_1898',['Choices',['../classChoiceBox.html#a66f2b412b7f0c05b47204046f77e1348',1,'ChoiceBox']]],
+  ['closebutton_1899',['CloseButton',['../classQuitApp.html#a6cf28d6d7bb6f015bc333814f7b15238',1,'QuitApp.CloseButton()'],['../classSaveApp.html#ae42f39ac7bad17feee5160c36a6a5cde',1,'SaveApp.CloseButton()']]],
+  ['color1_1900',['color1',['../classAnimatedPositionManager.html#af44f8e91335101705d2ed7d03913ad8b',1,'AnimatedPositionManager']]],
+  ['color2_1901',['color2',['../classAnimatedPositionManager.html#a90d0920eaf415651a7f1c45c02f5af89',1,'AnimatedPositionManager']]],
+  ['completed_1902',['Completed',['../classQuestNode.html#a528273babd1df92f349bca3d5fbe8d38',1,'QuestNode.Completed()'],['../classQuestResource.html#a6b4de23350e6d3d96a62f88ab06e1dbb',1,'QuestResource.Completed()']]],
+  ['conditionnodescene_1903',['ConditionNodeScene',['../classQuestEditorGraph.html#acae55f01cef8e8eb872bd00b7cea001e',1,'QuestEditorGraph']]],
+  ['container_1904',['Container',['../classSceneInstancer.html#a049962975b9c39148783e07e69396098',1,'SceneInstancer']]],
+  ['container_1905',['container',['../classMetadataEditor.html#a06017e8f6de9def38c45b0c9f05d7f43',1,'MetadataEditor']]],
+  ['currentgamesave_1906',['currentGameSave',['../classGameLogic.html#a81fda88248aeb45e037e4aa3b29896ab',1,'GameLogic']]],
+  ['currentgamesaveid_1907',['CurrentGameSaveId',['../classGameSaveManager.html#a5bc4151f8a45fa1fd1e26a9893a901f9',1,'GameSaveManager']]],
+  ['currentgamestate_1908',['CurrentGameState',['../classGlobals.html#ab7f4412793327572c8f17985b8694b8d',1,'Globals']]],
+  ['customdebugelements_1909',['CustomDebugElements',['../classGlobalSettings.html#ab0bc5385ffa33bc061b1c744ff4b799d',1,'GlobalSettings']]],
+  ['cutscene_1910',['Cutscene',['../classQuestPiece.html#af8a65228d2c2793cefde6d6b036509c6',1,'QuestPiece']]],
+  ['cutscenefinished_1911',['CutsceneFinished',['../classCutsceneNode.html#a4b70809d5c4607c7bcecb635663723c0',1,'CutsceneNode']]],
+  ['cutscenevariable_1912',['cutsceneVariable',['../classStatisticsNode.html#ace56c042a1083e26618d13891aa947c1',1,'StatisticsNode']]],
+  ['cutscenevariables_1913',['CutsceneVariables',['../classCutsceneScripter.html#ad91699aae4309e94ec7616b3d4b7eb02',1,'CutsceneScripter']]]
 ];

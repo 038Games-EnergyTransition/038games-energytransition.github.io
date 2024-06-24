@@ -87,11 +87,17 @@ $(document).ready(function(){initNavTree('classCutsceneScripter.html',''); initR
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#events">Events</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classCutsceneScripter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CutsceneScripter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The cutscene scripter. Helper tool for editing and playing cutscenes. [Editor Only] These controls are used to create, edit, and play cutscenes from the editor.  
+ <a href="classCutsceneScripter.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CutsceneScripter:</div>
 <div class="dyncontent">
@@ -101,11 +107,10 @@ Inheritance diagram for CutsceneScripter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a44c8340744a0c52c8b7cff7debf7b52d"><td class="memItemLeft" align="right" valign="top"><a id="a44c8340744a0c52c8b7cff7debf7b52d"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a44c8340744a0c52c8b7cff7debf7b52d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a44c8340744a0c52c8b7cff7debf7b52d">_Ready</a> ()</td></tr>
 <tr class="separator:a44c8340744a0c52c8b7cff7debf7b52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd44464b8f6bbbfb9f3e1c29be052a4"><td class="memItemLeft" align="right" valign="top"><a id="adfd44464b8f6bbbfb9f3e1c29be052a4"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:adfd44464b8f6bbbfb9f3e1c29be052a4"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#adfd44464b8f6bbbfb9f3e1c29be052a4">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:adfd44464b8f6bbbfb9f3e1c29be052a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do nothing when <a class="el" href="classCutsceneScripter.html#a8614c183453df21afb40076d02f280f1" title="The pause cutscene button. When set to true, the cutscene will pause.">PauseCutscene</a> is true If <a class="el" href="classCutsceneScripter.html#af7a75c88f0164ca785fe5b2093191468" title="The active nodes in the cutscene">_activeNodes</a> is not empty, process each node  <a href="classCutsceneScripter.html#adfd44464b8f6bbbfb9f3e1c29be052a4">More...</a><br /></td></tr>
 <tr class="separator:adfd44464b8f6bbbfb9f3e1c29be052a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6412750dd10ee8f10ace81ca74c564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a4a6412750dd10ee8f10ace81ca74c564">Play</a> (string path)</td></tr>
 <tr class="memdesc:a4a6412750dd10ee8f10ace81ca74c564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the cutscene at the given path  <a href="classCutsceneScripter.html#a4a6412750dd10ee8f10ace81ca74c564">More...</a><br /></td></tr>
@@ -113,65 +118,324 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 <tr class="memitem:a42f96622a74c3676d6c951e7464d6acd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a42f96622a74c3676d6c951e7464d6acd">PushError</a> (<a class="el" href="classCutsceneNode.html">CutsceneNode</a> sender, string error)</td></tr>
 <tr class="memdesc:a42f96622a74c3676d6c951e7464d6acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">a global accessable function to push errors from cutscene nodes.  <a href="classCutsceneScripter.html#a42f96622a74c3676d6c951e7464d6acd">More...</a><br /></td></tr>
 <tr class="separator:a42f96622a74c3676d6c951e7464d6acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb3c9f8d1e555c342e2a0ef553cc2248"><td class="memItemLeft" align="right" valign="top"><a id="aeb3c9f8d1e555c342e2a0ef553cc2248"></a>
-<a class="el" href="classCutsceneNodeVariableBase.html">CutsceneNodeVariableBase</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCutsceneVariable</b> (string name)</td></tr>
+<tr class="memitem:aeb3c9f8d1e555c342e2a0ef553cc2248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCutsceneNodeVariableBase.html">CutsceneNodeVariableBase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#aeb3c9f8d1e555c342e2a0ef553cc2248">GetCutsceneVariable</a> (string name)</td></tr>
 <tr class="separator:aeb3c9f8d1e555c342e2a0ef553cc2248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd3152aff66d30e25e93604c57fcf0b"><td class="memItemLeft" align="right" valign="top"><a id="aebd3152aff66d30e25e93604c57fcf0b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StopCutscene</b> ()</td></tr>
+<tr class="memitem:aebd3152aff66d30e25e93604c57fcf0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#aebd3152aff66d30e25e93604c57fcf0b">StopCutscene</a> ()</td></tr>
+<tr class="memdesc:aebd3152aff66d30e25e93604c57fcf0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the cutscene <a class="el" href="classCutsceneScripter.html#a6149f4178b3f0aa8cd3c0c842378e97a" title="Stop and clean up the cutscene">_stopCutscene()</a>  <a href="classCutsceneScripter.html#aebd3152aff66d30e25e93604c57fcf0b">More...</a><br /></td></tr>
 <tr class="separator:aebd3152aff66d30e25e93604c57fcf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8614c183453df21afb40076d02f280f1"><td class="memItemLeft" align="right" valign="top"><a id="a8614c183453df21afb40076d02f280f1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PauseCutscene</b> = false</td></tr>
+<tr class="memitem:a8614c183453df21afb40076d02f280f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a8614c183453df21afb40076d02f280f1">PauseCutscene</a> = false</td></tr>
+<tr class="memdesc:a8614c183453df21afb40076d02f280f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pause cutscene button. When set to true, the cutscene will pause.  <a href="classCutsceneScripter.html#a8614c183453df21afb40076d02f280f1">More...</a><br /></td></tr>
 <tr class="separator:a8614c183453df21afb40076d02f280f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d3a7b27f06cba2317fde2294e33c477"><td class="memItemLeft" align="right" valign="top"><a id="a5d3a7b27f06cba2317fde2294e33c477"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>PlayBackSpeed</b> = 1</td></tr>
+<tr class="memitem:a5d3a7b27f06cba2317fde2294e33c477"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a5d3a7b27f06cba2317fde2294e33c477">PlayBackSpeed</a> = 1</td></tr>
+<tr class="memdesc:a5d3a7b27f06cba2317fde2294e33c477"><td class="mdescLeft">&#160;</td><td class="mdescRight">The playback speed of the cutscene.  <a href="classCutsceneScripter.html#a5d3a7b27f06cba2317fde2294e33c477">More...</a><br /></td></tr>
 <tr class="separator:a5d3a7b27f06cba2317fde2294e33c477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05b7def412c4c2b62d8fcc00e3a5c2bb"><td class="memItemLeft" align="right" valign="top"><a id="a05b7def412c4c2b62d8fcc00e3a5c2bb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlayInEditor</b> = false</td></tr>
+<tr class="memitem:a05b7def412c4c2b62d8fcc00e3a5c2bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a05b7def412c4c2b62d8fcc00e3a5c2bb">PlayInEditor</a> = false</td></tr>
+<tr class="memdesc:a05b7def412c4c2b62d8fcc00e3a5c2bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the cutscene should play in the editor.  <a href="classCutsceneScripter.html#a05b7def412c4c2b62d8fcc00e3a5c2bb">More...</a><br /></td></tr>
 <tr class="separator:a05b7def412c4c2b62d8fcc00e3a5c2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0866d2c9590a7b63a67b12c7286fc4f"><td class="memItemLeft" align="right" valign="top"><a id="aa0866d2c9590a7b63a67b12c7286fc4f"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Path</b></td></tr>
+<tr class="memitem:aa0866d2c9590a7b63a67b12c7286fc4f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#aa0866d2c9590a7b63a67b12c7286fc4f">Path</a></td></tr>
+<tr class="memdesc:aa0866d2c9590a7b63a67b12c7286fc4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path to the cutscene.  <a href="classCutsceneScripter.html#aa0866d2c9590a7b63a67b12c7286fc4f">More...</a><br /></td></tr>
 <tr class="separator:aa0866d2c9590a7b63a67b12c7286fc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad91699aae4309e94ec7616b3d4b7eb02"><td class="memItemLeft" align="right" valign="top"><a id="ad91699aae4309e94ec7616b3d4b7eb02"></a>
-Dictionary&lt; string, <a class="el" href="classCutsceneNodeVariableBase.html">CutsceneNodeVariableBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CutsceneVariables</b> = new Dictionary&lt;string, <a class="el" href="classCutsceneNodeVariableBase.html">CutsceneNodeVariableBase</a>&gt;()</td></tr>
+<tr class="memitem:ad91699aae4309e94ec7616b3d4b7eb02"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, <a class="el" href="classCutsceneNodeVariableBase.html">CutsceneNodeVariableBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#ad91699aae4309e94ec7616b3d4b7eb02">CutsceneVariables</a> = new Dictionary&lt;string, <a class="el" href="classCutsceneNodeVariableBase.html">CutsceneNodeVariableBase</a>&gt;()</td></tr>
 <tr class="separator:ad91699aae4309e94ec7616b3d4b7eb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a7205c22cc8f286bcc7640a843f5465d3"><td class="memItemLeft" align="right" valign="top"><a id="a7205c22cc8f286bcc7640a843f5465d3"></a>
-static <a class="el" href="classCutsceneScripter.html">CutsceneScripter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b></td></tr>
+<tr class="memitem:a7205c22cc8f286bcc7640a843f5465d3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCutsceneScripter.html">CutsceneScripter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a7205c22cc8f286bcc7640a843f5465d3">Instance</a></td></tr>
+<tr class="memdesc:a7205c22cc8f286bcc7640a843f5465d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The instance of the cutscene scripter. This is used to access the cutscene scripter from other scripts.  <a href="classCutsceneScripter.html#a7205c22cc8f286bcc7640a843f5465d3">More...</a><br /></td></tr>
 <tr class="separator:a7205c22cc8f286bcc7640a843f5465d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a4e755cfa3f60eb9d7f291a5fca470b76"><td class="memItemLeft" align="right" valign="top"><a id="a4e755cfa3f60eb9d7f291a5fca470b76"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlayCutsceneButton</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a4e755cfa3f60eb9d7f291a5fca470b76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a4e755cfa3f60eb9d7f291a5fca470b76">PlayCutsceneButton</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a4e755cfa3f60eb9d7f291a5fca470b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">The play cutscene button. When set to true, the cutscene will play and the button will be reset to false.  <a href="classCutsceneScripter.html#a4e755cfa3f60eb9d7f291a5fca470b76">More...</a><br /></td></tr>
 <tr class="separator:a4e755cfa3f60eb9d7f291a5fca470b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9071ae6346b5812cb3a4e094f65d3463"><td class="memItemLeft" align="right" valign="top"><a id="a9071ae6346b5812cb3a4e094f65d3463"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>StopCutsceneButton</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a9071ae6346b5812cb3a4e094f65d3463"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a9071ae6346b5812cb3a4e094f65d3463">StopCutsceneButton</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a9071ae6346b5812cb3a4e094f65d3463"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stop cutscene button. When set to true, the cutscene will stop.  <a href="classCutsceneScripter.html#a9071ae6346b5812cb3a4e094f65d3463">More...</a><br /></td></tr>
 <tr class="separator:a9071ae6346b5812cb3a4e094f65d3463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e6a39f6d3841294d402f6697ee9818e"><td class="memItemLeft" align="right" valign="top"><a id="a6e6a39f6d3841294d402f6697ee9818e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadCutscene</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a6e6a39f6d3841294d402f6697ee9818e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a6e6a39f6d3841294d402f6697ee9818e">loadCutscene</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6e6a39f6d3841294d402f6697ee9818e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the cutscene should load from the current path.  <a href="classCutsceneScripter.html#a6e6a39f6d3841294d402f6697ee9818e">More...</a><br /></td></tr>
 <tr class="separator:a6e6a39f6d3841294d402f6697ee9818e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f12cc89b99ae5b4feee8ca32509ca9"><td class="memItemLeft" align="right" valign="top"><a id="a72f12cc89b99ae5b4feee8ca32509ca9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveCutscene</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a72f12cc89b99ae5b4feee8ca32509ca9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a72f12cc89b99ae5b4feee8ca32509ca9">saveCutscene</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a72f12cc89b99ae5b4feee8ca32509ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the cutscene should save to the current path.  <a href="classCutsceneScripter.html#a72f12cc89b99ae5b4feee8ca32509ca9">More...</a><br /></td></tr>
 <tr class="separator:a72f12cc89b99ae5b4feee8ca32509ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09fce16da8cde1ed09a09b3e090c2d66"><td class="memItemLeft" align="right" valign="top"><a id="a09fce16da8cde1ed09a09b3e090c2d66"></a>
-<a class="el" href="classCutscene.html">Cutscene</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cutscene</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a09fce16da8cde1ed09a09b3e090c2d66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCutscene.html">Cutscene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a09fce16da8cde1ed09a09b3e090c2d66">Cutscene</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a09fce16da8cde1ed09a09b3e090c2d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current cutscene.  <a href="classCutsceneScripter.html#a09fce16da8cde1ed09a09b3e090c2d66">More...</a><br /></td></tr>
 <tr class="separator:a09fce16da8cde1ed09a09b3e090c2d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1d06584e1d0fc83a3ea3c3ad7b7a02c"><td class="memItemLeft" align="right" valign="top"><a id="aa1d06584e1d0fc83a3ea3c3ad7b7a02c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPlaying</b><code> [get]</code></td></tr>
+<tr class="memitem:aa1d06584e1d0fc83a3ea3c3ad7b7a02c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#aa1d06584e1d0fc83a3ea3c3ad7b7a02c">IsPlaying</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:aa1d06584e1d0fc83a3ea3c3ad7b7a02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the cutscene is playing.  <a href="classCutsceneScripter.html#aa1d06584e1d0fc83a3ea3c3ad7b7a02c">More...</a><br /></td></tr>
 <tr class="separator:aa1d06584e1d0fc83a3ea3c3ad7b7a02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
 Events</h2></td></tr>
-<tr class="memitem:abfbc101a95958d0ebee1be59f9d2d451"><td class="memItemLeft" align="right" valign="top"><a id="abfbc101a95958d0ebee1be59f9d2d451"></a>
-EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>CutsceneFinished</b></td></tr>
+<tr class="memitem:abfbc101a95958d0ebee1be59f9d2d451"><td class="memItemLeft" align="right" valign="top">EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#abfbc101a95958d0ebee1be59f9d2d451">CutsceneFinished</a></td></tr>
 <tr class="separator:abfbc101a95958d0ebee1be59f9d2d451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1157b15ef09daeb18fcd12c2e3a7187f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a1157b15ef09daeb18fcd12c2e3a7187f">_loadNextNodes</a> ()</td></tr>
+<tr class="memdesc:a1157b15ef09daeb18fcd12c2e3a7187f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the next nodes in the cutscene  <a href="classCutsceneScripter.html#a1157b15ef09daeb18fcd12c2e3a7187f">More...</a><br /></td></tr>
+<tr class="separator:a1157b15ef09daeb18fcd12c2e3a7187f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c4bedc5b8378b9036e8c857af13df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#af4c4bedc5b8378b9036e8c857af13df4">_nodeFinished</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:af4c4bedc5b8378b9036e8c857af13df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for when a node finishes  <a href="classCutsceneScripter.html#af4c4bedc5b8378b9036e8c857af13df4">More...</a><br /></td></tr>
+<tr class="separator:af4c4bedc5b8378b9036e8c857af13df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138f125305116e0b593105672468c966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a138f125305116e0b593105672468c966">_loadCutscene</a> ()</td></tr>
+<tr class="memdesc:a138f125305116e0b593105672468c966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a cutscene from the given cutscene path  <a href="classCutsceneScripter.html#a138f125305116e0b593105672468c966">More...</a><br /></td></tr>
+<tr class="separator:a138f125305116e0b593105672468c966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8810a5c89217f993f765e4685a491fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a8810a5c89217f993f765e4685a491fd9">_saveCutscene</a> ()</td></tr>
+<tr class="memdesc:a8810a5c89217f993f765e4685a491fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves a cutscene from the given cutscene path  <a href="classCutsceneScripter.html#a8810a5c89217f993f765e4685a491fd9">More...</a><br /></td></tr>
+<tr class="separator:a8810a5c89217f993f765e4685a491fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6149f4178b3f0aa8cd3c0c842378e97a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a6149f4178b3f0aa8cd3c0c842378e97a">_stopCutscene</a> ()</td></tr>
+<tr class="memdesc:a6149f4178b3f0aa8cd3c0c842378e97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop and clean up the cutscene  <a href="classCutsceneScripter.html#a6149f4178b3f0aa8cd3c0c842378e97a">More...</a><br /></td></tr>
+<tr class="separator:a6149f4178b3f0aa8cd3c0c842378e97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0c69ffb2f901f26fc812eca4b238f587"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a0c69ffb2f901f26fc812eca4b238f587">_path</a></td></tr>
+<tr class="memdesc:a0c69ffb2f901f26fc812eca4b238f587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal cutscen path  <a href="classCutsceneScripter.html#a0c69ffb2f901f26fc812eca4b238f587">More...</a><br /></td></tr>
+<tr class="separator:a0c69ffb2f901f26fc812eca4b238f587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e46db7ce47bb0c8bbc5857cb452ba53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a0e46db7ce47bb0c8bbc5857cb452ba53">_isPlaying</a> = false</td></tr>
+<tr class="memdesc:a0e46db7ce47bb0c8bbc5857cb452ba53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal cutscene playing variable  <a href="classCutsceneScripter.html#a0e46db7ce47bb0c8bbc5857cb452ba53">More...</a><br /></td></tr>
+<tr class="separator:a0e46db7ce47bb0c8bbc5857cb452ba53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b358e33f9c89978e39a50996136a72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCutscene.html">Cutscene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#ad0b358e33f9c89978e39a50996136a72">_currentCutscene</a></td></tr>
+<tr class="memdesc:ad0b358e33f9c89978e39a50996136a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal cutscene variable  <a href="classCutsceneScripter.html#ad0b358e33f9c89978e39a50996136a72">More...</a><br /></td></tr>
+<tr class="separator:ad0b358e33f9c89978e39a50996136a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9477df21ecfaeeda782d3fb094310f14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a9477df21ecfaeeda782d3fb094310f14">activeNodes</a> = 0</td></tr>
+<tr class="memdesc:a9477df21ecfaeeda782d3fb094310f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of active nodes in the cutscene  <a href="classCutsceneScripter.html#a9477df21ecfaeeda782d3fb094310f14">More...</a><br /></td></tr>
+<tr class="separator:a9477df21ecfaeeda782d3fb094310f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a75c88f0164ca785fe5b2093191468"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classCutsceneNode.html">CutsceneNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#af7a75c88f0164ca785fe5b2093191468">_activeNodes</a> = new List&lt;<a class="el" href="classCutsceneNode.html">CutsceneNode</a>&gt;()</td></tr>
+<tr class="memdesc:af7a75c88f0164ca785fe5b2093191468"><td class="mdescLeft">&#160;</td><td class="mdescRight">The active nodes in the cutscene  <a href="classCutsceneScripter.html#af7a75c88f0164ca785fe5b2093191468">More...</a><br /></td></tr>
+<tr class="separator:af7a75c88f0164ca785fe5b2093191468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125bedbc1d422d288393be0f489f46a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a125bedbc1d422d288393be0f489f46a6">_currentNodeIndex</a> = 0</td></tr>
+<tr class="memdesc:a125bedbc1d422d288393be0f489f46a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current node index in the cutscene  <a href="classCutsceneScripter.html#a125bedbc1d422d288393be0f489f46a6">More...</a><br /></td></tr>
+<tr class="separator:a125bedbc1d422d288393be0f489f46a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a14ae1f03c085ad8f3576c8ce17ab1a3d"><td class="memItemLeft" align="right" valign="top">static readonly string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneScripter.html#a14ae1f03c085ad8f3576c8ce17ab1a3d">fileExtention</a> = &quot;.cutscene.tres&quot;</td></tr>
+<tr class="memdesc:a14ae1f03c085ad8f3576c8ce17ab1a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">File extention for cutscenes  <a href="classCutsceneScripter.html#a14ae1f03c085ad8f3576c8ce17ab1a3d">More...</a><br /></td></tr>
+<tr class="separator:a14ae1f03c085ad8f3576c8ce17ab1a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The cutscene scripter. Helper tool for editing and playing cutscenes. [Editor Only] These controls are used to create, edit, and play cutscenes from the editor. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a138f125305116e0b593105672468c966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138f125305116e0b593105672468c966">&#9670;&nbsp;</a></span>_loadCutscene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CutsceneScripter._loadCutscene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads a cutscene from the given cutscene path </p>
+
+</div>
+</div>
+<a id="a1157b15ef09daeb18fcd12c2e3a7187f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1157b15ef09daeb18fcd12c2e3a7187f">&#9670;&nbsp;</a></span>_loadNextNodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CutsceneScripter._loadNextNodes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the next nodes in the cutscene </p>
+
+</div>
+</div>
+<a id="af4c4bedc5b8378b9036e8c857af13df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4c4bedc5b8378b9036e8c857af13df4">&#9670;&nbsp;</a></span>_nodeFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CutsceneScripter._nodeFinished </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event handler for when a node finishes </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td></td></tr>
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>summary&gt; Returns the cutscene variable with the given name /summary&gt; </p>
+
+</div>
+</div>
+<a id="adfd44464b8f6bbbfb9f3e1c29be052a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd44464b8f6bbbfb9f3e1c29be052a4">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void CutsceneScripter._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do nothing when <a class="el" href="classCutsceneScripter.html#a8614c183453df21afb40076d02f280f1" title="The pause cutscene button. When set to true, the cutscene will pause.">PauseCutscene</a> is true If <a class="el" href="classCutsceneScripter.html#af7a75c88f0164ca785fe5b2093191468" title="The active nodes in the cutscene">_activeNodes</a> is not empty, process each node </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44c8340744a0c52c8b7cff7debf7b52d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c8340744a0c52c8b7cff7debf7b52d">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void CutsceneScripter._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8810a5c89217f993f765e4685a491fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8810a5c89217f993f765e4685a491fd9">&#9670;&nbsp;</a></span>_saveCutscene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CutsceneScripter._saveCutscene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>saves a cutscene from the given cutscene path </p>
+
+</div>
+</div>
+<a id="a6149f4178b3f0aa8cd3c0c842378e97a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6149f4178b3f0aa8cd3c0c842378e97a">&#9670;&nbsp;</a></span>_stopCutscene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CutsceneScripter._stopCutscene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stop and clean up the cutscene </p>
+
+</div>
+</div>
+<a id="aeb3c9f8d1e555c342e2a0ef553cc2248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3c9f8d1e555c342e2a0ef553cc2248">&#9670;&nbsp;</a></span>GetCutsceneVariable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCutsceneNodeVariableBase.html">CutsceneNodeVariableBase</a> CutsceneScripter.GetCutsceneVariable </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4a6412750dd10ee8f10ace81ca74c564"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a6412750dd10ee8f10ace81ca74c564">&#9670;&nbsp;</a></span>Play()</h2>
 
@@ -235,8 +499,459 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>CutsceneFinis
 
 </div>
 </div>
+<a id="aebd3152aff66d30e25e93604c57fcf0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd3152aff66d30e25e93604c57fcf0b">&#9670;&nbsp;</a></span>StopCutscene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CutsceneScripter.StopCutscene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops the cutscene <a class="el" href="classCutsceneScripter.html#a6149f4178b3f0aa8cd3c0c842378e97a" title="Stop and clean up the cutscene">_stopCutscene()</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af7a75c88f0164ca785fe5b2093191468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a75c88f0164ca785fe5b2093191468">&#9670;&nbsp;</a></span>_activeNodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classCutsceneNode.html">CutsceneNode</a>&gt; CutsceneScripter._activeNodes = new List&lt;<a class="el" href="classCutsceneNode.html">CutsceneNode</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The active nodes in the cutscene </p>
+
+</div>
+</div>
+<a id="ad0b358e33f9c89978e39a50996136a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b358e33f9c89978e39a50996136a72">&#9670;&nbsp;</a></span>_currentCutscene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCutscene.html">Cutscene</a> CutsceneScripter._currentCutscene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal cutscene variable </p>
+
+</div>
+</div>
+<a id="a125bedbc1d422d288393be0f489f46a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125bedbc1d422d288393be0f489f46a6">&#9670;&nbsp;</a></span>_currentNodeIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CutsceneScripter._currentNodeIndex = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current node index in the cutscene </p>
+
+</div>
+</div>
+<a id="a0e46db7ce47bb0c8bbc5857cb452ba53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e46db7ce47bb0c8bbc5857cb452ba53">&#9670;&nbsp;</a></span>_isPlaying</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CutsceneScripter._isPlaying = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal cutscene playing variable </p>
+
+</div>
+</div>
+<a id="a0c69ffb2f901f26fc812eca4b238f587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c69ffb2f901f26fc812eca4b238f587">&#9670;&nbsp;</a></span>_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CutsceneScripter._path</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal cutscen path </p>
+
+</div>
+</div>
+<a id="a9477df21ecfaeeda782d3fb094310f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9477df21ecfaeeda782d3fb094310f14">&#9670;&nbsp;</a></span>activeNodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CutsceneScripter.activeNodes = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of active nodes in the cutscene </p>
+
+</div>
+</div>
+<a id="ad91699aae4309e94ec7616b3d4b7eb02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91699aae4309e94ec7616b3d4b7eb02">&#9670;&nbsp;</a></span>CutsceneVariables</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, <a class="el" href="classCutsceneNodeVariableBase.html">CutsceneNodeVariableBase</a>&gt; CutsceneScripter.CutsceneVariables = new Dictionary&lt;string, <a class="el" href="classCutsceneNodeVariableBase.html">CutsceneNodeVariableBase</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14ae1f03c085ad8f3576c8ce17ab1a3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14ae1f03c085ad8f3576c8ce17ab1a3d">&#9670;&nbsp;</a></span>fileExtention</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string CutsceneScripter.fileExtention = &quot;.cutscene.tres&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>File extention for cutscenes </p>
+
+</div>
+</div>
+<a id="a7205c22cc8f286bcc7640a843f5465d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7205c22cc8f286bcc7640a843f5465d3">&#9670;&nbsp;</a></span>Instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCutsceneScripter.html">CutsceneScripter</a> CutsceneScripter.Instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The instance of the cutscene scripter. This is used to access the cutscene scripter from other scripts. </p>
+<p><code>CutsceneScripter.Instance.StopCutscene(); // example</code> </p>
+
+</div>
+</div>
+<a id="aa0866d2c9590a7b63a67b12c7286fc4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0866d2c9590a7b63a67b12c7286fc4f">&#9670;&nbsp;</a></span>Path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CutsceneScripter.Path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The path to the cutscene. </p>
+
+</div>
+</div>
+<a id="a8614c183453df21afb40076d02f280f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8614c183453df21afb40076d02f280f1">&#9670;&nbsp;</a></span>PauseCutscene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CutsceneScripter.PauseCutscene = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The pause cutscene button. When set to true, the cutscene will pause. </p>
+
+</div>
+</div>
+<a id="a5d3a7b27f06cba2317fde2294e33c477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3a7b27f06cba2317fde2294e33c477">&#9670;&nbsp;</a></span>PlayBackSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CutsceneScripter.PlayBackSpeed = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The playback speed of the cutscene. </p>
+
+</div>
+</div>
+<a id="a05b7def412c4c2b62d8fcc00e3a5c2bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b7def412c4c2b62d8fcc00e3a5c2bb">&#9670;&nbsp;</a></span>PlayInEditor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CutsceneScripter.PlayInEditor = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If the cutscene should play in the editor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a09fce16da8cde1ed09a09b3e090c2d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fce16da8cde1ed09a09b3e090c2d66">&#9670;&nbsp;</a></span>Cutscene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCutscene.html">Cutscene</a> CutsceneScripter.Cutscene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current cutscene. </p>
+
+</div>
+</div>
+<a id="aa1d06584e1d0fc83a3ea3c3ad7b7a02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d06584e1d0fc83a3ea3c3ad7b7a02c">&#9670;&nbsp;</a></span>IsPlaying</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CutsceneScripter.IsPlaying</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the cutscene is playing. </p>
+
+</div>
+</div>
+<a id="a6e6a39f6d3841294d402f6697ee9818e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6a39f6d3841294d402f6697ee9818e">&#9670;&nbsp;</a></span>loadCutscene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CutsceneScripter.loadCutscene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the cutscene should load from the current path. </p>
+
+</div>
+</div>
+<a id="a4e755cfa3f60eb9d7f291a5fca470b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e755cfa3f60eb9d7f291a5fca470b76">&#9670;&nbsp;</a></span>PlayCutsceneButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CutsceneScripter.PlayCutsceneButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The play cutscene button. When set to true, the cutscene will play and the button will be reset to false. </p>
+
+</div>
+</div>
+<a id="a72f12cc89b99ae5b4feee8ca32509ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f12cc89b99ae5b4feee8ca32509ca9">&#9670;&nbsp;</a></span>saveCutscene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CutsceneScripter.saveCutscene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the cutscene should save to the current path. </p>
+
+</div>
+</div>
+<a id="a9071ae6346b5812cb3a4e094f65d3463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9071ae6346b5812cb3a4e094f65d3463">&#9670;&nbsp;</a></span>StopCutsceneButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CutsceneScripter.StopCutsceneButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The stop cutscene button. When set to true, the cutscene will stop. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="abfbc101a95958d0ebee1be59f9d2d451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfbc101a95958d0ebee1be59f9d2d451">&#9670;&nbsp;</a></span>CutsceneFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler CutsceneScripter.CutsceneFinished</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/Cutscenes/CutsceneScripter.cs</li>
+<li>038EnergyTransition/Modules/Cutscenes/<a class="el" href="CutsceneScripter_8cs.html">CutsceneScripter.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

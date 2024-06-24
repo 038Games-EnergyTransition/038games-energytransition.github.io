@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['spawnposition_559',['SpawnPosition',['../classRoomScript.html#ae696a4fb17f1bfe633b44fe018da7ea9',1,'RoomScript']]],
-  ['statistics_560',['Statistics',['../classGameSave.html#a3fbddd2af0c3ac6c866a778e3fe17d14',1,'GameSave']]]
+  ['loadcutscene_2204',['loadCutscene',['../classCutsceneScripter.html#a6e6a39f6d3841294d402f6697ee9818e',1,'CutsceneScripter']]]
 ];

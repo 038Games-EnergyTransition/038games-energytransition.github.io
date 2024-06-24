@@ -84,6 +84,8 @@ $(document).ready(function(){initNavTree('classQuestEditor.html',''); initResiza
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classQuestEditor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">QuestEditor Class Reference</div>  </div>
@@ -98,8 +100,7 @@ Inheritance diagram for QuestEditor:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3a0946efeb30df897c536d02c1e0eb1d"><td class="memItemLeft" align="right" valign="top"><a id="a3a0946efeb30df897c536d02c1e0eb1d"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a3a0946efeb30df897c536d02c1e0eb1d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a3a0946efeb30df897c536d02c1e0eb1d">_Ready</a> ()</td></tr>
 <tr class="separator:a3a0946efeb30df897c536d02c1e0eb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb36f02936bead3b0dc8184177cf7c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#adcb36f02936bead3b0dc8184177cf7c2">ShowAddNodeMenu</a> (Vector2 position)</td></tr>
 <tr class="memdesc:adcb36f02936bead3b0dc8184177cf7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the add node menu at the given position  <a href="classQuestEditor.html#adcb36f02936bead3b0dc8184177cf7c2">More...</a><br /></td></tr>
@@ -107,11 +108,457 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> (
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:afe3bc4c215aab6758cbef1a0e22ef5ab"><td class="memItemLeft" align="right" valign="top"><a id="afe3bc4c215aab6758cbef1a0e22ef5ab"></a>
-PackedScene&#160;</td><td class="memItemRight" valign="bottom"><b>EditorActionScene</b> = GD.Load&lt;PackedScene&gt;(&quot;res://addons/quester/scenes/EditorAction.tscn&quot;)</td></tr>
+<tr class="memitem:afe3bc4c215aab6758cbef1a0e22ef5ab"><td class="memItemLeft" align="right" valign="top">PackedScene&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#afe3bc4c215aab6758cbef1a0e22ef5ab">EditorActionScene</a> = GD.Load&lt;PackedScene&gt;(&quot;res://addons/quester/scenes/EditorAction.tscn&quot;)</td></tr>
 <tr class="separator:afe3bc4c215aab6758cbef1a0e22ef5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a64b5e9c3d047f268332f1c23c4909841"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a64b5e9c3d047f268332f1c23c4909841">saveFile</a> (string path)</td></tr>
+<tr class="memdesc:a64b5e9c3d047f268332f1c23c4909841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the file to the given path  <a href="classQuestEditor.html#a64b5e9c3d047f268332f1c23c4909841">More...</a><br /></td></tr>
+<tr class="separator:a64b5e9c3d047f268332f1c23c4909841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445b4b974b7739f75f9a0dafdce7cfa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a445b4b974b7739f75f9a0dafdce7cfa9">loadFile</a> (string path)</td></tr>
+<tr class="memdesc:a445b4b974b7739f75f9a0dafdce7cfa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the file from the given path  <a href="classQuestEditor.html#a445b4b974b7739f75f9a0dafdce7cfa9">More...</a><br /></td></tr>
+<tr class="separator:a445b4b974b7739f75f9a0dafdce7cfa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bf3bd2c6cb3f963411967bca6c35af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a91bf3bd2c6cb3f963411967bca6c35af">applyChanges</a> ()</td></tr>
+<tr class="memdesc:a91bf3bd2c6cb3f963411967bca6c35af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply changes to the graph  <a href="classQuestEditor.html#a91bf3bd2c6cb3f963411967bca6c35af">More...</a><br /></td></tr>
+<tr class="separator:a91bf3bd2c6cb3f963411967bca6c35af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe72d78997970c5446520bfd3a085448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#afe72d78997970c5446520bfd3a085448">saveChanges</a> ()</td></tr>
+<tr class="memdesc:afe72d78997970c5446520bfd3a085448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a save file dialog if the file path is not set, otherwise save the file  <a href="classQuestEditor.html#afe72d78997970c5446520bfd3a085448">More...</a><br /></td></tr>
+<tr class="separator:afe72d78997970c5446520bfd3a085448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a5f64a54bb13227b120e4df6aad728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a06a5f64a54bb13227b120e4df6aad728">_on_NewButton_pressed</a> ()</td></tr>
+<tr class="memdesc:a06a5f64a54bb13227b120e4df6aad728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the graph  <a href="classQuestEditor.html#a06a5f64a54bb13227b120e4df6aad728">More...</a><br /></td></tr>
+<tr class="separator:a06a5f64a54bb13227b120e4df6aad728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14ecd2d5b5c8f8c2f30a3c59a4ba7e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#ab14ecd2d5b5c8f8c2f30a3c59a4ba7e8">_on_OpenButton_pressed</a> ()</td></tr>
+<tr class="memdesc:ab14ecd2d5b5c8f8c2f30a3c59a4ba7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file dialog to load a quest resource  <a href="classQuestEditor.html#ab14ecd2d5b5c8f8c2f30a3c59a4ba7e8">More...</a><br /></td></tr>
+<tr class="separator:ab14ecd2d5b5c8f8c2f30a3c59a4ba7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b5dfccce80d6be2ef23a6f003c75c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a78b5dfccce80d6be2ef23a6f003c75c4">_on_SaveButton_pressed</a> ()</td></tr>
+<tr class="memdesc:a78b5dfccce80d6be2ef23a6f003c75c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file dialog to save a quest resource  <a href="classQuestEditor.html#a78b5dfccce80d6be2ef23a6f003c75c4">More...</a><br /></td></tr>
+<tr class="separator:a78b5dfccce80d6be2ef23a6f003c75c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a19fb9560af64fc0892f84e12dc048"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#af3a19fb9560af64fc0892f84e12dc048">_on_AddNodeButton_pressed</a> ()</td></tr>
+<tr class="memdesc:af3a19fb9560af64fc0892f84e12dc048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the add node menu at the add node button position  <a href="classQuestEditor.html#af3a19fb9560af64fc0892f84e12dc048">More...</a><br /></td></tr>
+<tr class="separator:af3a19fb9560af64fc0892f84e12dc048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721aece8631d1020a77772b361d041f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a721aece8631d1020a77772b361d041f8">_onSaveFileDialogFileSelected</a> (string path)</td></tr>
+<tr class="memdesc:a721aece8631d1020a77772b361d041f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the file to the given path  <a href="classQuestEditor.html#a721aece8631d1020a77772b361d041f8">More...</a><br /></td></tr>
+<tr class="separator:a721aece8631d1020a77772b361d041f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b62595fe8023b7a3b030b4bb3947eff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a3b62595fe8023b7a3b030b4bb3947eff">_onLoadFileDialogFileSelected</a> (string path)</td></tr>
+<tr class="memdesc:a3b62595fe8023b7a3b030b4bb3947eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the file from the given path  <a href="classQuestEditor.html#a3b62595fe8023b7a3b030b4bb3947eff">More...</a><br /></td></tr>
+<tr class="separator:a3b62595fe8023b7a3b030b4bb3947eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cd00aacb95f85eb8db689dd53aa20d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#ab5cd00aacb95f85eb8db689dd53aa20d">_addNewNode</a> (int idx)</td></tr>
+<tr class="separator:ab5cd00aacb95f85eb8db689dd53aa20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedef58735d037f8b36e94a030d6cf47b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#aedef58735d037f8b36e94a030d6cf47b">_logAction</a> (string text, string icon)</td></tr>
+<tr class="memdesc:aedef58735d037f8b36e94a030d6cf47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log entry on top of the graph to notify the user of an action  <a href="classQuestEditor.html#aedef58735d037f8b36e94a030d6cf47b">More...</a><br /></td></tr>
+<tr class="separator:aedef58735d037f8b36e94a030d6cf47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2efe6e2163b7b257b7173ea28c5daf88"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a2efe6e2163b7b257b7173ea28c5daf88">_newButton</a></td></tr>
+<tr class="separator:a2efe6e2163b7b257b7173ea28c5daf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbfbcede590c08c3edc063e5e2d06443"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#acbfbcede590c08c3edc063e5e2d06443">_openButton</a></td></tr>
+<tr class="separator:acbfbcede590c08c3edc063e5e2d06443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece92447a03eefb7e82b62d2743f4f80"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#aece92447a03eefb7e82b62d2743f4f80">_saveButton</a></td></tr>
+<tr class="separator:aece92447a03eefb7e82b62d2743f4f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de43e1814a7b4428100ff49d6351ff6"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a2de43e1814a7b4428100ff49d6351ff6">_addNodeButton</a></td></tr>
+<tr class="separator:a2de43e1814a7b4428100ff49d6351ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed93162fd986ff2e9fc59ad5ca45a94"><td class="memItemLeft" align="right" valign="top">FileDialog&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#afed93162fd986ff2e9fc59ad5ca45a94">_saveFileDialog</a></td></tr>
+<tr class="separator:afed93162fd986ff2e9fc59ad5ca45a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced9b4576818b52331e1d1bca45b9069"><td class="memItemLeft" align="right" valign="top">FileDialog&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#aced9b4576818b52331e1d1bca45b9069">_loadFileDialog</a></td></tr>
+<tr class="separator:aced9b4576818b52331e1d1bca45b9069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8931015156f15352fdba50ddca539574"><td class="memItemLeft" align="right" valign="top">PopupMenu&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a8931015156f15352fdba50ddca539574">_addNodeMenu</a></td></tr>
+<tr class="separator:a8931015156f15352fdba50ddca539574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdfc5ae57bb3ffd461254f09a416d1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuestEditorGraph.html">QuestEditorGraph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a3fdfc5ae57bb3ffd461254f09a416d1f">_graph</a></td></tr>
+<tr class="separator:a3fdfc5ae57bb3ffd461254f09a416d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e3aee4b28dac8c902b569d572f37be"><td class="memItemLeft" align="right" valign="top">VBoxContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#ae4e3aee4b28dac8c902b569d572f37be">_actionlogContainer</a></td></tr>
+<tr class="separator:ae4e3aee4b28dac8c902b569d572f37be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6677dcf0638474f91b753c624772f520"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestEditor.html#a6677dcf0638474f91b753c624772f520">_saveFilePath</a></td></tr>
+<tr class="separator:a6677dcf0638474f91b753c624772f520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab5cd00aacb95f85eb8db689dd53aa20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5cd00aacb95f85eb8db689dd53aa20d">&#9670;&nbsp;</a></span>_addNewNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor._addNewNode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedef58735d037f8b36e94a030d6cf47b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedef58735d037f8b36e94a030d6cf47b">&#9670;&nbsp;</a></span>_logAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor._logAction </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>icon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a log entry on top of the graph to notify the user of an action </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td></td></tr>
+    <tr><td class="paramname">icon</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af3a19fb9560af64fc0892f84e12dc048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a19fb9560af64fc0892f84e12dc048">&#9670;&nbsp;</a></span>_on_AddNodeButton_pressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor._on_AddNodeButton_pressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Open the add node menu at the add node button position </p>
+
+</div>
+</div>
+<a id="a06a5f64a54bb13227b120e4df6aad728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a5f64a54bb13227b120e4df6aad728">&#9670;&nbsp;</a></span>_on_NewButton_pressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor._on_NewButton_pressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear the graph </p>
+
+</div>
+</div>
+<a id="ab14ecd2d5b5c8f8c2f30a3c59a4ba7e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14ecd2d5b5c8f8c2f30a3c59a4ba7e8">&#9670;&nbsp;</a></span>_on_OpenButton_pressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor._on_OpenButton_pressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Open a file dialog to load a quest resource </p>
+
+</div>
+</div>
+<a id="a78b5dfccce80d6be2ef23a6f003c75c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78b5dfccce80d6be2ef23a6f003c75c4">&#9670;&nbsp;</a></span>_on_SaveButton_pressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor._on_SaveButton_pressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Open a file dialog to save a quest resource </p>
+
+</div>
+</div>
+<a id="a3b62595fe8023b7a3b030b4bb3947eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b62595fe8023b7a3b030b4bb3947eff">&#9670;&nbsp;</a></span>_onLoadFileDialogFileSelected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor._onLoadFileDialogFileSelected </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load the file from the given path </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a721aece8631d1020a77772b361d041f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a721aece8631d1020a77772b361d041f8">&#9670;&nbsp;</a></span>_onSaveFileDialogFileSelected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor._onSaveFileDialogFileSelected </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the file to the given path </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a0946efeb30df897c536d02c1e0eb1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0946efeb30df897c536d02c1e0eb1d">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void QuestEditor._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91bf3bd2c6cb3f963411967bca6c35af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91bf3bd2c6cb3f963411967bca6c35af">&#9670;&nbsp;</a></span>applyChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor.applyChanges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply changes to the graph </p>
+
+</div>
+</div>
+<a id="a445b4b974b7739f75f9a0dafdce7cfa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a445b4b974b7739f75f9a0dafdce7cfa9">&#9670;&nbsp;</a></span>loadFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor.loadFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load the file from the given path </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afe72d78997970c5446520bfd3a085448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe72d78997970c5446520bfd3a085448">&#9670;&nbsp;</a></span>saveChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor.saveChanges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Show a save file dialog if the file path is not set, otherwise save the file </p>
+
+</div>
+</div>
+<a id="a64b5e9c3d047f268332f1c23c4909841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b5e9c3d047f268332f1c23c4909841">&#9670;&nbsp;</a></span>saveFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestEditor.saveFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the file to the given path </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adcb36f02936bead3b0dc8184177cf7c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adcb36f02936bead3b0dc8184177cf7c2">&#9670;&nbsp;</a></span>ShowAddNodeMenu()</h2>
 
@@ -138,8 +585,243 @@ PackedScene&#160;</td><td class="memItemRight" valign="bottom"><b>EditorActionSc
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae4e3aee4b28dac8c902b569d572f37be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e3aee4b28dac8c902b569d572f37be">&#9670;&nbsp;</a></span>_actionlogContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VBoxContainer QuestEditor._actionlogContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2de43e1814a7b4428100ff49d6351ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de43e1814a7b4428100ff49d6351ff6">&#9670;&nbsp;</a></span>_addNodeButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button QuestEditor._addNodeButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8931015156f15352fdba50ddca539574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8931015156f15352fdba50ddca539574">&#9670;&nbsp;</a></span>_addNodeMenu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PopupMenu QuestEditor._addNodeMenu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fdfc5ae57bb3ffd461254f09a416d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fdfc5ae57bb3ffd461254f09a416d1f">&#9670;&nbsp;</a></span>_graph</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQuestEditorGraph.html">QuestEditorGraph</a> QuestEditor._graph</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aced9b4576818b52331e1d1bca45b9069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced9b4576818b52331e1d1bca45b9069">&#9670;&nbsp;</a></span>_loadFileDialog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileDialog QuestEditor._loadFileDialog</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2efe6e2163b7b257b7173ea28c5daf88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2efe6e2163b7b257b7173ea28c5daf88">&#9670;&nbsp;</a></span>_newButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button QuestEditor._newButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbfbcede590c08c3edc063e5e2d06443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbfbcede590c08c3edc063e5e2d06443">&#9670;&nbsp;</a></span>_openButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button QuestEditor._openButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aece92447a03eefb7e82b62d2743f4f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece92447a03eefb7e82b62d2743f4f80">&#9670;&nbsp;</a></span>_saveButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button QuestEditor._saveButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afed93162fd986ff2e9fc59ad5ca45a94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afed93162fd986ff2e9fc59ad5ca45a94">&#9670;&nbsp;</a></span>_saveFileDialog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileDialog QuestEditor._saveFileDialog</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6677dcf0638474f91b753c624772f520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6677dcf0638474f91b753c624772f520">&#9670;&nbsp;</a></span>_saveFilePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string QuestEditor._saveFilePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe3bc4c215aab6758cbef1a0e22ef5ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3bc4c215aab6758cbef1a0e22ef5ab">&#9670;&nbsp;</a></span>EditorActionScene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PackedScene QuestEditor.EditorActionScene = GD.Load&lt;PackedScene&gt;(&quot;res://addons/quester/scenes/EditorAction.tscn&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/addons/quester/scripts/QuestEditor.cs</li>
+<li>038EnergyTransition/addons/quester/scripts/<a class="el" href="QuestEditor_8cs.html">QuestEditor.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

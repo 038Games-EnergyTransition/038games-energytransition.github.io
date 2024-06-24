@@ -14,6 +14,8 @@ var classQuestResource =
     [ "Serialize", "classQuestResource.html#a0705afb47f66189dc9048c5286dfe32f", null ],
     [ "Start", "classQuestResource.html#aec40585653a62ce93dd8a7d3f374cfa3", null ],
     [ "Update", "classQuestResource.html#a21f8b4ac5f9eb6123e387470cffe4df1", null ],
+    [ "_intStartNode", "classQuestResource.html#a36be96d3dbb90bd7dd518c65a5834146", null ],
+    [ "_wasInitialized", "classQuestResource.html#ad25cf8a092ebfe3ec7ab53a80821fb48", null ],
     [ "Completed", "classQuestResource.html#a6b4de23350e6d3d96a62f88ab06e1dbb", null ],
     [ "IsInstance", "classQuestResource.html#a22febe2838c72ef612dd522d4bb77f21", null ],
     [ "_startNode", "classQuestResource.html#a72e66736cd06b2ff7d4ce3f96e4d1c47", null ],

@@ -83,11 +83,17 @@ $(document).ready(function(){initNavTree('classMainLineQuestManager.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classMainLineQuestManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MainLineQuestManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The mainline quest manager. It will start the quests in order and listen for when a quest is completed.  
+ <a href="classMainLineQuestManager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for MainLineQuestManager:</div>
 <div class="dyncontent">
@@ -97,14 +103,96 @@ Inheritance diagram for MainLineQuestManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a156b1c5cd4bd7e244b8b650cb4ebbf36"><td class="memItemLeft" align="right" valign="top"><a id="a156b1c5cd4bd7e244b8b650cb4ebbf36"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a156b1c5cd4bd7e244b8b650cb4ebbf36"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#a156b1c5cd4bd7e244b8b650cb4ebbf36">_Ready</a> ()</td></tr>
+<tr class="memdesc:a156b1c5cd4bd7e244b8b650cb4ebbf36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classMainLineQuestManager.html" title="The mainline quest manager. It will start the quests in order and listen for when a quest is complete...">MainLineQuestManager</a>  <a href="classMainLineQuestManager.html#a156b1c5cd4bd7e244b8b650cb4ebbf36">More...</a><br /></td></tr>
 <tr class="separator:a156b1c5cd4bd7e244b8b650cb4ebbf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add7cb11b37992c8d0cd1a37d4c7fb91b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#add7cb11b37992c8d0cd1a37d4c7fb91b">NextQuest</a> ()</td></tr>
 <tr class="memdesc:add7cb11b37992c8d0cd1a37d4c7fb91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves to the next quest in the list  <a href="classMainLineQuestManager.html#add7cb11b37992c8d0cd1a37d4c7fb91b">More...</a><br /></td></tr>
 <tr class="separator:add7cb11b37992c8d0cd1a37d4c7fb91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a080270456f0b695e21e08dc59e5c0c26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#a080270456f0b695e21e08dc59e5c0c26">changeDayButton</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a080270456f0b695e21e08dc59e5c0c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change day button to trigger the day changed event  <a href="classMainLineQuestManager.html#a080270456f0b695e21e08dc59e5c0c26">More...</a><br /></td></tr>
+<tr class="separator:a080270456f0b695e21e08dc59e5c0c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a691af9afab3dde5c23fef9bdab522cda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#a691af9afab3dde5c23fef9bdab522cda">onDayChanged</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a691af9afab3dde5c23fef9bdab522cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Event] Called when the day changes by <a class="el" href="classGlobalTime.html" title="GlobalTime class to keep track of the current time in the game">GlobalTime</a>  <a href="classMainLineQuestManager.html#a691af9afab3dde5c23fef9bdab522cda">More...</a><br /></td></tr>
+<tr class="separator:a691af9afab3dde5c23fef9bdab522cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebbf0fe948ae18c12a79c0d954356778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#aebbf0fe948ae18c12a79c0d954356778">QuestCompleted</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
+<tr class="memdesc:aebbf0fe948ae18c12a79c0d954356778"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Event] Called when a quest is completed by <a class="el" href="classQuestManager.html">QuestManager</a> eventhandler for when a quest is completed  <a href="classMainLineQuestManager.html#aebbf0fe948ae18c12a79c0d954356778">More...</a><br /></td></tr>
+<tr class="separator:aebbf0fe948ae18c12a79c0d954356778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72234c706499a7c3b41c2774c096aeac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuestPiece.html">QuestPiece</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#a72234c706499a7c3b41c2774c096aeac">GetCurrentQuest</a> ()</td></tr>
+<tr class="memdesc:a72234c706499a7c3b41c2774c096aeac"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the current quest  <a href="classMainLineQuestManager.html#a72234c706499a7c3b41c2774c096aeac">More...</a><br /></td></tr>
+<tr class="separator:a72234c706499a7c3b41c2774c096aeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28aeec62bcc439d433ff6c20a49a9ad2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#a28aeec62bcc439d433ff6c20a49a9ad2">startQuest</a> ()</td></tr>
+<tr class="memdesc:a28aeec62bcc439d433ff6c20a49a9ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts a quest by initializing from the quest resource  <a href="classMainLineQuestManager.html#a28aeec62bcc439d433ff6c20a49a9ad2">More...</a><br /></td></tr>
+<tr class="separator:a28aeec62bcc439d433ff6c20a49a9ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1aaf4d315f776ad2341ff4c4328e63cc"><td class="memItemLeft" align="right" valign="top">Godot.Collections.Array&lt; <a class="el" href="classQuestPiece.html">QuestPiece</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#a1aaf4d315f776ad2341ff4c4328e63cc">QuestPieces</a> = new Godot.Collections.Array&lt;<a class="el" href="classQuestPiece.html">QuestPiece</a>&gt;()</td></tr>
+<tr class="memdesc:a1aaf4d315f776ad2341ff4c4328e63cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of quests in order of the mainline  <a href="classMainLineQuestManager.html#a1aaf4d315f776ad2341ff4c4328e63cc">More...</a><br /></td></tr>
+<tr class="separator:a1aaf4d315f776ad2341ff4c4328e63cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca121fc8ee58b1afeab98fc9d8ac708"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#abca121fc8ee58b1afeab98fc9d8ac708">_currentQuestIndex</a> = -1</td></tr>
+<tr class="memdesc:abca121fc8ee58b1afeab98fc9d8ac708"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current quest index  <a href="classMainLineQuestManager.html#abca121fc8ee58b1afeab98fc9d8ac708">More...</a><br /></td></tr>
+<tr class="separator:abca121fc8ee58b1afeab98fc9d8ac708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7f8584b218b8504212491a25f215e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainLineQuestManager.html#abc7f8584b218b8504212491a25f215e5">waitingForNewDay</a> = false</td></tr>
+<tr class="memdesc:abc7f8584b218b8504212491a25f215e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to check if the game is waiting for a new day to start for the next quest  <a href="classMainLineQuestManager.html#abc7f8584b218b8504212491a25f215e5">More...</a><br /></td></tr>
+<tr class="separator:abc7f8584b218b8504212491a25f215e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The mainline quest manager. It will start the quests in order and listen for when a quest is completed. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a156b1c5cd4bd7e244b8b650cb4ebbf36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156b1c5cd4bd7e244b8b650cb4ebbf36">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void MainLineQuestManager._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the <a class="el" href="classMainLineQuestManager.html" title="The mainline quest manager. It will start the quests in order and listen for when a quest is complete...">MainLineQuestManager</a> </p>
+
+</div>
+</div>
+<a id="a72234c706499a7c3b41c2774c096aeac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72234c706499a7c3b41c2774c096aeac">&#9670;&nbsp;</a></span>GetCurrentQuest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQuestPiece.html">QuestPiece</a> MainLineQuestManager.GetCurrentQuest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gets the current quest </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="add7cb11b37992c8d0cd1a37d4c7fb91b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add7cb11b37992c8d0cd1a37d4c7fb91b">&#9670;&nbsp;</a></span>NextQuest()</h2>
 
@@ -124,8 +212,212 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> (
 
 </div>
 </div>
+<a id="a691af9afab3dde5c23fef9bdab522cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691af9afab3dde5c23fef9bdab522cda">&#9670;&nbsp;</a></span>onDayChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainLineQuestManager.onDayChanged </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[Event] Called when the day changes by <a class="el" href="classGlobalTime.html" title="GlobalTime class to keep track of the current time in the game">GlobalTime</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td></td></tr>
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aebbf0fe948ae18c12a79c0d954356778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebbf0fe948ae18c12a79c0d954356778">&#9670;&nbsp;</a></span>QuestCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainLineQuestManager.QuestCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[Event] Called when a quest is completed by <a class="el" href="classQuestManager.html">QuestManager</a> eventhandler for when a quest is completed </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28aeec62bcc439d433ff6c20a49a9ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28aeec62bcc439d433ff6c20a49a9ad2">&#9670;&nbsp;</a></span>startQuest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainLineQuestManager.startQuest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>starts a quest by initializing from the quest resource </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abca121fc8ee58b1afeab98fc9d8ac708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca121fc8ee58b1afeab98fc9d8ac708">&#9670;&nbsp;</a></span>_currentQuestIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainLineQuestManager._currentQuestIndex = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current quest index </p>
+
+</div>
+</div>
+<a id="a1aaf4d315f776ad2341ff4c4328e63cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aaf4d315f776ad2341ff4c4328e63cc">&#9670;&nbsp;</a></span>QuestPieces</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Godot.Collections.Array&lt;<a class="el" href="classQuestPiece.html">QuestPiece</a>&gt; MainLineQuestManager.QuestPieces = new Godot.Collections.Array&lt;<a class="el" href="classQuestPiece.html">QuestPiece</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>list of quests in order of the mainline </p>
+
+</div>
+</div>
+<a id="abc7f8584b218b8504212491a25f215e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7f8584b218b8504212491a25f215e5">&#9670;&nbsp;</a></span>waitingForNewDay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainLineQuestManager.waitingForNewDay = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Boolean to check if the game is waiting for a new day to start for the next quest </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a080270456f0b695e21e08dc59e5c0c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a080270456f0b695e21e08dc59e5c0c26">&#9670;&nbsp;</a></span>changeDayButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainLineQuestManager.changeDayButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change day button to trigger the day changed event </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/MainLineQuestManager/MainLineQuestManager.cs</li>
+<li>038EnergyTransition/Modules/MainLineQuestManager/<a class="el" href="MainLineQuestManager_8cs.html">MainLineQuestManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

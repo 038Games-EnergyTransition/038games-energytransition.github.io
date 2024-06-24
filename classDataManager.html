@@ -84,6 +84,9 @@ $(document).ready(function(){initNavTree('classDataManager.html',''); initResiza
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classDataManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DataManager Class Reference</div>  </div>
@@ -98,27 +101,235 @@ Inheritance diagram for DataManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d0cc84011adad6802bb56528eff258f"><td class="memItemLeft" align="right" valign="top"><a id="a7d0cc84011adad6802bb56528eff258f"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DataChangedEventHandler</b> (string key, Variant value)</td></tr>
+<tr class="memitem:a7d0cc84011adad6802bb56528eff258f"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#a7d0cc84011adad6802bb56528eff258f">DataChangedEventHandler</a> (string key, Variant value)</td></tr>
 <tr class="separator:a7d0cc84011adad6802bb56528eff258f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa158100368fa7abcaa91fc9b75829155"><td class="memItemLeft" align="right" valign="top"><a id="aa158100368fa7abcaa91fc9b75829155"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:aa158100368fa7abcaa91fc9b75829155"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#aa158100368fa7abcaa91fc9b75829155">_Ready</a> ()</td></tr>
 <tr class="separator:aa158100368fa7abcaa91fc9b75829155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22be5522d121acbe43306d005b89f63d"><td class="memItemLeft" align="right" valign="top"><a id="a22be5522d121acbe43306d005b89f63d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (string key, Variant value)</td></tr>
+<tr class="memitem:a22be5522d121acbe43306d005b89f63d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#a22be5522d121acbe43306d005b89f63d">SetValue</a> (string key, Variant value)</td></tr>
 <tr class="separator:a22be5522d121acbe43306d005b89f63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1f2915a0f0bb4bc1553e31ca8bbd2ec"><td class="memItemLeft" align="right" valign="top"><a id="ad1f2915a0f0bb4bc1553e31ca8bbd2ec"></a>
-Variant&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (string key)</td></tr>
+<tr class="memitem:ad1f2915a0f0bb4bc1553e31ca8bbd2ec"><td class="memItemLeft" align="right" valign="top">Variant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#ad1f2915a0f0bb4bc1553e31ca8bbd2ec">GetValue</a> (string key)</td></tr>
 <tr class="separator:ad1f2915a0f0bb4bc1553e31ca8bbd2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac64f57d379da33f1e531ce56d81ac24c"><td class="memItemLeft" align="right" valign="top"><a id="ac64f57d379da33f1e531ce56d81ac24c"></a>
-static <a class="el" href="classDataManager.html">DataManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
+<tr class="memitem:ac64f57d379da33f1e531ce56d81ac24c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDataManager.html">DataManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#ac64f57d379da33f1e531ce56d81ac24c">GetInstance</a> ()</td></tr>
 <tr class="separator:ac64f57d379da33f1e531ce56d81ac24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af2fdd2d98e4b1e1621bc41f322fe3e13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#af2fdd2d98e4b1e1621bc41f322fe3e13">CompareValue</a> (string key, Variant value)</td></tr>
+<tr class="separator:af2fdd2d98e4b1e1621bc41f322fe3e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afc7460d24db75abcbb1ff75a25c75f6c"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#afc7460d24db75abcbb1ff75a25c75f6c">_data</a> = new Dictionary&lt;string, Variant&gt;()</td></tr>
+<tr class="separator:afc7460d24db75abcbb1ff75a25c75f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ad32e06cf226108b7c18872451e7734f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDataManager.html">DataManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#ad32e06cf226108b7c18872451e7734f2">_instance</a></td></tr>
+<tr class="separator:ad32e06cf226108b7c18872451e7734f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa158100368fa7abcaa91fc9b75829155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa158100368fa7abcaa91fc9b75829155">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void DataManager._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2fdd2d98e4b1e1621bc41f322fe3e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2fdd2d98e4b1e1621bc41f322fe3e13">&#9670;&nbsp;</a></span>CompareValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataManager.CompareValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d0cc84011adad6802bb56528eff258f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0cc84011adad6802bb56528eff258f">&#9670;&nbsp;</a></span>DataChangedEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void DataManager.DataChangedEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac64f57d379da33f1e531ce56d81ac24c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac64f57d379da33f1e531ce56d81ac24c">&#9670;&nbsp;</a></span>GetInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classDataManager.html">DataManager</a> DataManager.GetInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1f2915a0f0bb4bc1553e31ca8bbd2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f2915a0f0bb4bc1553e31ca8bbd2ec">&#9670;&nbsp;</a></span>GetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Variant DataManager.GetValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22be5522d121acbe43306d005b89f63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22be5522d121acbe43306d005b89f63d">&#9670;&nbsp;</a></span>SetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager.SetValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afc7460d24db75abcbb1ff75a25c75f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7460d24db75abcbb1ff75a25c75f6c">&#9670;&nbsp;</a></span>_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, Variant&gt; DataManager._data = new Dictionary&lt;string, Variant&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad32e06cf226108b7c18872451e7734f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad32e06cf226108b7c18872451e7734f2">&#9670;&nbsp;</a></span>_instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDataManager.html">DataManager</a> DataManager._instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/addons/quester/example/DataManager.cs</li>
+<li>038EnergyTransition/addons/quester/example/<a class="el" href="DataManager_8cs.html">DataManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -84,11 +84,15 @@ $(document).ready(function(){initNavTree('classSceneInstancer.html',''); initRes
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSceneInstancer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SceneInstancer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A tool to instance a scene in the editor.  
+ <a href="classSceneInstancer.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SceneInstancer:</div>
 <div class="dyncontent">
@@ -98,24 +102,123 @@ Inheritance diagram for SceneInstancer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9345fc02fef7c3548a2d18a5a928c920"><td class="memItemLeft" align="right" valign="top"><a id="a9345fc02fef7c3548a2d18a5a928c920"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a9345fc02fef7c3548a2d18a5a928c920"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneInstancer.html#a9345fc02fef7c3548a2d18a5a928c920">_Ready</a> ()</td></tr>
 <tr class="separator:a9345fc02fef7c3548a2d18a5a928c920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aded963a27b304ea21ce914e5a5f61476"><td class="memItemLeft" align="right" valign="top"><a id="aded963a27b304ea21ce914e5a5f61476"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:aded963a27b304ea21ce914e5a5f61476"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneInstancer.html#aded963a27b304ea21ce914e5a5f61476">_Process</a> (double delta)</td></tr>
 <tr class="separator:aded963a27b304ea21ce914e5a5f61476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5eb521d1ec49f1c3788d7918ebfde203"><td class="memItemLeft" align="right" valign="top"><a id="a5eb521d1ec49f1c3788d7918ebfde203"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ScenePath</b></td></tr>
+<tr class="memitem:a5eb521d1ec49f1c3788d7918ebfde203"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneInstancer.html#a5eb521d1ec49f1c3788d7918ebfde203">ScenePath</a></td></tr>
+<tr class="memdesc:a5eb521d1ec49f1c3788d7918ebfde203"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path to the scene to instance.  <a href="classSceneInstancer.html#a5eb521d1ec49f1c3788d7918ebfde203">More...</a><br /></td></tr>
 <tr class="separator:a5eb521d1ec49f1c3788d7918ebfde203"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33abe6dd7fd96b3dc1d62ab2220616f7"><td class="memItemLeft" align="right" valign="top"><a id="a33abe6dd7fd96b3dc1d62ab2220616f7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Reload</b> = false</td></tr>
+<tr class="memitem:a33abe6dd7fd96b3dc1d62ab2220616f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneInstancer.html#a33abe6dd7fd96b3dc1d62ab2220616f7">Reload</a> = false</td></tr>
+<tr class="memdesc:a33abe6dd7fd96b3dc1d62ab2220616f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">When checked, the scene will be reloaded and the checkbox will be unchecked.  <a href="classSceneInstancer.html#a33abe6dd7fd96b3dc1d62ab2220616f7">More...</a><br /></td></tr>
 <tr class="separator:a33abe6dd7fd96b3dc1d62ab2220616f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a049962975b9c39148783e07e69396098"><td class="memItemLeft" align="right" valign="top">Node3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneInstancer.html#a049962975b9c39148783e07e69396098">Container</a></td></tr>
+<tr class="memdesc:a049962975b9c39148783e07e69396098"><td class="mdescLeft">&#160;</td><td class="mdescRight">The container for the scene.  <a href="classSceneInstancer.html#a049962975b9c39148783e07e69396098">More...</a><br /></td></tr>
+<tr class="separator:a049962975b9c39148783e07e69396098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A tool to instance a scene in the editor. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aded963a27b304ea21ce914e5a5f61476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded963a27b304ea21ce914e5a5f61476">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SceneInstancer._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9345fc02fef7c3548a2d18a5a928c920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9345fc02fef7c3548a2d18a5a928c920">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SceneInstancer._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a049962975b9c39148783e07e69396098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049962975b9c39148783e07e69396098">&#9670;&nbsp;</a></span>Container</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node3D SceneInstancer.Container</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The container for the scene. </p>
+
+</div>
+</div>
+<a id="a33abe6dd7fd96b3dc1d62ab2220616f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33abe6dd7fd96b3dc1d62ab2220616f7">&#9670;&nbsp;</a></span>Reload</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SceneInstancer.Reload = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When checked, the scene will be reloaded and the checkbox will be unchecked. </p>
+
+</div>
+</div>
+<a id="a5eb521d1ec49f1c3788d7918ebfde203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb521d1ec49f1c3788d7918ebfde203">&#9670;&nbsp;</a></span>ScenePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SceneInstancer.ScenePath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The path to the scene to instance. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/MainMenu/Scripts/SceneInstancer.cs</li>
+<li>038EnergyTransition/Scenes/MainMenu/Scripts/<a class="el" href="SceneInstancer_8cs.html">SceneInstancer.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

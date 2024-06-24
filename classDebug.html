@@ -85,11 +85,17 @@ $(document).ready(function(){initNavTree('classDebug.html',''); initResizable();
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classDebug-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Debug Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classDebug.html" title="The Debug class is used to create a debug menu in the game">Debug</a> class is used to create a debug menu in the game  
+ <a href="classDebug.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Debug:</div>
 <div class="dyncontent">
@@ -99,9 +105,9 @@ Inheritance diagram for Debug:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abb2ef6ed23e216146d63592d61411994"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">ElementType</a> { <b>Label</b>
-, <b>CheckBox</b>
-, <b>HSlider</b>
+<tr class="memitem:abb2ef6ed23e216146d63592d61411994"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">ElementType</a> { <a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994ab021df6aac4654c454f46c77646e745f">Label</a>
+, <a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994a7ea0f1332ade5b23b34502a3bfe715a2">CheckBox</a>
+, <a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994aa25b899e38b85e561645a6a28409c0bb">HSlider</a>
  }</td></tr>
 <tr class="memdesc:abb2ef6ed23e216146d63592d61411994"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of element to add to the debug menu  <a href="classDebug.html#abb2ef6ed23e216146d63592d61411994">More...</a><br /></td></tr>
 <tr class="separator:abb2ef6ed23e216146d63592d61411994"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,13 +115,13 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1277aa88b9fd904f5301d56a2e83987"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#ac1277aa88b9fd904f5301d56a2e83987">Debug</a> ()</td></tr>
-<tr class="memdesc:ac1277aa88b9fd904f5301d56a2e83987"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor for the <a class="el" href="classDebug.html">Debug</a> class Adds the engine_fps and platform_name elements to the debug menu  <a href="classDebug.html#ac1277aa88b9fd904f5301d56a2e83987">More...</a><br /></td></tr>
+<tr class="memdesc:ac1277aa88b9fd904f5301d56a2e83987"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor for the <a class="el" href="classDebug.html" title="The Debug class is used to create a debug menu in the game">Debug</a> class Adds the engine_fps and platform_name elements to the debug menu  <a href="classDebug.html#ac1277aa88b9fd904f5301d56a2e83987">More...</a><br /></td></tr>
 <tr class="separator:ac1277aa88b9fd904f5301d56a2e83987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0800853ae77e615b794998fa964396f"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#ad0800853ae77e615b794998fa964396f">_Ready</a> ()</td></tr>
-<tr class="memdesc:ad0800853ae77e615b794998fa964396f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The _Ready function for the <a class="el" href="classDebug.html">Debug</a> class Removes all children from the VBoxContainer Updates the platform_name element to display the platform name  <a href="classDebug.html#ad0800853ae77e615b794998fa964396f">More...</a><br /></td></tr>
+<tr class="memdesc:ad0800853ae77e615b794998fa964396f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The _Ready function for the <a class="el" href="classDebug.html" title="The Debug class is used to create a debug menu in the game">Debug</a> class Removes all children from the VBoxContainer Updates the platform_name element to display the platform name  <a href="classDebug.html#ad0800853ae77e615b794998fa964396f">More...</a><br /></td></tr>
 <tr class="separator:ad0800853ae77e615b794998fa964396f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3643dcbc3843b248fa3f1c0f5cb8c6d1"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a3643dcbc3843b248fa3f1c0f5cb8c6d1">_Process</a> (double delta)</td></tr>
-<tr class="memdesc:a3643dcbc3843b248fa3f1c0f5cb8c6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The _Process function for the <a class="el" href="classDebug.html">Debug</a> class Updates the engine_fps element to display the engine's frames per second Adds elements to the VBoxContainer  <a href="classDebug.html#a3643dcbc3843b248fa3f1c0f5cb8c6d1">More...</a><br /></td></tr>
+<tr class="memdesc:a3643dcbc3843b248fa3f1c0f5cb8c6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The _Process function for the <a class="el" href="classDebug.html" title="The Debug class is used to create a debug menu in the game">Debug</a> class Updates the engine_fps element to display the engine's frames per second Adds elements to the VBoxContainer  <a href="classDebug.html#a3643dcbc3843b248fa3f1c0f5cb8c6d1">More...</a><br /></td></tr>
 <tr class="separator:a3643dcbc3843b248fa3f1c0f5cb8c6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -129,8 +135,34 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a233026db83f7bf8ba1a7257019a106ec"><td class="memItemLeft" align="right" valign="top">static Variant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a233026db83f7bf8ba1a7257019a106ec">GetValue</a> (string key)</td></tr>
 <tr class="memdesc:a233026db83f7bf8ba1a7257019a106ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of an element in the debug menu  <a href="classDebug.html#a233026db83f7bf8ba1a7257019a106ec">More...</a><br /></td></tr>
 <tr class="separator:a233026db83f7bf8ba1a7257019a106ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afb60b87effcd43ca927bf3d28c73711c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#afb60b87effcd43ca927bf3d28c73711c">formatName</a> (string text)</td></tr>
+<tr class="memdesc:afb60b87effcd43ca927bf3d28c73711c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format the name of an element to be more readable  <a href="classDebug.html#afb60b87effcd43ca927bf3d28c73711c">More...</a><br /></td></tr>
+<tr class="separator:afb60b87effcd43ca927bf3d28c73711c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae230df1f82cf1304cfbba9f881462f0d"><td class="memItemLeft" align="right" valign="top">VBoxContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#ae230df1f82cf1304cfbba9f881462f0d">_vboxContainer</a></td></tr>
+<tr class="memdesc:ae230df1f82cf1304cfbba9f881462f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The VBoxContainer that holds the debug menu  <a href="classDebug.html#ae230df1f82cf1304cfbba9f881462f0d">More...</a><br /></td></tr>
+<tr class="separator:ae230df1f82cf1304cfbba9f881462f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a40a59372fafb9f29dc789021f1efa751"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; string, <a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">ElementType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a40a59372fafb9f29dc789021f1efa751">_elementAddQueue</a> = new Dictionary&lt;string, <a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">ElementType</a>&gt;()</td></tr>
+<tr class="memdesc:a40a59372fafb9f29dc789021f1efa751"><td class="mdescLeft">&#160;</td><td class="mdescRight">A queue of elements to add to the debug menu  <a href="classDebug.html#a40a59372fafb9f29dc789021f1efa751">More...</a><br /></td></tr>
+<tr class="separator:a40a59372fafb9f29dc789021f1efa751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e7cb54713663ce1765bcf3ede9d2bf"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a99e7cb54713663ce1765bcf3ede9d2bf">_elementUpdateQueue</a> = new Dictionary&lt;string, Variant&gt;()</td></tr>
+<tr class="memdesc:a99e7cb54713663ce1765bcf3ede9d2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A queue of elements to update in the debug menu  <a href="classDebug.html#a99e7cb54713663ce1765bcf3ede9d2bf">More...</a><br /></td></tr>
+<tr class="separator:a99e7cb54713663ce1765bcf3ede9d2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6e616783d90e384eec9c119ad2211f"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; string, Variant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#aca6e616783d90e384eec9c119ad2211f">_elementValues</a> = new Dictionary&lt;string, Variant&gt;()</td></tr>
+<tr class="memdesc:aca6e616783d90e384eec9c119ad2211f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dictionary of elements and their values  <a href="classDebug.html#aca6e616783d90e384eec9c119ad2211f">More...</a><br /></td></tr>
+<tr class="separator:aca6e616783d90e384eec9c119ad2211f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classDebug.html" title="The Debug class is used to create a debug menu in the game">Debug</a> class is used to create a debug menu in the game </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="abb2ef6ed23e216146d63592d61411994"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb2ef6ed23e216146d63592d61411994">&#9670;&nbsp;</a></span>ElementType</h2>
 
@@ -152,6 +184,11 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The type of element to add to the debug menu </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abb2ef6ed23e216146d63592d61411994ab021df6aac4654c454f46c77646e745f"></a>Label&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb2ef6ed23e216146d63592d61411994a7ea0f1332ade5b23b34502a3bfe715a2"></a>CheckBox&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb2ef6ed23e216146d63592d61411994aa25b899e38b85e561645a6a28409c0bb"></a>HSlider&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -171,7 +208,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The constructor for the <a class="el" href="classDebug.html">Debug</a> class Adds the engine_fps and platform_name elements to the debug menu </p>
+<p>The constructor for the <a class="el" href="classDebug.html" title="The Debug class is used to create a debug menu in the game">Debug</a> class Adds the engine_fps and platform_name elements to the debug menu </p>
 
 </div>
 </div>
@@ -192,7 +229,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The _Process function for the <a class="el" href="classDebug.html">Debug</a> class Updates the engine_fps element to display the engine's frames per second Adds elements to the VBoxContainer </p>
+<p>The _Process function for the <a class="el" href="classDebug.html" title="The Debug class is used to create a debug menu in the game">Debug</a> class Updates the engine_fps element to display the engine's frames per second Adds elements to the VBoxContainer </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">delta</td><td></td></tr>
@@ -217,7 +254,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The _Ready function for the <a class="el" href="classDebug.html">Debug</a> class Removes all children from the VBoxContainer Updates the platform_name element to display the platform name </p>
+<p>The _Ready function for the <a class="el" href="classDebug.html" title="The Debug class is used to create a debug menu in the game">Debug</a> class Removes all children from the VBoxContainer Updates the platform_name element to display the platform name </p>
 
 </div>
 </div>
@@ -263,6 +300,41 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="afb60b87effcd43ca927bf3d28c73711c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb60b87effcd43ca927bf3d28c73711c">&#9670;&nbsp;</a></span>formatName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Debug.formatName </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Format the name of an element to be more readable </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>formatted string</dd></dl>
 
 </div>
 </div>
@@ -339,8 +411,105 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a40a59372fafb9f29dc789021f1efa751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a59372fafb9f29dc789021f1efa751">&#9670;&nbsp;</a></span>_elementAddQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, <a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">ElementType</a>&gt; Debug._elementAddQueue = new Dictionary&lt;string, <a class="el" href="classDebug.html#abb2ef6ed23e216146d63592d61411994">ElementType</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A queue of elements to add to the debug menu </p>
+
+</div>
+</div>
+<a id="a99e7cb54713663ce1765bcf3ede9d2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e7cb54713663ce1765bcf3ede9d2bf">&#9670;&nbsp;</a></span>_elementUpdateQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, Variant&gt; Debug._elementUpdateQueue = new Dictionary&lt;string, Variant&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A queue of elements to update in the debug menu </p>
+
+</div>
+</div>
+<a id="aca6e616783d90e384eec9c119ad2211f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6e616783d90e384eec9c119ad2211f">&#9670;&nbsp;</a></span>_elementValues</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, Variant&gt; Debug._elementValues = new Dictionary&lt;string, Variant&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A dictionary of elements and their values </p>
+
+</div>
+</div>
+<a id="ae230df1f82cf1304cfbba9f881462f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae230df1f82cf1304cfbba9f881462f0d">&#9670;&nbsp;</a></span>_vboxContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VBoxContainer Debug._vboxContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The VBoxContainer that holds the debug menu </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/Debug/Scripts/Debug.cs</li>
+<li>038EnergyTransition/Scenes/Debug/Scripts/<a class="el" href="Debug_8cs.html">Debug.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

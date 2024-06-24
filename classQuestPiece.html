@@ -85,11 +85,15 @@ $(document).ready(function(){initNavTree('classQuestPiece.html',''); initResizab
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classQuestPiece-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">QuestPiece Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is a resource that contains a quest and some additional information.  
+ <a href="classQuestPiece.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for QuestPiece:</div>
 <div class="dyncontent">
@@ -99,20 +103,17 @@ Inheritance diagram for QuestPiece:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aac4907bfc943283d1fe3228de077c645"><td class="memItemLeft" align="right" valign="top"><a id="aac4907bfc943283d1fe3228de077c645"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_ValidateProperty</b> (Godot.Collections.Dictionary property)</td></tr>
+<tr class="memitem:aac4907bfc943283d1fe3228de077c645"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPiece.html#aac4907bfc943283d1fe3228de077c645">_ValidateProperty</a> (Godot.Collections.Dictionary property)</td></tr>
 <tr class="separator:aac4907bfc943283d1fe3228de077c645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:afe292ad4fcde43bd152aad29397c455e"><td class="memItemLeft" align="right" valign="top"><a id="afe292ad4fcde43bd152aad29397c455e"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Quest</b></td></tr>
+<tr class="memitem:afe292ad4fcde43bd152aad29397c455e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPiece.html#afe292ad4fcde43bd152aad29397c455e">Quest</a></td></tr>
 <tr class="separator:afe292ad4fcde43bd152aad29397c455e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a518e6fbfa54f06cd4cc43f20b7cb3d4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPiece.html#a518e6fbfa54f06cd4cc43f20b7cb3d4c">StartAtANewDay</a> = false</td></tr>
 <tr class="memdesc:a518e6fbfa54f06cd4cc43f20b7cb3d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, The quest will only start at the new day.  <a href="classQuestPiece.html#a518e6fbfa54f06cd4cc43f20b7cb3d4c">More...</a><br /></td></tr>
 <tr class="separator:a518e6fbfa54f06cd4cc43f20b7cb3d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8a65228d2c2793cefde6d6b036509c6"><td class="memItemLeft" align="right" valign="top"><a id="af8a65228d2c2793cefde6d6b036509c6"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Cutscene</b></td></tr>
+<tr class="memitem:af8a65228d2c2793cefde6d6b036509c6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPiece.html#af8a65228d2c2793cefde6d6b036509c6">Cutscene</a></td></tr>
 <tr class="separator:af8a65228d2c2793cefde6d6b036509c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -120,8 +121,84 @@ Properties</h2></td></tr>
 <tr class="memitem:a750040c8e33b1659e9ab989b2bf55b32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPiece.html#a750040c8e33b1659e9ab989b2bf55b32">PlayCutsceneOnComplete</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a750040c8e33b1659e9ab989b2bf55b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the quest will play a cutscene when it is completed.  <a href="classQuestPiece.html#a750040c8e33b1659e9ab989b2bf55b32">More...</a><br /></td></tr>
 <tr class="separator:a750040c8e33b1659e9ab989b2bf55b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab192c51ab8c914dc89b30f3fea25b1d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPiece.html#ab192c51ab8c914dc89b30f3fea25b1d3">_playCutsceneOnComplete</a> = false</td></tr>
+<tr class="separator:ab192c51ab8c914dc89b30f3fea25b1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is a resource that contains a quest and some additional information. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aac4907bfc943283d1fe3228de077c645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac4907bfc943283d1fe3228de077c645">&#9670;&nbsp;</a></span>_ValidateProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void QuestPiece._ValidateProperty </td>
+          <td>(</td>
+          <td class="paramtype">Godot.Collections.Dictionary&#160;</td>
+          <td class="paramname"><em>property</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab192c51ab8c914dc89b30f3fea25b1d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab192c51ab8c914dc89b30f3fea25b1d3">&#9670;&nbsp;</a></span>_playCutsceneOnComplete</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QuestPiece._playCutsceneOnComplete = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8a65228d2c2793cefde6d6b036509c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a65228d2c2793cefde6d6b036509c6">&#9670;&nbsp;</a></span>Cutscene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string QuestPiece.Cutscene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe292ad4fcde43bd152aad29397c455e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe292ad4fcde43bd152aad29397c455e">&#9670;&nbsp;</a></span>Quest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string QuestPiece.Quest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a518e6fbfa54f06cd4cc43f20b7cb3d4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a518e6fbfa54f06cd4cc43f20b7cb3d4c">&#9670;&nbsp;</a></span>StartAtANewDay</h2>
 
@@ -164,7 +241,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/MainLineQuestManager/QuestPiece.cs</li>
+<li>038EnergyTransition/Modules/MainLineQuestManager/<a class="el" href="QuestPiece_8cs.html">QuestPiece.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

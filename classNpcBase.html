@@ -85,21 +85,27 @@ $(document).ready(function(){initNavTree('classNpcBase.html',''); initResizable(
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classNpcBase-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">NpcBase Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for all NPC nodes in the game, comes with a route system for NPC movement.  
+ <a href="classNpcBase.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for NpcBase:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classNpcBase.png" usemap="#NpcBase_map" alt=""/>
   <map id="NpcBase_map" name="NpcBase_map">
-<area href="classAartScript.html" alt="AartScript" shape="rect" coords="0,112,69,136"/>
-<area href="classDog.html" alt="Dog" shape="rect" coords="79,112,148,136"/>
-<area href="classIvanScript.html" alt="IvanScript" shape="rect" coords="158,112,227,136"/>
-<area href="classTestNPC.html" alt="TestNPC" shape="rect" coords="237,112,306,136"/>
+<area href="classAartScript.html" title="The almighty Aart script." alt="AartScript" shape="rect" coords="0,112,69,136"/>
+<area href="classDog.html" title="[TEST ONLY] The dog NPC." alt="Dog" shape="rect" coords="79,112,148,136"/>
+<area href="classIvanScript.html" title="The Ivan NPC script." alt="IvanScript" shape="rect" coords="158,112,227,136"/>
+<area href="classTestNPC.html" title="[TEST ONLY] A test NPC." alt="TestNPC" shape="rect" coords="237,112,306,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -111,17 +117,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a149d4bee9c75eb90dd588ff847f2df3d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a149d4bee9c75eb90dd588ff847f2df3d">_Ready</a> ()</td></tr>
 <tr class="memdesc:a149d4bee9c75eb90dd588ff847f2df3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene is ready. Initializes the NPC and sets up the event listeners. Also loads the route of the NPC and sets the NPC to be visible or not based on the game state.  <a href="classNpcBase.html#a149d4bee9c75eb90dd588ff847f2df3d">More...</a><br /></td></tr>
 <tr class="separator:a149d4bee9c75eb90dd588ff847f2df3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dff57e9a0157043ee48cf53f494dc12"><td class="memItemLeft" align="right" valign="top"><a id="a0dff57e9a0157043ee48cf53f494dc12"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_ExitTree</b> ()</td></tr>
+<tr class="memitem:a0dff57e9a0157043ee48cf53f494dc12"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a0dff57e9a0157043ee48cf53f494dc12">_ExitTree</a> ()</td></tr>
 <tr class="separator:a0dff57e9a0157043ee48cf53f494dc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">onSceneChange</a> (object sender, GameState gameState)</td></tr>
+<tr class="memitem:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">onSceneChange</a> (object sender, <a class="el" href="Globals_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> gameState)</td></tr>
 <tr class="memdesc:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the scene changes.  <a href="classNpcBase.html#a1e3745a0ffcd950d108d3a13fb3b5a52">More...</a><br /></td></tr>
 <tr class="separator:a1e3745a0ffcd950d108d3a13fb3b5a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b9e9512f848094cee33cb1e675ba2e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a56b9e9512f848094cee33cb1e675ba2e">_Process</a> (double delta)</td></tr>
 <tr class="memdesc:a56b9e9512f848094cee33cb1e675ba2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame. Handles the NPC's movement and interaction. Also handles the drawing of the path in the editor.  <a href="classNpcBase.html#a56b9e9512f848094cee33cb1e675ba2e">More...</a><br /></td></tr>
 <tr class="separator:a56b9e9512f848094cee33cb1e675ba2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a747d4c88c6f3255e1a94b96502c30932"><td class="memItemLeft" align="right" valign="top"><a id="a747d4c88c6f3255e1a94b96502c30932"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>nextMarker</b> ()</td></tr>
+<tr class="memitem:a747d4c88c6f3255e1a94b96502c30932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a747d4c88c6f3255e1a94b96502c30932">nextMarker</a> ()</td></tr>
 <tr class="separator:a747d4c88c6f3255e1a94b96502c30932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf3947f96f3851bcf2e2cfc2b0fb779b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#aaf3947f96f3851bcf2e2cfc2b0fb779b">OnInteract</a> ()</td></tr>
 <tr class="memdesc:aaf3947f96f3851bcf2e2cfc2b0fb779b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overwritable method that is called when the player interacts with the NPC.  <a href="classNpcBase.html#aaf3947f96f3851bcf2e2cfc2b0fb779b">More...</a><br /></td></tr>
@@ -144,8 +148,274 @@ Properties</h2></td></tr>
 <tr class="memitem:a5f7a04b2e93d6299cc2a8b026f3bd7a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNPCRoute.html">NPCRoute</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a5f7a04b2e93d6299cc2a8b026f3bd7a9">Route</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a5f7a04b2e93d6299cc2a8b026f3bd7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The route of the NPC.  <a href="classNpcBase.html#a5f7a04b2e93d6299cc2a8b026f3bd7a9">More...</a><br /></td></tr>
 <tr class="separator:a5f7a04b2e93d6299cc2a8b026f3bd7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3a0103277044df5806d1f3c1625a6a7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a3a0103277044df5806d1f3c1625a6a7b">_interacting</a> (double delta)</td></tr>
+<tr class="memdesc:a3a0103277044df5806d1f3c1625a6a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the player is close to the NPC and if so, flips the NPC to face the player.  <a href="classNpcBase.html#a3a0103277044df5806d1f3c1625a6a7b">More...</a><br /></td></tr>
+<tr class="separator:a3a0103277044df5806d1f3c1625a6a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ef78f0963f20ec8f16ac5c4cb626f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a99ef78f0963f20ec8f16ac5c4cb626f8">_walking</a> (double delta)</td></tr>
+<tr class="memdesc:a99ef78f0963f20ec8f16ac5c4cb626f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the NPC from one route marker to another.  <a href="classNpcBase.html#a99ef78f0963f20ec8f16ac5c4cb626f8">More...</a><br /></td></tr>
+<tr class="separator:a99ef78f0963f20ec8f16ac5c4cb626f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b45be838a021ff4ca01d927c9601cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#aa2b45be838a021ff4ca01d927c9601cf">_selectCorrectAnimation</a> ()</td></tr>
+<tr class="memdesc:aa2b45be838a021ff4ca01d927c9601cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the correct animation based on the direction the NPC is moving.  <a href="classNpcBase.html#aa2b45be838a021ff4ca01d927c9601cf">More...</a><br /></td></tr>
+<tr class="separator:aa2b45be838a021ff4ca01d927c9601cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d36b68f77a56d460f556b6e3a1e6f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#aa4d36b68f77a56d460f556b6e3a1e6f1">ConfirmPressed</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:aa4d36b68f77a56d460f556b6e3a1e6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the player presses the interact button.  <a href="classNpcBase.html#aa4d36b68f77a56d460f556b6e3a1e6f1">More...</a><br /></td></tr>
+<tr class="separator:aa4d36b68f77a56d460f556b6e3a1e6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf178fd6d6f52b9102093a7cf3d4312c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#aaf178fd6d6f52b9102093a7cf3d4312c">_isolateY</a> (<a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a> vector)</td></tr>
+<tr class="memdesc:aaf178fd6d6f52b9102093a7cf3d4312c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new vector with the Y value set to 0.  <a href="classNpcBase.html#aaf178fd6d6f52b9102093a7cf3d4312c">More...</a><br /></td></tr>
+<tr class="separator:aaf178fd6d6f52b9102093a7cf3d4312c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a7a70c9fc0434de8db74187a80a31e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRouteMarker.html">RouteMarker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#ad1a7a70c9fc0434de8db74187a80a31e">_getCurrentRouteMarker</a> ()</td></tr>
+<tr class="memdesc:ad1a7a70c9fc0434de8db74187a80a31e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current route marker.  <a href="classNpcBase.html#ad1a7a70c9fc0434de8db74187a80a31e">More...</a><br /></td></tr>
+<tr class="separator:ad1a7a70c9fc0434de8db74187a80a31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffc5b5f6477682566ae570948b88218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#adffc5b5f6477682566ae570948b88218">_onDayChanged</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:adffc5b5f6477682566ae570948b88218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the day changes.  <a href="classNpcBase.html#adffc5b5f6477682566ae570948b88218">More...</a><br /></td></tr>
+<tr class="separator:adffc5b5f6477682566ae570948b88218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e9629491e37735d29c9b4a6651cd5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a19e9629491e37735d29c9b4a6651cd5d">_loadRoute</a> ()</td></tr>
+<tr class="memdesc:a19e9629491e37735d29c9b4a6651cd5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the path of an npc from the given route path  <a href="classNpcBase.html#a19e9629491e37735d29c9b4a6651cd5d">More...</a><br /></td></tr>
+<tr class="separator:a19e9629491e37735d29c9b4a6651cd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afc1884ad583efb0359c07a92ade64b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a0afc1884ad583efb0359c07a92ade64b">_saveRoute</a> ()</td></tr>
+<tr class="memdesc:a0afc1884ad583efb0359c07a92ade64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the path of an npc from the given route path  <a href="classNpcBase.html#a0afc1884ad583efb0359c07a92ade64b">More...</a><br /></td></tr>
+<tr class="separator:a0afc1884ad583efb0359c07a92ade64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b92cb89adfc7b05205c51fa63dde330"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a1b92cb89adfc7b05205c51fa63dde330">_updateList</a> ()</td></tr>
+<tr class="memdesc:a1b92cb89adfc7b05205c51fa63dde330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the list to see if a route marker is null and if so, replaces it with a new one.  <a href="classNpcBase.html#a1b92cb89adfc7b05205c51fa63dde330">More...</a><br /></td></tr>
+<tr class="separator:a1b92cb89adfc7b05205c51fa63dde330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca7e09ca0b5596f104fbc9dd82a6830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#adca7e09ca0b5596f104fbc9dd82a6830">_reDrawLines</a> ()</td></tr>
+<tr class="memdesc:adca7e09ca0b5596f104fbc9dd82a6830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the lines between path markers in the editor.  <a href="classNpcBase.html#adca7e09ca0b5596f104fbc9dd82a6830">More...</a><br /></td></tr>
+<tr class="separator:adca7e09ca0b5596f104fbc9dd82a6830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aae77aa337535ed3b37524eb78589f2a5"><td class="memItemLeft" align="right" valign="top">AnimatedSprite3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#aae77aa337535ed3b37524eb78589f2a5">_animatedSprite3D</a></td></tr>
+<tr class="memdesc:aae77aa337535ed3b37524eb78589f2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The animated sprite of the NPC.  <a href="classNpcBase.html#aae77aa337535ed3b37524eb78589f2a5">More...</a><br /></td></tr>
+<tr class="separator:aae77aa337535ed3b37524eb78589f2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35a3d99cd54f5492163dd7d529dec73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#af35a3d99cd54f5492163dd7d529dec73">_stationary</a> = false</td></tr>
+<tr class="memdesc:af35a3d99cd54f5492163dd7d529dec73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state of the NPC.  <a href="classNpcBase.html#af35a3d99cd54f5492163dd7d529dec73">More...</a><br /></td></tr>
+<tr class="separator:af35a3d99cd54f5492163dd7d529dec73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5f16ab2b25a67f4118ca2dbefbd91a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a4a5f16ab2b25a67f4118ca2dbefbd91a">_routeIndex</a> = 0</td></tr>
+<tr class="memdesc:a4a5f16ab2b25a67f4118ca2dbefbd91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of the current route marker.  <a href="classNpcBase.html#a4a5f16ab2b25a67f4118ca2dbefbd91a">More...</a><br /></td></tr>
+<tr class="separator:a4a5f16ab2b25a67f4118ca2dbefbd91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adedebb0eae3ac695d6d5cefa4657fcf3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#adedebb0eae3ac695d6d5cefa4657fcf3">_timeOut</a> = 0</td></tr>
+<tr class="memdesc:adedebb0eae3ac695d6d5cefa4657fcf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time out of the NPC.  <a href="classNpcBase.html#adedebb0eae3ac695d6d5cefa4657fcf3">More...</a><br /></td></tr>
+<tr class="separator:adedebb0eae3ac695d6d5cefa4657fcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab2364b11b4b7d9e145706d94f04d5f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#acab2364b11b4b7d9e145706d94f04d5f">_speed</a> = 1.0f</td></tr>
+<tr class="memdesc:acab2364b11b4b7d9e145706d94f04d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The speed of the NPC.  <a href="classNpcBase.html#acab2364b11b4b7d9e145706d94f04d5f">More...</a><br /></td></tr>
+<tr class="separator:acab2364b11b4b7d9e145706d94f04d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d25a35f617789ff568fe77973f9b31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNPCRoute.html">NPCRoute</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a92d25a35f617789ff568fe77973f9b31">route</a></td></tr>
+<tr class="memdesc:a92d25a35f617789ff568fe77973f9b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">The route of the NPC.  <a href="classNpcBase.html#a92d25a35f617789ff568fe77973f9b31">More...</a><br /></td></tr>
+<tr class="separator:a92d25a35f617789ff568fe77973f9b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322975726b37af861d59cf3261c8cf11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a322975726b37af861d59cf3261c8cf11">_playerClose</a> = false</td></tr>
+<tr class="memdesc:a322975726b37af861d59cf3261c8cf11"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the player is close to the NPC.  <a href="classNpcBase.html#a322975726b37af861d59cf3261c8cf11">More...</a><br /></td></tr>
+<tr class="separator:a322975726b37af861d59cf3261c8cf11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59ea07991fa7184be6d69e7398a4ce2"><td class="memItemLeft" align="right" valign="top">List&lt; MeshInstance3D &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#ac59ea07991fa7184be6d69e7398a4ce2">_debugMarkers</a> = new List&lt;MeshInstance3D&gt;()</td></tr>
+<tr class="memdesc:ac59ea07991fa7184be6d69e7398a4ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The debug markers for the path.  <a href="classNpcBase.html#ac59ea07991fa7184be6d69e7398a4ce2">More...</a><br /></td></tr>
+<tr class="separator:ac59ea07991fa7184be6d69e7398a4ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1faa7a67950094cf1e33fd98d3566f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#aa1faa7a67950094cf1e33fd98d3566f2">_isEditingRoute</a> = false</td></tr>
+<tr class="memdesc:aa1faa7a67950094cf1e33fd98d3566f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the NPC route is being edited.  <a href="classNpcBase.html#aa1faa7a67950094cf1e33fd98d3566f2">More...</a><br /></td></tr>
+<tr class="separator:aa1faa7a67950094cf1e33fd98d3566f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0ebebe93ede6e34339f87de40d3bc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8cs.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a9b0ebebe93ede6e34339f87de40d3bc5">_direction</a></td></tr>
+<tr class="memdesc:a9b0ebebe93ede6e34339f87de40d3bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The direction of the NPC.  <a href="classNpcBase.html#a9b0ebebe93ede6e34339f87de40d3bc5">More...</a><br /></td></tr>
+<tr class="separator:a9b0ebebe93ede6e34339f87de40d3bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244d2ff886d622ed14ce35ae6765e297"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8cs.html#ae4b6dfb44a913b0e5ca9db5445e58049">Facing</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#a244d2ff886d622ed14ce35ae6765e297">_facing</a></td></tr>
+<tr class="memdesc:a244d2ff886d622ed14ce35ae6765e297"><td class="mdescLeft">&#160;</td><td class="mdescRight">The facing of the NPC.  <a href="classNpcBase.html#a244d2ff886d622ed14ce35ae6765e297">More...</a><br /></td></tr>
+<tr class="separator:a244d2ff886d622ed14ce35ae6765e297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af0ec5b7562fbde8b8d8566b1dcc22935"><td class="memItemLeft" align="right" valign="top">static readonly string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNpcBase.html#af0ec5b7562fbde8b8d8566b1dcc22935">fileExtention</a> = &quot;.path.res&quot;</td></tr>
+<tr class="memdesc:af0ec5b7562fbde8b8d8566b1dcc22935"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the route file.  <a href="classNpcBase.html#af0ec5b7562fbde8b8d8566b1dcc22935">More...</a><br /></td></tr>
+<tr class="separator:af0ec5b7562fbde8b8d8566b1dcc22935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for all NPC nodes in the game, comes with a route system for NPC movement. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0dff57e9a0157043ee48cf53f494dc12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dff57e9a0157043ee48cf53f494dc12">&#9670;&nbsp;</a></span>_ExitTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void NpcBase._ExitTree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1a7a70c9fc0434de8db74187a80a31e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a7a70c9fc0434de8db74187a80a31e">&#9670;&nbsp;</a></span>_getCurrentRouteMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRouteMarker.html">RouteMarker</a> NpcBase._getCurrentRouteMarker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current route marker. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a3a0103277044df5806d1f3c1625a6a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0103277044df5806d1f3c1625a6a7b">&#9670;&nbsp;</a></span>_interacting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase._interacting </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the player is close to the NPC and if so, flips the NPC to face the player. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf178fd6d6f52b9102093a7cf3d4312c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf178fd6d6f52b9102093a7cf3d4312c">&#9670;&nbsp;</a></span>_isolateY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a> NpcBase._isolateY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a new vector with the Y value set to 0. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a19e9629491e37735d29c9b4a6651cd5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e9629491e37735d29c9b4a6651cd5d">&#9670;&nbsp;</a></span>_loadRoute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase._loadRoute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the path of an npc from the given route path </p>
+
+</div>
+</div>
+<a id="adffc5b5f6477682566ae570948b88218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adffc5b5f6477682566ae570948b88218">&#9670;&nbsp;</a></span>_onDayChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase._onDayChanged </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the day changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td></td></tr>
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a56b9e9512f848094cee33cb1e675ba2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56b9e9512f848094cee33cb1e675ba2e">&#9670;&nbsp;</a></span>_Process()</h2>
 
@@ -191,6 +461,114 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="adca7e09ca0b5596f104fbc9dd82a6830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca7e09ca0b5596f104fbc9dd82a6830">&#9670;&nbsp;</a></span>_reDrawLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase._reDrawLines </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draws the lines between path markers in the editor. </p>
+
+</div>
+</div>
+<a id="a0afc1884ad583efb0359c07a92ade64b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afc1884ad583efb0359c07a92ade64b">&#9670;&nbsp;</a></span>_saveRoute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase._saveRoute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the path of an npc from the given route path </p>
+
+</div>
+</div>
+<a id="aa2b45be838a021ff4ca01d927c9601cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b45be838a021ff4ca01d927c9601cf">&#9670;&nbsp;</a></span>_selectCorrectAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase._selectCorrectAnimation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Selects the correct animation based on the direction the NPC is moving. </p>
+
+</div>
+</div>
+<a id="a1b92cb89adfc7b05205c51fa63dde330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b92cb89adfc7b05205c51fa63dde330">&#9670;&nbsp;</a></span>_updateList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase._updateList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks the list to see if a route marker is null and if so, replaces it with a new one. </p>
+
+</div>
+</div>
 <a id="a95da3b8eab7e5af7bf50c3aaea862c5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95da3b8eab7e5af7bf50c3aaea862c5d">&#9670;&nbsp;</a></span>_ValidateProperty()</h2>
 
@@ -214,6 +592,102 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a99ef78f0963f20ec8f16ac5c4cb626f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ef78f0963f20ec8f16ac5c4cb626f8">&#9670;&nbsp;</a></span>_walking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase._walking </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the NPC from one route marker to another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa4d36b68f77a56d460f556b6e3a1e6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d36b68f77a56d460f556b6e3a1e6f1">&#9670;&nbsp;</a></span>ConfirmPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase.ConfirmPressed </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the player presses the interact button. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td></td></tr>
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a747d4c88c6f3255e1a94b96502c30932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747d4c88c6f3255e1a94b96502c30932">&#9670;&nbsp;</a></span>nextMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NpcBase.nextMarker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -261,7 +735,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GameState&#160;</td>
+          <td class="paramtype"><a class="el" href="Globals_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a>&#160;</td>
           <td class="paramname"><em>gameState</em>&#160;</td>
         </tr>
         <tr>
@@ -284,6 +758,294 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aae77aa337535ed3b37524eb78589f2a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae77aa337535ed3b37524eb78589f2a5">&#9670;&nbsp;</a></span>_animatedSprite3D</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimatedSprite3D NpcBase._animatedSprite3D</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The animated sprite of the NPC. </p>
+
+</div>
+</div>
+<a id="ac59ea07991fa7184be6d69e7398a4ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59ea07991fa7184be6d69e7398a4ce2">&#9670;&nbsp;</a></span>_debugMarkers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;MeshInstance3D&gt; NpcBase._debugMarkers = new List&lt;MeshInstance3D&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The debug markers for the path. </p>
+
+</div>
+</div>
+<a id="a9b0ebebe93ede6e34339f87de40d3bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b0ebebe93ede6e34339f87de40d3bc5">&#9670;&nbsp;</a></span>_direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Player_8cs.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> NpcBase._direction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The direction of the NPC. </p>
+
+</div>
+</div>
+<a id="a244d2ff886d622ed14ce35ae6765e297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a244d2ff886d622ed14ce35ae6765e297">&#9670;&nbsp;</a></span>_facing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Player_8cs.html#ae4b6dfb44a913b0e5ca9db5445e58049">Facing</a> NpcBase._facing</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The facing of the NPC. </p>
+
+</div>
+</div>
+<a id="aa1faa7a67950094cf1e33fd98d3566f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1faa7a67950094cf1e33fd98d3566f2">&#9670;&nbsp;</a></span>_isEditingRoute</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NpcBase._isEditingRoute = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the NPC route is being edited. </p>
+
+</div>
+</div>
+<a id="a322975726b37af861d59cf3261c8cf11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322975726b37af861d59cf3261c8cf11">&#9670;&nbsp;</a></span>_playerClose</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NpcBase._playerClose = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the player is close to the NPC. </p>
+
+</div>
+</div>
+<a id="a4a5f16ab2b25a67f4118ca2dbefbd91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5f16ab2b25a67f4118ca2dbefbd91a">&#9670;&nbsp;</a></span>_routeIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NpcBase._routeIndex = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The index of the current route marker. </p>
+
+</div>
+</div>
+<a id="acab2364b11b4b7d9e145706d94f04d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab2364b11b4b7d9e145706d94f04d5f">&#9670;&nbsp;</a></span>_speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NpcBase._speed = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The speed of the NPC. </p>
+
+</div>
+</div>
+<a id="af35a3d99cd54f5492163dd7d529dec73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35a3d99cd54f5492163dd7d529dec73">&#9670;&nbsp;</a></span>_stationary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NpcBase._stationary = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The state of the NPC. </p>
+
+</div>
+</div>
+<a id="adedebb0eae3ac695d6d5cefa4657fcf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adedebb0eae3ac695d6d5cefa4657fcf3">&#9670;&nbsp;</a></span>_timeOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NpcBase._timeOut = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The time out of the NPC. </p>
+
+</div>
+</div>
+<a id="af0ec5b7562fbde8b8d8566b1dcc22935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ec5b7562fbde8b8d8566b1dcc22935">&#9670;&nbsp;</a></span>fileExtention</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string NpcBase.fileExtention = &quot;.path.res&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the route file. </p>
+
+</div>
+</div>
+<a id="a92d25a35f617789ff568fe77973f9b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d25a35f617789ff568fe77973f9b31">&#9670;&nbsp;</a></span>route</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNPCRoute.html">NPCRoute</a> NpcBase.route</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The route of the NPC. </p>
+
+</div>
+</div>
 <a id="a3d3ba9465613926e7655d89025fdb07c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d3ba9465613926e7655d89025fdb07c">&#9670;&nbsp;</a></span>routePath</h2>
 
@@ -374,7 +1136,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Objects/NPCs/NpcBase.cs</li>
+<li>038EnergyTransition/Objects/NPCs/<a class="el" href="NpcBase_8cs.html">NpcBase.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -6,5 +6,6 @@ var classDissolveUIComponent =
     [ "DissolveShow", "classDissolveUIComponent.html#a89aa3b586d26b26bb2fa625c10c10953", null ],
     [ "FullyHidden", "classDissolveUIComponent.html#a9fce3cc96b286348512a31b9ee503ce2", null ],
     [ "FullyShown", "classDissolveUIComponent.html#a47813efd671eace99cc3fcbdd76d1c2d", null ],
+    [ "_targetValue", "classDissolveUIComponent.html#a36689bcf7bd999db9d534a6d51d61314", null ],
     [ "DissolveSpeed", "classDissolveUIComponent.html#a141156b414d2bd38064155cb41c4c210", null ]
 ];

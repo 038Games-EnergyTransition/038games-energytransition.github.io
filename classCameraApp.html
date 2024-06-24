@@ -84,18 +84,23 @@ $(document).ready(function(){initNavTree('classCameraApp.html',''); initResizabl
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classCameraApp-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CameraApp Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The camera app on the phone. Handles taking a picture from a Camera3D viewport and saving it to the user://screenshots directory.  
+ <a href="classCameraApp.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CameraApp:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classCameraApp.png" usemap="#CameraApp_map" alt=""/>
   <map id="CameraApp_map" name="CameraApp_map">
-<area href="classBaseApp.html" alt="BaseApp" shape="rect" coords="0,56,79,80"/>
+<area href="classBaseApp.html" title="Base class for all apps. Holds the app name, icon and position on the homescreen and the open and clo..." alt="BaseApp" shape="rect" coords="0,56,79,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -120,70 +125,84 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a521467a374bea380334b37ccf6888d92 inherit pub_methods_classBaseApp"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a521467a374bea380334b37ccf6888d92">_Ready</a> ()</td></tr>
 <tr class="memdesc:a521467a374bea380334b37ccf6888d92 inherit pub_methods_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the app and update the PivotOffset  <a href="classBaseApp.html#a521467a374bea380334b37ccf6888d92">More...</a><br /></td></tr>
 <tr class="separator:a521467a374bea380334b37ccf6888d92 inherit pub_methods_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3009e190ca74de05bb3d7b92b66b0fe6 inherit pub_methods_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="a3009e190ca74de05bb3d7b92b66b0fe6"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a3009e190ca74de05bb3d7b92b66b0fe6 inherit pub_methods_classBaseApp"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a3009e190ca74de05bb3d7b92b66b0fe6">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:a3009e190ca74de05bb3d7b92b66b0fe6 inherit pub_methods_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage the open and close animations of the app. The open and close animations scale from the center of the app on the homescreen.  <a href="classBaseApp.html#a3009e190ca74de05bb3d7b92b66b0fe6">More...</a><br /></td></tr>
 <tr class="separator:a3009e190ca74de05bb3d7b92b66b0fe6 inherit pub_methods_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a31791f8ed3f535c0966119531168fd2a"><td class="memItemLeft" align="right" valign="top"><a id="a31791f8ed3f535c0966119531168fd2a"></a>
-Button&#160;</td><td class="memItemRight" valign="bottom"><b>ShutterButton</b></td></tr>
+<tr class="memitem:a31791f8ed3f535c0966119531168fd2a"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraApp.html#a31791f8ed3f535c0966119531168fd2a">ShutterButton</a></td></tr>
+<tr class="memdesc:a31791f8ed3f535c0966119531168fd2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shutter button to take a picture.  <a href="classCameraApp.html#a31791f8ed3f535c0966119531168fd2a">More...</a><br /></td></tr>
 <tr class="separator:a31791f8ed3f535c0966119531168fd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14630eafe7b3f1bc80dbffea3b26049e"><td class="memItemLeft" align="right" valign="top"><a id="a14630eafe7b3f1bc80dbffea3b26049e"></a>
-Timer&#160;</td><td class="memItemRight" valign="bottom"><b>ShutterButtonTimer</b></td></tr>
+<tr class="memitem:a14630eafe7b3f1bc80dbffea3b26049e"><td class="memItemLeft" align="right" valign="top">Timer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraApp.html#a14630eafe7b3f1bc80dbffea3b26049e">ShutterButtonTimer</a></td></tr>
+<tr class="memdesc:a14630eafe7b3f1bc80dbffea3b26049e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timer to disable the shutter button for a short time after taking a picture.  <a href="classCameraApp.html#a14630eafe7b3f1bc80dbffea3b26049e">More...</a><br /></td></tr>
 <tr class="separator:a14630eafe7b3f1bc80dbffea3b26049e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5dfd45b2888a3701ca9aed4541eee6"><td class="memItemLeft" align="right" valign="top"><a id="a1e5dfd45b2888a3701ca9aed4541eee6"></a>
-HSlider&#160;</td><td class="memItemRight" valign="bottom"><b>ZoomSlider</b></td></tr>
+<tr class="memitem:a1e5dfd45b2888a3701ca9aed4541eee6"><td class="memItemLeft" align="right" valign="top">HSlider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraApp.html#a1e5dfd45b2888a3701ca9aed4541eee6">ZoomSlider</a></td></tr>
+<tr class="memdesc:a1e5dfd45b2888a3701ca9aed4541eee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The zoom slider to change the Camera3D fov.  <a href="classCameraApp.html#a1e5dfd45b2888a3701ca9aed4541eee6">More...</a><br /></td></tr>
 <tr class="separator:a1e5dfd45b2888a3701ca9aed4541eee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70383cc22c5868e369f9c8aac94408dc"><td class="memItemLeft" align="right" valign="top"><a id="a70383cc22c5868e369f9c8aac94408dc"></a>
-SubViewport&#160;</td><td class="memItemRight" valign="bottom"><b>subViewport</b></td></tr>
+<tr class="memitem:a70383cc22c5868e369f9c8aac94408dc"><td class="memItemLeft" align="right" valign="top">SubViewport&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraApp.html#a70383cc22c5868e369f9c8aac94408dc">subViewport</a></td></tr>
+<tr class="memdesc:a70383cc22c5868e369f9c8aac94408dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sub viewport with the Camera3D to take a picture of.  <a href="classCameraApp.html#a70383cc22c5868e369f9c8aac94408dc">More...</a><br /></td></tr>
 <tr class="separator:a70383cc22c5868e369f9c8aac94408dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab70971ddebb4193e5ca121461533983a"><td class="memItemLeft" align="right" valign="top"><a id="ab70971ddebb4193e5ca121461533983a"></a>
-ColorRect&#160;</td><td class="memItemRight" valign="bottom"><b>FlashOverlay</b></td></tr>
+<tr class="memitem:ab70971ddebb4193e5ca121461533983a"><td class="memItemLeft" align="right" valign="top">ColorRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraApp.html#ab70971ddebb4193e5ca121461533983a">FlashOverlay</a></td></tr>
+<tr class="memdesc:ab70971ddebb4193e5ca121461533983a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The flash overlay to show when a picture is taken.  <a href="classCameraApp.html#ab70971ddebb4193e5ca121461533983a">More...</a><br /></td></tr>
 <tr class="separator:ab70971ddebb4193e5ca121461533983a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classBaseApp"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBaseApp')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classBaseApp.html">BaseApp</a></td></tr>
-<tr class="memitem:aa4420795a7396517a650168991fe5cfe inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="aa4420795a7396517a650168991fe5cfe"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>AppName</b> = &quot;App&quot;</td></tr>
+<tr class="memitem:aa4420795a7396517a650168991fe5cfe inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#aa4420795a7396517a650168991fe5cfe">AppName</a> = &quot;App&quot;</td></tr>
+<tr class="memdesc:aa4420795a7396517a650168991fe5cfe inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the app. Only used for the homescreen, not the app itself. Multiple apps can have the same name or the name can be empty.  <a href="classBaseApp.html#aa4420795a7396517a650168991fe5cfe">More...</a><br /></td></tr>
 <tr class="separator:aa4420795a7396517a650168991fe5cfe inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b4a00fb26bf8e0c89d275a9d14ba2a4 inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="a9b4a00fb26bf8e0c89d275a9d14ba2a4"></a>
-Font&#160;</td><td class="memItemRight" valign="bottom"><b>AppNameFont</b></td></tr>
+<tr class="memitem:a9b4a00fb26bf8e0c89d275a9d14ba2a4 inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a9b4a00fb26bf8e0c89d275a9d14ba2a4">AppNameFont</a></td></tr>
+<tr class="memdesc:a9b4a00fb26bf8e0c89d275a9d14ba2a4 inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The font of the app name.  <a href="classBaseApp.html#a9b4a00fb26bf8e0c89d275a9d14ba2a4">More...</a><br /></td></tr>
 <tr class="separator:a9b4a00fb26bf8e0c89d275a9d14ba2a4 inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab16f6e29369ed4041fabc38c1cb08b53 inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="ab16f6e29369ed4041fabc38c1cb08b53"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AppNameVisible</b> = true</td></tr>
+<tr class="memitem:ab16f6e29369ed4041fabc38c1cb08b53 inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#ab16f6e29369ed4041fabc38c1cb08b53">AppNameVisible</a> = true</td></tr>
+<tr class="memdesc:ab16f6e29369ed4041fabc38c1cb08b53 inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the app name be visible on the homescreen? Eg. the bottom few apps on the homescreen have the name hidden.  <a href="classBaseApp.html#ab16f6e29369ed4041fabc38c1cb08b53">More...</a><br /></td></tr>
 <tr class="separator:ab16f6e29369ed4041fabc38c1cb08b53 inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a900a8b4cf04461b8bf840408ea59db9d inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="a900a8b4cf04461b8bf840408ea59db9d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>AppNameFontSize</b> = 8</td></tr>
+<tr class="memitem:a900a8b4cf04461b8bf840408ea59db9d inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a900a8b4cf04461b8bf840408ea59db9d">AppNameFontSize</a> = 8</td></tr>
+<tr class="memdesc:a900a8b4cf04461b8bf840408ea59db9d inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The font size of the app name.  <a href="classBaseApp.html#a900a8b4cf04461b8bf840408ea59db9d">More...</a><br /></td></tr>
 <tr class="separator:a900a8b4cf04461b8bf840408ea59db9d inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bf63b4f05105d774d30fc87c7f0e65d inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="a3bf63b4f05105d774d30fc87c7f0e65d"></a>
-Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>AppIcon</b></td></tr>
+<tr class="memitem:a3bf63b4f05105d774d30fc87c7f0e65d inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a3bf63b4f05105d774d30fc87c7f0e65d">AppIcon</a></td></tr>
+<tr class="memdesc:a3bf63b4f05105d774d30fc87c7f0e65d inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The icon of the app.  <a href="classBaseApp.html#a3bf63b4f05105d774d30fc87c7f0e65d">More...</a><br /></td></tr>
 <tr class="separator:a3bf63b4f05105d774d30fc87c7f0e65d inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18c318e90c4c1e75737e338bbfe2864c inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="a18c318e90c4c1e75737e338bbfe2864c"></a>
-Control&#160;</td><td class="memItemRight" valign="bottom"><b>AppIconOverride</b></td></tr>
+<tr class="memitem:a18c318e90c4c1e75737e338bbfe2864c inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">Control&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a18c318e90c4c1e75737e338bbfe2864c">AppIconOverride</a></td></tr>
+<tr class="memdesc:a18c318e90c4c1e75737e338bbfe2864c inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the app icon with a custom control. This can be used for layering multiple icons on top of each other, or add text to the icon.  <a href="classBaseApp.html#a18c318e90c4c1e75737e338bbfe2864c">More...</a><br /></td></tr>
 <tr class="separator:a18c318e90c4c1e75737e338bbfe2864c inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d9da7b58d1e9393aee3cafeae2229b5 inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="a0d9da7b58d1e9393aee3cafeae2229b5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AppIconOverrideOnTop</b> = false</td></tr>
+<tr class="memitem:a0d9da7b58d1e9393aee3cafeae2229b5 inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a0d9da7b58d1e9393aee3cafeae2229b5">AppIconOverrideOnTop</a> = false</td></tr>
+<tr class="memdesc:a0d9da7b58d1e9393aee3cafeae2229b5 inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the app icon override be on top of the app icon?  <a href="classBaseApp.html#a0d9da7b58d1e9393aee3cafeae2229b5">More...</a><br /></td></tr>
 <tr class="separator:a0d9da7b58d1e9393aee3cafeae2229b5 inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90774122759f814ee9ebc473e350c4b0 inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="a90774122759f814ee9ebc473e350c4b0"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>AppIconScale</b> = Vector2.One</td></tr>
+<tr class="memitem:a90774122759f814ee9ebc473e350c4b0 inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a90774122759f814ee9ebc473e350c4b0">AppIconScale</a> = Vector2.One</td></tr>
+<tr class="memdesc:a90774122759f814ee9ebc473e350c4b0 inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale of the app icon on the homescreen.  <a href="classBaseApp.html#a90774122759f814ee9ebc473e350c4b0">More...</a><br /></td></tr>
 <tr class="separator:a90774122759f814ee9ebc473e350c4b0 inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a978f609dcbe3a684bd90f7762b17ca1b inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="a978f609dcbe3a684bd90f7762b17ca1b"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>AppPosition</b> = Vector2.Zero</td></tr>
+<tr class="memitem:a978f609dcbe3a684bd90f7762b17ca1b inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a978f609dcbe3a684bd90f7762b17ca1b">AppPosition</a> = Vector2.Zero</td></tr>
+<tr class="memdesc:a978f609dcbe3a684bd90f7762b17ca1b inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grid position of the app on the homescreen. Note: this is not the actual position of the app, but the position on the homescreen grid.  <a href="classBaseApp.html#a978f609dcbe3a684bd90f7762b17ca1b">More...</a><br /></td></tr>
 <tr class="separator:a978f609dcbe3a684bd90f7762b17ca1b inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8468c55c59d7ab144bb0f56fed4412 inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#afe8468c55c59d7ab144bb0f56fed4412">AppSize</a> = new Vector2(1, 1)</td></tr>
 <tr class="memdesc:afe8468c55c59d7ab144bb0f56fed4412 inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only used for the fade in and fade out animation  <a href="classBaseApp.html#afe8468c55c59d7ab144bb0f56fed4412">More...</a><br /></td></tr>
 <tr class="separator:afe8468c55c59d7ab144bb0f56fed4412 inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c7daf312caab577cce7fd762c7083b inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="a47c7daf312caab577cce7fd762c7083b"></a>
-Control&#160;</td><td class="memItemRight" valign="bottom"><b>HomescreenIcon</b></td></tr>
+<tr class="memitem:a47c7daf312caab577cce7fd762c7083b inherit pub_attribs_classBaseApp"><td class="memItemLeft" align="right" valign="top">Control&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#a47c7daf312caab577cce7fd762c7083b">HomescreenIcon</a></td></tr>
+<tr class="memdesc:a47c7daf312caab577cce7fd762c7083b inherit pub_attribs_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The home icon to return to the homescreen.  <a href="classBaseApp.html#a47c7daf312caab577cce7fd762c7083b">More...</a><br /></td></tr>
 <tr class="separator:a47c7daf312caab577cce7fd762c7083b inherit pub_attribs_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a463598590383db34461d7dd310f2a6b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraApp.html#a463598590383db34461d7dd310f2a6b6">_on_timer_timeout</a> ()</td></tr>
+<tr class="memdesc:a463598590383db34461d7dd310f2a6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the shutter button after the timer has finished  <a href="classCameraApp.html#a463598590383db34461d7dd310f2a6b6">More...</a><br /></td></tr>
+<tr class="separator:a463598590383db34461d7dd310f2a6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:add3354d3500d8c924a0b8893938be716"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraApp.html#add3354d3500d8c924a0b8893938be716">_lastScreenshotPath</a></td></tr>
+<tr class="memdesc:add3354d3500d8c924a0b8893938be716"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last screenshot path to open the screenshot after taking it.  <a href="classCameraApp.html#add3354d3500d8c924a0b8893938be716">More...</a><br /></td></tr>
+<tr class="separator:add3354d3500d8c924a0b8893938be716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_classBaseApp"><td colspan="2" onclick="javascript:toggleInherit('properties_classBaseApp')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classBaseApp.html">BaseApp</a></td></tr>
-<tr class="memitem:aa071af4b993de45719bb619cbd6c0508 inherit properties_classBaseApp"><td class="memItemLeft" align="right" valign="top"><a id="aa071af4b993de45719bb619cbd6c0508"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOpen</b> = false<code> [get]</code></td></tr>
+<tr class="memitem:aa071af4b993de45719bb619cbd6c0508 inherit properties_classBaseApp"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseApp.html#aa071af4b993de45719bb619cbd6c0508">IsOpen</a> = false<code> [get, private set]</code></td></tr>
+<tr class="memdesc:aa071af4b993de45719bb619cbd6c0508 inherit properties_classBaseApp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the app open?  <a href="classBaseApp.html#aa071af4b993de45719bb619cbd6c0508">More...</a><br /></td></tr>
 <tr class="separator:aa071af4b993de45719bb619cbd6c0508 inherit properties_classBaseApp"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The camera app on the phone. Handles taking a picture from a Camera3D viewport and saving it to the user://screenshots directory. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a282db67a73c0069c553c7017ef743998"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a282db67a73c0069c553c7017ef743998">&#9670;&nbsp;</a></span>_on_shutter_button_pressed()</h2>
 
@@ -200,6 +219,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOpen</b> = false<co
 </div><div class="memdoc">
 
 <p>Take a screenshot and save it to the user://screenshots directory </p>
+
+</div>
+</div>
+<a id="a463598590383db34461d7dd310f2a6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a463598590383db34461d7dd310f2a6b6">&#9670;&nbsp;</a></span>_on_timer_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraApp._on_timer_timeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable the shutter button after the timer has finished </p>
 
 </div>
 </div>
@@ -267,7 +313,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOpen</b> = false<co
 
 <p>Close the camera app and move the phone to the default phone up position </p>
 
-<p>Reimplemented from <a class="el" href="classBaseApp.html">BaseApp</a>.</p>
+<p>Reimplemented from <a class="el" href="classBaseApp.html#a5da498797f15355ce3b3382d5bcead82">BaseApp</a>.</p>
 
 </div>
 </div>
@@ -296,12 +342,117 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOpen</b> = false<co
 
 <p>Open the camera app and move the phone to the correct position </p>
 
-<p>Reimplemented from <a class="el" href="classBaseApp.html">BaseApp</a>.</p>
+<p>Reimplemented from <a class="el" href="classBaseApp.html#aea8520097681730bf04b9a12d1779144">BaseApp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="add3354d3500d8c924a0b8893938be716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3354d3500d8c924a0b8893938be716">&#9670;&nbsp;</a></span>_lastScreenshotPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CameraApp._lastScreenshotPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The last screenshot path to open the screenshot after taking it. </p>
+
+</div>
+</div>
+<a id="ab70971ddebb4193e5ca121461533983a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70971ddebb4193e5ca121461533983a">&#9670;&nbsp;</a></span>FlashOverlay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ColorRect CameraApp.FlashOverlay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The flash overlay to show when a picture is taken. </p>
+
+</div>
+</div>
+<a id="a31791f8ed3f535c0966119531168fd2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31791f8ed3f535c0966119531168fd2a">&#9670;&nbsp;</a></span>ShutterButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button CameraApp.ShutterButton</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The shutter button to take a picture. </p>
+
+</div>
+</div>
+<a id="a14630eafe7b3f1bc80dbffea3b26049e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14630eafe7b3f1bc80dbffea3b26049e">&#9670;&nbsp;</a></span>ShutterButtonTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Timer CameraApp.ShutterButtonTimer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The timer to disable the shutter button for a short time after taking a picture. </p>
+
+</div>
+</div>
+<a id="a70383cc22c5868e369f9c8aac94408dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70383cc22c5868e369f9c8aac94408dc">&#9670;&nbsp;</a></span>subViewport</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SubViewport CameraApp.subViewport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The sub viewport with the Camera3D to take a picture of. </p>
+
+</div>
+</div>
+<a id="a1e5dfd45b2888a3701ca9aed4541eee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5dfd45b2888a3701ca9aed4541eee6">&#9670;&nbsp;</a></span>ZoomSlider</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HSlider CameraApp.ZoomSlider</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The zoom slider to change the Camera3D fov. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/HUD/Phone/Scripts/CameraApp.cs</li>
+<li>038EnergyTransition/Scenes/HUD/Phone/Scripts/<a class="el" href="CameraApp_8cs.html">CameraApp.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

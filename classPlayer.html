@@ -84,11 +84,16 @@ $(document).ready(function(){initNavTree('classPlayer.html',''); initResizable()
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classPlayer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Player Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The player character with input controls. It is a 3D character with 2D in 3D animations.  
+ <a href="classPlayer.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Player:</div>
 <div class="dyncontent">
@@ -101,13 +106,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae192a478a80f0e93e01339d62cdd6f6d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ae192a478a80f0e93e01339d62cdd6f6d">_Ready</a> ()</td></tr>
 <tr class="memdesc:ae192a478a80f0e93e01339d62cdd6f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the player as the global player. If there is already a global player, delete this one.  <a href="classPlayer.html#ae192a478a80f0e93e01339d62cdd6f6d">More...</a><br /></td></tr>
 <tr class="separator:ae192a478a80f0e93e01339d62cdd6f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3645ff8a4268176aa02d484a443c98ea"><td class="memItemLeft" align="right" valign="top"><a id="a3645ff8a4268176aa02d484a443c98ea"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_ExitTree</b> ()</td></tr>
+<tr class="memitem:a3645ff8a4268176aa02d484a443c98ea"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a3645ff8a4268176aa02d484a443c98ea">_ExitTree</a> ()</td></tr>
+<tr class="memdesc:a3645ff8a4268176aa02d484a443c98ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the event listeners when the player is deleted.  <a href="classPlayer.html#a3645ff8a4268176aa02d484a443c98ea">More...</a><br /></td></tr>
 <tr class="separator:a3645ff8a4268176aa02d484a443c98ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81db5dd46c343160498d29f6fa42d611"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a81db5dd46c343160498d29f6fa42d611">_Process</a> (double delta)</td></tr>
 <tr class="memdesc:a81db5dd46c343160498d29f6fa42d611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the player based on input and gravity.  <a href="classPlayer.html#a81db5dd46c343160498d29f6fa42d611">More...</a><br /></td></tr>
 <tr class="separator:a81db5dd46c343160498d29f6fa42d611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5aca1b518d7ef3291be9ba6377986b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#af5aca1b518d7ef3291be9ba6377986b5">onSceneChange</a> (object sender, GameState gameState)</td></tr>
+<tr class="memitem:af5aca1b518d7ef3291be9ba6377986b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#af5aca1b518d7ef3291be9ba6377986b5">onSceneChange</a> (object sender, <a class="el" href="Globals_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> gameState)</td></tr>
 <tr class="memdesc:af5aca1b518d7ef3291be9ba6377986b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the player visible or invisible based on the game state.  <a href="classPlayer.html#af5aca1b518d7ef3291be9ba6377986b5">More...</a><br /></td></tr>
 <tr class="separator:af5aca1b518d7ef3291be9ba6377986b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,8 +133,55 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ade14f7db2c11604e57d2010ae2586834"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ade14f7db2c11604e57d2010ae2586834">gravity</a> = ProjectSettings.GetSetting(&quot;physics/3d/default_gravity&quot;).AsSingle()</td></tr>
 <tr class="memdesc:ade14f7db2c11604e57d2010ae2586834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gravity from the project settings to be synced with RigidBody nodes.  <a href="classPlayer.html#ade14f7db2c11604e57d2010ae2586834">More...</a><br /></td></tr>
 <tr class="separator:ade14f7db2c11604e57d2010ae2586834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3ae61fe92c0a513d5cb1c4e945705b83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a3ae61fe92c0a513d5cb1c4e945705b83">OnDayChanged</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a3ae61fe92c0a513d5cb1c4e945705b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the player's position when the day changes.  <a href="classPlayer.html#a3ae61fe92c0a513d5cb1c4e945705b83">More...</a><br /></td></tr>
+<tr class="separator:a3ae61fe92c0a513d5cb1c4e945705b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70de792f9d054d8f5a5c0f8de22f2ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ae70de792f9d054d8f5a5c0f8de22f2ae">ConfirmPressed</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ae70de792f9d054d8f5a5c0f8de22f2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Placeholder for the ConfirmPressed event.  <a href="classPlayer.html#ae70de792f9d054d8f5a5c0f8de22f2ae">More...</a><br /></td></tr>
+<tr class="separator:ae70de792f9d054d8f5a5c0f8de22f2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa2957967d67487781b8a5d1d3442bbbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8cs.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aa2957967d67487781b8a5d1d3442bbbf">_state</a> = <a class="el" href="Player_8cs.html#a5d74787dedbc4e11c1ab15bf487e61f8aec2f993aec2c27fc750119ab17b16cdb">State.idle</a></td></tr>
+<tr class="memdesc:aa2957967d67487781b8a5d1d3442bbbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current state of the player.  <a href="classPlayer.html#aa2957967d67487781b8a5d1d3442bbbf">More...</a><br /></td></tr>
+<tr class="separator:aa2957967d67487781b8a5d1d3442bbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f76bc1ff036635f19ab3bfdbbf0de1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8cs.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a70f76bc1ff036635f19ab3bfdbbf0de1">_direction</a> = <a class="el" href="Player_8cs.html#a224b9163917ac32fc95a60d8c1eec3aaa7c4f29407893c334a6cb7a87bf045c0d">Direction.right</a></td></tr>
+<tr class="memdesc:a70f76bc1ff036635f19ab3bfdbbf0de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The direction the player is moving.  <a href="classPlayer.html#a70f76bc1ff036635f19ab3bfdbbf0de1">More...</a><br /></td></tr>
+<tr class="separator:a70f76bc1ff036635f19ab3bfdbbf0de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa318ffd86cccd0bd802a71d1312e0e0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8cs.html#ae4b6dfb44a913b0e5ca9db5445e58049">Facing</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aa318ffd86cccd0bd802a71d1312e0e0b">_facing</a> = <a class="el" href="Player_8cs.html#ae4b6dfb44a913b0e5ca9db5445e58049ae6ec529ba185279aa0adcf93e645c7cd">Facing.front</a></td></tr>
+<tr class="memdesc:aa318ffd86cccd0bd802a71d1312e0e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The direction the player is facing.  <a href="classPlayer.html#aa318ffd86cccd0bd802a71d1312e0e0b">More...</a><br /></td></tr>
+<tr class="separator:aa318ffd86cccd0bd802a71d1312e0e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a571c33ed3ea9df1ae579dcfb119bbf91"><td class="memItemLeft" align="right" valign="top">AnimatedSprite3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a571c33ed3ea9df1ae579dcfb119bbf91">animatedSprite3D</a></td></tr>
+<tr class="memdesc:a571c33ed3ea9df1ae579dcfb119bbf91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The animated sprite of the player.  <a href="classPlayer.html#a571c33ed3ea9df1ae579dcfb119bbf91">More...</a><br /></td></tr>
+<tr class="separator:a571c33ed3ea9df1ae579dcfb119bbf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8adec6c260b860d0b56a69c317b9d792"><td class="memItemLeft" align="right" valign="top"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a8adec6c260b860d0b56a69c317b9d792">_initialPosition</a></td></tr>
+<tr class="separator:a8adec6c260b860d0b56a69c317b9d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The player character with input controls. It is a 3D character with 2D in 3D animations. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3645ff8a4268176aa02d484a443c98ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3645ff8a4268176aa02d484a443c98ea">&#9670;&nbsp;</a></span>_ExitTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Player._ExitTree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the event listeners when the player is deleted. </p>
+
+</div>
+</div>
 <a id="a81db5dd46c343160498d29f6fa42d611"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81db5dd46c343160498d29f6fa42d611">&#9670;&nbsp;</a></span>_Process()</h2>
 
@@ -175,6 +227,95 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae70de792f9d054d8f5a5c0f8de22f2ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70de792f9d054d8f5a5c0f8de22f2ae">&#9670;&nbsp;</a></span>ConfirmPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player.ConfirmPressed </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Placeholder for the ConfirmPressed event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td></td></tr>
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NotImplementedException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3ae61fe92c0a513d5cb1c4e945705b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae61fe92c0a513d5cb1c4e945705b83">&#9670;&nbsp;</a></span>OnDayChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player.OnDayChanged </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset the player's position when the day changes. </p>
+
+</div>
+</div>
 <a id="af5aca1b518d7ef3291be9ba6377986b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5aca1b518d7ef3291be9ba6377986b5">&#9670;&nbsp;</a></span>onSceneChange()</h2>
 
@@ -190,7 +331,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GameState&#160;</td>
+          <td class="paramtype"><a class="el" href="Globals_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a>&#160;</td>
           <td class="paramname"><em>gameState</em>&#160;</td>
         </tr>
         <tr>
@@ -213,6 +354,100 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a70f76bc1ff036635f19ab3bfdbbf0de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f76bc1ff036635f19ab3bfdbbf0de1">&#9670;&nbsp;</a></span>_direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Player_8cs.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> Player._direction = <a class="el" href="Player_8cs.html#a224b9163917ac32fc95a60d8c1eec3aaa7c4f29407893c334a6cb7a87bf045c0d">Direction.right</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The direction the player is moving. </p>
+
+</div>
+</div>
+<a id="aa318ffd86cccd0bd802a71d1312e0e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa318ffd86cccd0bd802a71d1312e0e0b">&#9670;&nbsp;</a></span>_facing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Player_8cs.html#ae4b6dfb44a913b0e5ca9db5445e58049">Facing</a> Player._facing = <a class="el" href="Player_8cs.html#ae4b6dfb44a913b0e5ca9db5445e58049ae6ec529ba185279aa0adcf93e645c7cd">Facing.front</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The direction the player is facing. </p>
+
+</div>
+</div>
+<a id="a8adec6c260b860d0b56a69c317b9d792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8adec6c260b860d0b56a69c317b9d792">&#9670;&nbsp;</a></span>_initialPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a> Player._initialPosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2957967d67487781b8a5d1d3442bbbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2957967d67487781b8a5d1d3442bbbf">&#9670;&nbsp;</a></span>_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Player_8cs.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a> Player._state = <a class="el" href="Player_8cs.html#a5d74787dedbc4e11c1ab15bf487e61f8aec2f993aec2c27fc750119ab17b16cdb">State.idle</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current state of the player. </p>
+
+</div>
+</div>
 <a id="afe1889952b1f3b970bf606a198dd1299"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe1889952b1f3b970bf606a198dd1299">&#9670;&nbsp;</a></span>Acceleration</h2>
 
@@ -226,6 +461,30 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The acceleration of the player (speedup). </p>
+
+</div>
+</div>
+<a id="a571c33ed3ea9df1ae579dcfb119bbf91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a571c33ed3ea9df1ae579dcfb119bbf91">&#9670;&nbsp;</a></span>animatedSprite3D</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimatedSprite3D Player.animatedSprite3D</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The animated sprite of the player. </p>
 
 </div>
 </div>
@@ -294,7 +553,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Objects/Player/Player.cs</li>
+<li>038EnergyTransition/Objects/Player/<a class="el" href="Player_8cs.html">Player.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

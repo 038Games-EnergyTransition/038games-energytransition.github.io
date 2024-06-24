@@ -85,11 +85,16 @@ $(document).ready(function(){initNavTree('classQuestPoint.html',''); initResizab
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classQuestPoint-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">QuestPoint Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The quest point. This is used to increment a statistic when the player enters the trigger zone.  
+ <a href="classQuestPoint.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for QuestPoint:</div>
 <div class="dyncontent">
@@ -102,26 +107,61 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acfa090c445a98633c4c827aa6f8c6e56"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPoint.html#acfa090c445a98633c4c827aa6f8c6e56">_ValidateProperty</a> (Godot.Collections.Dictionary property)</td></tr>
 <tr class="memdesc:acfa090c445a98633c4c827aa6f8c6e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the property so the property CutsceneName is hidden if PlayCutsceneOnTrigger is false  <a href="classQuestPoint.html#acfa090c445a98633c4c827aa6f8c6e56">More...</a><br /></td></tr>
 <tr class="separator:acfa090c445a98633c4c827aa6f8c6e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29c8917589a4b3815713e6f35b783dd0"><td class="memItemLeft" align="right" valign="top"><a id="a29c8917589a4b3815713e6f35b783dd0"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a29c8917589a4b3815713e6f35b783dd0"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPoint.html#a29c8917589a4b3815713e6f35b783dd0">_Ready</a> ()</td></tr>
+<tr class="memdesc:a29c8917589a4b3815713e6f35b783dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the trigger zone to the node TriggerZone and hides the arrow if not in editor mode  <a href="classQuestPoint.html#a29c8917589a4b3815713e6f35b783dd0">More...</a><br /></td></tr>
 <tr class="separator:a29c8917589a4b3815713e6f35b783dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab91feb9c32b963b42e6681fd0884de70"><td class="memItemLeft" align="right" valign="top"><a id="ab91feb9c32b963b42e6681fd0884de70"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Statistic</b></td></tr>
+<tr class="memitem:ab91feb9c32b963b42e6681fd0884de70"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPoint.html#ab91feb9c32b963b42e6681fd0884de70">Statistic</a></td></tr>
+<tr class="memdesc:ab91feb9c32b963b42e6681fd0884de70"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the statistic to increment.  <a href="classQuestPoint.html#ab91feb9c32b963b42e6681fd0884de70">More...</a><br /></td></tr>
 <tr class="separator:ab91feb9c32b963b42e6681fd0884de70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7da2378c44d14c32c7601de2c743283"><td class="memItemLeft" align="right" valign="top"><a id="aa7da2378c44d14c32c7601de2c743283"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Quest</b></td></tr>
+<tr class="memitem:aa7da2378c44d14c32c7601de2c743283"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPoint.html#aa7da2378c44d14c32c7601de2c743283">Quest</a></td></tr>
+<tr class="memdesc:aa7da2378c44d14c32c7601de2c743283"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the quest.  <a href="classQuestPoint.html#aa7da2378c44d14c32c7601de2c743283">More...</a><br /></td></tr>
 <tr class="separator:aa7da2378c44d14c32c7601de2c743283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a1a2ae4749e1fcc12999f290924308898"><td class="memItemLeft" align="right" valign="top"><a id="a1a2ae4749e1fcc12999f290924308898"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>QuestSpecific</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a1a2ae4749e1fcc12999f290924308898"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPoint.html#a1a2ae4749e1fcc12999f290924308898">QuestSpecific</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1a2ae4749e1fcc12999f290924308898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the quest point specific to a quest?  <a href="classQuestPoint.html#a1a2ae4749e1fcc12999f290924308898">More...</a><br /></td></tr>
 <tr class="separator:a1a2ae4749e1fcc12999f290924308898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:abaa7d3a4ed321410cb62f8d8ac3e9529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPoint.html#abaa7d3a4ed321410cb62f8d8ac3e9529">OnBodyEntered</a> (Node3D body)</td></tr>
+<tr class="memdesc:abaa7d3a4ed321410cb62f8d8ac3e9529"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the body enters the trigger zone its used to increment a statistics that can be for example used by a quest  <a href="classQuestPoint.html#abaa7d3a4ed321410cb62f8d8ac3e9529">More...</a><br /></td></tr>
+<tr class="separator:abaa7d3a4ed321410cb62f8d8ac3e9529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abe3144ad4729a5fc58316f946a685840"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPoint.html#abe3144ad4729a5fc58316f946a685840">_questSpecific</a> = false</td></tr>
+<tr class="separator:abe3144ad4729a5fc58316f946a685840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd831d4ad3aa0a74e8a791e7d3c8d462"><td class="memItemLeft" align="right" valign="top">Area3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestPoint.html#abd831d4ad3aa0a74e8a791e7d3c8d462">_triggerZone</a></td></tr>
+<tr class="memdesc:abd831d4ad3aa0a74e8a791e7d3c8d462"><td class="mdescLeft">&#160;</td><td class="mdescRight">The trigger zone Area3D  <a href="classQuestPoint.html#abd831d4ad3aa0a74e8a791e7d3c8d462">More...</a><br /></td></tr>
+<tr class="separator:abd831d4ad3aa0a74e8a791e7d3c8d462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The quest point. This is used to increment a statistic when the player enters the trigger zone. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a29c8917589a4b3815713e6f35b783dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c8917589a4b3815713e6f35b783dd0">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void QuestPoint._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the trigger zone to the node TriggerZone and hides the arrow if not in editor mode </p>
+
+</div>
+</div>
 <a id="acfa090c445a98633c4c827aa6f8c6e56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfa090c445a98633c4c827aa6f8c6e56">&#9670;&nbsp;</a></span>_ValidateProperty()</h2>
 
@@ -148,8 +188,146 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>QuestSpecific</b><cod
 
 </div>
 </div>
+<a id="abaa7d3a4ed321410cb62f8d8ac3e9529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa7d3a4ed321410cb62f8d8ac3e9529">&#9670;&nbsp;</a></span>OnBodyEntered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestPoint.OnBodyEntered </td>
+          <td>(</td>
+          <td class="paramtype">Node3D&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called when the body enters the trigger zone its used to increment a statistics that can be for example used by a quest </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abe3144ad4729a5fc58316f946a685840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3144ad4729a5fc58316f946a685840">&#9670;&nbsp;</a></span>_questSpecific</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QuestPoint._questSpecific = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd831d4ad3aa0a74e8a791e7d3c8d462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd831d4ad3aa0a74e8a791e7d3c8d462">&#9670;&nbsp;</a></span>_triggerZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Area3D QuestPoint._triggerZone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The trigger zone Area3D </p>
+
+</div>
+</div>
+<a id="aa7da2378c44d14c32c7601de2c743283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7da2378c44d14c32c7601de2c743283">&#9670;&nbsp;</a></span>Quest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string QuestPoint.Quest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The name of the quest. </p>
+
+</div>
+</div>
+<a id="ab91feb9c32b963b42e6681fd0884de70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91feb9c32b963b42e6681fd0884de70">&#9670;&nbsp;</a></span>Statistic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string QuestPoint.Statistic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The name of the statistic to increment. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a1a2ae4749e1fcc12999f290924308898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2ae4749e1fcc12999f290924308898">&#9670;&nbsp;</a></span>QuestSpecific</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QuestPoint.QuestSpecific</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the quest point specific to a quest? </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Objects/QuestPoint/QuestPoint.cs</li>
+<li>038EnergyTransition/Objects/QuestPoint/<a class="el" href="QuestPoint_8cs.html">QuestPoint.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

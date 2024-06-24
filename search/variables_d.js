@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['returndoor_527',['ReturnDoor',['../classRoomScript.html#a075d0a605b11627b6b1681addd293793',1,'RoomScript']]],
-  ['reverse_528',['Reverse',['../classShaderTransition.html#ae02109ff2ecc203ed73ead8eead09bee',1,'ShaderTransition']]],
-  ['rightportrait_529',['RightPortrait',['../classChoiceBox.html#a6526934fe09c4f04941a207ba68e37f7',1,'ChoiceBox.RightPortrait()'],['../classDialogueBox.html#af8972778bb45ce7da9fe608a2b361176',1,'DialogueBox.RightPortrait()']]],
-  ['roomcamera_530',['RoomCamera',['../classRoomScript.html#acdfd5ab65dece29d9752663ccc160b09',1,'RoomScript']]],
-  ['routepath_531',['routePath',['../classNpcBase.html#a3d3ba9465613926e7655d89025fdb07c',1,'NpcBase']]],
-  ['runningspeed_532',['RunningSpeed',['../classPlayer.html#ad5aff0b1b48221d9edbfda6d865a3d3b',1,'Player']]]
+  ['name_1990',['Name',['../classQuestStart.html#a92f6d2bbae76e9614983c08fc1dd61cd',1,'QuestStart']]],
+  ['nametextedit_1991',['nameTextEdit',['../classStartNode.html#a50341825b84b63366bf8e9aed9b8639f',1,'StartNode']]],
+  ['nextroom_1992',['NextRoom',['../classSceneTransitionDoor.html#aa93707c870d3da88283f4e30738ef43b',1,'SceneTransitionDoor']]],
+  ['nextsetting_1993',['NextSetting',['../classCamera.html#a8eaf03ab426e582451ee9ef993345cfa',1,'Camera']]],
+  ['nodes_1994',['Nodes',['../classCutscene.html#aab629a6bdb17acb5c3046b6873428508',1,'Cutscene']]],
+  ['npcname_1995',['NPCName',['../classCreateNPC.html#ae2fd3dc65e5d6f61580ded89d4debae8',1,'CreateNPC.NPCName()'],['../classMoveNPC.html#a121cc87c53011b8432dd5ec0c031214b',1,'MoveNPC.NPCName()']]]
 ];

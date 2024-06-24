@@ -84,11 +84,15 @@ $(document).ready(function(){initNavTree('classStatisticsManager.html',''); init
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classStatisticsManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">StatisticsManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The statistics manager. Manages the statistics of the player which are saved in the save file.  
+ <a href="classStatisticsManager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for StatisticsManager:</div>
 <div class="dyncontent">
@@ -98,39 +102,503 @@ Inheritance diagram for StatisticsManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae1286399f1adb5c5842f93b2c8cfa4c5"><td class="memItemLeft" align="right" valign="top"><a id="ae1286399f1adb5c5842f93b2c8cfa4c5"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:ae1286399f1adb5c5842f93b2c8cfa4c5"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#ae1286399f1adb5c5842f93b2c8cfa4c5">_Ready</a> ()</td></tr>
+<tr class="memdesc:ae1286399f1adb5c5842f93b2c8cfa4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the statistics from the save file and subscribes to the ConditionQueryRequested and ActionQueryRequested events in the <a class="el" href="classQuestManager.html">QuestManager</a>.  <a href="classStatisticsManager.html#ae1286399f1adb5c5842f93b2c8cfa4c5">More...</a><br /></td></tr>
 <tr class="separator:ae1286399f1adb5c5842f93b2c8cfa4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:acd7daada0afa160caffae2dd3d0c08ae"><td class="memItemLeft" align="right" valign="top"><a id="acd7daada0afa160caffae2dd3d0c08ae"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> ()</td></tr>
+<tr class="memitem:acd7daada0afa160caffae2dd3d0c08ae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#acd7daada0afa160caffae2dd3d0c08ae">Load</a> ()</td></tr>
+<tr class="memdesc:acd7daada0afa160caffae2dd3d0c08ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the statistics from the save file.  <a href="classStatisticsManager.html#acd7daada0afa160caffae2dd3d0c08ae">More...</a><br /></td></tr>
 <tr class="separator:acd7daada0afa160caffae2dd3d0c08ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd20a661853f3823ff7616636d467693"><td class="memItemLeft" align="right" valign="top"><a id="acd20a661853f3823ff7616636d467693"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>GetStat</b> (string statName)</td></tr>
+<tr class="memitem:a316ac7af84c502f7f449db88ad1317cd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#a316ac7af84c502f7f449db88ad1317cd">IsStatNameValid</a> (string statName)</td></tr>
+<tr class="memdesc:a316ac7af84c502f7f449db88ad1317cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the stat name is valid. An invalid stat name is null or an empty string.  <a href="classStatisticsManager.html#a316ac7af84c502f7f449db88ad1317cd">More...</a><br /></td></tr>
+<tr class="separator:a316ac7af84c502f7f449db88ad1317cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd20a661853f3823ff7616636d467693"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#acd20a661853f3823ff7616636d467693">GetStat</a> (string statName)</td></tr>
+<tr class="memdesc:acd20a661853f3823ff7616636d467693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the stat. Returns -1 if the stat name is invalid or when the gamesave is not loaded.  <a href="classStatisticsManager.html#acd20a661853f3823ff7616636d467693">More...</a><br /></td></tr>
 <tr class="separator:acd20a661853f3823ff7616636d467693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c0fa62f06b7aa99b6e6be71b995ad60"><td class="memItemLeft" align="right" valign="top"><a id="a5c0fa62f06b7aa99b6e6be71b995ad60"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStat</b> (string statName, int value)</td></tr>
+<tr class="memitem:a5c0fa62f06b7aa99b6e6be71b995ad60"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#a5c0fa62f06b7aa99b6e6be71b995ad60">SetStat</a> (string statName, int value)</td></tr>
+<tr class="memdesc:a5c0fa62f06b7aa99b6e6be71b995ad60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of the stat, creating it if it doesn't exist.  <a href="classStatisticsManager.html#a5c0fa62f06b7aa99b6e6be71b995ad60">More...</a><br /></td></tr>
 <tr class="separator:a5c0fa62f06b7aa99b6e6be71b995ad60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42ecf28cedee7ecfb3b6223f5658f812"><td class="memItemLeft" align="right" valign="top"><a id="a42ecf28cedee7ecfb3b6223f5658f812"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementStat</b> (string statName, int value)</td></tr>
+<tr class="memitem:a42ecf28cedee7ecfb3b6223f5658f812"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#a42ecf28cedee7ecfb3b6223f5658f812">IncrementStat</a> (string statName, int value)</td></tr>
+<tr class="memdesc:a42ecf28cedee7ecfb3b6223f5658f812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the value of the stat, creating it if it doesn't exist.  <a href="classStatisticsManager.html#a42ecf28cedee7ecfb3b6223f5658f812">More...</a><br /></td></tr>
 <tr class="separator:a42ecf28cedee7ecfb3b6223f5658f812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51125655712d659ebfb5723ca1aa9fdf"><td class="memItemLeft" align="right" valign="top"><a id="a51125655712d659ebfb5723ca1aa9fdf"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementStat</b> (string statName)</td></tr>
+<tr class="memitem:a51125655712d659ebfb5723ca1aa9fdf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#a51125655712d659ebfb5723ca1aa9fdf">IncrementStat</a> (string statName)</td></tr>
+<tr class="memdesc:a51125655712d659ebfb5723ca1aa9fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the value of the stat by 1, creating it if it doesn't exist.  <a href="classStatisticsManager.html#a51125655712d659ebfb5723ca1aa9fdf">More...</a><br /></td></tr>
 <tr class="separator:a51125655712d659ebfb5723ca1aa9fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7d722fcc1c6e4f605ab18164ff83738"><td class="memItemLeft" align="right" valign="top"><a id="ad7d722fcc1c6e4f605ab18164ff83738"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasStat</b> (string statName)</td></tr>
+<tr class="memitem:ad7d722fcc1c6e4f605ab18164ff83738"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#ad7d722fcc1c6e4f605ab18164ff83738">HasStat</a> (string statName)</td></tr>
+<tr class="memdesc:ad7d722fcc1c6e4f605ab18164ff83738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the stat exists.  <a href="classStatisticsManager.html#ad7d722fcc1c6e4f605ab18164ff83738">More...</a><br /></td></tr>
 <tr class="separator:ad7d722fcc1c6e4f605ab18164ff83738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae73912db1ec9c6a98ac30e31ca8f0c07"><td class="memItemLeft" align="right" valign="top"><a id="ae73912db1ec9c6a98ac30e31ca8f0c07"></a>
-static ICollection&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetKeys</b> ()</td></tr>
+<tr class="memitem:ae73912db1ec9c6a98ac30e31ca8f0c07"><td class="memItemLeft" align="right" valign="top">static ICollection&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#ae73912db1ec9c6a98ac30e31ca8f0c07">GetKeys</a> ()</td></tr>
+<tr class="memdesc:ae73912db1ec9c6a98ac30e31ca8f0c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the keys of the stats.  <a href="classStatisticsManager.html#ae73912db1ec9c6a98ac30e31ca8f0c07">More...</a><br /></td></tr>
 <tr class="separator:ae73912db1ec9c6a98ac30e31ca8f0c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46d5cf400dd61176f66cade1050e5df9"><td class="memItemLeft" align="right" valign="top"><a id="a46d5cf400dd61176f66cade1050e5df9"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoaded</b> ()</td></tr>
+<tr class="memitem:a46d5cf400dd61176f66cade1050e5df9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#a46d5cf400dd61176f66cade1050e5df9">IsLoaded</a> ()</td></tr>
+<tr class="memdesc:a46d5cf400dd61176f66cade1050e5df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the gamesave is loaded.  <a href="classStatisticsManager.html#a46d5cf400dd61176f66cade1050e5df9">More...</a><br /></td></tr>
 <tr class="separator:a46d5cf400dd61176f66cade1050e5df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a66d8355cc2c949a8f0622963a9131fac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#a66d8355cc2c949a8f0622963a9131fac">OnActionQueryRequested</a> (string queryType, string key, Variant value, <a class="el" href="classQuestAction.html">QuestAction</a> requester)</td></tr>
+<tr class="memdesc:a66d8355cc2c949a8f0622963a9131fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Event] Called when an action query is requested from a quest <code>QuestManager.ActionQueryRequested</code>.  <a href="classStatisticsManager.html#a66d8355cc2c949a8f0622963a9131fac">More...</a><br /></td></tr>
+<tr class="separator:a66d8355cc2c949a8f0622963a9131fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f43ddae9ba2e0e480775b890a2846e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatisticsManager.html#a1f43ddae9ba2e0e480775b890a2846e6">OnConditionQueryRequested</a> (string queryType, string key, Variant value, <a class="el" href="classQuestCondition.html">QuestCondition</a> requester)</td></tr>
+<tr class="memdesc:a1f43ddae9ba2e0e480775b890a2846e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Event] Called when a condition query is requested from a quest <code>QuestManager.ConditionQueryRequested</code>.  <a href="classStatisticsManager.html#a1f43ddae9ba2e0e480775b890a2846e6">More...</a><br /></td></tr>
+<tr class="separator:a1f43ddae9ba2e0e480775b890a2846e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The statistics manager. Manages the statistics of the player which are saved in the save file. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae1286399f1adb5c5842f93b2c8cfa4c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1286399f1adb5c5842f93b2c8cfa4c5">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void StatisticsManager._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads the statistics from the save file and subscribes to the ConditionQueryRequested and ActionQueryRequested events in the <a class="el" href="classQuestManager.html">QuestManager</a>. </p>
+
+</div>
+</div>
+<a id="ae73912db1ec9c6a98ac30e31ca8f0c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73912db1ec9c6a98ac30e31ca8f0c07">&#9670;&nbsp;</a></span>GetKeys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ICollection&lt;string&gt; StatisticsManager.GetKeys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the keys of the stats. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="acd20a661853f3823ff7616636d467693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd20a661853f3823ff7616636d467693">&#9670;&nbsp;</a></span>GetStat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int StatisticsManager.GetStat </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>statName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current value of the stat. Returns -1 if the stat name is invalid or when the gamesave is not loaded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ad7d722fcc1c6e4f605ab18164ff83738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d722fcc1c6e4f605ab18164ff83738">&#9670;&nbsp;</a></span>HasStat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool StatisticsManager.HasStat </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>statName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the stat exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a51125655712d659ebfb5723ca1aa9fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51125655712d659ebfb5723ca1aa9fdf">&#9670;&nbsp;</a></span>IncrementStat() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void StatisticsManager.IncrementStat </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>statName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increment the value of the stat by 1, creating it if it doesn't exist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42ecf28cedee7ecfb3b6223f5658f812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ecf28cedee7ecfb3b6223f5658f812">&#9670;&nbsp;</a></span>IncrementStat() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void StatisticsManager.IncrementStat </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>statName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increment the value of the stat, creating it if it doesn't exist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statName</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a46d5cf400dd61176f66cade1050e5df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d5cf400dd61176f66cade1050e5df9">&#9670;&nbsp;</a></span>IsLoaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool StatisticsManager.IsLoaded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the gamesave is loaded. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a316ac7af84c502f7f449db88ad1317cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316ac7af84c502f7f449db88ad1317cd">&#9670;&nbsp;</a></span>IsStatNameValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool StatisticsManager.IsStatNameValid </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>statName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the stat name is valid. An invalid stat name is null or an empty string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the stat name is valid, false otherwise</dd></dl>
+
+</div>
+</div>
+<a id="acd7daada0afa160caffae2dd3d0c08ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd7daada0afa160caffae2dd3d0c08ae">&#9670;&nbsp;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void StatisticsManager.Load </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the statistics from the save file. </p>
+
+</div>
+</div>
+<a id="a66d8355cc2c949a8f0622963a9131fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d8355cc2c949a8f0622963a9131fac">&#9670;&nbsp;</a></span>OnActionQueryRequested()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatisticsManager.OnActionQueryRequested </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>queryType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQuestAction.html">QuestAction</a>&#160;</td>
+          <td class="paramname"><em>requester</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[Event] Called when an action query is requested from a quest <code>QuestManager.ActionQueryRequested</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queryType</td><td></td></tr>
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+    <tr><td class="paramname">requester</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f43ddae9ba2e0e480775b890a2846e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f43ddae9ba2e0e480775b890a2846e6">&#9670;&nbsp;</a></span>OnConditionQueryRequested()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatisticsManager.OnConditionQueryRequested </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>queryType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Variant&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQuestCondition.html">QuestCondition</a>&#160;</td>
+          <td class="paramname"><em>requester</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[Event] Called when a condition query is requested from a quest <code>QuestManager.ConditionQueryRequested</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queryType</td><td></td></tr>
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+    <tr><td class="paramname">requester</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c0fa62f06b7aa99b6e6be71b995ad60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0fa62f06b7aa99b6e6be71b995ad60">&#9670;&nbsp;</a></span>SetStat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void StatisticsManager.SetStat </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>statName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the value of the stat, creating it if it doesn't exist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statName</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/Statistics/StatisticsManager.cs</li>
+<li>038EnergyTransition/Modules/Statistics/<a class="el" href="StatisticsManager_8cs.html">StatisticsManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -90,28 +90,31 @@ $(document).ready(function(){initNavTree('classCutsceneNode.html',''); initResiz
 <div class="title">CutsceneNode Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for all cutscene nodes  
+ <a href="classCutsceneNode.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CutsceneNode:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classCutsceneNode.png" usemap="#CutsceneNode_map" alt=""/>
   <map id="CutsceneNode_map" name="CutsceneNode_map">
-<area href="classCameraMove.html" alt="CameraMove" shape="rect" coords="151,112,292,136"/>
-<area href="classCameraSettingNode.html" alt="CameraSettingNode" shape="rect" coords="151,168,292,192"/>
-<area href="classChoiceBox.html" alt="ChoiceBox" shape="rect" coords="151,224,292,248"/>
-<area href="classCreateNPC.html" alt="CreateNPC" shape="rect" coords="151,280,292,304"/>
-<area href="classDialogueBox.html" alt="DialogueBox" shape="rect" coords="151,336,292,360"/>
-<area href="classEarlyExitNode.html" alt="EarlyExitNode" shape="rect" coords="151,392,292,416"/>
-<area href="classIfCutscene.html" alt="IfCutscene" shape="rect" coords="151,448,292,472"/>
-<area href="classModifyStatisticsNode.html" alt="ModifyStatisticsNode" shape="rect" coords="151,504,292,528"/>
-<area href="classMoveNPC.html" alt="MoveNPC" shape="rect" coords="151,560,292,584"/>
-<area href="classSetActivePortraitNode.html" alt="SetActivePortraitNode" shape="rect" coords="151,616,292,640"/>
-<area href="classSetStateCutsceneNode.html" alt="SetStateCutsceneNode" shape="rect" coords="151,672,292,696"/>
-<area href="classShaderTransition.html" alt="ShaderTransition" shape="rect" coords="151,728,292,752"/>
-<area href="classSleep.html" alt="Sleep" shape="rect" coords="151,784,292,808"/>
-<area href="classSpeechBackground.html" alt="SpeechBackground" shape="rect" coords="151,840,292,864"/>
-<area href="classStatisticsNode.html" alt="StatisticsNode" shape="rect" coords="151,896,292,920"/>
-<area href="classanimationNode.html" alt="animationNode" shape="rect" coords="151,952,292,976"/>
+<area href="classCameraMove.html" title="CameraMove node to move the camera from one position to another" alt="CameraMove" shape="rect" coords="151,112,292,136"/>
+<area href="classCameraSettingNode.html" title="A cutscene node that changes the camera settings" alt="CameraSettingNode" shape="rect" coords="151,168,292,192"/>
+<area href="classChoiceBox.html" title="A choice box that will display a question and a set of choices for the player to choose from." alt="ChoiceBox" shape="rect" coords="151,224,292,248"/>
+<area href="classCreateNPC.html" title="Create an NPC for the cutscene" alt="CreateNPC" shape="rect" coords="151,280,292,304"/>
+<area href="classDialogueBox.html" title="Dialogue box node for cutscenes. This node is used to display dialogue boxes in cutscenes." alt="DialogueBox" shape="rect" coords="151,336,292,360"/>
+<area href="classEarlyExitNode.html" title="The early exit node. Stop the cutscene when this node is reached, no matter what." alt="EarlyExitNode" shape="rect" coords="151,392,292,416"/>
+<area href="classIfCutscene.html" title="The if statement node. This node checks a variable and compares it to a value. If the condition is me..." alt="IfCutscene" shape="rect" coords="151,448,292,472"/>
+<area href="classModifyStatisticsNode.html" title="The modify statistics node. Modify the statistics of the player, which will be saved in the save file..." alt="ModifyStatisticsNode" shape="rect" coords="151,504,292,528"/>
+<area href="classMoveNPC.html" title="MoveNPC node to move an NPC from one position to another in the cutscene with a given speed and inter..." alt="MoveNPC" shape="rect" coords="151,560,292,584"/>
+<area href="classSetActivePortraitNode.html" title="Set the active portrait of the speech engine." alt="SetActivePortraitNode" shape="rect" coords="151,616,292,640"/>
+<area href="classSetStateCutsceneNode.html" title="Set the state of the game. Options: Playing, Paused, Cutscene Playing: The game is running normally...." alt="SetStateCutsceneNode" shape="rect" coords="151,672,292,696"/>
+<area href="classShaderTransition.html" title="Shader transition node. Transitions the screen using a shader." alt="ShaderTransition" shape="rect" coords="151,728,292,752"/>
+<area href="classSleep.html" title="The sleep node. Sleeps for a certain amount of time (in seconds)." alt="Sleep" shape="rect" coords="151,784,292,808"/>
+<area href="classSpeechBackground.html" title="Set the background of the speech engine." alt="SpeechBackground" shape="rect" coords="151,840,292,864"/>
+<area href="classStatisticsNode.html" title="Load or save a statistic to the statistics manager." alt="StatisticsNode" shape="rect" coords="151,896,292,920"/>
+<area href="classanimationNode.html" title="Animation node for the cutscene scripter Plays an animation from an AnimationPlayer node" alt="animationNode" shape="rect" coords="151,952,292,976"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,16 +127,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af61a6f7aacf54c2387af64d0ae040485"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called every frame if the cutscene is active  <a href="classCutsceneNode.html#af61a6f7aacf54c2387af64d0ae040485">More...</a><br /></td></tr>
 <tr class="separator:af61a6f7aacf54c2387af64d0ae040485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8eac4c0769f6f3a7f9099cd814280d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#ae8eac4c0769f6f3a7f9099cd814280d5">FinishNode</a> ()</td></tr>
-<tr class="memdesc:ae8eac4c0769f6f3a7f9099cd814280d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the cutscene is finished  <a href="classCutsceneNode.html#ae8eac4c0769f6f3a7f9099cd814280d5">More...</a><br /></td></tr>
+<tr class="memdesc:ae8eac4c0769f6f3a7f9099cd814280d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the cutscene is finished and triggers the CutsceneFinished event  <a href="classCutsceneNode.html#ae8eac4c0769f6f3a7f9099cd814280d5">More...</a><br /></td></tr>
 <tr class="separator:ae8eac4c0769f6f3a7f9099cd814280d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9ce10eb95a002c6f5150ba9a121696b6"><td class="memItemLeft" align="right" valign="top"><a id="a9ce10eb95a002c6f5150ba9a121696b6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlayAlone</b> = true</td></tr>
+<tr class="memitem:a9ce10eb95a002c6f5150ba9a121696b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#a9ce10eb95a002c6f5150ba9a121696b6">PlayAlone</a> = true</td></tr>
 <tr class="separator:a9ce10eb95a002c6f5150ba9a121696b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b70809d5c4607c7bcecb635663723c0"><td class="memItemLeft" align="right" valign="top"><a id="a4b70809d5c4607c7bcecb635663723c0"></a>
-EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>CutsceneFinished</b></td></tr>
+<tr class="memitem:a4b70809d5c4607c7bcecb635663723c0"><td class="memItemLeft" align="right" valign="top">EventHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCutsceneNode.html#a4b70809d5c4607c7bcecb635663723c0">CutsceneFinished</a></td></tr>
+<tr class="memdesc:a4b70809d5c4607c7bcecb635663723c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is called when the cutscene is finished  <a href="classCutsceneNode.html#a4b70809d5c4607c7bcecb635663723c0">More...</a><br /></td></tr>
 <tr class="separator:a4b70809d5c4607c7bcecb635663723c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -142,7 +144,9 @@ Properties</h2></td></tr>
 <tr class="memdesc:a7d4d57cf119b914c13c73b47c0b49b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">value used to dentify what node it is wen printing general errors  <a href="classCutsceneNode.html#a7d4d57cf119b914c13c73b47c0b49b02">More...</a><br /></td></tr>
 <tr class="separator:a7d4d57cf119b914c13c73b47c0b49b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for all cutscene nodes </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af61a6f7aacf54c2387af64d0ae040485"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af61a6f7aacf54c2387af64d0ae040485">&#9670;&nbsp;</a></span>_ProcessNode()</h2>
 
@@ -194,7 +198,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method is called when the cutscene is finished </p>
+<p>This method is called when the cutscene is finished and triggers the CutsceneFinished event </p>
 
 </div>
 </div>
@@ -234,6 +238,37 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4b70809d5c4607c7bcecb635663723c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b70809d5c4607c7bcecb635663723c0">&#9670;&nbsp;</a></span>CutsceneFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler CutsceneNode.CutsceneFinished</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event that is called when the cutscene is finished </p>
+
+</div>
+</div>
+<a id="a9ce10eb95a002c6f5150ba9a121696b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce10eb95a002c6f5150ba9a121696b6">&#9670;&nbsp;</a></span>PlayAlone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CutsceneNode.PlayAlone = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a id="a7d4d57cf119b914c13c73b47c0b49b02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d4d57cf119b914c13c73b47c0b49b02">&#9670;&nbsp;</a></span>NodeName</h2>
@@ -260,7 +295,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/Cutscenes/CutsceneNode.cs</li>
+<li>038EnergyTransition/Modules/Cutscenes/<a class="el" href="CutsceneNode_8cs.html">CutsceneNode.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

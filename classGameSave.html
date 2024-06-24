@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('classGameSave.html',''); initResizable
 <div class="title">GameSave Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The game save object that is used to save and load the game.  
+ <a href="classGameSave.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for GameSave:</div>
 <div class="dyncontent">
@@ -98,8 +101,11 @@ Inheritance diagram for GameSave:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac441d21e0e51a86cf047bb600fd9be27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSave.html#ac441d21e0e51a86cf047bb600fd9be27">GameSave</a> ()</td></tr>
+<tr class="memdesc:ac441d21e0e51a86cf047bb600fd9be27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> object and set it to empty.  <a href="classGameSave.html#ac441d21e0e51a86cf047bb600fd9be27">More...</a><br /></td></tr>
+<tr class="separator:ac441d21e0e51a86cf047bb600fd9be27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4218bd44fe4c90f725800f3a2e444e71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSave.html#a4218bd44fe4c90f725800f3a2e444e71">GameSave</a> (bool saveExists)</td></tr>
-<tr class="memdesc:a4218bd44fe4c90f725800f3a2e444e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="classGameSave.html">GameSave</a> object.  <a href="classGameSave.html#a4218bd44fe4c90f725800f3a2e444e71">More...</a><br /></td></tr>
+<tr class="memdesc:a4218bd44fe4c90f725800f3a2e444e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> object.  <a href="classGameSave.html#a4218bd44fe4c90f725800f3a2e444e71">More...</a><br /></td></tr>
 <tr class="separator:a4218bd44fe4c90f725800f3a2e444e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -107,7 +113,7 @@ Properties</h2></td></tr>
 <tr class="memitem:a4381e5689c5242f3924eeb06297d13f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSave.html#a4381e5689c5242f3924eeb06297d13f7">IsEmpty</a> = true<code> [get, set]</code></td></tr>
 <tr class="memdesc:a4381e5689c5242f3924eeb06297d13f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property can be used to check if this game save is empty or not, aka. has any data to load.  <a href="classGameSave.html#a4381e5689c5242f3924eeb06297d13f7">More...</a><br /></td></tr>
 <tr class="separator:a4381e5689c5242f3924eeb06297d13f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91a2717db9184d0aa95bb64319de856e"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSave.html#a91a2717db9184d0aa95bb64319de856e">PlayerPosition</a> = Vector3.Zero<code> [get, set]</code></td></tr>
+<tr class="memitem:a91a2717db9184d0aa95bb64319de856e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSave.html#a91a2717db9184d0aa95bb64319de856e">PlayerPosition</a> = Vector3.Zero<code> [get, set]</code></td></tr>
 <tr class="memdesc:a91a2717db9184d0aa95bb64319de856e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last position of the player. Populated with the value of a new default save.  <a href="classGameSave.html#a91a2717db9184d0aa95bb64319de856e">More...</a><br /></td></tr>
 <tr class="separator:a91a2717db9184d0aa95bb64319de856e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fbddd2af0c3ac6c866a778e3fe17d14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStatisticsResource.html">StatisticsResource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSave.html#a3fbddd2af0c3ac6c866a778e3fe17d14">Statistics</a> = new <a class="el" href="classStatisticsResource.html">StatisticsResource</a>()<code> [get, set]</code></td></tr>
@@ -119,16 +125,37 @@ Properties</h2></td></tr>
 <tr class="memitem:a96dba61d139d3365c5997720ee8223b0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSave.html#a96dba61d139d3365c5997720ee8223b0">IngameTime</a> = 0<code> [get, set]</code></td></tr>
 <tr class="memdesc:a96dba61d139d3365c5997720ee8223b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current ingame time.  <a href="classGameSave.html#a96dba61d139d3365c5997720ee8223b0">More...</a><br /></td></tr>
 <tr class="separator:a96dba61d139d3365c5997720ee8223b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00fbb7b0b6af6e04f2402f9ea6a6081a"><td class="memItemLeft" align="right" valign="top"><a id="a00fbb7b0b6af6e04f2402f9ea6a6081a"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerName</b> = &quot;Wouter&quot;<code> [get, set]</code></td></tr>
+<tr class="memitem:a00fbb7b0b6af6e04f2402f9ea6a6081a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSave.html#a00fbb7b0b6af6e04f2402f9ea6a6081a">PlayerName</a> = &quot;NAAMLOOS&quot;<code> [get, set]</code></td></tr>
+<tr class="memdesc:a00fbb7b0b6af6e04f2402f9ea6a6081a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the player, used in cutscenes and dialogues "&lt;&lt;PLAYERNAME&gt;&gt;".  <a href="classGameSave.html#a00fbb7b0b6af6e04f2402f9ea6a6081a">More...</a><br /></td></tr>
 <tr class="separator:a00fbb7b0b6af6e04f2402f9ea6a6081a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff431c6de57ac9d118309d235c86f8c"><td class="memItemLeft" align="right" valign="top"><a id="abff431c6de57ac9d118309d235c86f8c"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>TownName</b> = &quot;AssenDorp&quot;<code> [get, set]</code></td></tr>
+<tr class="memitem:abff431c6de57ac9d118309d235c86f8c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameSave.html#abff431c6de57ac9d118309d235c86f8c">TownName</a> = &quot;NAAMLOOS&quot;<code> [get, set]</code></td></tr>
+<tr class="memdesc:abff431c6de57ac9d118309d235c86f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the town, used in cutscenes and dialogues "&lt;&lt;TOWNNAME&gt;&gt;".  <a href="classGameSave.html#abff431c6de57ac9d118309d235c86f8c">More...</a><br /></td></tr>
 <tr class="separator:abff431c6de57ac9d118309d235c86f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The game save object that is used to save and load the game. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac441d21e0e51a86cf047bb600fd9be27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac441d21e0e51a86cf047bb600fd9be27">&#9670;&nbsp;</a></span>GameSave() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameSave.GameSave </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> object and set it to empty. </p>
+
+</div>
+</div>
 <a id="a4218bd44fe4c90f725800f3a2e444e71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4218bd44fe4c90f725800f3a2e444e71">&#9670;&nbsp;</a></span>GameSave()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4218bd44fe4c90f725800f3a2e444e71">&#9670;&nbsp;</a></span>GameSave() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +170,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>TownName</b> = &quo
       </table>
 </div><div class="memdoc">
 
-<p>Create a new <a class="el" href="classGameSave.html">GameSave</a> object. </p>
+<p>Create a new <a class="el" href="classGameSave.html" title="The game save object that is used to save and load the game.">GameSave</a> object. </p>
 <ul>
 <li>If saveExists is false, the object will be empty.</li>
 </ul>
@@ -205,6 +232,30 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>TownName</b> = &quo
 
 </div>
 </div>
+<a id="a00fbb7b0b6af6e04f2402f9ea6a6081a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00fbb7b0b6af6e04f2402f9ea6a6081a">&#9670;&nbsp;</a></span>PlayerName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GameSave.PlayerName = &quot;NAAMLOOS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the player, used in cutscenes and dialogues "&lt;&lt;PLAYERNAME&gt;&gt;". </p>
+
+</div>
+</div>
 <a id="a91a2717db9184d0aa95bb64319de856e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91a2717db9184d0aa95bb64319de856e">&#9670;&nbsp;</a></span>PlayerPosition</h2>
 
@@ -215,7 +266,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>TownName</b> = &quo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3 GameSave.PlayerPosition = Vector3.Zero</td>
+          <td class="memname"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a> GameSave.PlayerPosition = Vector3.Zero</td>
         </tr>
       </table>
   </td>
@@ -253,6 +304,30 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>TownName</b> = &quo
 
 </div>
 </div>
+<a id="abff431c6de57ac9d118309d235c86f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff431c6de57ac9d118309d235c86f8c">&#9670;&nbsp;</a></span>TownName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GameSave.TownName = &quot;NAAMLOOS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the town, used in cutscenes and dialogues "&lt;&lt;TOWNNAME&gt;&gt;". </p>
+
+</div>
+</div>
 <a id="a59b03ab94b82352ec236066e3f6706a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59b03ab94b82352ec236066e3f6706a0">&#9670;&nbsp;</a></span>WallpaperID</h2>
 
@@ -278,7 +353,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>TownName</b> = &quo
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/GameSave.cs</li>
+<li>038EnergyTransition/Modules/<a class="el" href="GameSave_8cs.html">GameSave.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

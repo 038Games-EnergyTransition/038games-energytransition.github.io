@@ -83,11 +83,15 @@ $(document).ready(function(){initNavTree('classAppTodoQuestText.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classAppTodoQuestText-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AppTodoQuestText Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The text of the quest(s) in the todo app. More detailed than the homescreen version.  
+ <a href="classAppTodoQuestText.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for AppTodoQuestText:</div>
 <div class="dyncontent">
@@ -97,18 +101,183 @@ Inheritance diagram for AppTodoQuestText:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1810408060a231e4175db8d91f0a6459"><td class="memItemLeft" align="right" valign="top"><a id="a1810408060a231e4175db8d91f0a6459"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a1810408060a231e4175db8d91f0a6459"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppTodoQuestText.html#a1810408060a231e4175db8d91f0a6459">_Ready</a> ()</td></tr>
+<tr class="memdesc:a1810408060a231e4175db8d91f0a6459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect the quest events to update the text. From the Quester add-on <a class="el" href="classQuestManager.html">QuestManager</a>  <a href="classAppTodoQuestText.html#a1810408060a231e4175db8d91f0a6459">More...</a><br /></td></tr>
 <tr class="separator:a1810408060a231e4175db8d91f0a6459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa0bbfa3b453054a7e8b17668f181ef1"><td class="memItemLeft" align="right" valign="top"><a id="aaa0bbfa3b453054a7e8b17668f181ef1"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_ExitTree</b> ()</td></tr>
+<tr class="memitem:aaa0bbfa3b453054a7e8b17668f181ef1"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppTodoQuestText.html#aaa0bbfa3b453054a7e8b17668f181ef1">_ExitTree</a> ()</td></tr>
+<tr class="memdesc:aaa0bbfa3b453054a7e8b17668f181ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect the quest events.  <a href="classAppTodoQuestText.html#aaa0bbfa3b453054a7e8b17668f181ef1">More...</a><br /></td></tr>
 <tr class="separator:aaa0bbfa3b453054a7e8b17668f181ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43e083089a7fc319c65b51c2af2d8c78"><td class="memItemLeft" align="right" valign="top"><a id="a43e083089a7fc319c65b51c2af2d8c78"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
-<tr class="separator:a43e083089a7fc319c65b51c2af2d8c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa16662f682506a9416ce8d578df9d699"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppTodoQuestText.html#aa16662f682506a9416ce8d578df9d699">QuestObjectiveCompleted</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest, <a class="el" href="classQuestObjective.html">QuestObjective</a> objective)</td></tr>
+<tr class="separator:aa16662f682506a9416ce8d578df9d699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70912bf5103c052305981bdc039698c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppTodoQuestText.html#ac70912bf5103c052305981bdc039698c">QuestStarted</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
+<tr class="separator:ac70912bf5103c052305981bdc039698c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276fc97a6b92da9f56d514cfe3350d6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppTodoQuestText.html#a276fc97a6b92da9f56d514cfe3350d6d">QuestCompleted</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
+<tr class="separator:a276fc97a6b92da9f56d514cfe3350d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344f8287970c51b87f61ca8646ffc422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppTodoQuestText.html#a344f8287970c51b87f61ca8646ffc422">updateText</a> ()</td></tr>
+<tr class="memdesc:a344f8287970c51b87f61ca8646ffc422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the text of the quest(s)  <a href="classAppTodoQuestText.html#a344f8287970c51b87f61ca8646ffc422">More...</a><br /></td></tr>
+<tr class="separator:a344f8287970c51b87f61ca8646ffc422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The text of the quest(s) in the todo app. More detailed than the homescreen version. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaa0bbfa3b453054a7e8b17668f181ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0bbfa3b453054a7e8b17668f181ef1">&#9670;&nbsp;</a></span>_ExitTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void AppTodoQuestText._ExitTree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disconnect the quest events. </p>
+
+</div>
+</div>
+<a id="a1810408060a231e4175db8d91f0a6459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1810408060a231e4175db8d91f0a6459">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void AppTodoQuestText._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connect the quest events to update the text. From the Quester add-on <a class="el" href="classQuestManager.html">QuestManager</a> </p>
+
+</div>
+</div>
+<a id="a276fc97a6b92da9f56d514cfe3350d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276fc97a6b92da9f56d514cfe3350d6d">&#9670;&nbsp;</a></span>QuestCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppTodoQuestText.QuestCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa16662f682506a9416ce8d578df9d699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16662f682506a9416ce8d578df9d699">&#9670;&nbsp;</a></span>QuestObjectiveCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppTodoQuestText.QuestObjectiveCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQuestObjective.html">QuestObjective</a>&#160;</td>
+          <td class="paramname"><em>objective</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac70912bf5103c052305981bdc039698c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70912bf5103c052305981bdc039698c">&#9670;&nbsp;</a></span>QuestStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppTodoQuestText.QuestStarted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuestResource.html">QuestResource</a>&#160;</td>
+          <td class="paramname"><em>quest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a344f8287970c51b87f61ca8646ffc422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344f8287970c51b87f61ca8646ffc422">&#9670;&nbsp;</a></span>updateText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppTodoQuestText.updateText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the text of the quest(s) </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/HUD/Phone/Scripts/AppTodoQuestText.cs</li>
+<li>038EnergyTransition/Scenes/HUD/Phone/Scripts/<a class="el" href="AppTodoQuestText_8cs.html">AppTodoQuestText.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

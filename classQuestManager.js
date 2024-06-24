@@ -1,6 +1,7 @@
 var classQuestManager =
 [
     [ "_Ready", "classQuestManager.html#a71a111122dfd7a3f81720673908a5560", null ],
+    [ "_setupTimer", "classQuestManager.html#ab2c3747af20863407e766353285f0b56", null ],
     [ "ActionQueryRequestedEventHandler", "classQuestManager.html#a42b6e15d3103596015aba310d525d95a", null ],
     [ "Clear", "classQuestManager.html#a2474be8c3f43ae73a6b415a776b2eddd", null ],
     [ "ConditionQueryRequestedEventHandler", "classQuestManager.html#af38f7d4e562147dd04bdad8b9389cce0", null ],
@@ -16,5 +17,9 @@ var classQuestManager =
     [ "Serialize", "classQuestManager.html#a43a14b86bcdd607470debe60565951e9", null ],
     [ "StartQuest", "classQuestManager.html#a41c0feed7f6cb2e9717f1c2c2c4e4f28", null ],
     [ "ToggleUpdatePolling", "classQuestManager.html#a2fda72b21f6937520fcfd79581746ee4", null ],
-    [ "UpdateQuests", "classQuestManager.html#a7320309614eaf2324b8142c327afa1f3", null ]
+    [ "UpdateQuests", "classQuestManager.html#a7320309614eaf2324b8142c327afa1f3", null ],
+    [ "_instance", "classQuestManager.html#a998ac2c3a0a63ac9d657f77c4e626548", null ],
+    [ "_quests", "classQuestManager.html#a76b930b36ef65d9f06b7a035ebd19d3b", null ],
+    [ "_questUpdateTimer", "classQuestManager.html#acf68d85f71b2c1aae109ad130c5ea371", null ],
+    [ "Instance", "classQuestManager.html#a8e1cd09cf2af8f04d6854f0b54d8b0bf", null ]
 ];

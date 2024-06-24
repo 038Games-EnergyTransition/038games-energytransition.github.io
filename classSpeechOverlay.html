@@ -83,11 +83,17 @@ $(document).ready(function(){initNavTree('classSpeechOverlay.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSpeechOverlay-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SpeechOverlay Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The speech overlay that is used to display text and choices to the player  
+ <a href="classSpeechOverlay.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SpeechOverlay:</div>
 <div class="dyncontent">
@@ -100,8 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a91bb8082526a15eb927db20e3cf86b4c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a91bb8082526a15eb927db20e3cf86b4c">_Ready</a> ()</td></tr>
 <tr class="memdesc:a91bb8082526a15eb927db20e3cf86b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting up all the node values probably the place stuff goes wrong iif node names or positions are changed  <a href="classSpeechOverlay.html#a91bb8082526a15eb927db20e3cf86b4c">More...</a><br /></td></tr>
 <tr class="separator:a91bb8082526a15eb927db20e3cf86b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaeabae8cc3d0ff188d3c5b81c7419f5"><td class="memItemLeft" align="right" valign="top"><a id="acaeabae8cc3d0ff188d3c5b81c7419f5"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:acaeabae8cc3d0ff188d3c5b81c7419f5"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#acaeabae8cc3d0ff188d3c5b81c7419f5">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:acaeabae8cc3d0ff188d3c5b81c7419f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process function for the overlay that handles the typing of the text  <a href="classSpeechOverlay.html#acaeabae8cc3d0ff188d3c5b81c7419f5">More...</a><br /></td></tr>
 <tr class="separator:acaeabae8cc3d0ff188d3c5b81c7419f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf37d3d86f2523987f20a241260ec5c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#adf37d3d86f2523987f20a241260ec5c0">SetText</a> (String text)</td></tr>
 <tr class="memdesc:adf37d3d86f2523987f20a241260ec5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the text to be displayed in the overlay  <a href="classSpeechOverlay.html#adf37d3d86f2523987f20a241260ec5c0">More...</a><br /></td></tr>
@@ -130,8 +136,228 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 <tr class="memitem:a2f461383a9ea209945e0b2f3616b518c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a2f461383a9ea209945e0b2f3616b518c">SetActivePortrait</a> (bool focusRight)</td></tr>
 <tr class="memdesc:a2f461383a9ea209945e0b2f3616b518c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set active active portrait where true means right and false means left  <a href="classSpeechOverlay.html#a2f461383a9ea209945e0b2f3616b518c">More...</a><br /></td></tr>
 <tr class="separator:a2f461383a9ea209945e0b2f3616b518c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a2247a2d811834126a60d8674663e38c9"><td class="memItemLeft" align="right" valign="top">TextureRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a2247a2d811834126a60d8674663e38c9">_activePortrait</a><code> [get]</code></td></tr>
+<tr class="memdesc:a2247a2d811834126a60d8674663e38c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently active portrait for the overlay  <a href="classSpeechOverlay.html#a2247a2d811834126a60d8674663e38c9">More...</a><br /></td></tr>
+<tr class="separator:a2247a2d811834126a60d8674663e38c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c75d810a5d6c310210dfc0de5e8657"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a27c75d810a5d6c310210dfc0de5e8657">_activeBasePosition</a><code> [get]</code></td></tr>
+<tr class="memdesc:a27c75d810a5d6c310210dfc0de5e8657"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base position of the active portrait  <a href="classSpeechOverlay.html#a27c75d810a5d6c310210dfc0de5e8657">More...</a><br /></td></tr>
+<tr class="separator:a27c75d810a5d6c310210dfc0de5e8657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeadbdcf96ddafa6c57c55bd560e7739"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#aaeadbdcf96ddafa6c57c55bd560e7739">_textSpeed</a><code> [get]</code></td></tr>
+<tr class="memdesc:aaeadbdcf96ddafa6c57c55bd560e7739"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpeechBubble text speed, loaded from <a class="el" href="classGlobalSettings.html" title="The global settings, used to save and load settings to the player&#39;s computer.">GlobalSettings</a>  <a href="classSpeechOverlay.html#aaeadbdcf96ddafa6c57c55bd560e7739">More...</a><br /></td></tr>
+<tr class="separator:aaeadbdcf96ddafa6c57c55bd560e7739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3a0f2cbbe260f5b2de65766528f75ffb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a3a0f2cbbe260f5b2de65766528f75ffb">ConfirmPressed</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a3a0f2cbbe260f5b2de65766528f75ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for the confirm input event  <a href="classSpeechOverlay.html#a3a0f2cbbe260f5b2de65766528f75ffb">More...</a><br /></td></tr>
+<tr class="separator:a3a0f2cbbe260f5b2de65766528f75ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed9b3cca01dd39f9ce2754f577ce41e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a9ed9b3cca01dd39f9ce2754f577ce41e">ChoicesCallback</a> (object sender, int e)</td></tr>
+<tr class="memdesc:a9ed9b3cca01dd39f9ce2754f577ce41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for the choices made event  <a href="classSpeechOverlay.html#a9ed9b3cca01dd39f9ce2754f577ce41e">More...</a><br /></td></tr>
+<tr class="separator:a9ed9b3cca01dd39f9ce2754f577ce41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538f39ff3db5721fa1879c8c0b8c9a9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a538f39ff3db5721fa1879c8c0b8c9a9a">_finishSpeech</a> ()</td></tr>
+<tr class="memdesc:a538f39ff3db5721fa1879c8c0b8c9a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to finish the speech  <a href="classSpeechOverlay.html#a538f39ff3db5721fa1879c8c0b8c9a9a">More...</a><br /></td></tr>
+<tr class="separator:a538f39ff3db5721fa1879c8c0b8c9a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6901a6d7a15b18f284fc7cf8d501e6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a5b6901a6d7a15b18f284fc7cf8d501e6">_CutBBCodeOut</a> (string text)</td></tr>
+<tr class="memdesc:a5b6901a6d7a15b18f284fc7cf8d501e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes all BB code from the text  <a href="classSpeechOverlay.html#a5b6901a6d7a15b18f284fc7cf8d501e6">More...</a><br /></td></tr>
+<tr class="separator:a5b6901a6d7a15b18f284fc7cf8d501e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d931aec09f6f5e1af7261771dece17f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a1d931aec09f6f5e1af7261771dece17f">_replaceConstants</a> (string text)</td></tr>
+<tr class="memdesc:a1d931aec09f6f5e1af7261771dece17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the constants in the text like &lt;&lt;PLAYERNAME&gt;&gt; and &lt;&lt;TOWNNAME&gt;&gt;  <a href="classSpeechOverlay.html#a1d931aec09f6f5e1af7261771dece17f">More...</a><br /></td></tr>
+<tr class="separator:a1d931aec09f6f5e1af7261771dece17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9c4f7d789919749c056be9041de6e1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#aaa9c4f7d789919749c056be9041de6e1">_translateIfPossible</a> (string text)</td></tr>
+<tr class="memdesc:aaa9c4f7d789919749c056be9041de6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the text if it starts with an underscore as is required by the translation system  <a href="classSpeechOverlay.html#aaa9c4f7d789919749c056be9041de6e1">More...</a><br /></td></tr>
+<tr class="separator:aaa9c4f7d789919749c056be9041de6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bf07fc6606c750189289a50701f30b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#aa0bf07fc6606c750189289a50701f30b">_finish</a> ()</td></tr>
+<tr class="memdesc:aa0bf07fc6606c750189289a50701f30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the overlay  <a href="classSpeechOverlay.html#aa0bf07fc6606c750189289a50701f30b">More...</a><br /></td></tr>
+<tr class="separator:aa0bf07fc6606c750189289a50701f30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4d37f9bbd382d3ba4617a0ce6628ce85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpeechOverlayChoices.html">SpeechOverlayChoices</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a4d37f9bbd382d3ba4617a0ce6628ce85">_choices</a></td></tr>
+<tr class="memdesc:a4d37f9bbd382d3ba4617a0ce6628ce85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The choices overlay that is used to display the choices to the player Set automatically when the game starts <code>GetNode&lt;SpeechOverlayChoices&gt;("Choices")</code>  <a href="classSpeechOverlay.html#a4d37f9bbd382d3ba4617a0ce6628ce85">More...</a><br /></td></tr>
+<tr class="separator:a4d37f9bbd382d3ba4617a0ce6628ce85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6dc3816d9e32b3762fbf364b1c784b6"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#aa6dc3816d9e32b3762fbf364b1c784b6">_textLabel</a></td></tr>
+<tr class="memdesc:aa6dc3816d9e32b3762fbf364b1c784b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The label that is used to display the text of the overlay Set automatically when the game starts <code>GetNode&lt;Label&gt;("TextLabel")</code>  <a href="classSpeechOverlay.html#aa6dc3816d9e32b3762fbf364b1c784b6">More...</a><br /></td></tr>
+<tr class="separator:aa6dc3816d9e32b3762fbf364b1c784b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc7fa3a84d3c6e37d664ec47ffa1dc2"><td class="memItemLeft" align="right" valign="top">RichTextLabel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#acbc7fa3a84d3c6e37d664ec47ffa1dc2">_text</a></td></tr>
+<tr class="memdesc:acbc7fa3a84d3c6e37d664ec47ffa1dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rich text label that is used to display the text of the overlay Set automatically when the game starts <code>GetNode&lt;RichTextLabel&gt;("SpeechText")</code>  <a href="classSpeechOverlay.html#acbc7fa3a84d3c6e37d664ec47ffa1dc2">More...</a><br /></td></tr>
+<tr class="separator:acbc7fa3a84d3c6e37d664ec47ffa1dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8fb8d19969cc3ed2843f74111bce60f"><td class="memItemLeft" align="right" valign="top">TextureRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#af8fb8d19969cc3ed2843f74111bce60f">_leftPortrait</a></td></tr>
+<tr class="memdesc:af8fb8d19969cc3ed2843f74111bce60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The left portrait of the overlay Set automatically when the game starts <code>GetNode&lt;TextureRect&gt;("LeftPortrait")</code>  <a href="classSpeechOverlay.html#af8fb8d19969cc3ed2843f74111bce60f">More...</a><br /></td></tr>
+<tr class="separator:af8fb8d19969cc3ed2843f74111bce60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1635b12aaa644772047f64008068655c"><td class="memItemLeft" align="right" valign="top">TextureRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a1635b12aaa644772047f64008068655c">_rightPortrait</a></td></tr>
+<tr class="memdesc:a1635b12aaa644772047f64008068655c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The right portrait of the overlay Set automatically when the game starts <code>GetNode&lt;TextureRect&gt;("RightPortrait")</code>  <a href="classSpeechOverlay.html#a1635b12aaa644772047f64008068655c">More...</a><br /></td></tr>
+<tr class="separator:a1635b12aaa644772047f64008068655c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0cf591856ef643ce2fbda208663f80"><td class="memItemLeft" align="right" valign="top">TextureRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a3b0cf591856ef643ce2fbda208663f80">_speechBubble</a></td></tr>
+<tr class="memdesc:a3b0cf591856ef643ce2fbda208663f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">The speech bubble of the overlay Set automatically when the game starts <code>GetNode&lt;TextureRect&gt;("SpeechBubble")</code>  <a href="classSpeechOverlay.html#a3b0cf591856ef643ce2fbda208663f80">More...</a><br /></td></tr>
+<tr class="separator:a3b0cf591856ef643ce2fbda208663f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c5bd2a4f60018387efc6f2b0765f5a"><td class="memItemLeft" align="right" valign="top">ColorRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a96c5bd2a4f60018387efc6f2b0765f5a">_backgroundColor</a></td></tr>
+<tr class="memdesc:a96c5bd2a4f60018387efc6f2b0765f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background color of the overlay, visible if <a class="el" href="classSpeechBackground.html#af3b9f29137290c01a46a8cec116e61cdacb5feb1b7314637725a2e73bdc9f7295">SpeechBackground.BackgroundType.Color</a> Set automatically when the game starts <code>GetNode&lt;ColorRect&gt;("BackgroundColor")</code>  <a href="classSpeechOverlay.html#a96c5bd2a4f60018387efc6f2b0765f5a">More...</a><br /></td></tr>
+<tr class="separator:a96c5bd2a4f60018387efc6f2b0765f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1e9de1264a071d86679cf36a3d5eb4"><td class="memItemLeft" align="right" valign="top">TextureRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a3a1e9de1264a071d86679cf36a3d5eb4">_backgroundImg</a></td></tr>
+<tr class="memdesc:a3a1e9de1264a071d86679cf36a3d5eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background image of the overlay, visible if <a class="el" href="classSpeechBackground.html#af3b9f29137290c01a46a8cec116e61cdabe53a0541a6d36f6ecb879fa2c584b08">SpeechBackground.BackgroundType.Image</a> Set automatically when the game starts <code>GetNode&lt;TextureRect&gt;("BackgroundImg")</code>  <a href="classSpeechOverlay.html#a3a1e9de1264a071d86679cf36a3d5eb4">More...</a><br /></td></tr>
+<tr class="separator:a3a1e9de1264a071d86679cf36a3d5eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aef96e8f6a3976398f1f3deafae00d5"><td class="memItemLeft" align="right" valign="top">AnimationPlayer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a3aef96e8f6a3976398f1f3deafae00d5">_caretAnimation</a></td></tr>
+<tr class="memdesc:a3aef96e8f6a3976398f1f3deafae00d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The animation player for the caret  <a href="classSpeechOverlay.html#a3aef96e8f6a3976398f1f3deafae00d5">More...</a><br /></td></tr>
+<tr class="separator:a3aef96e8f6a3976398f1f3deafae00d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c698b560cfbe7de25e1313015f74f10"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a7c698b560cfbe7de25e1313015f74f10">_leftBasePosition</a></td></tr>
+<tr class="memdesc:a7c698b560cfbe7de25e1313015f74f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base position of the left portrait  <a href="classSpeechOverlay.html#a7c698b560cfbe7de25e1313015f74f10">More...</a><br /></td></tr>
+<tr class="separator:a7c698b560cfbe7de25e1313015f74f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cfe5aa60d4b56a8cba41af013b79c5"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#af1cfe5aa60d4b56a8cba41af013b79c5">_rightBasePosition</a></td></tr>
+<tr class="memdesc:af1cfe5aa60d4b56a8cba41af013b79c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base position of the right portrait  <a href="classSpeechOverlay.html#af1cfe5aa60d4b56a8cba41af013b79c5">More...</a><br /></td></tr>
+<tr class="separator:af1cfe5aa60d4b56a8cba41af013b79c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad367a0c63b1152ee974b8e1067a562af"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#ad367a0c63b1152ee974b8e1067a562af">_textString</a> = @&quot;This is a test phrace if you ever see this get really [angry] angry [/angry] at the developers&quot;</td></tr>
+<tr class="memdesc:ad367a0c63b1152ee974b8e1067a562af"><td class="mdescLeft">&#160;</td><td class="mdescRight">The text string that is displayed in the overlay  <a href="classSpeechOverlay.html#ad367a0c63b1152ee974b8e1067a562af">More...</a><br /></td></tr>
+<tr class="separator:ad367a0c63b1152ee974b8e1067a562af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82acb0b1a4090dc146fbe7b7cce7821"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#af82acb0b1a4090dc146fbe7b7cce7821">_segments</a></td></tr>
+<tr class="memdesc:af82acb0b1a4090dc146fbe7b7cce7821"><td class="mdescLeft">&#160;</td><td class="mdescRight">The segments of the text that are displayed in the overlay  <a href="classSpeechOverlay.html#af82acb0b1a4090dc146fbe7b7cce7821">More...</a><br /></td></tr>
+<tr class="separator:af82acb0b1a4090dc146fbe7b7cce7821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9b1fb67903ab7db2c77e377f582fc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#afd9b1fb67903ab7db2c77e377f582fc0">_segmentCount</a> = 0</td></tr>
+<tr class="memdesc:afd9b1fb67903ab7db2c77e377f582fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of segments in the text  <a href="classSpeechOverlay.html#afd9b1fb67903ab7db2c77e377f582fc0">More...</a><br /></td></tr>
+<tr class="separator:afd9b1fb67903ab7db2c77e377f582fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbac38a96293f419951dcf0b5e8dcda"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#afdbac38a96293f419951dcf0b5e8dcda">_currentSegment</a> = 0</td></tr>
+<tr class="memdesc:afdbac38a96293f419951dcf0b5e8dcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current segment of the text  <a href="classSpeechOverlay.html#afdbac38a96293f419951dcf0b5e8dcda">More...</a><br /></td></tr>
+<tr class="separator:afdbac38a96293f419951dcf0b5e8dcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807bba6f31064ff982be5a8363215739"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a807bba6f31064ff982be5a8363215739">_focusRight</a> = false</td></tr>
+<tr class="memdesc:a807bba6f31064ff982be5a8363215739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the right side of the overlay in focus  <a href="classSpeechOverlay.html#a807bba6f31064ff982be5a8363215739">More...</a><br /></td></tr>
+<tr class="separator:a807bba6f31064ff982be5a8363215739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c42cd039913755454a8989e3a7409f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a29c42cd039913755454a8989e3a7409f">_timer</a> = 0</td></tr>
+<tr class="separator:a29c42cd039913755454a8989e3a7409f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c32d841d239b65b920ddbb0b8bb7b8e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a8c32d841d239b65b920ddbb0b8bb7b8e">_time</a> = 0</td></tr>
+<tr class="separator:a8c32d841d239b65b920ddbb0b8bb7b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637511b30b84efb3d75cc760a583515a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a637511b30b84efb3d75cc760a583515a">_isTyping</a> = false</td></tr>
+<tr class="memdesc:a637511b30b84efb3d75cc760a583515a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the overlay currently typing out text  <a href="classSpeechOverlay.html#a637511b30b84efb3d75cc760a583515a">More...</a><br /></td></tr>
+<tr class="separator:a637511b30b84efb3d75cc760a583515a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634b9dc5bea8559d599b8d44a90c3dc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a634b9dc5bea8559d599b8d44a90c3dc1">_awaitingConfirmation</a> = false</td></tr>
+<tr class="memdesc:a634b9dc5bea8559d599b8d44a90c3dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the overlay currently awaiting confirmation from the player to continue  <a href="classSpeechOverlay.html#a634b9dc5bea8559d599b8d44a90c3dc1">More...</a><br /></td></tr>
+<tr class="separator:a634b9dc5bea8559d599b8d44a90c3dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3ca3e8718bac83dd4ad70d04e70cdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#a1a3ca3e8718bac83dd4ad70d04e70cdb">_isActive</a> = false</td></tr>
+<tr class="memdesc:a1a3ca3e8718bac83dd4ad70d04e70cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the overlay active  <a href="classSpeechOverlay.html#a1a3ca3e8718bac83dd4ad70d04e70cdb">More...</a><br /></td></tr>
+<tr class="separator:a1a3ca3e8718bac83dd4ad70d04e70cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad30f42681c3fd3352ce1512cbf698742"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpeechOverlay.html#ad30f42681c3fd3352ce1512cbf698742">_isTalking</a> = true</td></tr>
+<tr class="memdesc:ad30f42681c3fd3352ce1512cbf698742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if the overlay is talking or showing choices  <a href="classSpeechOverlay.html#ad30f42681c3fd3352ce1512cbf698742">More...</a><br /></td></tr>
+<tr class="separator:ad30f42681c3fd3352ce1512cbf698742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The speech overlay that is used to display text and choices to the player </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5b6901a6d7a15b18f284fc7cf8d501e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6901a6d7a15b18f284fc7cf8d501e6">&#9670;&nbsp;</a></span>_CutBBCodeOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SpeechOverlay._CutBBCodeOut </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>removes all BB code from the text </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aa0bf07fc6606c750189289a50701f30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bf07fc6606c750189289a50701f30b">&#9670;&nbsp;</a></span>_finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SpeechOverlay._finish </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets the overlay </p>
+
+</div>
+</div>
+<a id="a538f39ff3db5721fa1879c8c0b8c9a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538f39ff3db5721fa1879c8c0b8c9a9a">&#9670;&nbsp;</a></span>_finishSpeech()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SpeechOverlay._finishSpeech </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>function to finish the speech </p>
+
+</div>
+</div>
+<a id="acaeabae8cc3d0ff188d3c5b81c7419f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaeabae8cc3d0ff188d3c5b81c7419f5">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SpeechOverlay._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process function for the overlay that handles the typing of the text </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a91bb8082526a15eb927db20e3cf86b4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91bb8082526a15eb927db20e3cf86b4c">&#9670;&nbsp;</a></span>_Ready()</h2>
 
@@ -148,6 +374,159 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 </div><div class="memdoc">
 
 <p>Setting up all the node values probably the place stuff goes wrong iif node names or positions are changed </p>
+
+</div>
+</div>
+<a id="a1d931aec09f6f5e1af7261771dece17f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d931aec09f6f5e1af7261771dece17f">&#9670;&nbsp;</a></span>_replaceConstants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SpeechOverlay._replaceConstants </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Replaces the constants in the text like &lt;&lt;PLAYERNAME&gt;&gt; and &lt;&lt;TOWNNAME&gt;&gt; </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Formatted text with the constants replaced</dd></dl>
+
+</div>
+</div>
+<a id="aaa9c4f7d789919749c056be9041de6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9c4f7d789919749c056be9041de6e1">&#9670;&nbsp;</a></span>_translateIfPossible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SpeechOverlay._translateIfPossible </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Translates the text if it starts with an underscore as is required by the translation system </p>
+
+</div>
+</div>
+<a id="a9ed9b3cca01dd39f9ce2754f577ce41e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed9b3cca01dd39f9ce2754f577ce41e">&#9670;&nbsp;</a></span>ChoicesCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SpeechOverlay.ChoicesCallback </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event handler for the choices made event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td></td></tr>
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a0f2cbbe260f5b2de65766528f75ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0f2cbbe260f5b2de65766528f75ffb">&#9670;&nbsp;</a></span>ConfirmPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SpeechOverlay.ConfirmPressed </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event handler for the confirm input event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td></td></tr>
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -379,8 +758,606 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a634b9dc5bea8559d599b8d44a90c3dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634b9dc5bea8559d599b8d44a90c3dc1">&#9670;&nbsp;</a></span>_awaitingConfirmation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeechOverlay._awaitingConfirmation = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the overlay currently awaiting confirmation from the player to continue </p>
+
+</div>
+</div>
+<a id="a96c5bd2a4f60018387efc6f2b0765f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c5bd2a4f60018387efc6f2b0765f5a">&#9670;&nbsp;</a></span>_backgroundColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ColorRect SpeechOverlay._backgroundColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The background color of the overlay, visible if <a class="el" href="classSpeechBackground.html#af3b9f29137290c01a46a8cec116e61cdacb5feb1b7314637725a2e73bdc9f7295">SpeechBackground.BackgroundType.Color</a> Set automatically when the game starts <code>GetNode&lt;ColorRect&gt;("BackgroundColor")</code> </p>
+
+</div>
+</div>
+<a id="a3a1e9de1264a071d86679cf36a3d5eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1e9de1264a071d86679cf36a3d5eb4">&#9670;&nbsp;</a></span>_backgroundImg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextureRect SpeechOverlay._backgroundImg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The background image of the overlay, visible if <a class="el" href="classSpeechBackground.html#af3b9f29137290c01a46a8cec116e61cdabe53a0541a6d36f6ecb879fa2c584b08">SpeechBackground.BackgroundType.Image</a> Set automatically when the game starts <code>GetNode&lt;TextureRect&gt;("BackgroundImg")</code> </p>
+
+</div>
+</div>
+<a id="a3aef96e8f6a3976398f1f3deafae00d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aef96e8f6a3976398f1f3deafae00d5">&#9670;&nbsp;</a></span>_caretAnimation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimationPlayer SpeechOverlay._caretAnimation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The animation player for the caret </p>
+
+</div>
+</div>
+<a id="a4d37f9bbd382d3ba4617a0ce6628ce85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d37f9bbd382d3ba4617a0ce6628ce85">&#9670;&nbsp;</a></span>_choices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpeechOverlayChoices.html">SpeechOverlayChoices</a> SpeechOverlay._choices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The choices overlay that is used to display the choices to the player Set automatically when the game starts <code>GetNode&lt;SpeechOverlayChoices&gt;("Choices")</code> </p>
+
+</div>
+</div>
+<a id="afdbac38a96293f419951dcf0b5e8dcda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdbac38a96293f419951dcf0b5e8dcda">&#9670;&nbsp;</a></span>_currentSegment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SpeechOverlay._currentSegment = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current segment of the text </p>
+
+</div>
+</div>
+<a id="a807bba6f31064ff982be5a8363215739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807bba6f31064ff982be5a8363215739">&#9670;&nbsp;</a></span>_focusRight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeechOverlay._focusRight = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the right side of the overlay in focus </p>
+
+</div>
+</div>
+<a id="a1a3ca3e8718bac83dd4ad70d04e70cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a3ca3e8718bac83dd4ad70d04e70cdb">&#9670;&nbsp;</a></span>_isActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeechOverlay._isActive = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the overlay active </p>
+
+</div>
+</div>
+<a id="ad30f42681c3fd3352ce1512cbf698742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad30f42681c3fd3352ce1512cbf698742">&#9670;&nbsp;</a></span>_isTalking</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeechOverlay._isTalking = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decides if the overlay is talking or showing choices </p>
+
+</div>
+</div>
+<a id="a637511b30b84efb3d75cc760a583515a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637511b30b84efb3d75cc760a583515a">&#9670;&nbsp;</a></span>_isTyping</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeechOverlay._isTyping = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the overlay currently typing out text </p>
+
+</div>
+</div>
+<a id="a7c698b560cfbe7de25e1313015f74f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c698b560cfbe7de25e1313015f74f10">&#9670;&nbsp;</a></span>_leftBasePosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 SpeechOverlay._leftBasePosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The base position of the left portrait </p>
+
+</div>
+</div>
+<a id="af8fb8d19969cc3ed2843f74111bce60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8fb8d19969cc3ed2843f74111bce60f">&#9670;&nbsp;</a></span>_leftPortrait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextureRect SpeechOverlay._leftPortrait</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The left portrait of the overlay Set automatically when the game starts <code>GetNode&lt;TextureRect&gt;("LeftPortrait")</code> </p>
+
+</div>
+</div>
+<a id="af1cfe5aa60d4b56a8cba41af013b79c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1cfe5aa60d4b56a8cba41af013b79c5">&#9670;&nbsp;</a></span>_rightBasePosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 SpeechOverlay._rightBasePosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The base position of the right portrait </p>
+
+</div>
+</div>
+<a id="a1635b12aaa644772047f64008068655c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1635b12aaa644772047f64008068655c">&#9670;&nbsp;</a></span>_rightPortrait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextureRect SpeechOverlay._rightPortrait</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The right portrait of the overlay Set automatically when the game starts <code>GetNode&lt;TextureRect&gt;("RightPortrait")</code> </p>
+
+</div>
+</div>
+<a id="afd9b1fb67903ab7db2c77e377f582fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9b1fb67903ab7db2c77e377f582fc0">&#9670;&nbsp;</a></span>_segmentCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SpeechOverlay._segmentCount = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The amount of segments in the text </p>
+
+</div>
+</div>
+<a id="af82acb0b1a4090dc146fbe7b7cce7821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af82acb0b1a4090dc146fbe7b7cce7821">&#9670;&nbsp;</a></span>_segments</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] SpeechOverlay._segments</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The segments of the text that are displayed in the overlay </p>
+
+</div>
+</div>
+<a id="a3b0cf591856ef643ce2fbda208663f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0cf591856ef643ce2fbda208663f80">&#9670;&nbsp;</a></span>_speechBubble</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextureRect SpeechOverlay._speechBubble</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The speech bubble of the overlay Set automatically when the game starts <code>GetNode&lt;TextureRect&gt;("SpeechBubble")</code> </p>
+
+</div>
+</div>
+<a id="acbc7fa3a84d3c6e37d664ec47ffa1dc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc7fa3a84d3c6e37d664ec47ffa1dc2">&#9670;&nbsp;</a></span>_text</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RichTextLabel SpeechOverlay._text</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The rich text label that is used to display the text of the overlay Set automatically when the game starts <code>GetNode&lt;RichTextLabel&gt;("SpeechText")</code> </p>
+
+</div>
+</div>
+<a id="aa6dc3816d9e32b3762fbf364b1c784b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6dc3816d9e32b3762fbf364b1c784b6">&#9670;&nbsp;</a></span>_textLabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Label SpeechOverlay._textLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The label that is used to display the text of the overlay Set automatically when the game starts <code>GetNode&lt;Label&gt;("TextLabel")</code> </p>
+
+</div>
+</div>
+<a id="ad367a0c63b1152ee974b8e1067a562af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad367a0c63b1152ee974b8e1067a562af">&#9670;&nbsp;</a></span>_textString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SpeechOverlay._textString = @&quot;This is a test phrace if you ever see this get really [angry] angry [/angry] at the developers&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The text string that is displayed in the overlay </p>
+
+</div>
+</div>
+<a id="a8c32d841d239b65b920ddbb0b8bb7b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c32d841d239b65b920ddbb0b8bb7b8e">&#9670;&nbsp;</a></span>_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SpeechOverlay._time = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29c42cd039913755454a8989e3a7409f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c42cd039913755454a8989e3a7409f">&#9670;&nbsp;</a></span>_timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SpeechOverlay._timer = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a27c75d810a5d6c310210dfc0de5e8657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c75d810a5d6c310210dfc0de5e8657">&#9670;&nbsp;</a></span>_activeBasePosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 SpeechOverlay._activeBasePosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The base position of the active portrait </p>
+
+</div>
+</div>
+<a id="a2247a2d811834126a60d8674663e38c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2247a2d811834126a60d8674663e38c9">&#9670;&nbsp;</a></span>_activePortrait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextureRect SpeechOverlay._activePortrait</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The currently active portrait for the overlay </p>
+
+</div>
+</div>
+<a id="aaeadbdcf96ddafa6c57c55bd560e7739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeadbdcf96ddafa6c57c55bd560e7739">&#9670;&nbsp;</a></span>_textSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SpeechOverlay._textSpeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SpeechBubble text speed, loaded from <a class="el" href="classGlobalSettings.html" title="The global settings, used to save and load settings to the player&#39;s computer.">GlobalSettings</a> </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/SpeechEngine/SpeechOverlay/SpeechOverlay.cs</li>
+<li>038EnergyTransition/Modules/SpeechEngine/SpeechOverlay/<a class="el" href="SpeechOverlay_8cs.html">SpeechOverlay.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

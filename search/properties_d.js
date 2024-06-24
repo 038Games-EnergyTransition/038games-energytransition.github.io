@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wallpaperid_564',['WallpaperID',['../classGameSave.html#a59b03ab94b82352ec236066e3f6706a0',1,'GameSave']]]
+  ['questspecific_2223',['QuestSpecific',['../classQuestPoint.html#a1a2ae4749e1fcc12999f290924308898',1,'QuestPoint']]]
 ];

@@ -85,32 +85,37 @@ $(document).ready(function(){initNavTree('classRoomScript.html',''); initResizab
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classRoomScript-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RoomScript Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The room script is used to switch the camera to the room camera when the player enters the room  
+ <a href="classRoomScript.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for RoomScript:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classRoomScript.png" usemap="#RoomScript_map" alt=""/>
   <map id="RoomScript_map" name="RoomScript_map">
-<area href="classInteractable.html" alt="Interactable" shape="rect" coords="0,56,78,80"/>
+<area href="classInteractable.html" title="The interactable object that the player can interact with." alt="Interactable" shape="rect" coords="0,56,78,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a56128d1eaf344b21e9957dc811a475c6"><td class="memItemLeft" align="right" valign="top"><a id="a56128d1eaf344b21e9957dc811a475c6"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a56128d1eaf344b21e9957dc811a475c6"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoomScript.html#a56128d1eaf344b21e9957dc811a475c6">_Ready</a> ()</td></tr>
+<tr class="memdesc:a56128d1eaf344b21e9957dc811a475c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the local spawn point and the room camera  <a href="classRoomScript.html#a56128d1eaf344b21e9957dc811a475c6">More...</a><br /></td></tr>
 <tr class="separator:a56128d1eaf344b21e9957dc811a475c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1223054e2f7293778d7a4906b7d5a6e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoomScript.html#ae1223054e2f7293778d7a4906b7d5a6e">OnInteract</a> ()</td></tr>
-<tr class="memdesc:ae1223054e2f7293778d7a4906b7d5a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overridable function that is called when the player interacts with the object  <a href="classRoomScript.html#ae1223054e2f7293778d7a4906b7d5a6e">More...</a><br /></td></tr>
+<tr class="memdesc:ae1223054e2f7293778d7a4906b7d5a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">When called the camera will switch to the room camera  <a href="classRoomScript.html#ae1223054e2f7293778d7a4906b7d5a6e">More...</a><br /></td></tr>
 <tr class="separator:ae1223054e2f7293778d7a4906b7d5a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classInteractable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classInteractable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classInteractable.html">Interactable</a></td></tr>
-<tr class="memitem:a9add6c2a759f67998bdb373dbb654130 inherit pub_methods_classInteractable"><td class="memItemLeft" align="right" valign="top"><a id="a9add6c2a759f67998bdb373dbb654130"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a9add6c2a759f67998bdb373dbb654130 inherit pub_methods_classInteractable"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#a9add6c2a759f67998bdb373dbb654130">_Ready</a> ()</td></tr>
+<tr class="memdesc:a9add6c2a759f67998bdb373dbb654130 inherit pub_methods_classInteractable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the EnterBox to the _areaBox variable Assigns the BodyEntered and BodyExited events to the OnBodyEntered and OnBodyExited functions Assigns the ConfirmPressed event to the OnConfirmPressed function Sets the playerInEnterBox to false  <a href="classInteractable.html#a9add6c2a759f67998bdb373dbb654130">More...</a><br /></td></tr>
 <tr class="separator:a9add6c2a759f67998bdb373dbb654130 inherit pub_methods_classInteractable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -124,11 +129,93 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ae696a4fb17f1bfe633b44fe018da7ea9"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoomScript.html#ae696a4fb17f1bfe633b44fe018da7ea9">SpawnPosition</a><code> [get]</code></td></tr>
+<tr class="memitem:ae696a4fb17f1bfe633b44fe018da7ea9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoomScript.html#ae696a4fb17f1bfe633b44fe018da7ea9">SpawnPosition</a><code> [get]</code></td></tr>
 <tr class="memdesc:ae696a4fb17f1bfe633b44fe018da7ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position the player will spawn at when entering the room  <a href="classRoomScript.html#ae696a4fb17f1bfe633b44fe018da7ea9">More...</a><br /></td></tr>
 <tr class="separator:ae696a4fb17f1bfe633b44fe018da7ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classInteractable"><td colspan="2" onclick="javascript:toggleInherit('properties_classInteractable')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classInteractable.html">Interactable</a></td></tr>
+<tr class="memitem:ac13b00607de01dde42418e5bcaac3dee inherit properties_classInteractable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#ac13b00607de01dde42418e5bcaac3dee">playerInEnterBox</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac13b00607de01dde42418e5bcaac3dee inherit properties_classInteractable"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to keep track if the player is in the enter box  <a href="classInteractable.html#ac13b00607de01dde42418e5bcaac3dee">More...</a><br /></td></tr>
+<tr class="separator:ac13b00607de01dde42418e5bcaac3dee inherit properties_classInteractable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a74355d28b9f64168f615b5c1f9a78d70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoomScript.html#a74355d28b9f64168f615b5c1f9a78d70">OnCutsceneFinished</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a74355d28b9f64168f615b5c1f9a78d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler to wait till the cutscene is finished to switch the cameras  <a href="classRoomScript.html#a74355d28b9f64168f615b5c1f9a78d70">More...</a><br /></td></tr>
+<tr class="separator:a74355d28b9f64168f615b5c1f9a78d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad9b800e684ad0d9a46ff62e239e0759c"><td class="memItemLeft" align="right" valign="top">Node3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoomScript.html#ad9b800e684ad0d9a46ff62e239e0759c">_localSpawnPoint</a></td></tr>
+<tr class="memdesc:ad9b800e684ad0d9a46ff62e239e0759c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local spawn point for the player this is automaticly assigned by looking for the "SpawnLocation" node  <a href="classRoomScript.html#ad9b800e684ad0d9a46ff62e239e0759c">More...</a><br /></td></tr>
+<tr class="separator:ad9b800e684ad0d9a46ff62e239e0759c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The room script is used to switch the camera to the room camera when the player enters the room </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a56128d1eaf344b21e9957dc811a475c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56128d1eaf344b21e9957dc811a475c6">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RoomScript._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the local spawn point and the room camera </p>
+
+</div>
+</div>
+<a id="a74355d28b9f64168f615b5c1f9a78d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74355d28b9f64168f615b5c1f9a78d70">&#9670;&nbsp;</a></span>OnCutsceneFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoomScript.OnCutsceneFinished </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event handler to wait till the cutscene is finished to switch the cameras </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td></td></tr>
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae1223054e2f7293778d7a4906b7d5a6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1223054e2f7293778d7a4906b7d5a6e">&#9670;&nbsp;</a></span>OnInteract()</h2>
 
@@ -152,13 +239,37 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>An overridable function that is called when the player interacts with the object </p>
+<p>When called the camera will switch to the room camera </p>
 
 <p>Reimplemented from <a class="el" href="classInteractable.html#ac98fdae4f4827ec372039bc288369092">Interactable</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad9b800e684ad0d9a46ff62e239e0759c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b800e684ad0d9a46ff62e239e0759c">&#9670;&nbsp;</a></span>_localSpawnPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node3D RoomScript._localSpawnPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The local spawn point for the player this is automaticly assigned by looking for the "SpawnLocation" node </p>
+
+</div>
+</div>
 <a id="a075d0a605b11627b6b1681addd293793"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a075d0a605b11627b6b1681addd293793">&#9670;&nbsp;</a></span>ReturnDoor</h2>
 
@@ -202,7 +313,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3 RoomScript.SpawnPosition</td>
+          <td class="memname"><a class="el" href="NpcBase_8cs.html#a4cbf3afcf17d88234d1953025cff3dac">Vector3</a> RoomScript.SpawnPosition</td>
         </tr>
       </table>
   </td>
@@ -217,7 +328,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Objects/Interieur/RoomScript.cs</li>
+<li>038EnergyTransition/Objects/Interieur/<a class="el" href="RoomScript_8cs.html">RoomScript.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

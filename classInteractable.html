@@ -83,32 +83,198 @@ $(document).ready(function(){initNavTree('classInteractable.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classInteractable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Interactable Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The interactable object that the player can interact with.  
+ <a href="classInteractable.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Interactable:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classInteractable.png" usemap="#Interactable_map" alt=""/>
   <map id="Interactable_map" name="Interactable_map">
-<area href="classRoomScript.html" alt="RoomScript" shape="rect" coords="0,112,131,136"/>
-<area href="classSceneTransitionDoor.html" alt="SceneTransitionDoor" shape="rect" coords="141,112,272,136"/>
+<area href="classRoomScript.html" title="The room script is used to switch the camera to the room camera when the player enters the room" alt="RoomScript" shape="rect" coords="0,112,131,136"/>
+<area href="classSceneTransitionDoor.html" title="The scene transition door which is interactable and will open the door to the next room." alt="SceneTransitionDoor" shape="rect" coords="141,112,272,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9add6c2a759f67998bdb373dbb654130"><td class="memItemLeft" align="right" valign="top"><a id="a9add6c2a759f67998bdb373dbb654130"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a9add6c2a759f67998bdb373dbb654130"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#a9add6c2a759f67998bdb373dbb654130">_Ready</a> ()</td></tr>
+<tr class="memdesc:a9add6c2a759f67998bdb373dbb654130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the EnterBox to the _areaBox variable Assigns the BodyEntered and BodyExited events to the OnBodyEntered and OnBodyExited functions Assigns the ConfirmPressed event to the OnConfirmPressed function Sets the playerInEnterBox to false  <a href="classInteractable.html#a9add6c2a759f67998bdb373dbb654130">More...</a><br /></td></tr>
 <tr class="separator:a9add6c2a759f67998bdb373dbb654130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98fdae4f4827ec372039bc288369092"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#ac98fdae4f4827ec372039bc288369092">OnInteract</a> ()</td></tr>
 <tr class="memdesc:ac98fdae4f4827ec372039bc288369092"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overridable function that is called when the player interacts with the object  <a href="classInteractable.html#ac98fdae4f4827ec372039bc288369092">More...</a><br /></td></tr>
 <tr class="separator:ac98fdae4f4827ec372039bc288369092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ac13b00607de01dde42418e5bcaac3dee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#ac13b00607de01dde42418e5bcaac3dee">playerInEnterBox</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac13b00607de01dde42418e5bcaac3dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to keep track if the player is in the enter box  <a href="classInteractable.html#ac13b00607de01dde42418e5bcaac3dee">More...</a><br /></td></tr>
+<tr class="separator:ac13b00607de01dde42418e5bcaac3dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa6e11276c95934dc8a76111429d3a094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#aa6e11276c95934dc8a76111429d3a094">OnConfirmPressed</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:aa6e11276c95934dc8a76111429d3a094"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the player presses the confirm button  <a href="classInteractable.html#aa6e11276c95934dc8a76111429d3a094">More...</a><br /></td></tr>
+<tr class="separator:aa6e11276c95934dc8a76111429d3a094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595b7d73da8522f55552cd72cf7c8e62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#a595b7d73da8522f55552cd72cf7c8e62">OnBodyExited</a> (Node3D body)</td></tr>
+<tr class="memdesc:a595b7d73da8522f55552cd72cf7c8e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the player exits the interactable area  <a href="classInteractable.html#a595b7d73da8522f55552cd72cf7c8e62">More...</a><br /></td></tr>
+<tr class="separator:a595b7d73da8522f55552cd72cf7c8e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee4a470f5512e13e7ea0eaaa723243e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#a2ee4a470f5512e13e7ea0eaaa723243e">OnBodyEntered</a> (Node3D body)</td></tr>
+<tr class="memdesc:a2ee4a470f5512e13e7ea0eaaa723243e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the player enters the interactable area  <a href="classInteractable.html#a2ee4a470f5512e13e7ea0eaaa723243e">More...</a><br /></td></tr>
+<tr class="separator:a2ee4a470f5512e13e7ea0eaaa723243e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7034d377af79523736d173f104c17b74"><td class="memItemLeft" align="right" valign="top">Area3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#a7034d377af79523736d173f104c17b74">_areaBox</a></td></tr>
+<tr class="memdesc:a7034d377af79523736d173f104c17b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">The area box that the player has to enter to interact with the object this is automaticly assigned to the node "EnterBox"  <a href="classInteractable.html#a7034d377af79523736d173f104c17b74">More...</a><br /></td></tr>
+<tr class="separator:a7034d377af79523736d173f104c17b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7b473f411c65f433c88ec76324d799"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInteractable.html#aaf7b473f411c65f433c88ec76324d799">_playerInEnterBox</a></td></tr>
+<tr class="separator:aaf7b473f411c65f433c88ec76324d799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The interactable object that the player can interact with. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9add6c2a759f67998bdb373dbb654130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9add6c2a759f67998bdb373dbb654130">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Interactable._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assigns the EnterBox to the _areaBox variable Assigns the BodyEntered and BodyExited events to the OnBodyEntered and OnBodyExited functions Assigns the ConfirmPressed event to the OnConfirmPressed function Sets the playerInEnterBox to false </p>
+
+</div>
+</div>
+<a id="a2ee4a470f5512e13e7ea0eaaa723243e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee4a470f5512e13e7ea0eaaa723243e">&#9670;&nbsp;</a></span>OnBodyEntered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Interactable.OnBodyEntered </td>
+          <td>(</td>
+          <td class="paramtype">Node3D&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called when the player enters the interactable area </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a595b7d73da8522f55552cd72cf7c8e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595b7d73da8522f55552cd72cf7c8e62">&#9670;&nbsp;</a></span>OnBodyExited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Interactable.OnBodyExited </td>
+          <td>(</td>
+          <td class="paramtype">Node3D&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called when the player exits the interactable area </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6e11276c95934dc8a76111429d3a094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e11276c95934dc8a76111429d3a094">&#9670;&nbsp;</a></span>OnConfirmPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Interactable.OnConfirmPressed </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called when the player presses the confirm button </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td></td></tr>
+    <tr><td class="paramname">e</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac98fdae4f4827ec372039bc288369092"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac98fdae4f4827ec372039bc288369092">&#9670;&nbsp;</a></span>OnInteract()</h2>
 
@@ -138,8 +304,80 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> (
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7034d377af79523736d173f104c17b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7034d377af79523736d173f104c17b74">&#9670;&nbsp;</a></span>_areaBox</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Area3D Interactable._areaBox</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The area box that the player has to enter to interact with the object this is automaticly assigned to the node "EnterBox" </p>
+
+</div>
+</div>
+<a id="aaf7b473f411c65f433c88ec76324d799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf7b473f411c65f433c88ec76324d799">&#9670;&nbsp;</a></span>_playerInEnterBox</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Interactable._playerInEnterBox</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="ac13b00607de01dde42418e5bcaac3dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13b00607de01dde42418e5bcaac3dee">&#9670;&nbsp;</a></span>playerInEnterBox</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Interactable.playerInEnterBox</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>boolean to keep track if the player is in the enter box </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/Implimentable/Interactable.cs</li>
+<li>038EnergyTransition/Modules/Implimentable/<a class="el" href="Interactable_8cs.html">Interactable.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

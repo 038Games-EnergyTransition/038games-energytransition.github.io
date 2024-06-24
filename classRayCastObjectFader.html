@@ -84,11 +84,17 @@ $(document).ready(function(){initNavTree('classRayCastObjectFader.html',''); ini
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classRayCastObjectFader-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RayCastObjectFader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classRayCastObjectFader.html" title="RayCastObjectFader is a 3D node that uses raycasts to detect StaticBody3D objects and update the dith...">RayCastObjectFader</a> is a 3D node that uses raycasts to detect StaticBody3D objects and update the dither_amount shader parameter smoothly.  
+ <a href="classRayCastObjectFader.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for RayCastObjectFader:</div>
 <div class="dyncontent">
@@ -107,8 +113,46 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f1c1d680c46b3aadcfe32e6570c2029"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#a4f1c1d680c46b3aadcfe32e6570c2029">Unload</a> ()</td></tr>
 <tr class="memdesc:a4f1c1d680c46b3aadcfe32e6570c2029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload the dictionary of StaticBody3D and dither_amount values  <a href="classRayCastObjectFader.html#a4f1c1d680c46b3aadcfe32e6570c2029">More...</a><br /></td></tr>
 <tr class="separator:a4f1c1d680c46b3aadcfe32e6570c2029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a75545a8248b78f5af5cac6037a32758e"><td class="memItemLeft" align="right" valign="top">MeshInstance3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#a75545a8248b78f5af5cac6037a32758e">getMesh</a> (StaticBody3D baseObject)</td></tr>
+<tr class="memdesc:a75545a8248b78f5af5cac6037a32758e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for a MeshInstance3D in the children of the baseObject  <a href="classRayCastObjectFader.html#a75545a8248b78f5af5cac6037a32758e">More...</a><br /></td></tr>
+<tr class="separator:a75545a8248b78f5af5cac6037a32758e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420a1905161fa0f6c3dc625d2f22e102"><td class="memItemLeft" align="right" valign="top">MeshInstance3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#a420a1905161fa0f6c3dc625d2f22e102">getParentMesh</a> (StaticBody3D baseObject)</td></tr>
+<tr class="memdesc:a420a1905161fa0f6c3dc625d2f22e102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for a MeshInstance3D in the parent of the baseObject  <a href="classRayCastObjectFader.html#a420a1905161fa0f6c3dc625d2f22e102">More...</a><br /></td></tr>
+<tr class="separator:a420a1905161fa0f6c3dc625d2f22e102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5e9b58bbbdbc278233719c7489ca5c"><td class="memItemLeft" align="right" valign="top">MeshInstance3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#a9c5e9b58bbbdbc278233719c7489ca5c">getChildMesh</a> (StaticBody3D baseObject)</td></tr>
+<tr class="memdesc:a9c5e9b58bbbdbc278233719c7489ca5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for a MeshInstance3D in the children of the children of the baseObject  <a href="classRayCastObjectFader.html#a9c5e9b58bbbdbc278233719c7489ca5c">More...</a><br /></td></tr>
+<tr class="separator:a9c5e9b58bbbdbc278233719c7489ca5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5e63fab019b54af40d31814c8b15c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#a2d5e63fab019b54af40d31814c8b15c4">setShaderValue</a> (MeshInstance3D mesh, string name, float value)</td></tr>
+<tr class="memdesc:a2d5e63fab019b54af40d31814c8b15c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of a shader parameter on a mesh  <a href="classRayCastObjectFader.html#a2d5e63fab019b54af40d31814c8b15c4">More...</a><br /></td></tr>
+<tr class="separator:a2d5e63fab019b54af40d31814c8b15c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5ff594275b3018b4b8c6d12db359db"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#ace5ff594275b3018b4b8c6d12db359db">getShaderValue</a> (MeshInstance3D mesh, string name)</td></tr>
+<tr class="memdesc:ace5ff594275b3018b4b8c6d12db359db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of a shader parameter from a mesh  <a href="classRayCastObjectFader.html#ace5ff594275b3018b4b8c6d12db359db">More...</a><br /></td></tr>
+<tr class="separator:ace5ff594275b3018b4b8c6d12db359db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:adfd91bc6e9eaabe96ac5b23139a672aa"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#adfd91bc6e9eaabe96ac5b23139a672aa">_transitionSpeed</a> = 0.65f</td></tr>
+<tr class="memdesc:adfd91bc6e9eaabe96ac5b23139a672aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition speed of the dither_amount shader parameter  <a href="classRayCastObjectFader.html#adfd91bc6e9eaabe96ac5b23139a672aa">More...</a><br /></td></tr>
+<tr class="separator:adfd91bc6e9eaabe96ac5b23139a672aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7fcd17318539d93b011ed11ac6ea1d8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#af7fcd17318539d93b011ed11ac6ea1d8">_maxTargetValue</a> = 0.45f</td></tr>
+<tr class="memdesc:af7fcd17318539d93b011ed11ac6ea1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum value of the dither_amount shader parameter  <a href="classRayCastObjectFader.html#af7fcd17318539d93b011ed11ac6ea1d8">More...</a><br /></td></tr>
+<tr class="separator:af7fcd17318539d93b011ed11ac6ea1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2057056584f5acde0fef8e2c36db23"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#a1c2057056584f5acde0fef8e2c36db23">_rayMaxCollisionPointZ</a> = 2.0f</td></tr>
+<tr class="memdesc:a1c2057056584f5acde0fef8e2c36db23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum distance from the camera to the collision point of the raycasts  <a href="classRayCastObjectFader.html#a1c2057056584f5acde0fef8e2c36db23">More...</a><br /></td></tr>
+<tr class="separator:a1c2057056584f5acde0fef8e2c36db23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a2031cd0f204487814482403b1037d081"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; StaticBody3D, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayCastObjectFader.html#a2031cd0f204487814482403b1037d081">_bodies</a> = new Dictionary&lt;StaticBody3D, double&gt;()</td></tr>
+<tr class="memdesc:a2031cd0f204487814482403b1037d081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary to store the StaticBody3D and the dither_amount value that have ever been detected by the raycasts  <a href="classRayCastObjectFader.html#a2031cd0f204487814482403b1037d081">More...</a><br /></td></tr>
+<tr class="separator:a2031cd0f204487814482403b1037d081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classRayCastObjectFader.html" title="RayCastObjectFader is a 3D node that uses raycasts to detect StaticBody3D objects and update the dith...">RayCastObjectFader</a> is a 3D node that uses raycasts to detect StaticBody3D objects and update the dither_amount shader parameter smoothly. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af3d61100996b1ea6b09b66ec3b28c522"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3d61100996b1ea6b09b66ec3b28c522">&#9670;&nbsp;</a></span>_Process()</h2>
 
@@ -129,6 +173,209 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c5e9b58bbbdbc278233719c7489ca5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5e9b58bbbdbc278233719c7489ca5c">&#9670;&nbsp;</a></span>getChildMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MeshInstance3D RayCastObjectFader.getChildMesh </td>
+          <td>(</td>
+          <td class="paramtype">StaticBody3D&#160;</td>
+          <td class="paramname"><em>baseObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Search for a MeshInstance3D in the children of the children of the baseObject </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">baseObject</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a75545a8248b78f5af5cac6037a32758e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75545a8248b78f5af5cac6037a32758e">&#9670;&nbsp;</a></span>getMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MeshInstance3D RayCastObjectFader.getMesh </td>
+          <td>(</td>
+          <td class="paramtype">StaticBody3D&#160;</td>
+          <td class="paramname"><em>baseObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Search for a MeshInstance3D in the children of the baseObject </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">baseObject</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a420a1905161fa0f6c3dc625d2f22e102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420a1905161fa0f6c3dc625d2f22e102">&#9670;&nbsp;</a></span>getParentMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MeshInstance3D RayCastObjectFader.getParentMesh </td>
+          <td>(</td>
+          <td class="paramtype">StaticBody3D&#160;</td>
+          <td class="paramname"><em>baseObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Search for a MeshInstance3D in the parent of the baseObject </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">baseObject</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ace5ff594275b3018b4b8c6d12db359db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5ff594275b3018b4b8c6d12db359db">&#9670;&nbsp;</a></span>getShaderValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RayCastObjectFader.getShaderValue </td>
+          <td>(</td>
+          <td class="paramtype">MeshInstance3D&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the value of a shader parameter from a mesh </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td></td></tr>
+    <tr><td class="paramname">name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a2d5e63fab019b54af40d31814c8b15c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5e63fab019b54af40d31814c8b15c4">&#9670;&nbsp;</a></span>setShaderValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayCastObjectFader.setShaderValue </td>
+          <td>(</td>
+          <td class="paramtype">MeshInstance3D&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the value of a shader parameter on a mesh </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td></td></tr>
+    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -162,8 +409,106 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2031cd0f204487814482403b1037d081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2031cd0f204487814482403b1037d081">&#9670;&nbsp;</a></span>_bodies</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;StaticBody3D, double&gt; RayCastObjectFader._bodies = new Dictionary&lt;StaticBody3D, double&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dictionary to store the StaticBody3D and the dither_amount value that have ever been detected by the raycasts </p>
+
+</div>
+</div>
+<a id="af7fcd17318539d93b011ed11ac6ea1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7fcd17318539d93b011ed11ac6ea1d8">&#9670;&nbsp;</a></span>_maxTargetValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RayCastObjectFader._maxTargetValue = 0.45f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum value of the dither_amount shader parameter </p>
+
+</div>
+</div>
+<a id="a1c2057056584f5acde0fef8e2c36db23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2057056584f5acde0fef8e2c36db23">&#9670;&nbsp;</a></span>_rayMaxCollisionPointZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RayCastObjectFader._rayMaxCollisionPointZ = 2.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum distance from the camera to the collision point of the raycasts </p>
+<p><code> (GlobalPosition - ray.GetCollisionPoint()).Z </code></p>
+
+</div>
+</div>
+<a id="adfd91bc6e9eaabe96ac5b23139a672aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd91bc6e9eaabe96ac5b23139a672aa">&#9670;&nbsp;</a></span>_transitionSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RayCastObjectFader._transitionSpeed = 0.65f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transition speed of the dither_amount shader parameter </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Objects/Camera/Scripts/RayCastObjectFader.cs</li>
+<li>038EnergyTransition/Objects/Camera/Scripts/<a class="el" href="RayCastObjectFader_8cs.html">RayCastObjectFader.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -85,11 +85,17 @@ $(document).ready(function(){initNavTree('classSceneManager.html',''); initResiz
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classSceneManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SceneManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The scene manager, used to change scenes and manage the current scene.  
+ <a href="classSceneManager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SceneManager:</div>
 <div class="dyncontent">
@@ -99,44 +105,500 @@ Inheritance diagram for SceneManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad56e482d8bc20caabb3e0df57c1d6d79"><td class="memItemLeft" align="right" valign="top"><a id="ad56e482d8bc20caabb3e0df57c1d6d79"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> { <b>Intro</b>
-, <b>Mainmenu</b>
-, <b>Game</b>
+<tr class="memitem:ad56e482d8bc20caabb3e0df57c1d6d79"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">Scene</a> { <a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79a1cad35d4b3b9f624f82dbf237daaf188">Intro</a>
+, <a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79a5eb099fcdbfae8e58aeb711ab307b3ad">Mainmenu</a>
+, <a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79a63d72051e901c069f8aa1b32aa0c43bb">Game</a>
  }</td></tr>
+<tr class="memdesc:ad56e482d8bc20caabb3e0df57c1d6d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">The available scenes in the game.  <a href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">More...</a><br /></td></tr>
 <tr class="separator:ad56e482d8bc20caabb3e0df57c1d6d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6fc2d34e3ddc351f282475bdb0f80245"><td class="memItemLeft" align="right" valign="top"><a id="a6fc2d34e3ddc351f282475bdb0f80245"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:a6fc2d34e3ddc351f282475bdb0f80245"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a6fc2d34e3ddc351f282475bdb0f80245">_Ready</a> ()</td></tr>
 <tr class="separator:a6fc2d34e3ddc351f282475bdb0f80245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bbf6a4b411822460d6e212f91968a4c"><td class="memItemLeft" align="right" valign="top"><a id="a6bbf6a4b411822460d6e212f91968a4c"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a6bbf6a4b411822460d6e212f91968a4c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a6bbf6a4b411822460d6e212f91968a4c">_Process</a> (double delta)</td></tr>
 <tr class="separator:a6bbf6a4b411822460d6e212f91968a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e12c5a7f0374633787cda1a20e28874"><td class="memItemLeft" align="right" valign="top"><a id="a8e12c5a7f0374633787cda1a20e28874"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeScene</b> (Node node, Scene scene, bool threaded=false)</td></tr>
+<tr class="memitem:a8e12c5a7f0374633787cda1a20e28874"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a8e12c5a7f0374633787cda1a20e28874">ChangeScene</a> (Node node, <a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">Scene</a> scene, bool threaded=false)</td></tr>
 <tr class="separator:a8e12c5a7f0374633787cda1a20e28874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f969d4520b3d205addf87809aed220"><td class="memItemLeft" align="right" valign="top"><a id="a00f969d4520b3d205addf87809aed220"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCurrentNode</b> (Node node)</td></tr>
+<tr class="memitem:a00f969d4520b3d205addf87809aed220"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a00f969d4520b3d205addf87809aed220">SetCurrentNode</a> (Node node)</td></tr>
 <tr class="separator:a00f969d4520b3d205addf87809aed220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a036ca4eec6ed8cfc0d1bb76409825102"><td class="memItemLeft" align="right" valign="top"><a id="a036ca4eec6ed8cfc0d1bb76409825102"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadStartEventHandler</b> ()</td></tr>
+<tr class="memitem:a036ca4eec6ed8cfc0d1bb76409825102"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a036ca4eec6ed8cfc0d1bb76409825102">LoadStartEventHandler</a> ()</td></tr>
+<tr class="memdesc:a036ca4eec6ed8cfc0d1bb76409825102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event signal for when the loading starts  <a href="classSceneManager.html#a036ca4eec6ed8cfc0d1bb76409825102">More...</a><br /></td></tr>
 <tr class="separator:a036ca4eec6ed8cfc0d1bb76409825102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16d498c1db8ccf61a8762c2e1d957aa6"><td class="memItemLeft" align="right" valign="top"><a id="a16d498c1db8ccf61a8762c2e1d957aa6"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadProgressEventHandler</b> (int percentage)</td></tr>
+<tr class="memitem:a16d498c1db8ccf61a8762c2e1d957aa6"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a16d498c1db8ccf61a8762c2e1d957aa6">LoadProgressEventHandler</a> (int percentage)</td></tr>
+<tr class="memdesc:a16d498c1db8ccf61a8762c2e1d957aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event signal for when the loading progress changes with the percentage 0-100%  <a href="classSceneManager.html#a16d498c1db8ccf61a8762c2e1d957aa6">More...</a><br /></td></tr>
 <tr class="separator:a16d498c1db8ccf61a8762c2e1d957aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace2759c3ed19627f9274cf7b3435bd58"><td class="memItemLeft" align="right" valign="top"><a id="ace2759c3ed19627f9274cf7b3435bd58"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadEndEventHandler</b> ()</td></tr>
+<tr class="memitem:ace2759c3ed19627f9274cf7b3435bd58"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#ace2759c3ed19627f9274cf7b3435bd58">LoadEndEventHandler</a> ()</td></tr>
+<tr class="memdesc:ace2759c3ed19627f9274cf7b3435bd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event signal for when the loading ends  <a href="classSceneManager.html#ace2759c3ed19627f9274cf7b3435bd58">More...</a><br /></td></tr>
 <tr class="separator:ace2759c3ed19627f9274cf7b3435bd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ac05b3b785a4cedf4e2a5943b0fe328cf"><td class="memItemLeft" align="right" valign="top"><a id="ac05b3b785a4cedf4e2a5943b0fe328cf"></a>
-static <a class="el" href="classSceneManager.html">SceneManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
+<tr class="memitem:ac05b3b785a4cedf4e2a5943b0fe328cf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSceneManager.html">SceneManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#ac05b3b785a4cedf4e2a5943b0fe328cf">Instance</a><code> [get]</code></td></tr>
 <tr class="separator:ac05b3b785a4cedf4e2a5943b0fe328cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5ff71052d014cdb87da4345de1fd9c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a5ff71052d014cdb87da4345de1fd9c21">_removeCurrentScene</a> ()</td></tr>
+<tr class="separator:a5ff71052d014cdb87da4345de1fd9c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab7fdc77ae432afc28da33f30329a7d40"><td class="memItemLeft" align="right" valign="top">Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#ab7fdc77ae432afc28da33f30329a7d40">_lastNode</a></td></tr>
+<tr class="separator:ab7fdc77ae432afc28da33f30329a7d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d1e8cdbf48ef5b9f2322f4ed9ce85f"><td class="memItemLeft" align="right" valign="top">Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a09d1e8cdbf48ef5b9f2322f4ed9ce85f">_currentNode</a></td></tr>
+<tr class="separator:a09d1e8cdbf48ef5b9f2322f4ed9ce85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aab95660ac2555a73e2c661ffe18c1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a0aab95660ac2555a73e2c661ffe18c1c">_isLoading</a> = false</td></tr>
+<tr class="separator:a0aab95660ac2555a73e2c661ffe18c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81efdac8c094bfc5808fede2a41ff9f1"><td class="memItemLeft" align="right" valign="top">Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a81efdac8c094bfc5808fede2a41ff9f1">_loadingNode</a></td></tr>
+<tr class="separator:a81efdac8c094bfc5808fede2a41ff9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375dcbfd73319bd731d1779606dc5089"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a375dcbfd73319bd731d1779606dc5089">_loadingScenePath</a></td></tr>
+<tr class="separator:a375dcbfd73319bd731d1779606dc5089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cb581e2090f3a420591964c4f07f85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#a42cb581e2090f3a420591964c4f07f85">_loadingLastPercentage</a> = 0</td></tr>
+<tr class="separator:a42cb581e2090f3a420591964c4f07f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7462b02e851cbd47882ac35d4f74c5"><td class="memItemLeft" align="right" valign="top">Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#add7462b02e851cbd47882ac35d4f74c5">_nextScene</a></td></tr>
+<tr class="separator:add7462b02e851cbd47882ac35d4f74c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ac13e7f5e4905cc10dbbcb5d5fb5612d1"><td class="memItemLeft" align="right" valign="top">static SceneTree&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#ac13e7f5e4905cc10dbbcb5d5fb5612d1">_tree</a></td></tr>
+<tr class="separator:ac13e7f5e4905cc10dbbcb5d5fb5612d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae098aa0d2b1d3f8545081be7b3b7e528"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSceneManager.html">SceneManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneManager.html#ae098aa0d2b1d3f8545081be7b3b7e528">_instance</a></td></tr>
+<tr class="separator:ae098aa0d2b1d3f8545081be7b3b7e528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The scene manager, used to change scenes and manage the current scene. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad56e482d8bc20caabb3e0df57c1d6d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad56e482d8bc20caabb3e0df57c1d6d79">&#9670;&nbsp;</a></span>Scene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">SceneManager.Scene</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The available scenes in the game. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad56e482d8bc20caabb3e0df57c1d6d79a1cad35d4b3b9f624f82dbf237daaf188"></a>Intro&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad56e482d8bc20caabb3e0df57c1d6d79a5eb099fcdbfae8e58aeb711ab307b3ad"></a>Mainmenu&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad56e482d8bc20caabb3e0df57c1d6d79a63d72051e901c069f8aa1b32aa0c43bb"></a>Game&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6bbf6a4b411822460d6e212f91968a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbf6a4b411822460d6e212f91968a4c">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SceneManager._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fc2d34e3ddc351f282475bdb0f80245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc2d34e3ddc351f282475bdb0f80245">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void SceneManager._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ff71052d014cdb87da4345de1fd9c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff71052d014cdb87da4345de1fd9c21">&#9670;&nbsp;</a></span>_removeCurrentScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SceneManager._removeCurrentScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e12c5a7f0374633787cda1a20e28874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e12c5a7f0374633787cda1a20e28874">&#9670;&nbsp;</a></span>ChangeScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SceneManager.ChangeScene </td>
+          <td>(</td>
+          <td class="paramtype">Node&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSceneManager.html#ad56e482d8bc20caabb3e0df57c1d6d79">Scene</a>&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>threaded</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace2759c3ed19627f9274cf7b3435bd58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2759c3ed19627f9274cf7b3435bd58">&#9670;&nbsp;</a></span>LoadEndEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void SceneManager.LoadEndEventHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event signal for when the loading ends </p>
+
+</div>
+</div>
+<a id="a16d498c1db8ccf61a8762c2e1d957aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d498c1db8ccf61a8762c2e1d957aa6">&#9670;&nbsp;</a></span>LoadProgressEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void SceneManager.LoadProgressEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>percentage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event signal for when the loading progress changes with the percentage 0-100% </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">percentage</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a036ca4eec6ed8cfc0d1bb76409825102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036ca4eec6ed8cfc0d1bb76409825102">&#9670;&nbsp;</a></span>LoadStartEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void SceneManager.LoadStartEventHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event signal for when the loading starts </p>
+
+</div>
+</div>
+<a id="a00f969d4520b3d205addf87809aed220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f969d4520b3d205addf87809aed220">&#9670;&nbsp;</a></span>SetCurrentNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SceneManager.SetCurrentNode </td>
+          <td>(</td>
+          <td class="paramtype">Node&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a09d1e8cdbf48ef5b9f2322f4ed9ce85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09d1e8cdbf48ef5b9f2322f4ed9ce85f">&#9670;&nbsp;</a></span>_currentNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node SceneManager._currentNode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae098aa0d2b1d3f8545081be7b3b7e528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae098aa0d2b1d3f8545081be7b3b7e528">&#9670;&nbsp;</a></span>_instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSceneManager.html">SceneManager</a> SceneManager._instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0aab95660ac2555a73e2c661ffe18c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aab95660ac2555a73e2c661ffe18c1c">&#9670;&nbsp;</a></span>_isLoading</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SceneManager._isLoading = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7fdc77ae432afc28da33f30329a7d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7fdc77ae432afc28da33f30329a7d40">&#9670;&nbsp;</a></span>_lastNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node SceneManager._lastNode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42cb581e2090f3a420591964c4f07f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42cb581e2090f3a420591964c4f07f85">&#9670;&nbsp;</a></span>_loadingLastPercentage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceneManager._loadingLastPercentage = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81efdac8c094bfc5808fede2a41ff9f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81efdac8c094bfc5808fede2a41ff9f1">&#9670;&nbsp;</a></span>_loadingNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node SceneManager._loadingNode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a375dcbfd73319bd731d1779606dc5089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375dcbfd73319bd731d1779606dc5089">&#9670;&nbsp;</a></span>_loadingScenePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SceneManager._loadingScenePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add7462b02e851cbd47882ac35d4f74c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7462b02e851cbd47882ac35d4f74c5">&#9670;&nbsp;</a></span>_nextScene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node SceneManager._nextScene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac13e7f5e4905cc10dbbcb5d5fb5612d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13e7f5e4905cc10dbbcb5d5fb5612d1">&#9670;&nbsp;</a></span>_tree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SceneTree SceneManager._tree</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="ac05b3b785a4cedf4e2a5943b0fe328cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05b3b785a4cedf4e2a5943b0fe328cf">&#9670;&nbsp;</a></span>Instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSceneManager.html">SceneManager</a> SceneManager.Instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Modules/SceneManager.cs</li>
+<li>038EnergyTransition/Modules/<a class="el" href="SceneManager_8cs.html">SceneManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

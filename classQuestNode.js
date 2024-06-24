@@ -5,6 +5,7 @@ var classQuestNode =
     [ "AnyPreviousNodesCompleted", "classQuestNode.html#abac2b516aff176093e3b19382afc14bb", null ],
     [ "Deserialize", "classQuestNode.html#adec123477979e15da355725344b1b1a8", null ],
     [ "Reset", "classQuestNode.html#ae17ccfff7dfb956d0b70468b40207c50", null ],
+    [ "Reset", "classQuestNode.html#a6b22f5965594a59774a442bf70186dbc", null ],
     [ "Serialize", "classQuestNode.html#a9e74968550fe903ec16b8659bb048e82", null ],
     [ "SetGraph", "classQuestNode.html#ae50c3eb01bb5b1d46c083e3e61c1b12f", null ],
     [ "Update", "classQuestNode.html#a98f7fb55440c3474c553fe6b3e878c2e", null ],

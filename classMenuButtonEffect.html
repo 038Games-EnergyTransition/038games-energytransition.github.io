@@ -83,11 +83,16 @@ $(document).ready(function(){initNavTree('classMenuButtonEffect.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classMenuButtonEffect-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MenuButtonEffect Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Button effect for buttons in the top bar in the main menu.  
+ <a href="classMenuButtonEffect.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for MenuButtonEffect:</div>
 <div class="dyncontent">
@@ -97,15 +102,148 @@ Inheritance diagram for MenuButtonEffect:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab9e3bc7623ee7b4c5d75c422035f9c4e"><td class="memItemLeft" align="right" valign="top"><a id="ab9e3bc7623ee7b4c5d75c422035f9c4e"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memitem:ab9e3bc7623ee7b4c5d75c422035f9c4e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuButtonEffect.html#ab9e3bc7623ee7b4c5d75c422035f9c4e">_Ready</a> ()</td></tr>
 <tr class="separator:ab9e3bc7623ee7b4c5d75c422035f9c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a7276196d072567010dea1d68cb53cd"><td class="memItemLeft" align="right" valign="top"><a id="a3a7276196d072567010dea1d68cb53cd"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a3a7276196d072567010dea1d68cb53cd"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuButtonEffect.html#a3a7276196d072567010dea1d68cb53cd">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:a3a7276196d072567010dea1d68cb53cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the button effect.  <a href="classMenuButtonEffect.html#a3a7276196d072567010dea1d68cb53cd">More...</a><br /></td></tr>
 <tr class="separator:a3a7276196d072567010dea1d68cb53cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aef7dd5244b3be3ce7a5f2fc204a7be67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuButtonEffect.html#aef7dd5244b3be3ce7a5f2fc204a7be67">PressedYOffset</a> = 5</td></tr>
+<tr class="memdesc:aef7dd5244b3be3ce7a5f2fc204a7be67"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vertical offset of the button when pressed.  <a href="classMenuButtonEffect.html#aef7dd5244b3be3ce7a5f2fc204a7be67">More...</a><br /></td></tr>
+<tr class="separator:aef7dd5244b3be3ce7a5f2fc204a7be67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6035d3a06cea0974c0aed2f9d1abecdb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuButtonEffect.html#a6035d3a06cea0974c0aed2f9d1abecdb">YOffsetMoveFactor</a> = 0.1f</td></tr>
+<tr class="memdesc:a6035d3a06cea0974c0aed2f9d1abecdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The factor of the vertical offset movement.  <a href="classMenuButtonEffect.html#a6035d3a06cea0974c0aed2f9d1abecdb">More...</a><br /></td></tr>
+<tr class="separator:a6035d3a06cea0974c0aed2f9d1abecdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a4c8b22c30250a579895fdb93e74bd6c9"><td class="memItemLeft" align="right" valign="top">static Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuButtonEffect.html#a4c8b22c30250a579895fdb93e74bd6c9">_lastPressedButton</a> = null</td></tr>
+<tr class="memdesc:a4c8b22c30250a579895fdb93e74bd6c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last pressed button in the top bar. static, so it's shared between all instances of this class.  <a href="classMenuButtonEffect.html#a4c8b22c30250a579895fdb93e74bd6c9">More...</a><br /></td></tr>
+<tr class="separator:a4c8b22c30250a579895fdb93e74bd6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Button effect for buttons in the top bar in the main menu. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3a7276196d072567010dea1d68cb53cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7276196d072567010dea1d68cb53cd">&#9670;&nbsp;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void MenuButtonEffect._Process </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the button effect. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab9e3bc7623ee7b4c5d75c422035f9c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e3bc7623ee7b4c5d75c422035f9c4e">&#9670;&nbsp;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void MenuButtonEffect._Ready </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4c8b22c30250a579895fdb93e74bd6c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8b22c30250a579895fdb93e74bd6c9">&#9670;&nbsp;</a></span>_lastPressedButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button MenuButtonEffect._lastPressedButton = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The last pressed button in the top bar. static, so it's shared between all instances of this class. </p>
+
+</div>
+</div>
+<a id="aef7dd5244b3be3ce7a5f2fc204a7be67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7dd5244b3be3ce7a5f2fc204a7be67">&#9670;&nbsp;</a></span>PressedYOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MenuButtonEffect.PressedYOffset = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The vertical offset of the button when pressed. </p>
+
+</div>
+</div>
+<a id="a6035d3a06cea0974c0aed2f9d1abecdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6035d3a06cea0974c0aed2f9d1abecdb">&#9670;&nbsp;</a></span>YOffsetMoveFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MenuButtonEffect.YOffsetMoveFactor = 0.1f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The factor of the vertical offset movement. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>038EnergyTransition/Scenes/MainMenu/Scripts/MenuButtonEffect.cs</li>
+<li>038EnergyTransition/Scenes/MainMenu/Scripts/<a class="el" href="MenuButtonEffect_8cs.html">MenuButtonEffect.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
