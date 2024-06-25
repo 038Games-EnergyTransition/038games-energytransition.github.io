@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('classQuestManager.html',''); initResiz
 <div class="title">QuestManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A class responsible for managing active quests, sending events and checking if quests are completed. /summary&gt;  
+ <a href="classQuestManager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for QuestManager:</div>
 <div class="dyncontent">
@@ -116,6 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a71a111122dfd7a3f81720673908a5560"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a71a111122dfd7a3f81720673908a5560">_Ready</a> ()</td></tr>
 <tr class="separator:a71a111122dfd7a3f81720673908a5560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c0feed7f6cb2e9717f1c2c2c4e4f28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a41c0feed7f6cb2e9717f1c2c2c4e4f28">StartQuest</a> (<a class="el" href="classQuestResource.html">QuestResource</a> quest)</td></tr>
+<tr class="memdesc:a41c0feed7f6cb2e9717f1c2c2c4e4f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a quest and adds it to the list of active quests.  <a href="classQuestManager.html#a41c0feed7f6cb2e9717f1c2c2c4e4f28">More...</a><br /></td></tr>
 <tr class="separator:a41c0feed7f6cb2e9717f1c2c2c4e4f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7320309614eaf2324b8142c327afa1f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a7320309614eaf2324b8142c327afa1f3">UpdateQuests</a> ()</td></tr>
 <tr class="separator:a7320309614eaf2324b8142c327afa1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +148,7 @@ Properties</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ab2c3747af20863407e766353285f0b56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#ab2c3747af20863407e766353285f0b56">_setupTimer</a> ()</td></tr>
+<tr class="memdesc:ab2c3747af20863407e766353285f0b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the timer thats used to pol quest progression.  <a href="classQuestManager.html#ab2c3747af20863407e766353285f0b56">More...</a><br /></td></tr>
 <tr class="separator:ab2c3747af20863407e766353285f0b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -158,7 +163,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a998ac2c3a0a63ac9d657f77c4e626548"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classQuestManager.html">QuestManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestManager.html#a998ac2c3a0a63ac9d657f77c4e626548">_instance</a></td></tr>
 <tr class="separator:a998ac2c3a0a63ac9d657f77c4e626548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class responsible for managing active quests, sending events and checking if quests are completed. /summary&gt; </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a71a111122dfd7a3f81720673908a5560"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71a111122dfd7a3f81720673908a5560">&#9670;&nbsp;</a></span>_Ready()</h2>
 
@@ -198,6 +205,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sets up the timer thats used to pol quest progression. </p>
 
 </div>
 </div>
@@ -255,6 +264,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>summary&gt; returns a list of all quests. /summary&gt; </p>
 
 </div>
 </div>
@@ -313,6 +323,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>summary&gt; Toggles the update polling on or off. /summary&gt; </p>
 
 </div>
 </div>
@@ -330,6 +341,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>summary&gt; Returns a list serialized quests. /summary&gt; </p>
 
 </div>
 </div>
@@ -347,6 +359,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>summary&gt; Returns a list of all completed quests. /summary&gt; </p>
 
 </div>
 </div>
@@ -457,6 +470,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>summary&gt; Sets all active states in the nodes of this quest to false.This however doesnt reset the values it checks for. param name="quest"&gt;The quest to reset /summary&gt; </p>
 
 </div>
 </div>
@@ -475,6 +489,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>summary&gt; Clears the list of active quests. /summary&gt; </p>
 
 </div>
 </div>
@@ -492,6 +507,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>summary&gt; Takes a list of serialized quests, deserializes them and ads them to the active quests. /summary&gt; </p>
 
 </div>
 </div>
@@ -510,6 +526,9 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Starts a quest and adds it to the list of active quests. </p>
+<p>summary&gt; Goes over every quest and updates them by calling their Update method. Invoked by <a class="el" href="classQuestManager.html#acf68d85f71b2c1aae109ad130c5ea371">_questUpdateTimer</a> /summary&gt; </p>
 
 </div>
 </div>
@@ -545,6 +564,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>summary&gt; Removes a specific quest from the list of active quests. param name="quest"&gt;The quest to remove from the list of active quests. /summary&gt; </p>
 
 </div>
 </div>

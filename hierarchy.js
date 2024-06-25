@@ -39,7 +39,6 @@ var hierarchy =
       [ "Loadscreen", "classLoadscreen.html", null ],
       [ "MainMenu", "classMainMenu.html", null ],
       [ "Phone", "classPhone.html", null ],
-      [ "QuestEditor", "classQuestEditor.html", null ],
       [ "SpeechOverlay", "classSpeechOverlay.html", null ],
       [ "SpeechOverlayChoices", "classSpeechOverlayChoices.html", null ]
     ] ],
@@ -57,20 +56,7 @@ var hierarchy =
       [ "UIMoveEventArgs", "classUIMoveEventArgs.html", null ]
     ] ],
     [ "GlobalBank", "classGlobalBank.html", null ],
-    [ "GraphEdit", null, [
-      [ "QuestEditorGraph", "classQuestEditorGraph.html", null ]
-    ] ],
-    [ "GraphNode", null, [
-      [ "QuestGraphNode", "classQuestGraphNode.html", [
-        [ "ActionNode", "classActionNode.html", null ],
-        [ "ConditionNode", "classConditionNode.html", null ],
-        [ "EndNode", "classEndNode.html", null ],
-        [ "ObjectiveNode", "classObjectiveNode.html", null ],
-        [ "StartNode", "classStartNode.html", null ]
-      ] ]
-    ] ],
     [ "HBoxContainer", null, [
-      [ "EditorAction", "classEditorAction.html", null ],
       [ "VariantInput", "classVariantInput.html", null ],
       [ "Vector2Input", "classVector2Input.html", null ],
       [ "Vector3Input", "classVector3Input.html", null ]
@@ -194,10 +180,6 @@ var hierarchy =
     ] ],
     [ "TextureRect", null, [
       [ "AppTimeHomescreenMask", "classAppTimeHomescreenMask.html", null ]
-    ] ],
-    [ "VBoxContainer", null, [
-      [ "MetadataEditor", "classMetadataEditor.html", null ],
-      [ "MetadataItem", "classMetadataItem.html", null ]
     ] ],
     [ "WorldEnvironment", null, [
       [ "WorldEnvironmentQualitySettings", "classWorldEnvironmentQualitySettings.html", null ]

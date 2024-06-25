@@ -91,44 +91,57 @@ $(document).ready(function(){initNavTree('classQuestNode.html',''); initResizabl
 <div class="title">QuestNode Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A template node that represents a node in a quest graph.  
+ <a href="classQuestNode.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for QuestNode:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classQuestNode.png" usemap="#QuestNode_map" alt=""/>
   <map id="QuestNode_map" name="QuestNode_map">
-<area href="classQuestAction.html" alt="QuestAction" shape="rect" coords="0,112,99,136"/>
-<area href="classQuestCondition.html" alt="QuestCondition" shape="rect" coords="109,112,208,136"/>
-<area href="classQuestEnd.html" alt="QuestEnd" shape="rect" coords="218,112,317,136"/>
+<area href="classQuestAction.html" title="A node that represents an action in a quest." alt="QuestAction" shape="rect" coords="0,112,99,136"/>
+<area href="classQuestCondition.html" title="A node that represents a quest condition." alt="QuestCondition" shape="rect" coords="109,112,208,136"/>
+<area href="classQuestEnd.html" title="A node that represents the end of a quest." alt="QuestEnd" shape="rect" coords="218,112,317,136"/>
 <area href="classQuestObjective.html" alt="QuestObjective" shape="rect" coords="327,112,426,136"/>
-<area href="classQuestStart.html" alt="QuestStart" shape="rect" coords="436,112,535,136"/>
+<area href="classQuestStart.html" title="A node that represents the start of a quest." alt="QuestStart" shape="rect" coords="436,112,535,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abbbe62b724d800d55daeca23f27133a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#abbbe62b724d800d55daeca23f27133a2">AllPreviousNodesCompleted</a> ()</td></tr>
+<tr class="memdesc:abbbe62b724d800d55daeca23f27133a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all previous nodes are completed.  <a href="classQuestNode.html#abbbe62b724d800d55daeca23f27133a2">More...</a><br /></td></tr>
 <tr class="separator:abbbe62b724d800d55daeca23f27133a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac2b516aff176093e3b19382afc14bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#abac2b516aff176093e3b19382afc14bb">AnyPreviousNodesCompleted</a> ()</td></tr>
+<tr class="memdesc:abac2b516aff176093e3b19382afc14bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if any previous nodes are completed.  <a href="classQuestNode.html#abac2b516aff176093e3b19382afc14bb">More...</a><br /></td></tr>
 <tr class="separator:abac2b516aff176093e3b19382afc14bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0445216588301130c1d396b6639934ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#a0445216588301130c1d396b6639934ca">AnyChildrenActive</a> ()</td></tr>
+<tr class="memdesc:a0445216588301130c1d396b6639934ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if any children are active.  <a href="classQuestNode.html#a0445216588301130c1d396b6639934ca">More...</a><br /></td></tr>
 <tr class="separator:a0445216588301130c1d396b6639934ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98f7fb55440c3474c553fe6b3e878c2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#a98f7fb55440c3474c553fe6b3e878c2e">Update</a> ()</td></tr>
+<tr class="memdesc:a98f7fb55440c3474c553fe6b3e878c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the node.  <a href="classQuestNode.html#a98f7fb55440c3474c553fe6b3e878c2e">More...</a><br /></td></tr>
 <tr class="separator:a98f7fb55440c3474c553fe6b3e878c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ceabf5a5f77b8efe2a22c920eb449b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#a8ceabf5a5f77b8efe2a22c920eb449b2">Update</a> (<a class="el" href="classQuestNode.html">QuestNode</a> node)</td></tr>
+<tr class="memdesc:a8ceabf5a5f77b8efe2a22c920eb449b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the given node Fires from <a class="el" href="classQuestNode.html#a98f7fb55440c3474c553fe6b3e878c2e" title="Updates the node.">Update</a> usualy the next node in line.  <a href="classQuestNode.html#a8ceabf5a5f77b8efe2a22c920eb449b2">More...</a><br /></td></tr>
 <tr class="separator:a8ceabf5a5f77b8efe2a22c920eb449b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae17ccfff7dfb956d0b70468b40207c50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#ae17ccfff7dfb956d0b70468b40207c50">Reset</a> ()</td></tr>
+<tr class="memdesc:ae17ccfff7dfb956d0b70468b40207c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the node.  <a href="classQuestNode.html#ae17ccfff7dfb956d0b70468b40207c50">More...</a><br /></td></tr>
 <tr class="separator:ae17ccfff7dfb956d0b70468b40207c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae50c3eb01bb5b1d46c083e3e61c1b12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#ae50c3eb01bb5b1d46c083e3e61c1b12f">SetGraph</a> (<a class="el" href="classQuestResource.html">QuestResource</a> _graph)</td></tr>
+<tr class="memdesc:ae50c3eb01bb5b1d46c083e3e61c1b12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the graph that this node belongs to.  <a href="classQuestNode.html#ae50c3eb01bb5b1d46c083e3e61c1b12f">More...</a><br /></td></tr>
 <tr class="separator:ae50c3eb01bb5b1d46c083e3e61c1b12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e74968550fe903ec16b8659bb048e82"><td class="memItemLeft" align="right" valign="top">Dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#a9e74968550fe903ec16b8659bb048e82">Serialize</a> ()</td></tr>
+<tr class="memdesc:a9e74968550fe903ec16b8659bb048e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the node to a dictionary.  <a href="classQuestNode.html#a9e74968550fe903ec16b8659bb048e82">More...</a><br /></td></tr>
 <tr class="separator:a9e74968550fe903ec16b8659bb048e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec123477979e15da355725344b1b1a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#adec123477979e15da355725344b1b1a8">Deserialize</a> (Dictionary data)</td></tr>
+<tr class="memdesc:adec123477979e15da355725344b1b1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes the node from a dictionary.  <a href="classQuestNode.html#adec123477979e15da355725344b1b1a8">More...</a><br /></td></tr>
 <tr class="separator:adec123477979e15da355725344b1b1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b22f5965594a59774a442bf70186dbc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#a6b22f5965594a59774a442bf70186dbc">Reset</a> (<a class="el" href="classQuestNode.html">QuestNode</a> node)</td></tr>
+<tr class="memdesc:a6b22f5965594a59774a442bf70186dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the given node.  <a href="classQuestNode.html#a6b22f5965594a59774a442bf70186dbc">More...</a><br /></td></tr>
 <tr class="separator:a6b22f5965594a59774a442bf70186dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -153,7 +166,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a7bfaad5ab26cec24b262dcda157f10d4"><td class="memItemLeft" align="right" valign="top">Array&lt; <a class="el" href="classQuestNode.html">QuestNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestNode.html#a7bfaad5ab26cec24b262dcda157f10d4">NextNodes</a><code> [get]</code></td></tr>
 <tr class="separator:a7bfaad5ab26cec24b262dcda157f10d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A template node that represents a node in a quest graph. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abbbe62b724d800d55daeca23f27133a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbbe62b724d800d55daeca23f27133a2">&#9670;&nbsp;</a></span>AllPreviousNodesCompleted()</h2>
 
@@ -168,6 +183,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns true if all previous nodes are completed. </p>
 
 </div>
 </div>
@@ -186,6 +203,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns true if any children are active. </p>
+
 </div>
 </div>
 <a id="abac2b516aff176093e3b19382afc14bb"></a>
@@ -202,6 +221,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns true if any previous nodes are completed. </p>
 
 </div>
 </div>
@@ -221,6 +242,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Deserializes the node from a dictionary. </p>
+
 </div>
 </div>
 <a id="ae17ccfff7dfb956d0b70468b40207c50"></a>
@@ -237,6 +260,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Resets the node. </p>
 
 </div>
 </div>
@@ -264,6 +289,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Resets the given node. </p>
+
 </div>
 </div>
 <a id="a9e74968550fe903ec16b8659bb048e82"></a>
@@ -280,6 +307,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Serializes the node to a dictionary. </p>
 
 </div>
 </div>
@@ -299,6 +328,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the graph that this node belongs to. </p>
+
 </div>
 </div>
 <a id="a98f7fb55440c3474c553fe6b3e878c2e"></a>
@@ -315,6 +346,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Updates the node. </p>
 
 </div>
 </div>
@@ -333,6 +366,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Updates the given node Fires from <a class="el" href="classQuestNode.html#a98f7fb55440c3474c553fe6b3e878c2e" title="Updates the node.">Update</a> usualy the next node in line. </p>
 
 </div>
 </div>

@@ -26,6 +26,24 @@ var NAVTREE =
 [
   [ "038 Energy Transition", "index.html", [
     [ "MIT License", "md_038EnergyTransition_addons_debug_menu_LICENSE.html", null ],
+    [ "README", "md_038EnergyTransition_addons_quester_README.html", [
+      [ "Features", "md_038EnergyTransition_addons_quester_README.html#autotoc_md1", null ],
+      [ "Getting Started", "md_038EnergyTransition_addons_quester_README.html#autotoc_md2", null ],
+      [ "Using the Condition and Action Nodes", "md_038EnergyTransition_addons_quester_README.html#autotoc_md3", null ],
+      [ "Nodes", "md_038EnergyTransition_addons_quester_README.html#autotoc_md4", [
+        [ "Start Node", "md_038EnergyTransition_addons_quester_README.html#autotoc_md5", null ],
+        [ "End Node", "md_038EnergyTransition_addons_quester_README.html#autotoc_md6", null ],
+        [ "Objective Node", "md_038EnergyTransition_addons_quester_README.html#autotoc_md7", null ],
+        [ "Condition Node", "md_038EnergyTransition_addons_quester_README.html#autotoc_md8", null ],
+        [ "Action Node", "md_038EnergyTransition_addons_quester_README.html#autotoc_md9", null ]
+      ] ],
+      [ "Starting a Quest", "md_038EnergyTransition_addons_quester_README.html#autotoc_md10", null ],
+      [ "Observing Quest states", "md_038EnergyTransition_addons_quester_README.html#autotoc_md11", null ],
+      [ "Quest utilities", "md_038EnergyTransition_addons_quester_README.html#autotoc_md12", null ],
+      [ "Contributing", "md_038EnergyTransition_addons_quester_README.html#autotoc_md13", null ],
+      [ "License", "md_038EnergyTransition_addons_quester_README.html#autotoc_md14", null ],
+      [ "Credits", "md_038EnergyTransition_addons_quester_README.html#autotoc_md15", null ]
+    ] ],
     [ "Translation", "md_038EnergyTransition_Translation_README.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ]
@@ -57,12 +75,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AartScript_8cs.html",
-"classBaseApp.html",
-"classEngineCS.html",
-"classMainMenu.html#a17807e5db625a240f50a3bc65cbebd48",
-"classQuestEditorGraph.html#a34f0572c109e7d2253a46c1a5c7b1bad",
-"classSpeechBackground.html#af3b9f29137290c01a46a8cec116e61cdabe53a0541a6d36f6ecb879fa2c584b08",
-"classanimationNode.html#a25c51af25ec12b307840ec2be96c74c3"
+"classBaseApp.html#ab16f6e29369ed4041fabc38c1cb08b53",
+"classGame.html#adb6601522ba9f3043e9a310eeafbdae8",
+"classModifyStatisticsNode.html#a5d2afd9740b4ba6da4749920dcfd494fa1d9baf077ee87921f57a8fe42d510b65",
+"classRoomScript.html#acdfd5ab65dece29d9752663ccc160b09",
+"classTestNode.html#a447e110ff50f48cd7d0ccd886d83883c",
+"md_038EnergyTransition_addons_quester_README.html#autotoc_md2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('classDataManager.html',''); initResiza
 <div class="title">DataManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>an example implimentation of a data manager used for quests.  
+ <a href="classDataManager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for DataManager:</div>
 <div class="dyncontent">
@@ -106,18 +109,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa158100368fa7abcaa91fc9b75829155"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#aa158100368fa7abcaa91fc9b75829155">_Ready</a> ()</td></tr>
 <tr class="separator:aa158100368fa7abcaa91fc9b75829155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22be5522d121acbe43306d005b89f63d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#a22be5522d121acbe43306d005b89f63d">SetValue</a> (string key, Variant value)</td></tr>
+<tr class="memdesc:a22be5522d121acbe43306d005b89f63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a value in the data manager.  <a href="classDataManager.html#a22be5522d121acbe43306d005b89f63d">More...</a><br /></td></tr>
 <tr class="separator:a22be5522d121acbe43306d005b89f63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f2915a0f0bb4bc1553e31ca8bbd2ec"><td class="memItemLeft" align="right" valign="top">Variant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#ad1f2915a0f0bb4bc1553e31ca8bbd2ec">GetValue</a> (string key)</td></tr>
+<tr class="memdesc:ad1f2915a0f0bb4bc1553e31ca8bbd2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value from the data manager.  <a href="classDataManager.html#ad1f2915a0f0bb4bc1553e31ca8bbd2ec">More...</a><br /></td></tr>
 <tr class="separator:ad1f2915a0f0bb4bc1553e31ca8bbd2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac64f57d379da33f1e531ce56d81ac24c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDataManager.html">DataManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#ac64f57d379da33f1e531ce56d81ac24c">GetInstance</a> ()</td></tr>
+<tr class="memdesc:ac64f57d379da33f1e531ce56d81ac24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the current instance of the <a class="el" href="classDataManager.html" title="an example implimentation of a data manager used for quests.">DataManager</a>  <a href="classDataManager.html#ac64f57d379da33f1e531ce56d81ac24c">More...</a><br /></td></tr>
 <tr class="separator:ac64f57d379da33f1e531ce56d81ac24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:af2fdd2d98e4b1e1621bc41f322fe3e13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#af2fdd2d98e4b1e1621bc41f322fe3e13">CompareValue</a> (string key, Variant value)</td></tr>
+<tr class="memdesc:af2fdd2d98e4b1e1621bc41f322fe3e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the value of a key to a given value.  <a href="classDataManager.html#af2fdd2d98e4b1e1621bc41f322fe3e13">More...</a><br /></td></tr>
 <tr class="separator:af2fdd2d98e4b1e1621bc41f322fe3e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -130,7 +137,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:ad32e06cf226108b7c18872451e7734f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDataManager.html">DataManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataManager.html#ad32e06cf226108b7c18872451e7734f2">_instance</a></td></tr>
 <tr class="separator:ad32e06cf226108b7c18872451e7734f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>an example implimentation of a data manager used for quests. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa158100368fa7abcaa91fc9b75829155"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa158100368fa7abcaa91fc9b75829155">&#9670;&nbsp;</a></span>_Ready()</h2>
 
@@ -181,6 +190,16 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Compares the value of a key to a given value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -235,6 +254,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>gets the current instance of the <a class="el" href="classDataManager.html" title="an example implimentation of a data manager used for quests.">DataManager</a> </p>
+
 </div>
 </div>
 <a id="ad1f2915a0f0bb4bc1553e31ca8bbd2ec"></a>
@@ -252,6 +273,15 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets a value from the data manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -280,6 +310,15 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets a value in the data manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
