@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['homescreenlowerapps_1050',['HomescreenLowerApps',['../classHomescreenLowerApps.html',1,'']]]
+  ['homescreenlowerapps_1072',['HomescreenLowerApps',['../classHomescreenLowerApps.html',1,'']]]
 ];

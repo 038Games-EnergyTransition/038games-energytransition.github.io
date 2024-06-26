@@ -97,6 +97,7 @@ var hierarchy =
       [ "AnimatedSunLight", "classAnimatedSunLight.html", null ],
       [ "GameLogic", "classGameLogic.html", null ],
       [ "Interactable", "classInteractable.html", [
+        [ "BuildLot", "classBuildLot.html", null ],
         [ "RoomScript", "classRoomScript.html", null ],
         [ "SceneTransitionDoor", "classSceneTransitionDoor.html", null ]
       ] ],

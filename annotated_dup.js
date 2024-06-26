@@ -20,6 +20,7 @@ var annotated_dup =
     [ "AutoplayAnimationPlayer", "classAutoplayAnimationPlayer.html", "classAutoplayAnimationPlayer" ],
     [ "BankTransaction", "classBankTransaction.html", "classBankTransaction" ],
     [ "BaseApp", "classBaseApp.html", "classBaseApp" ],
+    [ "BuildLot", "classBuildLot.html", "classBuildLot" ],
     [ "Camera", "classCamera.html", "classCamera" ],
     [ "CameraApp", "classCameraApp.html", "classCameraApp" ],
     [ "CameraMove", "classCameraMove.html", "classCameraMove" ],
